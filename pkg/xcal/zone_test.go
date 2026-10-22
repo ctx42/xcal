@@ -165,4 +165,17 @@ func Test_Zone_Validate(t *testing.T) {
 		// --- Then ---
 		assert.ErrorEqual(t, "invalid ZoneID -1", err)
 	})
+
+	t.Run("not in zone table", func(t *testing.T) {
+		// --- Given ---
+		z := validZone()
+		z.Name = "Europe/Kyiv"
+		z.CountryCode = "UA"
+
+		// --- When ---
+		err := z.Validate()
+
+		// --- Then ---
+		assert.ErrorIs(t, ErrInvTimezone, err)
+	})
 }

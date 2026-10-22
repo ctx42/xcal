@@ -66,6 +66,29 @@ func Test_ReadZones_duplicateName(t *testing.T) {
 	assert.Nil(t, zs)
 }
 
+func Test_ReadZones_invalidZone(t *testing.T) {
+	// --- When ---
+	zs, err := ReadZones("testdata/timezones_invalid_zone.json")
+
+	// --- Then ---
+	assert.ErrorEqual(t, "at index 1: invalid Zone offset 1000", err)
+	assert.Nil(t, zs)
+}
+
+func Test_ReadZones_noGeneratedZones(t *testing.T) {
+	// --- Given ---
+	save := xcal.Zones
+	xcal.Zones = map[string]*xcal.Zone{}
+	t.Cleanup(func() { xcal.Zones = save })
+
+	// --- When ---
+	zs, err := ReadZones("testdata/timezones_mismatched_ids.json")
+
+	// --- Then ---
+	assert.ErrorEqual(t, "expected ZoneID 1 got 2", err)
+	assert.Nil(t, zs)
+}
+
 func Test_ReadZones_invalidJSON(t *testing.T) {
 	// --- When ---
 	zs, err := ReadZones("testdata/timezones_invalid_json.json")
