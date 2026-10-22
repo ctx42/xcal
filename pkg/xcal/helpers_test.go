@@ -64,6 +64,14 @@ func Test_CheckTimeBounds_errors_tabular(t *testing.T) {
 			"field",
 			"date out of bounds: field date in far past",
 		},
+		{
+			"error - no name",
+			time.Date(1999, 12, 31, 23, 59, 59, 0, time.UTC),
+			time.Date(2000, 1, 1, 0, 0, 0, 0, time.UTC),
+			"1s",
+			"",
+			"date out of bounds: date in far past",
+		},
 	}
 
 	for _, tc := range tt {

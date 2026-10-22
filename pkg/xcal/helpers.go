@@ -2,6 +2,7 @@ package xcal
 
 import (
 	"fmt"
+	"strings"
 	"time"
 )
 
@@ -9,10 +10,12 @@ import (
 // fip or later than now plus fif. The name prefixes the error message.
 func CheckTimeBounds(name string, tim, fip time.Time, fif time.Duration) error {
 	if tim.After(time.Now().UTC().Add(fif)) {
-		return fmt.Errorf("%w: %s date in far future", ErrTimeBounds, name)
+		msg := strings.TrimSpace(name + " date in far future")
+		return fmt.Errorf("%w: %s", ErrTimeBounds, msg)
 	}
 	if tim.Before(fip) {
-		return fmt.Errorf("%w: %s date in far past", ErrTimeBounds, name)
+		msg := strings.TrimSpace(name + " date in far past")
+		return fmt.Errorf("%w: %s", ErrTimeBounds, msg)
 	}
 	return nil
 }
