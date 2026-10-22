@@ -137,6 +137,28 @@ func Test_Day_MarshalText_zero(t *testing.T) {
 	assert.Equal(t, `{"day":""}`, string(have))
 }
 
+func Test_Day_MarshalText_yearOutOfRange_tabular(t *testing.T) {
+	tt := []struct {
+		testN string
+
+		day Day
+	}{
+		{"error - year after 9999", NewDay(10000, time.January, 1)},
+		{"error - negative year", NewDay(-1, time.January, 1)},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- When ---
+			have, err := tc.day.MarshalText()
+
+			// --- Then ---
+			assert.ErrorContain(t, "year outside of range [0,9999]", err)
+			assert.Nil(t, have)
+		})
+	}
+}
+
 func Test_Day_zeroRoundTrip(t *testing.T) {
 	// --- Given ---
 	data := must.Value(json.Marshal(struct{ Day Day }{}))

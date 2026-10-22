@@ -1,6 +1,7 @@
 package xcal
 
 import (
+	"errors"
 	"time"
 )
 
@@ -54,8 +55,13 @@ func (day *Day) UnmarshalText(text []byte) error {
 
 // MarshalText implements encoding.TextMarshaler, so a Day encodes in the
 // same "YYYY-MM-DD" format UnmarshalText accepts. The zero Day encodes as
-// empty text.
+// empty text. It returns an error for years outside the range [0,9999], which
+// that format cannot represent.
 func (day Day) MarshalText() ([]byte, error) {
+	if day.year < 0 || day.year > 9999 {
+		msg := "xcal.Day.MarshalText: year outside of range [0,9999]"
+		return nil, errors.New(msg)
+	}
 	return []byte(day.String()), nil
 }
 
