@@ -62,7 +62,7 @@ func (zon *Zone) Check() error {
 	}
 
 	if zon.Status != Removed {
-		if _, err := time.LoadLocation(zon.Name); err != nil {
+		if _, err := loadTZ(zon.Name); err != nil {
 			return fmt.Errorf("%w: %s", ErrInvTimezone, zon.Name)
 		}
 	}
@@ -87,7 +87,7 @@ func (zon *Zone) Check() error {
 			return fmt.Errorf(format, zon.Name, zon.Status)
 		}
 
-		if _, err := time.LoadLocation(zon.Link); err != nil {
+		if _, err := loadTZ(zon.Link); err != nil {
 			return fmt.Errorf("invalid link %s", zon.Link)
 		}
 	}
@@ -114,9 +114,19 @@ func (zon *Zone) Loc() (*time.Location, error) {
 	if zon.Status == Removed {
 		name = zon.Link
 	}
-	loc, err := time.LoadLocation(name)
+	loc, err := loadTZ(name)
 	if err != nil {
 		return nil, ErrInvTimezone
 	}
 	return loc, nil
+}
+
+// loadTZ loads the named location from the Go location database. It rejects
+// "" and "Local", which [time.LoadLocation] resolves to UTC and to the host's
+// zone, with [ErrInvTimezone].
+func loadTZ(name string) (*time.Location, error) {
+	if name == "" || name == "Local" {
+		return nil, ErrInvTimezone
+	}
+	return time.LoadLocation(name)
 }

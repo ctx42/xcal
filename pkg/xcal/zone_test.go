@@ -82,6 +82,30 @@ func Test_Zone_Check(t *testing.T) {
 		assert.ErrorEqual(t, "invalid timezone: Unknown/Unknown", err)
 	})
 
+	t.Run("error - empty name", func(t *testing.T) {
+		// --- Given ---
+		zon := validZone()
+		zon.Name = ""
+
+		// --- When ---
+		err := zon.Check()
+
+		// --- Then ---
+		assert.ErrorEqual(t, "invalid timezone: ", err)
+	})
+
+	t.Run("error - Local name", func(t *testing.T) {
+		// --- Given ---
+		zon := validZone()
+		zon.Name = "Local"
+
+		// --- When ---
+		err := zon.Check()
+
+		// --- Then ---
+		assert.ErrorEqual(t, "invalid timezone: Local", err)
+	})
+
 	t.Run("error - invalid offset", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
@@ -142,6 +166,19 @@ func Test_Zone_Check(t *testing.T) {
 		// --- Then ---
 		want := `zone Europe/Warsaw with status "R" has no link`
 		assert.ErrorEqual(t, want, err)
+	})
+
+	t.Run("error - alias with Local link", func(t *testing.T) {
+		// --- Given ---
+		zon := validZone()
+		zon.Status = Alias
+		zon.Link = "Local"
+
+		// --- When ---
+		err := zon.Check()
+
+		// --- Then ---
+		assert.ErrorEqual(t, "invalid link Local", err)
 	})
 
 	t.Run("error - alias with invalid link", func(t *testing.T) {
@@ -216,6 +253,69 @@ func Test_Zone_Loc_removed(t *testing.T) {
 	// --- Then ---
 	assert.NoError(t, err)
 	assert.Equal(t, "Europe/Berlin", have.String())
+}
+
+func Test_Zone_Loc_rejectedNames_tabular(t *testing.T) {
+	tt := []struct {
+		testN string
+
+		zon *Zone
+	}{
+		{"error - zero zone", &Zone{}},
+		{"error - Local", &Zone{Name: "Local"}},
+		{"error - removed without link", &Zone{Name: "X", Status: Removed}},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- When ---
+			have, err := tc.zon.Loc()
+
+			// --- Then ---
+			assert.ErrorIs(t, ErrInvTimezone, err)
+			assert.Nil(t, have)
+		})
+	}
+}
+
+func Test_loadTZ(t *testing.T) {
+	// --- When ---
+	have, err := loadTZ("Europe/Warsaw")
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, "Europe/Warsaw", have.String())
+}
+
+func Test_loadTZ_rejected_tabular(t *testing.T) {
+	tt := []struct {
+		testN string
+
+		name string
+	}{
+		{"error - empty", ""},
+		{"error - Local", "Local"},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- When ---
+			have, err := loadTZ(tc.name)
+
+			// --- Then ---
+			assert.ErrorIs(t, ErrInvTimezone, err)
+			assert.Nil(t, have)
+		})
+	}
+}
+
+func Test_loadTZ_unknown(t *testing.T) {
+	// --- When ---
+	have, err := loadTZ("Unknown/Unknown")
+
+	// --- Then ---
+	assert.ErrorContain(t, "unknown time zone Unknown/Unknown", err)
+	assert.Nil(t, have)
 }
 
 func Test_Zone_Loc_unknownTimezone(t *testing.T) {
