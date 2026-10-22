@@ -38,8 +38,8 @@ var (
 
 // Sentinel errors.
 var (
-	// ErrInvTimezone is an error returned when timezone name unmarshalling
-	// failed.
+	// ErrInvTimezone is an error returned when a timezone name or ID is not
+	// valid.
 	ErrInvTimezone = errors.New("invalid timezone")
 
 	// ErrNoZoneID indicates there is no zone ID for given timezone.
