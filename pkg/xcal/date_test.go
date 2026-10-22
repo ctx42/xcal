@@ -456,13 +456,9 @@ func Test_ChangeLocation_tabular(t *testing.T) {
 }
 
 func Benchmark_ChangeLocation(b *testing.B) {
-	b.StopTimer()
 	tim := time.Date(2022, 4, 23, 10, 18, 19, 0, WAW)
-	var n time.Time
 
-	b.StartTimer()
-	for i := 0; i < b.N; i++ {
-		n = ChangeLocation(tim, time.UTC)
+	for b.Loop() {
+		ChangeLocation(tim, time.UTC)
 	}
-	_ = n
 }
