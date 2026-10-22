@@ -137,8 +137,7 @@ func Test_FromTimeLoc_UnknownTimezone(t *testing.T) {
 
 func Test_Location_MarshalJSON(t *testing.T) {
 	// --- Given ---
-	tz, err := LoadLocation("Europe/Warsaw")
-	assert.NoError(t, err)
+	tz := must.Value(LoadLocation("Europe/Warsaw"))
 
 	// --- When ---
 	have, err := json.Marshal(tz)
@@ -150,8 +149,7 @@ func Test_Location_MarshalJSON(t *testing.T) {
 
 func Test_Location_MarshalJSON_inStructure(t *testing.T) {
 	// --- Given ---
-	loc, err := LoadLocation("Europe/Warsaw")
-	assert.NoError(t, err)
+	loc := must.Value(LoadLocation("Europe/Warsaw"))
 
 	var ts = struct {
 		Loc *Location `json:"my_loc"`

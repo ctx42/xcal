@@ -6,6 +6,7 @@ import (
 	"testing"
 
 	"github.com/ctx42/testing/pkg/assert"
+	"github.com/ctx42/testing/pkg/must"
 
 	"github.com/ctx42/xcal/pkg/xcal"
 )
@@ -117,11 +118,8 @@ func Test_GenerateTZ(t *testing.T) {
 	// --- Then ---
 	assert.NoError(t, err)
 
-	want, err := os.ReadFile("testdata/timezones_expected_go")
-	assert.NoError(t, err)
-
-	have, err := os.ReadFile(dst)
-	assert.NoError(t, err)
+	want := must.Value(os.ReadFile("testdata/timezones_expected_go"))
+	have := must.Value(os.ReadFile(dst))
 	assert.Equal(t, string(want), string(have))
 }
 
@@ -145,20 +143,16 @@ func Test_GenerateTZ_noDestinationDir(t *testing.T) {
 func Test_GenerateTZGo(t *testing.T) {
 	// --- Given ---
 	dst := filepath.Join(t.TempDir(), "timezones.go")
-	zs, err := ReadZones("testdata/timezones.json")
-	assert.NoError(t, err)
+	zs := must.Value(ReadZones("testdata/timezones.json"))
 
 	// --- When ---
-	err = GenerateTZGo(zs, dst, "xcal")
+	err := GenerateTZGo(zs, dst, "xcal")
 
 	// --- Then ---
 	assert.NoError(t, err)
 
-	want, err := os.ReadFile("testdata/timezones_expected_go")
-	assert.NoError(t, err)
-
-	have, err := os.ReadFile(dst)
-	assert.NoError(t, err)
+	want := must.Value(os.ReadFile("testdata/timezones_expected_go"))
+	have := must.Value(os.ReadFile(dst))
 	assert.Equal(t, string(want), string(have))
 }
 
