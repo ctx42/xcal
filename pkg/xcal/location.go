@@ -26,18 +26,18 @@ func LoadLocation(locS string) (*Location, error) {
 		if err != nil {
 			return nil, ErrInvTimezone
 		}
-		zone, ok := ZoneIDs[zid]
+		zon, ok := ZoneIDs[zid]
 		if !ok {
 			return nil, ErrInvTimezone
 		}
-		tLoc, err := zone.Loc()
+		tLoc, err := zon.Loc()
 		if err != nil {
 			// Zone is not in the Go location database.
 			return nil, ErrInvTimezone
 		}
 
 		loc := &Location{
-			ID:  zone.Id,
+			ID:  zon.Id,
 			Loc: tLoc,
 		}
 
@@ -49,14 +49,14 @@ func LoadLocation(locS string) (*Location, error) {
 		return nil, ErrInvTimezone
 	}
 
-	zone, ok := Zones[tLoc.String()]
+	zon, ok := Zones[tLoc.String()]
 	if !ok {
 		// Location name is not on our timezone list.
 		return nil, ErrInvTimezone
 	}
 
 	loc := &Location{
-		ID:  zone.Id,
+		ID:  zon.Id,
 		Loc: tLoc,
 	}
 
@@ -70,9 +70,9 @@ func FromTimeLoc(loc *time.Location) (*Location, error) {
 	if loc == nil {
 		loc = time.UTC
 	}
-	if zone, ok := Zones[loc.String()]; ok {
+	if zon, ok := Zones[loc.String()]; ok {
 		ret := &Location{
-			ID:  zone.Id,
+			ID:  zon.Id,
 			Loc: loc,
 		}
 		return ret, nil

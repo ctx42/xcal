@@ -35,11 +35,11 @@ func ToZone(loc *time.Location) (*Zone, error) {
 
 // ByZoneID takes timezone ID and returns corresponding time.Location instance.
 func ByZoneID(tzi int) (*time.Location, error) {
-	tz, ok := ZoneIDs[tzi]
+	zon, ok := ZoneIDs[tzi]
 	if !ok {
 		return nil, ErrInvTimezone
 	}
-	loc, err := tz.Loc()
+	loc, err := zon.Loc()
 	if err != nil {
 		return nil, ErrInvTimezone
 	}
