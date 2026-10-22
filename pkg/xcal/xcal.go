@@ -1,4 +1,20 @@
-// Package xcal provides date / time related functions.
+// Package xcal provides calendar and timezone helpers built on [time].
+//
+// The main types are:
+//   - [Day], a calendar date with no time of day, encoded as "YYYY-MM-DD".
+//   - [Location], a [time.Location] paired with a stable numeric zone ID from
+//     the generated [Zones] and [ZoneIDs] tables, encoded in JSON as the zone
+//     name.
+//
+// Functions such as [Midnight], [MonthStartEnd], [InWindow] and
+// [CheckTimeBounds] cover common date arithmetic and checks.
+//
+// Import the package as:
+//
+//	import "github.com/ctx42/xcal/pkg/xcal"
+//
+// The timezone database is embedded, so zones load on hosts without
+// zoneinfo. See the package examples for usage.
 package xcal
 
 import (
