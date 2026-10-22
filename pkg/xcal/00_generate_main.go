@@ -7,6 +7,7 @@ import (
 	"os"
 
 	"github.com/ctx42/xcal/internal/tzgen"
+	"github.com/ctx42/xcal/pkg/xcal"
 )
 
 // main generates a Go source file with timezones defined in a JSON file.
@@ -18,7 +19,7 @@ func main() {
 		_, _ = fmt.Fprintln(os.Stderr, "GOPACKAGE not set: run via go generate")
 		os.Exit(1)
 	}
-	if err := tzgen.GenerateTZ(src, tzGo, pkg); err != nil {
+	if err := tzgen.GenerateTZ(src, tzGo, pkg, xcal.Zones); err != nil {
 		_, _ = fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
 	}

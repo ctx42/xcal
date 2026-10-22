@@ -40,15 +40,6 @@ func Test_ReadZones(t *testing.T) {
 	assert.Equal(t, "PL", zon.CountryCode)
 }
 
-func Test_ReadZones_mismatchedIDs(t *testing.T) {
-	// --- When ---
-	have, err := ReadZones("testdata/timezones_mismatched_ids.json")
-
-	// --- Then ---
-	assert.ErrorEqual(t, "at index 1: expected ZoneID 416 got 2", err)
-	assert.Nil(t, have)
-}
-
 func Test_ReadZones_duplicateID(t *testing.T) {
 	// --- When ---
 	have, err := ReadZones("testdata/timezones_duplicate_id.json")
@@ -76,20 +67,6 @@ func Test_ReadZones_invalidZone(t *testing.T) {
 	assert.Nil(t, have)
 }
 
-func Test_ReadZones_noGeneratedZones(t *testing.T) {
-	// --- Given ---
-	save := xcal.Zones
-	xcal.Zones = map[string]*xcal.Zone{}
-	t.Cleanup(func() { xcal.Zones = save })
-
-	// --- When ---
-	have, err := ReadZones("testdata/timezones_mismatched_ids.json")
-
-	// --- Then ---
-	assert.ErrorEqual(t, "at index 1: expected ZoneID 1 got 2", err)
-	assert.Nil(t, have)
-}
-
 func Test_ReadZones_invalidJSON(t *testing.T) {
 	// --- When ---
 	have, err := ReadZones("testdata/timezones_invalid_json.json")
@@ -113,7 +90,7 @@ func Test_GenerateTZ(t *testing.T) {
 	dst := filepath.Join(t.TempDir(), "timezones.go")
 
 	// --- When ---
-	err := GenerateTZ("testdata/timezones.json", dst, "xcal")
+	err := GenerateTZ("testdata/timezones.json", dst, "xcal", testPrev(t))
 
 	// --- Then ---
 	assert.NoError(t, err)
@@ -125,7 +102,7 @@ func Test_GenerateTZ(t *testing.T) {
 
 func Test_GenerateTZ_noSourceFile(t *testing.T) {
 	// --- When ---
-	err := GenerateTZ("testdata/not_existing.json", "", "xcal")
+	err := GenerateTZ("testdata/not_existing.json", "", "xcal", nil)
 
 	// --- Then ---
 	assert.ErrorContain(t, "testdata/not_existing.json", err)
@@ -136,10 +113,153 @@ func Test_GenerateTZ_noDestinationDir(t *testing.T) {
 	dst := "testdata/not_existing/timezones.go"
 
 	// --- When ---
-	err := GenerateTZ("testdata/timezones.json", dst, "xcal")
+	err := GenerateTZ("testdata/timezones.json", dst, "xcal", testPrev(t))
 
 	// --- Then ---
 	assert.ErrorContain(t, "testdata/not_existing/timezones.go", err)
+}
+
+func Test_GenerateTZ_unstableIDs(t *testing.T) {
+	// --- Given ---
+	dst := filepath.Join(t.TempDir(), "timezones.go")
+
+	// --- When ---
+	err := GenerateTZ("testdata/timezones.json", dst, "xcal", nil)
+
+	// --- Then ---
+	assert.ErrorEqual(t, "at index 1: expected ZoneID 1 got 416", err)
+	assert.NoFileExist(t, dst)
+}
+
+func Test_DecodeZones(t *testing.T) {
+	// --- When ---
+	have, err := DecodeZones("testdata/timezones_invalid_zone.json")
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Len(t, 2, have)
+	assert.Equal(t, 1000, have[1].Offset)
+}
+
+func Test_DecodeZones_errors_tabular(t *testing.T) {
+	tt := []struct {
+		testN string
+
+		pth  string
+		want string
+	}{
+		{
+			"error - missing file",
+			"testdata/not_existing.json",
+			"testdata/not_existing.json",
+		},
+		{
+			"error - invalid JSON",
+			"testdata/timezones_invalid_json.json",
+			"unexpected end of JSON input",
+		},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- When ---
+			have, err := DecodeZones(tc.pth)
+
+			// --- Then ---
+			assert.ErrorContain(t, tc.want, err)
+			assert.Nil(t, have)
+		})
+	}
+}
+
+func Test_CheckStable_tabular(t *testing.T) {
+	tt := []struct {
+		testN string
+
+		prev map[string]*xcal.Zone
+		zs   []*xcal.Zone
+	}{
+		{
+			"no previous zones",
+			nil,
+			[]*xcal.Zone{{Id: 0, Name: "UTC"}, {Id: 1, Name: "Etc/UTC"}},
+		},
+		{
+			"same IDs",
+			map[string]*xcal.Zone{"UTC": {Id: 0, Name: "UTC"}},
+			[]*xcal.Zone{{Id: 0, Name: "UTC"}},
+		},
+		{
+			"new zone above previous IDs",
+			map[string]*xcal.Zone{"UTC": {Id: 4, Name: "UTC"}},
+			[]*xcal.Zone{{Id: 4, Name: "UTC"}, {Id: 5, Name: "Etc/UTC"}},
+		},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- When ---
+			err := CheckStable(tc.prev, tc.zs)
+
+			// --- Then ---
+			assert.NoError(t, err)
+		})
+	}
+}
+
+func Test_CheckStable_errors_tabular(t *testing.T) {
+	tt := []struct {
+		testN string
+
+		prev map[string]*xcal.Zone
+		zs   []*xcal.Zone
+		want string
+	}{
+		{
+			"error - not counting from zero",
+			nil,
+			[]*xcal.Zone{{Id: 0, Name: "UTC"}, {Id: 2, Name: "Etc/UTC"}},
+			"at index 1: expected ZoneID 1 got 2",
+		},
+		{
+			"error - changed ID",
+			map[string]*xcal.Zone{"UTC": {Id: 0, Name: "UTC"}},
+			[]*xcal.Zone{{Id: 1, Name: "UTC"}},
+			"at index 0: expected ZoneID 0 got 1",
+		},
+		{
+			"error - new zone reusing ID range",
+			map[string]*xcal.Zone{
+				"UTC":     {Id: 0, Name: "UTC"},
+				"Etc/UTC": {Id: 2, Name: "Etc/UTC"},
+			},
+			[]*xcal.Zone{
+				{Id: 0, Name: "UTC"},
+				{Id: 1, Name: "Europe/Warsaw"},
+				{Id: 2, Name: "Etc/UTC"},
+			},
+			"at index 1: new zone Europe/Warsaw has ID 1, expected above 2",
+		},
+		{
+			"error - missing zone",
+			map[string]*xcal.Zone{
+				"UTC":     {Id: 0, Name: "UTC"},
+				"Etc/UTC": {Id: 1, Name: "Etc/UTC"},
+			},
+			[]*xcal.Zone{{Id: 0, Name: "UTC"}},
+			"zone Etc/UTC with ID 1 is missing",
+		},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- When ---
+			err := CheckStable(tc.prev, tc.zs)
+
+			// --- Then ---
+			assert.ErrorEqual(t, tc.want, err)
+		})
+	}
 }
 
 func Test_GenerateTZGo(t *testing.T) {

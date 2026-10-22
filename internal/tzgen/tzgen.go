@@ -1,5 +1,7 @@
-// Package tzgen generates the Go source of the xcal timezone tables from a
-// JSON file.
+// Package tzgen maintains the xcal timezone registry: it merges the IANA tz
+// database release a Go toolchain embeds into the registry JSON file, keeping
+// zone IDs stable, and generates the Go source of the xcal timezone tables
+// from that file.
 package tzgen
 
 import (
@@ -8,6 +10,7 @@ import (
 	"encoding/json"
 	"fmt"
 	goformat "go/format"
+	"maps"
 	"os"
 	"slices"
 	"strings"
@@ -15,20 +18,47 @@ import (
 	"github.com/ctx42/xcal/pkg/xcal"
 )
 
+// Registry files in a data directory.
+const (
+	// ZonesFile is the timezones JSON file, the registry of zone IDs.
+	ZonesFile = "timezones.json"
+
+	// TZDataDir is the directory holding the files [Fetch] extracts.
+	TZDataDir = "tzdata"
+)
+
+// Files kept in the tzdata directory, extracted from an IANA release.
+const (
+	// VersionFile holds the release version, such as "2026c".
+	VersionFile = "version"
+
+	// LinksFile holds every Link line of the release, sorted by link name.
+	LinksFile = "links"
+
+	// ZoneTabFile is the release's zone.tab with country codes and comments.
+	ZoneTabFile = "zone.tab"
+)
+
+// ReleaseURL is the IANA tz database release URL; %s is the version.
+const ReleaseURL = "https://data.iana.org/time-zones/releases/tzdata%s.tar.gz"
+
 // GenerateTZ generates a Go source file at dst from the src JSON file, with
-// the given package name.
-func GenerateTZ(src, dst, name string) error {
+// the given package name. The zones must keep the IDs prev assigns, as
+// [CheckStable] requires.
+func GenerateTZ(src, dst, name string, prev map[string]*xcal.Zone) error {
 	zs, err := ReadZones(src)
 	if err != nil {
+		return err
+	}
+	if err = CheckStable(prev, zs); err != nil {
 		return err
 	}
 
 	return GenerateTZGo(zs, dst, name)
 }
 
-// ReadZones reads a timezones JSON file and returns a slice of validated
-// Zone instances.
-func ReadZones(pth string) ([]*xcal.Zone, error) {
+// DecodeZones reads a timezones JSON file without validating its zones.
+func DecodeZones(pth string) ([]*xcal.Zone, error) {
 	data, err := os.ReadFile(pth)
 	if err != nil {
 		return nil, err
@@ -36,6 +66,16 @@ func ReadZones(pth string) ([]*xcal.Zone, error) {
 
 	var zs []*xcal.Zone
 	if err = json.Unmarshal(data, &zs); err != nil {
+		return nil, err
+	}
+	return zs, nil
+}
+
+// ReadZones reads a timezones JSON file and returns a slice of validated
+// Zone instances with unique names and IDs.
+func ReadZones(pth string) ([]*xcal.Zone, error) {
+	zs, err := DecodeZones(pth)
+	if err != nil {
 		return nil, err
 	}
 
@@ -55,17 +95,54 @@ func ReadZones(pth string) ([]*xcal.Zone, error) {
 		}
 		seenIDs[zon.Id] = true
 		seenNames[zon.Name] = true
-		if len(xcal.Zones) > 0 {
-			if have, ok := xcal.Zones[zon.Name]; ok && have.Id != zon.Id {
-				format := "at index %d: expected ZoneID %d got %d"
-				return nil, fmt.Errorf(format, i, have.Id, zon.Id)
-			}
-		} else if zon.Id != i {
-			format := "at index %d: expected ZoneID %d got %d"
-			return nil, fmt.Errorf(format, i, i, zon.Id)
-		}
 	}
 	return zs, nil
+}
+
+// CheckStable returns an error when zs would change an ID that prev, the
+// previous zones by name, assigns: a zone with a different ID, a zone of prev
+// missing from zs, or a new zone with an ID not above every ID in prev. With
+// an empty prev, the IDs must count up from zero in order.
+func CheckStable(prev map[string]*xcal.Zone, zs []*xcal.Zone) error {
+	if len(prev) == 0 {
+		for i, zon := range zs {
+			if zon.Id != i {
+				format := "at index %d: expected ZoneID %d got %d"
+				return fmt.Errorf(format, i, i, zon.Id)
+			}
+		}
+		return nil
+	}
+
+	top := -1
+	for _, zon := range prev {
+		top = max(top, zon.Id)
+	}
+
+	names := make(map[string]bool, len(zs))
+	for i, zon := range zs {
+		names[zon.Name] = true
+		old, ok := prev[zon.Name]
+		if ok && old.Id != zon.Id {
+			format := "at index %d: expected ZoneID %d got %d"
+			return fmt.Errorf(format, i, old.Id, zon.Id)
+		}
+		if !ok && zon.Id <= top {
+			format := "at index %d: new zone %s has ID %d, expected above %d"
+			return fmt.Errorf(format, i, zon.Name, zon.Id, top)
+		}
+	}
+
+	olds := slices.SortedFunc(maps.Values(prev), func(a, b *xcal.Zone) int {
+		return cmp.Compare(a.Id, b.Id)
+	})
+	for _, old := range olds {
+		if !names[old.Name] {
+			format := "zone %s with ID %d is missing"
+			return fmt.Errorf(format, old.Name, old.Id)
+		}
+	}
+	return nil
 }
 
 // GenerateTZGo generates a Go source file with timezones. The map entries are
