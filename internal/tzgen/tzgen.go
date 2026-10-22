@@ -61,7 +61,8 @@ func ReadZones(pth string) ([]*xcal.Zone, error) {
 				return nil, fmt.Errorf(format, i, have.Id, zon.Id)
 			}
 		} else if zon.Id != i {
-			return nil, fmt.Errorf("expected ZoneID %d got %d", i, zon.Id)
+			format := "at index %d: expected ZoneID %d got %d"
+			return nil, fmt.Errorf(format, i, i, zon.Id)
 		}
 	}
 	return zs, nil

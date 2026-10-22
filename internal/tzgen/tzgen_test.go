@@ -86,7 +86,7 @@ func Test_ReadZones_noGeneratedZones(t *testing.T) {
 	zs, err := ReadZones("testdata/timezones_mismatched_ids.json")
 
 	// --- Then ---
-	assert.ErrorEqual(t, "expected ZoneID 1 got 2", err)
+	assert.ErrorEqual(t, "at index 1: expected ZoneID 1 got 2", err)
 	assert.Nil(t, zs)
 }
 
