@@ -36,12 +36,12 @@ func InWindow(start, length time.Duration, tim time.Time) bool {
 	return InBetweenInclusive(tim, begin, end)
 }
 
-// InBetween returns true if tim in between start and end not inclusive.
+// InBetween returns true if tim is between start and end, exclusive.
 func InBetween(tim, start, end time.Time) bool {
 	return tim.After(start) && tim.Before(end)
 }
 
-// InBetweenInclusive returns true if date in between start and end inclusive.
+// InBetweenInclusive returns true if tim is between start and end, inclusive.
 func InBetweenInclusive(tim, start, end time.Time) bool {
 	return (tim.Equal(start) || tim.After(start)) &&
 		(tim.Equal(end) || tim.Before(end))

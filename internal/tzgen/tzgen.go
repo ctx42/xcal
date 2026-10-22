@@ -15,8 +15,8 @@ import (
 	"github.com/ctx42/xcal/pkg/xcal"
 )
 
-// GenerateTZ generates a go source file at dst from src JSON file with package
-// name.
+// GenerateTZ generates a Go source file at dst from the src JSON file, with
+// the given package name.
 func GenerateTZ(src, dst, name string) error {
 	zs, err := ReadZones(src)
 	if err != nil {
