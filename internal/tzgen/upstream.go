@@ -110,9 +110,10 @@ func Fetch(
 		name string
 		data []byte
 	}{
-		{VersionFile, append(ver, '\n')},
 		{LinksFile, []byte(strings.Join(links, "\n") + "\n")},
 		{ZoneTabFile, zoneTab},
+		// Written last, so it never names a release whose files are missing.
+		{VersionFile, append(ver, '\n')},
 	}
 	for _, fil := range files {
 		pth := filepath.Join(dir, fil.name)
