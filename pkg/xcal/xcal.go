@@ -13,8 +13,8 @@
 //
 //	import "github.com/ctx42/xcal/pkg/xcal"
 //
-// The timezone database is embedded, so zones load on hosts without
-// zoneinfo. See the package examples for usage.
+// The timezone database is embedded, so zones the build's Go release knows
+// load on hosts without zoneinfo. See the package examples for usage.
 package xcal
 
 import (
