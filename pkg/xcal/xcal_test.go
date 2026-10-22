@@ -21,7 +21,11 @@ func Test_DefaultLocations_tabular(t *testing.T) {
 
 	for _, tc := range tt {
 		t.Run(tc.testN, func(t *testing.T) {
-			assert.Equal(t, tc.want, tc.loc.String())
+			// --- When ---
+			have := tc.loc.String()
+
+			// --- Then ---
+			assert.Equal(t, tc.want, have)
 		})
 	}
 }

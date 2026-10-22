@@ -74,7 +74,7 @@ func Test_MonthStartEnd_tabular(t *testing.T) {
 
 	for _, tc := range tt {
 		t.Run(tc.testN, func(t *testing.T) {
-			// --- Given ---
+			// --- When ---
 			hStart, hEnd := MonthStartEnd(tc.date)
 
 			// --- Then ---

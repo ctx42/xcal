@@ -18,17 +18,28 @@ func Test_NewDay(t *testing.T) {
 	assert.Equal(t, "2026-03-02", have.String())
 }
 
-func Test_DayOf(t *testing.T) {
-	// --- Given ---
+func Test_DayOf_tabular(t *testing.T) {
 	tim := time.Date(2026, time.March, 24, 23, 30, 0, 0, time.UTC)
 
-	// --- When ---
-	hUTC := DayOf(tim)
-	hLoc := DayOf(tim.In(WAW))
+	tt := []struct {
+		testN string
 
-	// --- Then ---
-	assert.Equal(t, NewDay(2026, time.March, 24), hUTC)
-	assert.Equal(t, NewDay(2026, time.March, 25), hLoc)
+		tim  time.Time
+		want Day
+	}{
+		{"UTC", tim, NewDay(2026, time.March, 24)},
+		{"Warsaw", tim.In(WAW), NewDay(2026, time.March, 25)},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- When ---
+			have := DayOf(tc.tim)
+
+			// --- Then ---
+			assert.Equal(t, tc.want, have)
+		})
+	}
 }
 
 func Test_parseDay(t *testing.T) {
@@ -139,9 +150,26 @@ func Test_Day_zeroRoundTrip(t *testing.T) {
 	assert.True(t, have.Day.IsZero())
 }
 
-func Test_Day_IsZero(t *testing.T) {
-	assert.True(t, Day{}.IsZero())
-	assert.False(t, NewDay(2026, time.March, 25).IsZero())
+func Test_Day_IsZero_tabular(t *testing.T) {
+	tt := []struct {
+		testN string
+
+		day  Day
+		want bool
+	}{
+		{"zero", Day{}, true},
+		{"set", NewDay(2026, time.March, 25), false},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- When ---
+			have := tc.day.IsZero()
+
+			// --- Then ---
+			assert.Equal(t, tc.want, have)
+		})
+	}
 }
 
 func Test_Day_In(t *testing.T) {
@@ -163,39 +191,91 @@ func Test_Day_In(t *testing.T) {
 	})
 }
 
-func Test_Day_AddDays(t *testing.T) {
-	// --- Given ---
-	day := NewDay(2026, time.February, 27)
+func Test_Day_AddDays_tabular(t *testing.T) {
+	tt := []struct {
+		testN string
 
-	// --- Then ---
-	assert.Equal(t, NewDay(2026, time.March, 1), day.AddDays(2))
-	assert.Equal(t, NewDay(2026, time.February, 26), day.AddDays(-1))
-	assert.Equal(t, day, day.AddDays(0))
+		n    int
+		want Day
+	}{
+		{"across month end", 2, NewDay(2026, time.March, 1)},
+		{"negative", -1, NewDay(2026, time.February, 26)},
+		{"zero", 0, NewDay(2026, time.February, 27)},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- Given ---
+			day := NewDay(2026, time.February, 27)
+
+			// --- When ---
+			have := day.AddDays(tc.n)
+
+			// --- Then ---
+			assert.Equal(t, tc.want, have)
+		})
+	}
 }
 
-func Test_Day_Before(t *testing.T) {
-	// --- Given ---
+func Test_Day_Before_tabular(t *testing.T) {
 	early := NewDay(2026, time.March, 24)
 	late := NewDay(2026, time.March, 25)
 
-	// --- Then ---
-	assert.True(t, early.Before(late))
-	assert.False(t, late.Before(early))
-	assert.False(t, early.Before(early))
+	tt := []struct {
+		testN string
+
+		day   Day
+		other Day
+		want  bool
+	}{
+		{"earlier", early, late, true},
+		{"later", late, early, false},
+		{"same", early, early, false},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- When ---
+			have := tc.day.Before(tc.other)
+
+			// --- Then ---
+			assert.Equal(t, tc.want, have)
+		})
+	}
 }
 
-func Test_Day_DaysUntil(t *testing.T) {
-	// --- Given ---
-	day := NewDay(2026, time.March, 25)
+func Test_Day_DaysUntil_tabular(t *testing.T) {
+	tt := []struct {
+		testN string
 
-	// --- Then ---
-	assert.Equal(t, 0, day.DaysUntil(day))
-	assert.Equal(t, 31, day.DaysUntil(NewDay(2026, time.April, 25)))
-	assert.Equal(t, -1, day.DaysUntil(NewDay(2026, time.March, 24)))
+		other Day
+		want  int
+	}{
+		{"same day", NewDay(2026, time.March, 25), 0},
+		{"next month", NewDay(2026, time.April, 25), 31},
+		{"earlier", NewDay(2026, time.March, 24), -1},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- Given ---
+			day := NewDay(2026, time.March, 25)
+
+			// --- When ---
+			have := day.DaysUntil(tc.other)
+
+			// --- Then ---
+			assert.Equal(t, tc.want, have)
+		})
+	}
 }
 
 func Test_Day_String(t *testing.T) {
-	assert.Equal(t, "2026-03-05", NewDay(2026, time.March, 5).String())
+	// --- When ---
+	have := NewDay(2026, time.March, 5).String()
+
+	// --- Then ---
+	assert.Equal(t, "2026-03-05", have)
 }
 
 func Test_Day_String_zero(t *testing.T) {
