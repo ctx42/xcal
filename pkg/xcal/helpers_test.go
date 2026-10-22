@@ -49,7 +49,7 @@ func Test_CheckTimeBounds_errors_tabular(t *testing.T) {
 		want  string
 	}{
 		{
-			"1",
+			"error - far future",
 			time.Date(2200, 1, 1, 0, 0, 0, 0, time.UTC),
 			time.Date(2000, 1, 1, 0, 0, 0, 0, time.UTC),
 			"1s",
@@ -57,7 +57,7 @@ func Test_CheckTimeBounds_errors_tabular(t *testing.T) {
 			"date out of bounds: field date in far future",
 		},
 		{
-			"2",
+			"error - far past",
 			time.Date(1999, 12, 31, 23, 59, 59, 0, time.UTC),
 			time.Date(2000, 1, 1, 0, 0, 0, 0, time.UTC),
 			"1s",

@@ -54,7 +54,7 @@ func Test_Zone_Check(t *testing.T) {
 		assert.NoError(t, err)
 	})
 
-	t.Run("negative idx", func(t *testing.T) {
+	t.Run("error - negative ID", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
 		zon.Id = -1
@@ -66,7 +66,7 @@ func Test_Zone_Check(t *testing.T) {
 		assert.ErrorEqual(t, "invalid ZoneID -1", err)
 	})
 
-	t.Run("unknown timezone name", func(t *testing.T) {
+	t.Run("error - unknown timezone name", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
 		zon.Name = "Unknown/Unknown"
@@ -79,7 +79,7 @@ func Test_Zone_Check(t *testing.T) {
 		assert.ErrorEqual(t, "invalid timezone: Unknown/Unknown", err)
 	})
 
-	t.Run("invalid offset", func(t *testing.T) {
+	t.Run("error - invalid offset", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
 		zon.Offset = -1000
@@ -91,7 +91,7 @@ func Test_Zone_Check(t *testing.T) {
 		assert.ErrorEqual(t, "invalid Zone offset -1000", err)
 	})
 
-	t.Run("invalid DST offset", func(t *testing.T) {
+	t.Run("error - invalid DST offset", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
 		zon.OffsetDST = -1000
@@ -103,7 +103,7 @@ func Test_Zone_Check(t *testing.T) {
 		assert.ErrorEqual(t, "invalid Zone DST offset -1000", err)
 	})
 
-	t.Run("alias without link", func(t *testing.T) {
+	t.Run("error - alias without link", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
 		zon.Status = Alias
@@ -115,7 +115,7 @@ func Test_Zone_Check(t *testing.T) {
 		assert.ErrorEqual(t, "alias without link for Europe/Warsaw", err)
 	})
 
-	t.Run("alias with invalid link", func(t *testing.T) {
+	t.Run("error - alias with invalid link", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
 		zon.Status = Alias
@@ -154,7 +154,7 @@ func Test_Zone_Validate(t *testing.T) {
 		assert.NoError(t, err)
 	})
 
-	t.Run("negative idx", func(t *testing.T) {
+	t.Run("error - negative ID", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
 		zon.Id = -1
@@ -166,7 +166,7 @@ func Test_Zone_Validate(t *testing.T) {
 		assert.ErrorEqual(t, "invalid ZoneID -1", err)
 	})
 
-	t.Run("not in zone table", func(t *testing.T) {
+	t.Run("error - not in zone table", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
 		save := Zones[zon.Name]
