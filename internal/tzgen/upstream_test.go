@@ -27,36 +27,29 @@ func Test_GoTZVersion(t *testing.T) {
 	assert.Equal(t, "2026c", have)
 }
 
-func Test_GoTZVersion_errors_tabular(t *testing.T) {
-	tt := []struct {
-		testN string
+func Test_GoTZVersion_noScript(t *testing.T) {
+	// --- When ---
+	have, err := GoTZVersion(t.TempDir())
 
-		script string
-		want   string
-	}{
-		{"error - no script", "", "update.bash: no such file or directory"},
-		{"error - no DATA line", "CODE=2026c\n", "no DATA line in"},
-	}
+	// --- Then ---
+	assert.ErrorContain(t, "update.bash: no such file or directory", err)
+	assert.Equal(t, "", have)
+}
 
-	for _, tc := range tt {
-		t.Run(tc.testN, func(t *testing.T) {
-			// --- Given ---
-			root := t.TempDir()
-			if tc.script != "" {
-				dir := filepath.Join(root, "lib", "time")
-				must.Nil(os.MkdirAll(dir, 0755))
-				pth := filepath.Join(dir, "update.bash")
-				must.Nil(os.WriteFile(pth, []byte(tc.script), 0644))
-			}
+func Test_GoTZVersion_noDataLine(t *testing.T) {
+	// --- Given ---
+	root := t.TempDir()
+	dir := filepath.Join(root, "lib", "time")
+	must.Nil(os.MkdirAll(dir, 0755))
+	pth := filepath.Join(dir, "update.bash")
+	must.Nil(os.WriteFile(pth, []byte("CODE=2026c\n"), 0644))
 
-			// --- When ---
-			have, err := GoTZVersion(root)
+	// --- When ---
+	have, err := GoTZVersion(root)
 
-			// --- Then ---
-			assert.ErrorContain(t, tc.want, err)
-			assert.Equal(t, "", have)
-		})
-	}
+	// --- Then ---
+	assert.ErrorContain(t, "no DATA line in", err)
+	assert.Equal(t, "", have)
 }
 
 func Test_Fetch(t *testing.T) {
