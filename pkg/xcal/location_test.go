@@ -9,7 +9,7 @@ import (
 	"github.com/ctx42/testing/pkg/must"
 )
 
-func Test_LoadLocation(t *testing.T) {
+func Test_LoadLocation_tabular(t *testing.T) {
 	tt := []struct {
 		testN string
 
@@ -277,7 +277,7 @@ func Test_Location_UnmarshalJSON_inStructure_ZoneID(t *testing.T) {
 	assert.Equal(t, 416, g.Loc.ID)
 }
 
-func Test_DefaultLocations(t *testing.T) {
+func Test_DefaultLocations_tabular(t *testing.T) {
 	tt := []struct {
 		testN string
 

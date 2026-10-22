@@ -8,7 +8,7 @@ import (
 	"github.com/ctx42/testing/pkg/must"
 )
 
-func Test_CheckTimeBounds(t *testing.T) {
+func Test_CheckTimeBounds_tabular(t *testing.T) {
 	tt := []struct {
 		testN string
 
@@ -38,7 +38,7 @@ func Test_CheckTimeBounds(t *testing.T) {
 	}
 }
 
-func Test_CheckTimeBounds_errors(t *testing.T) {
+func Test_CheckTimeBounds_errors_tabular(t *testing.T) {
 	tt := []struct {
 		testN string
 

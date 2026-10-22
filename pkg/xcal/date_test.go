@@ -9,7 +9,7 @@ import (
 	"github.com/ctx42/testing/pkg/must"
 )
 
-func Test_Midnight(t *testing.T) {
+func Test_Midnight_tabular(t *testing.T) {
 	tt := []struct {
 		testN string
 
@@ -44,7 +44,7 @@ func Test_Midnight(t *testing.T) {
 	}
 }
 
-func Test_MonthStartEnd(t *testing.T) {
+func Test_MonthStartEnd_tabular(t *testing.T) {
 	tt := []struct {
 		testN string
 
@@ -84,7 +84,7 @@ func Test_MonthStartEnd(t *testing.T) {
 	}
 }
 
-func Test_SinceMidnight(t *testing.T) {
+func Test_SinceMidnight_tabular(t *testing.T) {
 	tt := []struct {
 		testN string
 
@@ -116,7 +116,7 @@ func Test_SinceMidnight(t *testing.T) {
 	}
 }
 
-func Test_InWindow(t *testing.T) {
+func Test_InWindow_tabular(t *testing.T) {
 	tt := []struct {
 		testN string
 
@@ -207,7 +207,7 @@ func Test_InWindow(t *testing.T) {
 	}
 }
 
-func Test_InBetween(t *testing.T) {
+func Test_InBetween_tabular(t *testing.T) {
 	tt := []struct {
 		testN string
 
@@ -264,7 +264,7 @@ func Test_InBetween(t *testing.T) {
 	}
 }
 
-func Test_InBetweenInclusive(t *testing.T) {
+func Test_InBetweenInclusive_tabular(t *testing.T) {
 	tt := []struct {
 		testN string
 
@@ -321,7 +321,7 @@ func Test_InBetweenInclusive(t *testing.T) {
 	}
 }
 
-func Test_IsBeforeOrEqual(t *testing.T) {
+func Test_IsBeforeOrEqual_tabular(t *testing.T) {
 	tt := []struct {
 		testN string
 
@@ -359,7 +359,7 @@ func Test_IsBeforeOrEqual(t *testing.T) {
 	}
 }
 
-func Test_IsAfterOrEqual(t *testing.T) {
+func Test_IsAfterOrEqual_tabular(t *testing.T) {
 	tt := []struct {
 		testN string
 
@@ -416,7 +416,7 @@ func Test_TimeSortASC(t *testing.T) {
 	assert.Equal(t, want, in)
 }
 
-func Test_ChangeLocation(t *testing.T) {
+func Test_ChangeLocation_tabular(t *testing.T) {
 	tt := []struct {
 		testN string
 
