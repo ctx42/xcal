@@ -7,6 +7,7 @@ import (
 	"context"
 	"flag"
 	"fmt"
+	"io"
 	"net/http"
 	"os"
 	"os/exec"
@@ -17,14 +18,15 @@ import (
 )
 
 func main() {
-	if err := run(context.Background(), os.Args[1:]); err != nil {
+	if err := run(context.Background(), os.Args[1:], os.Stdout); err != nil {
 		_, _ = fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
 	}
 }
 
-// run updates the registry as the command-line args direct.
-func run(ctx context.Context, args []string) error {
+// run updates the registry as the command-line args direct and reports the
+// changes to out.
+func run(ctx context.Context, args []string, out io.Writer) error {
 	fs := flag.NewFlagSet("tzupdate", flag.ContinueOnError)
 	upd := &tzgen.Updater{Client: http.DefaultClient, URL: tzgen.ReleaseURL}
 	fs.StringVar(&upd.DataDir, "data", "pkg/xcal/data", "registry directory")
@@ -34,20 +36,27 @@ func run(ctx context.Context, args []string) error {
 		return err
 	}
 	if upd.GoRoot == "" {
-		out, err := exec.CommandContext(ctx, "go", "env", "GOROOT").Output()
+		root, err := exec.CommandContext(ctx, "go", "env", "GOROOT").Output()
 		if err != nil {
 			return fmt.Errorf("go env GOROOT: %w", err)
 		}
-		upd.GoRoot = strings.TrimSpace(string(out))
+		upd.GoRoot = strings.TrimSpace(string(root))
 	}
 
 	sum, err := upd.Run(ctx)
 	if err != nil {
 		return err
 	}
-	format := "" +
-		"tz database %s: %d zones added, %d changed\n" +
-		"run \"go generate ./pkg/xcal\" to regenerate the zone tables\n"
-	_, _ = fmt.Printf(format, sum.Version, len(sum.Added), len(sum.Changed))
+	added, changed := len(sum.Added), len(sum.Changed)
+	format := "tz database %s: %d zones added, %d changed\n"
+	_, _ = fmt.Fprintf(out, format, sum.Version, added, changed)
+	for _, name := range sum.Added {
+		_, _ = fmt.Fprintf(out, "  added:   %s\n", name)
+	}
+	for _, name := range sum.Changed {
+		_, _ = fmt.Fprintf(out, "  changed: %s\n", name)
+	}
+	hint := "run \"go generate ./pkg/xcal\" to regenerate the zone tables\n"
+	_, _ = fmt.Fprint(out, hint)
 	return nil
 }

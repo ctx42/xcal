@@ -1,6 +1,8 @@
 package main
 
 import (
+	"bytes"
+	"io"
 	"path/filepath"
 	"testing"
 
@@ -25,12 +27,21 @@ func Test_run(t *testing.T) {
 	src := filepath.Join(testdata, "timezones.json")
 	copyFile(t, src, filepath.Join(dir, tzgen.ZonesFile))
 	args := []string{"-goroot", root, "-data", dir, "-year", "2026"}
+	var out bytes.Buffer
 
 	// --- When ---
-	err := run(t.Context(), args)
+	err := run(t.Context(), args, &out)
 
 	// --- Then ---
 	assert.NoError(t, err)
+	want := "" +
+		"tz database 2026c: 3 zones added, 1 changed\n" +
+		"  added:   Etc/UTC\n" +
+		"  added:   Europe/Kiev\n" +
+		"  added:   Europe/Kyiv\n" +
+		"  changed: Europe/Warsaw\n" +
+		"run \"go generate ./pkg/xcal\" to regenerate the zone tables\n"
+	assert.Equal(t, want, out.String())
 
 	pth := filepath.Join(dir, tzgen.ZonesFile)
 	zs := must.Value(tzgen.ReadZones(pth))
@@ -59,7 +70,7 @@ func Test_run_errors_tabular(t *testing.T) {
 	for _, tc := range tt {
 		t.Run(tc.testN, func(t *testing.T) {
 			// --- When ---
-			err := run(t.Context(), tc.args)
+			err := run(t.Context(), tc.args, io.Discard)
 
 			// --- Then ---
 			assert.ErrorContain(t, tc.want, err)
