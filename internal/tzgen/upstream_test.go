@@ -1,7 +1,6 @@
 package tzgen
 
 import (
-	"archive/zip"
 	"context"
 	"net/http"
 	"net/http/httptest"
@@ -334,11 +333,10 @@ func Test_ReadUpstream_invalidZone(t *testing.T) {
 
 func Test_loadZipLocation(t *testing.T) {
 	// --- Given ---
-	zr := must.Value(zip.OpenReader("testdata/zoneinfo.zip"))
-	t.Cleanup(func() { _ = zr.Close() })
+	fil := zipEntry(t, "Europe/Warsaw")
 
 	// --- When ---
-	have, err := loadZipLocation(zr.File[3])
+	have, err := loadZipLocation(fil)
 
 	// --- Then ---
 	assert.NoError(t, err)
