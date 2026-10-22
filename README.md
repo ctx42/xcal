@@ -29,7 +29,8 @@ its zone name, and helpers for midnights, month ranges, and time windows.
   with offsets, status, alias links, and country codes, kept in step with the
   IANA tz database the Go toolchain embeds.
 - Embedded tz database — zones load on hosts without zoneinfo, such as scratch
-  or distroless containers.
+  or distroless containers, when the Go release the program is built with
+  knows them.
 - Date helpers — `Midnight`, `MonthStartEnd`, `InWindow`, `ChangeLocation`,
   and more.
 - Bounds checks — `CheckTimeBounds` rejects dates too far in the past or
