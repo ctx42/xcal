@@ -17,9 +17,10 @@ type Day struct {
 	day   int
 }
 
-// NewDay returns the day of the given calendar date.
+// NewDay returns the day of the given calendar date. Out-of-range values are
+// normalized as [time.Date] does, so February 30 becomes March 2 or 1.
 func NewDay(year int, month time.Month, day int) Day {
-	return Day{year: year, month: month, day: day}
+	return DayOf(time.Date(year, month, day, 0, 0, 0, 0, time.UTC))
 }
 
 // DayOf returns the calendar day the instant falls on in its own location.

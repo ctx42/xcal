@@ -9,6 +9,15 @@ import (
 	"github.com/ctx42/testing/pkg/must"
 )
 
+func Test_NewDay(t *testing.T) {
+	// --- When ---
+	have := NewDay(2026, time.February, 30)
+
+	// --- Then ---
+	assert.Equal(t, NewDay(2026, time.March, 2), have)
+	assert.Equal(t, "2026-03-02", have.String())
+}
+
 func Test_DayOf(t *testing.T) {
 	// --- Given ---
 	tim := time.Date(2026, time.March, 24, 23, 30, 0, 0, time.UTC)
