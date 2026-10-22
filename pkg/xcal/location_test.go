@@ -206,6 +206,18 @@ func Test_Location_MarshalJSON_zero(t *testing.T) {
 	assert.Equal(t, `{"my_loc":null}`, string(have))
 }
 
+func Test_Location_MarshalJSON_escapesName(t *testing.T) {
+	// --- Given ---
+	loc := Location{Loc: time.FixedZone(`a"b`, 0)}
+
+	// --- When ---
+	have, err := json.Marshal(loc)
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, `"a\"b"`, string(have))
+}
+
 func Test_Location_UnmarshalJSON(t *testing.T) {
 	// --- Given ---
 	loc := &Location{}

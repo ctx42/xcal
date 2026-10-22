@@ -85,7 +85,7 @@ func (loc Location) MarshalJSON() ([]byte, error) {
 	if loc.Loc == nil {
 		return []byte("null"), nil
 	}
-	return []byte(`"` + loc.Loc.String() + `"`), nil
+	return json.Marshal(loc.Loc.String())
 }
 
 // UnmarshalJSON accepts a zone name or ID, as a JSON string or a number. A
