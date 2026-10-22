@@ -88,5 +88,5 @@ func WriteZones(pth string, zs []*xcal.Zone) error {
 	if err := enc.Encode(zs); err != nil {
 		return err
 	}
-	return os.WriteFile(pth, buf.Bytes(), 0644)
+	return os.WriteFile(pth, buf.Bytes(), 0o600)
 }

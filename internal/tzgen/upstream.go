@@ -23,7 +23,7 @@ import (
 // goroot embeds, read from the DATA line of its lib/time/update.bash.
 func GoTZVersion(goroot string) (string, error) {
 	pth := filepath.Join(goroot, "lib", "time", "update.bash")
-	data, err := os.ReadFile(pth)
+	data, err := os.ReadFile(pth) //nolint:gosec // Caller-supplied path.
 	if err != nil {
 		return "", err
 	}
@@ -48,7 +48,8 @@ func Fetch(
 ) error {
 
 	url = fmt.Sprintf(url, version)
-	req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
+	body := http.NoBody
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, body)
 	if err != nil {
 		return err
 	}
@@ -61,63 +62,90 @@ func Fetch(
 		return fmt.Errorf("download %s: %s", url, rsp.Status)
 	}
 
-	gz, err := gzip.NewReader(rsp.Body)
+	rel, err := readRelease(rsp.Body)
 	if err != nil {
 		return fmt.Errorf("read %s: %w", url, err)
 	}
-	var ver, zoneTab []byte
-	var links []string
+	if rel.version != version {
+		format := "%s holds version %q, want %q"
+		return fmt.Errorf(format, url, rel.version, version)
+	}
+	if rel.zoneTab == nil {
+		return fmt.Errorf("%s has no %s", url, ZoneTabFile)
+	}
+	return rel.write(dir)
+}
+
+// release holds the files [Fetch] keeps from a tz database release.
+type release struct {
+	version string   // Release version.
+	zoneTab []byte   // The zone.tab file.
+	links   []string // Link lines of every data file, sorted by link name.
+}
+
+// readRelease reads a gzip-compressed tar archive of a tz database release.
+func readRelease(r io.Reader) (*release, error) {
+	gz, err := gzip.NewReader(r)
+	if err != nil {
+		return nil, err
+	}
+
+	rel := &release{}
 	tr := tar.NewReader(gz)
+	var hdr *tar.Header
 	for {
-		hdr, err := tr.Next()
+		hdr, err = tr.Next()
 		if errors.Is(err, io.EOF) {
 			break
 		}
 		if err != nil {
-			return fmt.Errorf("read %s: %w", url, err)
+			return nil, err
 		}
 		if hdr.Typeflag != tar.TypeReg {
 			continue
 		}
-		data, err := io.ReadAll(tr)
-		if err != nil {
-			return fmt.Errorf("read %s: %w", url, err)
+		var data []byte
+		if data, err = io.ReadAll(tr); err != nil {
+			return nil, err
 		}
-		switch {
-		case hdr.Name == VersionFile:
-			ver = bytes.TrimSpace(data)
-		case hdr.Name == ZoneTabFile:
-			zoneTab = data
-		case isDataFile(hdr.Name):
-			links = append(links, linkLines(data)...)
-		}
+		rel.add(hdr.Name, data)
 	}
 
-	if string(ver) != version {
-		return fmt.Errorf("%s holds version %q, want %q", url, ver, version)
-	}
-	if zoneTab == nil {
-		return fmt.Errorf("%s has no %s", url, ZoneTabFile)
-	}
-	slices.SortFunc(links, func(a, b string) int {
+	slices.SortFunc(rel.links, func(a, b string) int {
 		return strings.Compare(lastField(a), lastField(b))
 	})
+	return rel, nil
+}
 
-	if err = os.MkdirAll(dir, 0755); err != nil {
+// add keeps the parts of the release file name the release needs.
+func (rel *release) add(name string, data []byte) {
+	switch {
+	case name == VersionFile:
+		rel.version = string(bytes.TrimSpace(data))
+	case name == ZoneTabFile:
+		rel.zoneTab = data
+	case isDataFile(name):
+		rel.links = append(rel.links, linkLines(data)...)
+	}
+}
+
+// write writes the release files into dir. The version file goes last, so
+// it never names a release whose files are missing.
+func (rel *release) write(dir string) error {
+	if err := os.MkdirAll(dir, 0o750); err != nil {
 		return err
 	}
 	files := []struct {
 		name string
 		data []byte
 	}{
-		{LinksFile, []byte(strings.Join(links, "\n") + "\n")},
-		{ZoneTabFile, zoneTab},
-		// Written last, so it never names a release whose files are missing.
-		{VersionFile, append(ver, '\n')},
+		{LinksFile, []byte(strings.Join(rel.links, "\n") + "\n")},
+		{ZoneTabFile, rel.zoneTab},
+		{VersionFile, []byte(rel.version + "\n")},
 	}
 	for _, fil := range files {
 		pth := filepath.Join(dir, fil.name)
-		if err = os.WriteFile(pth, fil.data, 0644); err != nil {
+		if err := os.WriteFile(pth, fil.data, 0o600); err != nil {
 			return err
 		}
 	}
@@ -219,7 +247,7 @@ func loadZipLocation(fil *zip.File) (*time.Location, error) {
 
 // readLinks reads a [LinksFile] into a map of link names to their targets.
 func readLinks(pth string) (map[string]string, error) {
-	data, err := os.ReadFile(pth)
+	data, err := os.ReadFile(pth) //nolint:gosec // Caller-supplied path.
 	if err != nil {
 		return nil, err
 	}
@@ -239,7 +267,7 @@ type zoneTab struct {
 
 // readZoneTab reads a zone.tab file into a map of zone names to entries.
 func readZoneTab(pth string) (map[string]zoneTab, error) {
-	data, err := os.ReadFile(pth)
+	data, err := os.ReadFile(pth) //nolint:gosec // Caller-supplied path.
 	if err != nil {
 		return nil, err
 	}

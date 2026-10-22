@@ -61,14 +61,8 @@ func (zon *Zone) Check() error {
 		return fmt.Errorf("invalid ZoneID %d", zon.ID)
 	}
 
-	// A removed zone's name is not loaded, so reject the names loadTZ would.
-	if zon.Name == "" || zon.Name == "Local" {
-		return fmt.Errorf("%w: %s", ErrInvTimezone, zon.Name)
-	}
-	if zon.Status != Removed {
-		if _, err := loadTZ(zon.Name); err != nil {
-			return fmt.Errorf("%w: %s", ErrInvTimezone, zon.Name)
-		}
+	if err := zon.checkName(); err != nil {
+		return err
 	}
 
 	if zon.Offset < -12*60 || zon.Offset > 14*60 {
@@ -79,23 +73,43 @@ func (zon *Zone) Check() error {
 		return fmt.Errorf("invalid Zone DST offset %d", zon.OffsetDST)
 	}
 
+	return zon.checkStatus()
+}
+
+// checkName validates the zone name, which must load unless the zone is
+// [Removed].
+func (zon *Zone) checkName() error {
+	// A removed zone's name is not loaded, so reject the names loadTZ would.
+	if zon.Name == "" || zon.Name == "Local" {
+		return fmt.Errorf("%w: %s", ErrInvTimezone, zon.Name)
+	}
+	if zon.Status == Removed {
+		return nil
+	}
+	if _, err := loadTZ(zon.Name); err != nil {
+		return fmt.Errorf("%w: %s", ErrInvTimezone, zon.Name)
+	}
+	return nil
+}
+
+// checkStatus validates the zone status and the link an [Alias] or a
+// [Removed] zone requires.
+func (zon *Zone) checkStatus() error {
 	switch zon.Status {
-	case Canonical, Alias, Deprecated, Removed:
+	case Canonical, Deprecated:
+		return nil
+	case Alias, Removed:
 	default:
 		return fmt.Errorf("invalid Zone status %q", zon.Status)
 	}
 
-	if zon.Status == Alias || zon.Status == Removed {
-		if zon.Link == "" {
-			format := "zone %s with status %q has no link"
-			return fmt.Errorf(format, zon.Name, zon.Status)
-		}
-
-		if _, err := loadTZ(zon.Link); err != nil {
-			return fmt.Errorf("invalid link %s", zon.Link)
-		}
+	if zon.Link == "" {
+		format := "zone %s with status %q has no link"
+		return fmt.Errorf(format, zon.Name, zon.Status)
 	}
-
+	if _, err := loadTZ(zon.Link); err != nil {
+		return fmt.Errorf("invalid link %s", zon.Link)
+	}
 	return nil
 }
 

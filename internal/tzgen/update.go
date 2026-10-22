@@ -81,7 +81,8 @@ func (upd *Updater) Run(ctx context.Context) (Summary, error) {
 // haveRelease reports whether dir holds every file [Fetch] extracts from the
 // release ver.
 func haveRelease(dir, ver string) bool {
-	data, err := os.ReadFile(filepath.Join(dir, VersionFile))
+	pth := filepath.Join(dir, VersionFile)
+	data, err := os.ReadFile(pth) //nolint:gosec // Caller-supplied path.
 	if err != nil || strings.TrimSpace(string(data)) != ver {
 		return false
 	}

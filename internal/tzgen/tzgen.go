@@ -59,7 +59,7 @@ func GenerateTZ(src, dst, name string, prev map[string]*xcal.Zone) error {
 
 // DecodeZones reads a timezones JSON file without validating its zones.
 func DecodeZones(pth string) ([]*xcal.Zone, error) {
-	data, err := os.ReadFile(pth)
+	data, err := os.ReadFile(pth) //nolint:gosec // Caller-supplied path.
 	if err != nil {
 		return nil, err
 	}
@@ -180,7 +180,7 @@ func GenerateTZGo(zs []*xcal.Zone, dst, name string) error {
 	if err != nil {
 		return fmt.Errorf("format generated code: %w", err)
 	}
-	return os.WriteFile(dst, src, 0644)
+	return os.WriteFile(dst, src, 0o600)
 }
 
 // zoneLit returns the zone as a Go composite literal with the type elided.
