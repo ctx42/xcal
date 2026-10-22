@@ -1,0 +1,84 @@
+## v0.1.0 (Thu, 22 Oct 2026 20:44:05 UTC)
+- chore: scaffold project.
+- feat: add xcal package.
+- fix(xcal): embed the timezone database.
+- fix(xcal): encode Location held by value as zone name.
+- fix(xcal): accept null and escaped strings in Location JSON.
+- fix(xcal): encode Day as YYYY-MM-DD text.
+- refactor!: move timezone generator to internal/tzgen.
+- fix(tzgen): reject duplicate zone IDs and names.
+- test(xcal): remove the fake zone ID after the test.
+- test(xcal): assert the zone ID returned by LoadLocation.
+- docs(xcal): correct RFC339MICRO and CheckTimeBounds docs.
+- test: cover zone validation error branches.
+- refactor(xcal): gather package-wide declarations in xcal.go.
+- docs(xcal): add runnable examples.
+- style(xcal): use three-letter receiver names.
+- test: name actual and expected values have and want.
+- fix(xcal): round-trip the zero Day through text.
+- fix(xcal): encode a Location without a zone as null.
+- test(xcal): remove the zone from the table in the Validate test.
+- style: name Zone locals zon to match the receiver.
+- docs(xcal): expand the package overview.
+- test(xcal): suffix table-driven test names with _tabular.
+- test(xcal): name table test cases after their condition.
+- test(xcal): prefix error-path subtest names with "error - ".
+- test(xcal): order tests like the declarations they cover.
+- test: unwrap setup and read-back values with must.Value.
+- test(tzgen): set the destination path in the Given section.
+- test(xcal): share the valid zone fixture in all_test.go.
+- test(tzgen): assert which path the error reports.
+- test(xcal): assert the parse error each bad day produces.
+- fix(xcal): normalize out-of-range dates in NewDay.
+- fix(xcal): treat a nil location as UTC in FromTimeLoc.
+- fix(xcal): print the zero Day as an empty string.
+- fix(xcal): escape the zone name in Location JSON.
+- refactor(xcal): drop unused json tags from Location.
+- test(xcal): give every test Given/When/Then sections.
+- docs: fix grammar in InBetween and GenerateTZ comments.
+- refactor(tzgen): alias go/format so format locals do not shadow it.
+- refactor(tzgen): return GenerateTZGo result directly.
+- fix(tzgen): prefix the sequential ID error with its index.
+- test(xcal): stop replacing time.Local in the ToZone test.
+- fix(xcal): reject unknown zone statuses in Zone.Check.
+- fix(xcal): reject years MarshalText cannot round-trip.
+- docs(xcal): describe every use of ErrInvTimezone.
+- fix(xcal): drop the double space when CheckTimeBounds has no name.
+- docs(tzgen): fix grammar in ReadZones and GenerateTZGo comments.
+- test(xcal): pass the zone name as an argument, not a format.
+- test(xcal): name the zero Day round-trip test after MarshalText.
+- fix(xcal): explain a missing GOPACKAGE in the timezone generator.
+- docs(xcal): state that Zone.Validate and Zone.Loc need a known zone.
+- test(xcal): cover valid alias and deprecated zones in Zone.Check.
+- style(xcal): name the remaining Zone locals zon.
+- test: name the remaining results under test have.
+- docs(xcal): document how ChangeLocation treats the zero time.
+- docs(xcal): correct why a zone ID may fail to load.
+- style(xcal): tidy the timezone generator comment and error print.
+- test(xcal): use b.Loop in the ChangeLocation benchmark.
+- chore: add MIT license.
+- docs: add README.
+- feat(xcal): keep removed zones loadable through their link.
+- feat(tzgen): update the zone registry from the IANA tz database.
+- feat(xcal): refresh the zone tables to tz database 2026c.
+- docs: describe updating the zone table with tzupdate.
+- fix(xcal): reject empty and Local zone names.
+- fix(tzgen): write the tzdata version file after its data.
+- fix(tzgen): give a zero Updater safe defaults.
+- test(tzgen): take offset fixtures from the test zoneinfo.zip.
+- test(tzgen): split the GoTZVersion error cases into their own tests.
+- test(tzgen): derive test contexts from t.Context.
+- test(tzgen): share test helpers from all_test.go as tester.T helpers.
+- test(tzgen): find the loadZipLocation fixture by name.
+- docs: note the embedded tz database follows the build's Go release.
+- fix(tzgen): fetch the release again when a tzdata file is missing.
+- fix(xcal): reject empty and Local names for removed zones too.
+- docs(xcal): qualify the embedded tz database claim in the package doc.
+- feat(tzupdate): list the added and changed zones.
+- refactor(xcal)!: rename Zone.Id to Zone.ID.
+- refactor: split Zone.Check and Fetch and satisfy the linters.
+- test: satisfy the linters in tests.
+- ci: run the tests on GitHub Actions.
+- feat(tzupdate): add -check to detect an outdated zone registry.
+- ci: fail when the latest Go ships a newer tz database.
+
