@@ -1,14 +1,9 @@
 package xcal
 
 import (
-	"errors"
 	"fmt"
 	"time"
 )
-
-// ErrTimeBounds is wrapped by errors returned when time is either far in the
-// past or far in the future.
-var ErrTimeBounds = errors.New("date out of bounds")
 
 // CheckTimeBounds returns an error wrapping [ErrTimeBounds] when tim is before
 // fip or later than now plus fif. The name prefixes the error message.

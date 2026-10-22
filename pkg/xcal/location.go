@@ -2,48 +2,9 @@ package xcal
 
 import (
 	"encoding/json"
-	"errors"
 	"strconv"
 	"time"
-
-	// Embed the timezone database, so zones load on hosts without zoneinfo.
-	_ "time/tzdata"
 )
-
-// Useful time.Location instances.
-var (
-	WAW *time.Location // Warsaw.
-	ZRH *time.Location // Zurich.
-	MOW *time.Location // Moscow.
-)
-
-// ErrInvTimezone is an error returned when timezone name unmarshalling
-// failed.
-var ErrInvTimezone = errors.New("invalid timezone")
-
-// ErrNoZoneID indicates there is no zone ID for given timezone.
-var ErrNoZoneID = errors.New("no zone ID for timezone name")
-
-// ErrLocalTimezone represents an error when timezone is set to Local.
-var ErrLocalTimezone = errors.New("timezone Local means nothing")
-
-func init() {
-	var err error
-	WAW, err = time.LoadLocation("Europe/Warsaw")
-	if err != nil {
-		panic(err)
-	}
-
-	ZRH, err = time.LoadLocation("Europe/Zurich")
-	if err != nil {
-		panic(err)
-	}
-
-	MOW, err = time.LoadLocation("Europe/Moscow")
-	if err != nil {
-		panic(err)
-	}
-}
 
 // Location is a wrapper for time.Location instance providing
 // MarshalJSON and UnmarshalJSON methods.
