@@ -48,6 +48,24 @@ func Test_ReadZones_mismatchedIDs(t *testing.T) {
 	assert.Nil(t, zs)
 }
 
+func Test_ReadZones_duplicateID(t *testing.T) {
+	// --- When ---
+	zs, err := ReadZones("testdata/timezones_duplicate_id.json")
+
+	// --- Then ---
+	assert.ErrorEqual(t, "at index 2: duplicate ZoneID 416", err)
+	assert.Nil(t, zs)
+}
+
+func Test_ReadZones_duplicateName(t *testing.T) {
+	// --- When ---
+	zs, err := ReadZones("testdata/timezones_duplicate_name.json")
+
+	// --- Then ---
+	assert.ErrorEqual(t, "at index 2: duplicate timezone UTC", err)
+	assert.Nil(t, zs)
+}
+
 func Test_ReadZones_invalidJSON(t *testing.T) {
 	// --- When ---
 	zs, err := ReadZones("testdata/timezones_invalid_json.json")

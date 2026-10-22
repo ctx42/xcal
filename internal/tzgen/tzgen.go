@@ -43,10 +43,21 @@ func ReadZones(pth string) ([]*xcal.Zone, error) {
 		return nil, err
 	}
 
+	seenIDs := make(map[int]bool, len(zs))
+	seenNames := make(map[string]bool, len(zs))
 	for i, z := range zs {
 		if err = z.Check(); err != nil {
 			return nil, fmt.Errorf("at index %d: %w", i, err)
 		}
+		if seenNames[z.Name] {
+			format := "at index %d: duplicate timezone %s"
+			return nil, fmt.Errorf(format, i, z.Name)
+		}
+		if seenIDs[z.Id] {
+			return nil, fmt.Errorf("at index %d: duplicate ZoneID %d", i, z.Id)
+		}
+		seenIDs[z.Id] = true
+		seenNames[z.Name] = true
 		if len(xcal.Zones) > 0 {
 			if have, ok := xcal.Zones[z.Name]; ok && have.Id != z.Id {
 				format := "at index %d: expected ZoneID %d got %d"

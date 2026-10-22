@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "timezone": "UTC",
+        "status": "A",
+        "offset": 0,
+        "offset_dst": 0,
+        "link": "Etc/UTC",
+        "notes": "test note",
+        "country_code": ""
+    },
+    {
+        "id": 416,
+        "timezone": "Europe/Warsaw",
+        "status": "C",
+        "offset": 120,
+        "offset_dst": 180,
+        "link": "",
+        "notes": "",
+        "country_code": "PL"
+    },
+    {
+        "id": 416,
+        "timezone": "Europe/Kyiv",
+        "status": "C",
+        "offset": 120,
+        "offset_dst": 180,
+        "link": "",
+        "notes": "",
+        "country_code": "UA"
+    }
+]
