@@ -1,12 +1,14 @@
 package tzgen
 
 import (
+	"cmp"
 	"context"
 	"net/http"
 	"os"
 	"path/filepath"
 	"reflect"
 	"strings"
+	"time"
 
 	"github.com/ctx42/xcal/pkg/xcal"
 )
@@ -14,11 +16,20 @@ import (
 // Updater refreshes a zone registry from the IANA tz database release that a
 // Go toolchain embeds.
 type Updater struct {
-	Client  *http.Client // Client downloads the release.
-	URL     string       // URL is the release URL format, see [ReleaseURL].
-	GoRoot  string       // GoRoot is the root of the Go toolchain.
-	DataDir string       // DataDir holds [ZonesFile] and [TZDataDir].
-	Year    int          // Year is the year zone offsets are taken from.
+	// Client downloads the release; nil means [http.DefaultClient].
+	Client *http.Client
+
+	// URL is the release URL format; empty means [ReleaseURL].
+	URL string
+
+	// GoRoot is the root of the Go toolchain.
+	GoRoot string
+
+	// DataDir holds [ZonesFile] and [TZDataDir].
+	DataDir string
+
+	// Year is the year zone offsets are taken from; zero means this year.
+	Year int
 }
 
 // Summary describes a registry update.
@@ -40,13 +51,16 @@ func (upd *Updater) Run(ctx context.Context) (Summary, error) {
 	dir := filepath.Join(upd.DataDir, TZDataDir)
 	have, _ := os.ReadFile(filepath.Join(dir, VersionFile))
 	if strings.TrimSpace(string(have)) != ver {
-		if err = Fetch(ctx, upd.Client, upd.URL, ver, dir); err != nil {
+		cli := cmp.Or(upd.Client, http.DefaultClient)
+		url := cmp.Or(upd.URL, ReleaseURL)
+		if err = Fetch(ctx, cli, url, ver, dir); err != nil {
 			return Summary{}, err
 		}
 	}
 
 	zip := filepath.Join(upd.GoRoot, "lib", "time", "zoneinfo.zip")
-	ups, err := ReadUpstream(dir, zip, upd.Year)
+	year := cmp.Or(upd.Year, time.Now().Year())
+	ups, err := ReadUpstream(dir, zip, year)
 	if err != nil {
 		return Summary{}, err
 	}

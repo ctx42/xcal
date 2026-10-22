@@ -103,6 +103,28 @@ func Test_Updater_Run_current(t *testing.T) {
 	assert.Equal(t, int32(1), reqs.Load())
 }
 
+func Test_Updater_Run_zeroYear(t *testing.T) {
+	// --- Given ---
+	dir := newDataDir(t)
+	for _, name := range []string{VersionFile, LinksFile, ZoneTabFile} {
+		src := filepath.Join("testdata", "tzdata", name)
+		dst := filepath.Join(dir, TZDataDir, name)
+		must.Nil(os.MkdirAll(filepath.Dir(dst), 0755))
+		must.Nil(os.WriteFile(dst, must.Value(os.ReadFile(src)), 0644))
+	}
+	upd := &Updater{GoRoot: newGoRoot(t, "2026c"), DataDir: dir}
+
+	// --- When ---
+	_, err := upd.Run(t.Context())
+
+	// --- Then ---
+	assert.NoError(t, err)
+
+	zs := must.Value(ReadZones(filepath.Join(dir, ZonesFile)))
+	assert.Equal(t, "Europe/Warsaw", zs[1].Name)
+	assert.Equal(t, 60, zs[1].Offset)
+}
+
 func Test_Updater_Run_noGoRoot(t *testing.T) {
 	// --- Given ---
 	upd := &Updater{GoRoot: t.TempDir(), DataDir: newDataDir(t)}
