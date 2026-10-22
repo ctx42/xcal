@@ -35,7 +35,7 @@ func LoadLocation(locS string) (*Location, error) {
 	}
 
 	loc := &Location{
-		ID:  zon.Id,
+		ID:  zon.ID,
 		Loc: tLoc,
 	}
 	return loc, nil
@@ -50,7 +50,7 @@ func FromTimeLoc(loc *time.Location) (*Location, error) {
 	}
 	if zon, ok := Zones[loc.String()]; ok {
 		ret := &Location{
-			ID:  zon.Id,
+			ID:  zon.ID,
 			Loc: loc,
 		}
 		return ret, nil

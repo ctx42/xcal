@@ -63,7 +63,7 @@ func Test_LoadLocation_unknownTimezoneName(t *testing.T) {
 func Test_LoadLocation_timezoneNotInGoDatabase(t *testing.T) {
 	// --- Given ---
 	zon := &Zone{
-		Id:          999,
+		ID:          999,
 		Name:        "Europe/Krakow",
 		Status:      "C",
 		Offset:      120,
@@ -91,10 +91,10 @@ func Test_LoadLocation_timezoneInGoDatabaseButNotOurs(t *testing.T) {
 	// --- Given ---
 	save := Zones["Europe/Warsaw"]
 	delete(Zones, save.Name)
-	delete(ZoneIDs, save.Id)
+	delete(ZoneIDs, save.ID)
 	defer func() {
 		Zones[save.Name] = save
-		ZoneIDs[save.Id] = save
+		ZoneIDs[save.ID] = save
 	}()
 
 	// --- When ---
@@ -119,16 +119,16 @@ func Test_LoadLocation_removed_tabular(t *testing.T) {
 		t.Run(tc.testN, func(t *testing.T) {
 			// --- Given ---
 			zon := &Zone{
-				Id:     999,
+				ID:     999,
 				Name:   "Europe/Gone",
 				Status: Removed,
 				Link:   "Europe/Berlin",
 			}
 			Zones[zon.Name] = zon
-			ZoneIDs[zon.Id] = zon
+			ZoneIDs[zon.ID] = zon
 			t.Cleanup(func() {
 				delete(Zones, zon.Name)
-				delete(ZoneIDs, zon.Id)
+				delete(ZoneIDs, zon.ID)
 			})
 
 			// --- When ---
@@ -167,7 +167,7 @@ func Test_FromTimeLoc_nil(t *testing.T) {
 	// --- Then ---
 	assert.NoError(t, err)
 	assert.Same(t, time.UTC, have.Loc)
-	assert.Equal(t, Zones["UTC"].Id, have.ID)
+	assert.Equal(t, Zones["UTC"].ID, have.ID)
 }
 
 func Test_FromTimeLoc_UnknownTimezone(t *testing.T) {

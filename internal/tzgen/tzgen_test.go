@@ -20,7 +20,7 @@ func Test_ReadZones(t *testing.T) {
 	assert.Len(t, 2, have)
 
 	zon := have[0]
-	assert.Equal(t, 0, zon.Id)
+	assert.Equal(t, 0, zon.ID)
 	assert.Equal(t, "UTC", zon.Name)
 	assert.Equal(t, "A", zon.Status)
 	assert.Equal(t, 0, zon.Offset)
@@ -30,7 +30,7 @@ func Test_ReadZones(t *testing.T) {
 	assert.Equal(t, "", zon.CountryCode)
 
 	zon = have[1]
-	assert.Equal(t, 416, zon.Id)
+	assert.Equal(t, 416, zon.ID)
 	assert.Equal(t, "Europe/Warsaw", zon.Name)
 	assert.Equal(t, "C", zon.Status)
 	assert.Equal(t, 120, zon.Offset)
@@ -182,17 +182,17 @@ func Test_CheckStable_tabular(t *testing.T) {
 		{
 			"no previous zones",
 			nil,
-			[]*xcal.Zone{{Id: 0, Name: "UTC"}, {Id: 1, Name: "Etc/UTC"}},
+			[]*xcal.Zone{{ID: 0, Name: "UTC"}, {ID: 1, Name: "Etc/UTC"}},
 		},
 		{
 			"same IDs",
-			map[string]*xcal.Zone{"UTC": {Id: 0, Name: "UTC"}},
-			[]*xcal.Zone{{Id: 0, Name: "UTC"}},
+			map[string]*xcal.Zone{"UTC": {ID: 0, Name: "UTC"}},
+			[]*xcal.Zone{{ID: 0, Name: "UTC"}},
 		},
 		{
 			"new zone above previous IDs",
-			map[string]*xcal.Zone{"UTC": {Id: 4, Name: "UTC"}},
-			[]*xcal.Zone{{Id: 4, Name: "UTC"}, {Id: 5, Name: "Etc/UTC"}},
+			map[string]*xcal.Zone{"UTC": {ID: 4, Name: "UTC"}},
+			[]*xcal.Zone{{ID: 4, Name: "UTC"}, {ID: 5, Name: "Etc/UTC"}},
 		},
 	}
 
@@ -218,35 +218,35 @@ func Test_CheckStable_errors_tabular(t *testing.T) {
 		{
 			"error - not counting from zero",
 			nil,
-			[]*xcal.Zone{{Id: 0, Name: "UTC"}, {Id: 2, Name: "Etc/UTC"}},
+			[]*xcal.Zone{{ID: 0, Name: "UTC"}, {ID: 2, Name: "Etc/UTC"}},
 			"at index 1: expected ZoneID 1 got 2",
 		},
 		{
 			"error - changed ID",
-			map[string]*xcal.Zone{"UTC": {Id: 0, Name: "UTC"}},
-			[]*xcal.Zone{{Id: 1, Name: "UTC"}},
+			map[string]*xcal.Zone{"UTC": {ID: 0, Name: "UTC"}},
+			[]*xcal.Zone{{ID: 1, Name: "UTC"}},
 			"at index 0: expected ZoneID 0 got 1",
 		},
 		{
 			"error - new zone reusing ID range",
 			map[string]*xcal.Zone{
-				"UTC":     {Id: 0, Name: "UTC"},
-				"Etc/UTC": {Id: 2, Name: "Etc/UTC"},
+				"UTC":     {ID: 0, Name: "UTC"},
+				"Etc/UTC": {ID: 2, Name: "Etc/UTC"},
 			},
 			[]*xcal.Zone{
-				{Id: 0, Name: "UTC"},
-				{Id: 1, Name: "Europe/Warsaw"},
-				{Id: 2, Name: "Etc/UTC"},
+				{ID: 0, Name: "UTC"},
+				{ID: 1, Name: "Europe/Warsaw"},
+				{ID: 2, Name: "Etc/UTC"},
 			},
 			"at index 1: new zone Europe/Warsaw has ID 1, expected above 2",
 		},
 		{
 			"error - missing zone",
 			map[string]*xcal.Zone{
-				"UTC":     {Id: 0, Name: "UTC"},
-				"Etc/UTC": {Id: 1, Name: "Etc/UTC"},
+				"UTC":     {ID: 0, Name: "UTC"},
+				"Etc/UTC": {ID: 1, Name: "Etc/UTC"},
 			},
-			[]*xcal.Zone{{Id: 0, Name: "UTC"}},
+			[]*xcal.Zone{{ID: 0, Name: "UTC"}},
 			"zone Etc/UTC with ID 1 is missing",
 		},
 	}
@@ -281,7 +281,7 @@ func Test_GenerateTZGo(t *testing.T) {
 func Test_zoneLit(t *testing.T) {
 	// --- Given ---
 	zon := &xcal.Zone{
-		Id:          416,
+		ID:          416,
 		Name:        "Europe/Warsaw",
 		Status:      "C",
 		Offset:      120,
@@ -297,7 +297,7 @@ func Test_zoneLit(t *testing.T) {
 	// --- Then ---
 	want := "" +
 		"{\n" +
-		"Id: 416,\n" +
+		"ID: 416,\n" +
 		"Name: \"Europe/Warsaw\",\n" +
 		"Status: \"C\",\n" +
 		"Offset: 120,\n" +

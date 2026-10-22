@@ -30,7 +30,7 @@ const (
 // ICANN TZ database. See https://en.wikipedia.org/wiki/Tz_database.
 type Zone struct {
 	// Timezone ID.
-	Id int `json:"id"`
+	ID int `json:"id"`
 
 	// Timezone name.
 	// The Area and Location names have a maximum length of 14 characters.
@@ -57,8 +57,8 @@ type Zone struct {
 
 // Check validates zone during import of new timezones.
 func (zon *Zone) Check() error {
-	if zon.Id < 0 {
-		return fmt.Errorf("invalid ZoneID %d", zon.Id)
+	if zon.ID < 0 {
+		return fmt.Errorf("invalid ZoneID %d", zon.ID)
 	}
 
 	// A removed zone's name is not loaded, so reject the names loadTZ would.

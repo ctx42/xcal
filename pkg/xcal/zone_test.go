@@ -60,7 +60,7 @@ func Test_Zone_Check(t *testing.T) {
 	t.Run("error - negative ID", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
-		zon.Id = -1
+		zon.ID = -1
 
 		// --- When ---
 		err := zon.Check()
@@ -225,7 +225,7 @@ func Test_Zone_Validate(t *testing.T) {
 	t.Run("error - negative ID", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
-		zon.Id = -1
+		zon.ID = -1
 
 		// --- When ---
 		err := zon.Validate()

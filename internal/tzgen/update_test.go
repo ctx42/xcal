@@ -41,7 +41,7 @@ func Test_Updater_Run(t *testing.T) {
 
 	zs := must.Value(ReadZones(filepath.Join(upd.DataDir, ZonesFile)))
 	assert.Len(t, 5, zs)
-	assert.Equal(t, 418, zs[3].Id)
+	assert.Equal(t, 418, zs[3].ID)
 	assert.Equal(t, "Europe/Kiev", zs[3].Name)
 
 	ver := filepath.Join(upd.DataDir, TZDataDir, VersionFile)
@@ -168,7 +168,7 @@ func Test_Updater_Run_mergeError(t *testing.T) {
 	var reqs atomic.Int32
 	srv := newRelease(t, &reqs)
 	dir := t.TempDir()
-	zs := []*xcal.Zone{{Id: 0, Name: "Europe/Paris", Status: xcal.Canonical}}
+	zs := []*xcal.Zone{{ID: 0, Name: "Europe/Paris", Status: xcal.Canonical}}
 	must.Nil(WriteZones(filepath.Join(dir, ZonesFile), zs))
 	upd := &Updater{
 		Client:  srv.Client(),
@@ -264,13 +264,13 @@ func Test_haveRelease_tabular(t *testing.T) {
 func Test_summarize(t *testing.T) {
 	// --- Given ---
 	prev := []*xcal.Zone{
-		{Id: 0, Name: "UTC"},
-		{Id: 1, Name: "Europe/Warsaw", Offset: 120},
+		{ID: 0, Name: "UTC"},
+		{ID: 1, Name: "Europe/Warsaw", Offset: 120},
 	}
 	zs := []*xcal.Zone{
-		{Id: 0, Name: "UTC"},
-		{Id: 1, Name: "Europe/Warsaw", Offset: 60},
-		{Id: 2, Name: "Europe/Kyiv"},
+		{ID: 0, Name: "UTC"},
+		{ID: 1, Name: "Europe/Warsaw", Offset: 60},
+		{ID: 2, Name: "Europe/Kyiv"},
 	}
 
 	// --- When ---

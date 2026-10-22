@@ -3,7 +3,7 @@ package xcal
 // validZone returns a new Zone that passes [Zone.Check] and [Zone.Validate].
 func validZone() *Zone {
 	return &Zone{
-		Id:          416,
+		ID:          416,
 		CountryCode: "PL",
 		Name:        "Europe/Warsaw",
 		Offset:      120,

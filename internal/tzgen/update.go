@@ -97,11 +97,11 @@ func haveRelease(dir, ver string) bool {
 func summarize(ver string, prev, zs []*xcal.Zone) Summary {
 	byID := make(map[int]*xcal.Zone, len(prev))
 	for _, zon := range prev {
-		byID[zon.Id] = zon
+		byID[zon.ID] = zon
 	}
 	sum := Summary{Version: ver}
 	for _, zon := range zs {
-		old, ok := byID[zon.Id]
+		old, ok := byID[zon.ID]
 		switch {
 		case !ok:
 			sum.Added = append(sum.Added, zon.Name)

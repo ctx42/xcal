@@ -5,7 +5,7 @@ package xcal
 // Zones maps timezone names to Zone instances.
 var Zones = map[string]*Zone{
 	"Africa/Abidjan": {
-		Id:          2,
+		ID:          2,
 		Name:        "Africa/Abidjan",
 		Status:      "C",
 		Offset:      0,
@@ -15,7 +15,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CI",
 	},
 	"Africa/Accra": {
-		Id:          3,
+		ID:          3,
 		Name:        "Africa/Accra",
 		Status:      "A",
 		Offset:      0,
@@ -25,7 +25,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GH",
 	},
 	"Africa/Addis_Ababa": {
-		Id:          4,
+		ID:          4,
 		Name:        "Africa/Addis_Ababa",
 		Status:      "A",
 		Offset:      180,
@@ -35,7 +35,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ET",
 	},
 	"Africa/Algiers": {
-		Id:          5,
+		ID:          5,
 		Name:        "Africa/Algiers",
 		Status:      "C",
 		Offset:      60,
@@ -45,7 +45,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "DZ",
 	},
 	"Africa/Asmara": {
-		Id:          6,
+		ID:          6,
 		Name:        "Africa/Asmara",
 		Status:      "A",
 		Offset:      180,
@@ -55,7 +55,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ER",
 	},
 	"Africa/Asmera": {
-		Id:          474,
+		ID:          474,
 		Name:        "Africa/Asmera",
 		Status:      "A",
 		Offset:      180,
@@ -65,7 +65,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Africa/Bamako": {
-		Id:          7,
+		ID:          7,
 		Name:        "Africa/Bamako",
 		Status:      "A",
 		Offset:      0,
@@ -75,7 +75,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ML",
 	},
 	"Africa/Bangui": {
-		Id:          8,
+		ID:          8,
 		Name:        "Africa/Bangui",
 		Status:      "A",
 		Offset:      60,
@@ -85,7 +85,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CF",
 	},
 	"Africa/Banjul": {
-		Id:          9,
+		ID:          9,
 		Name:        "Africa/Banjul",
 		Status:      "A",
 		Offset:      0,
@@ -95,7 +95,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GM",
 	},
 	"Africa/Bissau": {
-		Id:          10,
+		ID:          10,
 		Name:        "Africa/Bissau",
 		Status:      "C",
 		Offset:      0,
@@ -105,7 +105,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GW",
 	},
 	"Africa/Blantyre": {
-		Id:          11,
+		ID:          11,
 		Name:        "Africa/Blantyre",
 		Status:      "A",
 		Offset:      120,
@@ -115,7 +115,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MW",
 	},
 	"Africa/Brazzaville": {
-		Id:          12,
+		ID:          12,
 		Name:        "Africa/Brazzaville",
 		Status:      "A",
 		Offset:      60,
@@ -125,7 +125,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CG",
 	},
 	"Africa/Bujumbura": {
-		Id:          13,
+		ID:          13,
 		Name:        "Africa/Bujumbura",
 		Status:      "A",
 		Offset:      120,
@@ -135,7 +135,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BI",
 	},
 	"Africa/Cairo": {
-		Id:          14,
+		ID:          14,
 		Name:        "Africa/Cairo",
 		Status:      "C",
 		Offset:      120,
@@ -145,7 +145,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "EG",
 	},
 	"Africa/Casablanca": {
-		Id:          15,
+		ID:          15,
 		Name:        "Africa/Casablanca",
 		Status:      "C",
 		Offset:      60,
@@ -155,7 +155,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MA",
 	},
 	"Africa/Ceuta": {
-		Id:          16,
+		ID:          16,
 		Name:        "Africa/Ceuta",
 		Status:      "C",
 		Offset:      60,
@@ -165,7 +165,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ES",
 	},
 	"Africa/Conakry": {
-		Id:          17,
+		ID:          17,
 		Name:        "Africa/Conakry",
 		Status:      "A",
 		Offset:      0,
@@ -175,7 +175,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GN",
 	},
 	"Africa/Dakar": {
-		Id:          18,
+		ID:          18,
 		Name:        "Africa/Dakar",
 		Status:      "A",
 		Offset:      0,
@@ -185,7 +185,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SN",
 	},
 	"Africa/Dar_es_Salaam": {
-		Id:          19,
+		ID:          19,
 		Name:        "Africa/Dar_es_Salaam",
 		Status:      "A",
 		Offset:      180,
@@ -195,7 +195,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TZ",
 	},
 	"Africa/Djibouti": {
-		Id:          20,
+		ID:          20,
 		Name:        "Africa/Djibouti",
 		Status:      "A",
 		Offset:      180,
@@ -205,7 +205,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "DJ",
 	},
 	"Africa/Douala": {
-		Id:          21,
+		ID:          21,
 		Name:        "Africa/Douala",
 		Status:      "A",
 		Offset:      60,
@@ -215,7 +215,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CM",
 	},
 	"Africa/El_Aaiun": {
-		Id:          22,
+		ID:          22,
 		Name:        "Africa/El_Aaiun",
 		Status:      "C",
 		Offset:      60,
@@ -225,7 +225,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "EH",
 	},
 	"Africa/Freetown": {
-		Id:          23,
+		ID:          23,
 		Name:        "Africa/Freetown",
 		Status:      "A",
 		Offset:      0,
@@ -235,7 +235,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SL",
 	},
 	"Africa/Gaborone": {
-		Id:          24,
+		ID:          24,
 		Name:        "Africa/Gaborone",
 		Status:      "A",
 		Offset:      120,
@@ -245,7 +245,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BW",
 	},
 	"Africa/Harare": {
-		Id:          25,
+		ID:          25,
 		Name:        "Africa/Harare",
 		Status:      "A",
 		Offset:      120,
@@ -255,7 +255,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ZW",
 	},
 	"Africa/Johannesburg": {
-		Id:          26,
+		ID:          26,
 		Name:        "Africa/Johannesburg",
 		Status:      "C",
 		Offset:      120,
@@ -265,7 +265,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ZA",
 	},
 	"Africa/Juba": {
-		Id:          27,
+		ID:          27,
 		Name:        "Africa/Juba",
 		Status:      "C",
 		Offset:      120,
@@ -275,7 +275,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SS",
 	},
 	"Africa/Kampala": {
-		Id:          28,
+		ID:          28,
 		Name:        "Africa/Kampala",
 		Status:      "A",
 		Offset:      180,
@@ -285,7 +285,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "UG",
 	},
 	"Africa/Khartoum": {
-		Id:          29,
+		ID:          29,
 		Name:        "Africa/Khartoum",
 		Status:      "C",
 		Offset:      120,
@@ -295,7 +295,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SD",
 	},
 	"Africa/Kigali": {
-		Id:          30,
+		ID:          30,
 		Name:        "Africa/Kigali",
 		Status:      "A",
 		Offset:      120,
@@ -305,7 +305,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RW",
 	},
 	"Africa/Kinshasa": {
-		Id:          31,
+		ID:          31,
 		Name:        "Africa/Kinshasa",
 		Status:      "A",
 		Offset:      60,
@@ -315,7 +315,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CD",
 	},
 	"Africa/Lagos": {
-		Id:          32,
+		ID:          32,
 		Name:        "Africa/Lagos",
 		Status:      "C",
 		Offset:      60,
@@ -325,7 +325,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NG",
 	},
 	"Africa/Libreville": {
-		Id:          33,
+		ID:          33,
 		Name:        "Africa/Libreville",
 		Status:      "A",
 		Offset:      60,
@@ -335,7 +335,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GA",
 	},
 	"Africa/Lome": {
-		Id:          34,
+		ID:          34,
 		Name:        "Africa/Lome",
 		Status:      "A",
 		Offset:      0,
@@ -345,7 +345,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TG",
 	},
 	"Africa/Luanda": {
-		Id:          35,
+		ID:          35,
 		Name:        "Africa/Luanda",
 		Status:      "A",
 		Offset:      60,
@@ -355,7 +355,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AO",
 	},
 	"Africa/Lubumbashi": {
-		Id:          36,
+		ID:          36,
 		Name:        "Africa/Lubumbashi",
 		Status:      "A",
 		Offset:      120,
@@ -365,7 +365,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CD",
 	},
 	"Africa/Lusaka": {
-		Id:          37,
+		ID:          37,
 		Name:        "Africa/Lusaka",
 		Status:      "A",
 		Offset:      120,
@@ -375,7 +375,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ZM",
 	},
 	"Africa/Malabo": {
-		Id:          38,
+		ID:          38,
 		Name:        "Africa/Malabo",
 		Status:      "A",
 		Offset:      60,
@@ -385,7 +385,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GQ",
 	},
 	"Africa/Maputo": {
-		Id:          39,
+		ID:          39,
 		Name:        "Africa/Maputo",
 		Status:      "C",
 		Offset:      120,
@@ -395,7 +395,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MZ",
 	},
 	"Africa/Maseru": {
-		Id:          40,
+		ID:          40,
 		Name:        "Africa/Maseru",
 		Status:      "A",
 		Offset:      120,
@@ -405,7 +405,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "LS",
 	},
 	"Africa/Mbabane": {
-		Id:          41,
+		ID:          41,
 		Name:        "Africa/Mbabane",
 		Status:      "A",
 		Offset:      120,
@@ -415,7 +415,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SZ",
 	},
 	"Africa/Mogadishu": {
-		Id:          42,
+		ID:          42,
 		Name:        "Africa/Mogadishu",
 		Status:      "A",
 		Offset:      180,
@@ -425,7 +425,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SO",
 	},
 	"Africa/Monrovia": {
-		Id:          43,
+		ID:          43,
 		Name:        "Africa/Monrovia",
 		Status:      "C",
 		Offset:      0,
@@ -435,7 +435,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "LR",
 	},
 	"Africa/Nairobi": {
-		Id:          44,
+		ID:          44,
 		Name:        "Africa/Nairobi",
 		Status:      "C",
 		Offset:      180,
@@ -445,7 +445,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KE",
 	},
 	"Africa/Ndjamena": {
-		Id:          45,
+		ID:          45,
 		Name:        "Africa/Ndjamena",
 		Status:      "C",
 		Offset:      60,
@@ -455,7 +455,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TD",
 	},
 	"Africa/Niamey": {
-		Id:          46,
+		ID:          46,
 		Name:        "Africa/Niamey",
 		Status:      "A",
 		Offset:      60,
@@ -465,7 +465,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NE",
 	},
 	"Africa/Nouakchott": {
-		Id:          47,
+		ID:          47,
 		Name:        "Africa/Nouakchott",
 		Status:      "A",
 		Offset:      0,
@@ -475,7 +475,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MR",
 	},
 	"Africa/Ouagadougou": {
-		Id:          48,
+		ID:          48,
 		Name:        "Africa/Ouagadougou",
 		Status:      "A",
 		Offset:      0,
@@ -485,7 +485,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BF",
 	},
 	"Africa/Porto-Novo": {
-		Id:          49,
+		ID:          49,
 		Name:        "Africa/Porto-Novo",
 		Status:      "A",
 		Offset:      60,
@@ -495,7 +495,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BJ",
 	},
 	"Africa/Sao_Tome": {
-		Id:          50,
+		ID:          50,
 		Name:        "Africa/Sao_Tome",
 		Status:      "C",
 		Offset:      0,
@@ -505,7 +505,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ST",
 	},
 	"Africa/Timbuktu": {
-		Id:          51,
+		ID:          51,
 		Name:        "Africa/Timbuktu",
 		Status:      "A",
 		Offset:      0,
@@ -515,7 +515,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CI",
 	},
 	"Africa/Tripoli": {
-		Id:          52,
+		ID:          52,
 		Name:        "Africa/Tripoli",
 		Status:      "C",
 		Offset:      120,
@@ -525,7 +525,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "LY",
 	},
 	"Africa/Tunis": {
-		Id:          53,
+		ID:          53,
 		Name:        "Africa/Tunis",
 		Status:      "C",
 		Offset:      60,
@@ -535,7 +535,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TN",
 	},
 	"Africa/Windhoek": {
-		Id:          54,
+		ID:          54,
 		Name:        "Africa/Windhoek",
 		Status:      "C",
 		Offset:      120,
@@ -545,7 +545,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NA",
 	},
 	"America/Adak": {
-		Id:          55,
+		ID:          55,
 		Name:        "America/Adak",
 		Status:      "C",
 		Offset:      -600,
@@ -555,7 +555,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Anchorage": {
-		Id:          56,
+		ID:          56,
 		Name:        "America/Anchorage",
 		Status:      "C",
 		Offset:      -540,
@@ -565,7 +565,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Anguilla": {
-		Id:          57,
+		ID:          57,
 		Name:        "America/Anguilla",
 		Status:      "A",
 		Offset:      -240,
@@ -575,7 +575,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AI",
 	},
 	"America/Antigua": {
-		Id:          58,
+		ID:          58,
 		Name:        "America/Antigua",
 		Status:      "A",
 		Offset:      -240,
@@ -585,7 +585,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AG",
 	},
 	"America/Araguaina": {
-		Id:          59,
+		ID:          59,
 		Name:        "America/Araguaina",
 		Status:      "C",
 		Offset:      -180,
@@ -595,7 +595,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Argentina/Buenos_Aires": {
-		Id:          60,
+		ID:          60,
 		Name:        "America/Argentina/Buenos_Aires",
 		Status:      "C",
 		Offset:      -180,
@@ -605,7 +605,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Argentina/Catamarca": {
-		Id:          61,
+		ID:          61,
 		Name:        "America/Argentina/Catamarca",
 		Status:      "C",
 		Offset:      -180,
@@ -615,7 +615,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Argentina/ComodRivadavia": {
-		Id:          62,
+		ID:          62,
 		Name:        "America/Argentina/ComodRivadavia",
 		Status:      "A",
 		Offset:      -180,
@@ -625,7 +625,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Argentina/Cordoba": {
-		Id:          63,
+		ID:          63,
 		Name:        "America/Argentina/Cordoba",
 		Status:      "C",
 		Offset:      -180,
@@ -635,7 +635,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Argentina/Jujuy": {
-		Id:          64,
+		ID:          64,
 		Name:        "America/Argentina/Jujuy",
 		Status:      "C",
 		Offset:      -180,
@@ -645,7 +645,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Argentina/La_Rioja": {
-		Id:          65,
+		ID:          65,
 		Name:        "America/Argentina/La_Rioja",
 		Status:      "C",
 		Offset:      -180,
@@ -655,7 +655,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Argentina/Mendoza": {
-		Id:          66,
+		ID:          66,
 		Name:        "America/Argentina/Mendoza",
 		Status:      "C",
 		Offset:      -180,
@@ -665,7 +665,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Argentina/Rio_Gallegos": {
-		Id:          67,
+		ID:          67,
 		Name:        "America/Argentina/Rio_Gallegos",
 		Status:      "C",
 		Offset:      -180,
@@ -675,7 +675,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Argentina/Salta": {
-		Id:          68,
+		ID:          68,
 		Name:        "America/Argentina/Salta",
 		Status:      "C",
 		Offset:      -180,
@@ -685,7 +685,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Argentina/San_Juan": {
-		Id:          69,
+		ID:          69,
 		Name:        "America/Argentina/San_Juan",
 		Status:      "C",
 		Offset:      -180,
@@ -695,7 +695,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Argentina/San_Luis": {
-		Id:          70,
+		ID:          70,
 		Name:        "America/Argentina/San_Luis",
 		Status:      "C",
 		Offset:      -180,
@@ -705,7 +705,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Argentina/Tucuman": {
-		Id:          71,
+		ID:          71,
 		Name:        "America/Argentina/Tucuman",
 		Status:      "C",
 		Offset:      -180,
@@ -715,7 +715,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Argentina/Ushuaia": {
-		Id:          72,
+		ID:          72,
 		Name:        "America/Argentina/Ushuaia",
 		Status:      "C",
 		Offset:      -180,
@@ -725,7 +725,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Aruba": {
-		Id:          73,
+		ID:          73,
 		Name:        "America/Aruba",
 		Status:      "A",
 		Offset:      -240,
@@ -735,7 +735,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AW",
 	},
 	"America/Asuncion": {
-		Id:          74,
+		ID:          74,
 		Name:        "America/Asuncion",
 		Status:      "C",
 		Offset:      -180,
@@ -745,7 +745,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PY",
 	},
 	"America/Atikokan": {
-		Id:          75,
+		ID:          75,
 		Name:        "America/Atikokan",
 		Status:      "A",
 		Offset:      -300,
@@ -755,7 +755,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Atka": {
-		Id:          76,
+		ID:          76,
 		Name:        "America/Atka",
 		Status:      "A",
 		Offset:      -600,
@@ -765,7 +765,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Bahia": {
-		Id:          77,
+		ID:          77,
 		Name:        "America/Bahia",
 		Status:      "C",
 		Offset:      -180,
@@ -775,7 +775,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Bahia_Banderas": {
-		Id:          78,
+		ID:          78,
 		Name:        "America/Bahia_Banderas",
 		Status:      "C",
 		Offset:      -360,
@@ -785,7 +785,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Barbados": {
-		Id:          79,
+		ID:          79,
 		Name:        "America/Barbados",
 		Status:      "C",
 		Offset:      -240,
@@ -795,7 +795,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BB",
 	},
 	"America/Belem": {
-		Id:          80,
+		ID:          80,
 		Name:        "America/Belem",
 		Status:      "C",
 		Offset:      -180,
@@ -805,7 +805,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Belize": {
-		Id:          81,
+		ID:          81,
 		Name:        "America/Belize",
 		Status:      "C",
 		Offset:      -360,
@@ -815,7 +815,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BZ",
 	},
 	"America/Blanc-Sablon": {
-		Id:          82,
+		ID:          82,
 		Name:        "America/Blanc-Sablon",
 		Status:      "A",
 		Offset:      -240,
@@ -825,7 +825,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Boa_Vista": {
-		Id:          83,
+		ID:          83,
 		Name:        "America/Boa_Vista",
 		Status:      "C",
 		Offset:      -240,
@@ -835,7 +835,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Bogota": {
-		Id:          84,
+		ID:          84,
 		Name:        "America/Bogota",
 		Status:      "C",
 		Offset:      -300,
@@ -845,7 +845,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CO",
 	},
 	"America/Boise": {
-		Id:          85,
+		ID:          85,
 		Name:        "America/Boise",
 		Status:      "C",
 		Offset:      -420,
@@ -855,7 +855,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Buenos_Aires": {
-		Id:          86,
+		ID:          86,
 		Name:        "America/Buenos_Aires",
 		Status:      "A",
 		Offset:      -180,
@@ -865,7 +865,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Cambridge_Bay": {
-		Id:          87,
+		ID:          87,
 		Name:        "America/Cambridge_Bay",
 		Status:      "C",
 		Offset:      -420,
@@ -875,7 +875,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Campo_Grande": {
-		Id:          88,
+		ID:          88,
 		Name:        "America/Campo_Grande",
 		Status:      "C",
 		Offset:      -240,
@@ -885,7 +885,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Cancun": {
-		Id:          89,
+		ID:          89,
 		Name:        "America/Cancun",
 		Status:      "C",
 		Offset:      -300,
@@ -895,7 +895,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Caracas": {
-		Id:          90,
+		ID:          90,
 		Name:        "America/Caracas",
 		Status:      "C",
 		Offset:      -240,
@@ -905,7 +905,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "VE",
 	},
 	"America/Catamarca": {
-		Id:          91,
+		ID:          91,
 		Name:        "America/Catamarca",
 		Status:      "A",
 		Offset:      -180,
@@ -915,7 +915,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Cayenne": {
-		Id:          92,
+		ID:          92,
 		Name:        "America/Cayenne",
 		Status:      "C",
 		Offset:      -180,
@@ -925,7 +925,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GF",
 	},
 	"America/Cayman": {
-		Id:          93,
+		ID:          93,
 		Name:        "America/Cayman",
 		Status:      "A",
 		Offset:      -300,
@@ -935,7 +935,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KY",
 	},
 	"America/Chicago": {
-		Id:          94,
+		ID:          94,
 		Name:        "America/Chicago",
 		Status:      "C",
 		Offset:      -360,
@@ -945,7 +945,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Chihuahua": {
-		Id:          95,
+		ID:          95,
 		Name:        "America/Chihuahua",
 		Status:      "C",
 		Offset:      -360,
@@ -955,7 +955,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Ciudad_Juarez": {
-		Id:          475,
+		ID:          475,
 		Name:        "America/Ciudad_Juarez",
 		Status:      "C",
 		Offset:      -420,
@@ -965,7 +965,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Coral_Harbour": {
-		Id:          96,
+		ID:          96,
 		Name:        "America/Coral_Harbour",
 		Status:      "A",
 		Offset:      -300,
@@ -975,7 +975,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Cordoba": {
-		Id:          97,
+		ID:          97,
 		Name:        "America/Cordoba",
 		Status:      "A",
 		Offset:      -180,
@@ -985,7 +985,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Costa_Rica": {
-		Id:          98,
+		ID:          98,
 		Name:        "America/Costa_Rica",
 		Status:      "C",
 		Offset:      -360,
@@ -995,7 +995,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CR",
 	},
 	"America/Coyhaique": {
-		Id:          476,
+		ID:          476,
 		Name:        "America/Coyhaique",
 		Status:      "C",
 		Offset:      -180,
@@ -1005,7 +1005,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CL",
 	},
 	"America/Creston": {
-		Id:          99,
+		ID:          99,
 		Name:        "America/Creston",
 		Status:      "A",
 		Offset:      -420,
@@ -1015,7 +1015,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Cuiaba": {
-		Id:          100,
+		ID:          100,
 		Name:        "America/Cuiaba",
 		Status:      "C",
 		Offset:      -240,
@@ -1025,7 +1025,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Curacao": {
-		Id:          101,
+		ID:          101,
 		Name:        "America/Curacao",
 		Status:      "A",
 		Offset:      -240,
@@ -1035,7 +1035,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CW",
 	},
 	"America/Danmarkshavn": {
-		Id:          102,
+		ID:          102,
 		Name:        "America/Danmarkshavn",
 		Status:      "C",
 		Offset:      0,
@@ -1045,7 +1045,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GL",
 	},
 	"America/Dawson": {
-		Id:          103,
+		ID:          103,
 		Name:        "America/Dawson",
 		Status:      "C",
 		Offset:      -420,
@@ -1055,7 +1055,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Dawson_Creek": {
-		Id:          104,
+		ID:          104,
 		Name:        "America/Dawson_Creek",
 		Status:      "C",
 		Offset:      -420,
@@ -1065,7 +1065,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Denver": {
-		Id:          105,
+		ID:          105,
 		Name:        "America/Denver",
 		Status:      "C",
 		Offset:      -420,
@@ -1075,7 +1075,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Detroit": {
-		Id:          106,
+		ID:          106,
 		Name:        "America/Detroit",
 		Status:      "C",
 		Offset:      -300,
@@ -1085,7 +1085,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Dominica": {
-		Id:          107,
+		ID:          107,
 		Name:        "America/Dominica",
 		Status:      "A",
 		Offset:      -240,
@@ -1095,7 +1095,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "DM",
 	},
 	"America/Edmonton": {
-		Id:          108,
+		ID:          108,
 		Name:        "America/Edmonton",
 		Status:      "C",
 		Offset:      -420,
@@ -1105,7 +1105,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Eirunepe": {
-		Id:          109,
+		ID:          109,
 		Name:        "America/Eirunepe",
 		Status:      "C",
 		Offset:      -300,
@@ -1115,7 +1115,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/El_Salvador": {
-		Id:          110,
+		ID:          110,
 		Name:        "America/El_Salvador",
 		Status:      "C",
 		Offset:      -360,
@@ -1125,7 +1125,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SV",
 	},
 	"America/Ensenada": {
-		Id:          111,
+		ID:          111,
 		Name:        "America/Ensenada",
 		Status:      "A",
 		Offset:      -480,
@@ -1135,7 +1135,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Fort_Nelson": {
-		Id:          112,
+		ID:          112,
 		Name:        "America/Fort_Nelson",
 		Status:      "C",
 		Offset:      -420,
@@ -1145,7 +1145,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Fort_Wayne": {
-		Id:          113,
+		ID:          113,
 		Name:        "America/Fort_Wayne",
 		Status:      "A",
 		Offset:      -300,
@@ -1155,7 +1155,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Fortaleza": {
-		Id:          114,
+		ID:          114,
 		Name:        "America/Fortaleza",
 		Status:      "C",
 		Offset:      -180,
@@ -1165,7 +1165,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Glace_Bay": {
-		Id:          115,
+		ID:          115,
 		Name:        "America/Glace_Bay",
 		Status:      "C",
 		Offset:      -240,
@@ -1175,7 +1175,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Godthab": {
-		Id:          116,
+		ID:          116,
 		Name:        "America/Godthab",
 		Status:      "A",
 		Offset:      -120,
@@ -1185,7 +1185,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GL",
 	},
 	"America/Goose_Bay": {
-		Id:          117,
+		ID:          117,
 		Name:        "America/Goose_Bay",
 		Status:      "C",
 		Offset:      -240,
@@ -1195,7 +1195,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Grand_Turk": {
-		Id:          118,
+		ID:          118,
 		Name:        "America/Grand_Turk",
 		Status:      "C",
 		Offset:      -300,
@@ -1205,7 +1205,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TC",
 	},
 	"America/Grenada": {
-		Id:          119,
+		ID:          119,
 		Name:        "America/Grenada",
 		Status:      "A",
 		Offset:      -240,
@@ -1215,7 +1215,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GD",
 	},
 	"America/Guadeloupe": {
-		Id:          120,
+		ID:          120,
 		Name:        "America/Guadeloupe",
 		Status:      "A",
 		Offset:      -240,
@@ -1225,7 +1225,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GP",
 	},
 	"America/Guatemala": {
-		Id:          121,
+		ID:          121,
 		Name:        "America/Guatemala",
 		Status:      "C",
 		Offset:      -360,
@@ -1235,7 +1235,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GT",
 	},
 	"America/Guayaquil": {
-		Id:          122,
+		ID:          122,
 		Name:        "America/Guayaquil",
 		Status:      "C",
 		Offset:      -300,
@@ -1245,7 +1245,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "EC",
 	},
 	"America/Guyana": {
-		Id:          123,
+		ID:          123,
 		Name:        "America/Guyana",
 		Status:      "C",
 		Offset:      -240,
@@ -1255,7 +1255,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GY",
 	},
 	"America/Halifax": {
-		Id:          124,
+		ID:          124,
 		Name:        "America/Halifax",
 		Status:      "C",
 		Offset:      -240,
@@ -1265,7 +1265,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Havana": {
-		Id:          125,
+		ID:          125,
 		Name:        "America/Havana",
 		Status:      "C",
 		Offset:      -300,
@@ -1275,7 +1275,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CU",
 	},
 	"America/Hermosillo": {
-		Id:          126,
+		ID:          126,
 		Name:        "America/Hermosillo",
 		Status:      "C",
 		Offset:      -420,
@@ -1285,7 +1285,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Indiana/Indianapolis": {
-		Id:          127,
+		ID:          127,
 		Name:        "America/Indiana/Indianapolis",
 		Status:      "C",
 		Offset:      -300,
@@ -1295,7 +1295,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Indiana/Knox": {
-		Id:          128,
+		ID:          128,
 		Name:        "America/Indiana/Knox",
 		Status:      "C",
 		Offset:      -360,
@@ -1305,7 +1305,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Indiana/Marengo": {
-		Id:          129,
+		ID:          129,
 		Name:        "America/Indiana/Marengo",
 		Status:      "C",
 		Offset:      -300,
@@ -1315,7 +1315,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Indiana/Petersburg": {
-		Id:          130,
+		ID:          130,
 		Name:        "America/Indiana/Petersburg",
 		Status:      "C",
 		Offset:      -300,
@@ -1325,7 +1325,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Indiana/Tell_City": {
-		Id:          131,
+		ID:          131,
 		Name:        "America/Indiana/Tell_City",
 		Status:      "C",
 		Offset:      -360,
@@ -1335,7 +1335,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Indiana/Vevay": {
-		Id:          132,
+		ID:          132,
 		Name:        "America/Indiana/Vevay",
 		Status:      "C",
 		Offset:      -300,
@@ -1345,7 +1345,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Indiana/Vincennes": {
-		Id:          133,
+		ID:          133,
 		Name:        "America/Indiana/Vincennes",
 		Status:      "C",
 		Offset:      -300,
@@ -1355,7 +1355,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Indiana/Winamac": {
-		Id:          134,
+		ID:          134,
 		Name:        "America/Indiana/Winamac",
 		Status:      "C",
 		Offset:      -300,
@@ -1365,7 +1365,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Indianapolis": {
-		Id:          135,
+		ID:          135,
 		Name:        "America/Indianapolis",
 		Status:      "A",
 		Offset:      -300,
@@ -1375,7 +1375,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Inuvik": {
-		Id:          136,
+		ID:          136,
 		Name:        "America/Inuvik",
 		Status:      "C",
 		Offset:      -420,
@@ -1385,7 +1385,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Iqaluit": {
-		Id:          137,
+		ID:          137,
 		Name:        "America/Iqaluit",
 		Status:      "C",
 		Offset:      -300,
@@ -1395,7 +1395,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Jamaica": {
-		Id:          138,
+		ID:          138,
 		Name:        "America/Jamaica",
 		Status:      "C",
 		Offset:      -300,
@@ -1405,7 +1405,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "JM",
 	},
 	"America/Jujuy": {
-		Id:          139,
+		ID:          139,
 		Name:        "America/Jujuy",
 		Status:      "A",
 		Offset:      -180,
@@ -1415,7 +1415,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Juneau": {
-		Id:          140,
+		ID:          140,
 		Name:        "America/Juneau",
 		Status:      "C",
 		Offset:      -540,
@@ -1425,7 +1425,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Kentucky/Louisville": {
-		Id:          141,
+		ID:          141,
 		Name:        "America/Kentucky/Louisville",
 		Status:      "C",
 		Offset:      -300,
@@ -1435,7 +1435,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Kentucky/Monticello": {
-		Id:          142,
+		ID:          142,
 		Name:        "America/Kentucky/Monticello",
 		Status:      "C",
 		Offset:      -300,
@@ -1445,7 +1445,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Knox_IN": {
-		Id:          143,
+		ID:          143,
 		Name:        "America/Knox_IN",
 		Status:      "A",
 		Offset:      -360,
@@ -1455,7 +1455,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Kralendijk": {
-		Id:          144,
+		ID:          144,
 		Name:        "America/Kralendijk",
 		Status:      "A",
 		Offset:      -240,
@@ -1465,7 +1465,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BQ",
 	},
 	"America/La_Paz": {
-		Id:          145,
+		ID:          145,
 		Name:        "America/La_Paz",
 		Status:      "C",
 		Offset:      -240,
@@ -1475,7 +1475,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BO",
 	},
 	"America/Lima": {
-		Id:          146,
+		ID:          146,
 		Name:        "America/Lima",
 		Status:      "C",
 		Offset:      -300,
@@ -1485,7 +1485,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PE",
 	},
 	"America/Los_Angeles": {
-		Id:          147,
+		ID:          147,
 		Name:        "America/Los_Angeles",
 		Status:      "C",
 		Offset:      -480,
@@ -1495,7 +1495,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Louisville": {
-		Id:          148,
+		ID:          148,
 		Name:        "America/Louisville",
 		Status:      "A",
 		Offset:      -300,
@@ -1505,7 +1505,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Lower_Princes": {
-		Id:          149,
+		ID:          149,
 		Name:        "America/Lower_Princes",
 		Status:      "A",
 		Offset:      -240,
@@ -1515,7 +1515,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SX",
 	},
 	"America/Maceio": {
-		Id:          150,
+		ID:          150,
 		Name:        "America/Maceio",
 		Status:      "C",
 		Offset:      -180,
@@ -1525,7 +1525,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Managua": {
-		Id:          151,
+		ID:          151,
 		Name:        "America/Managua",
 		Status:      "C",
 		Offset:      -360,
@@ -1535,7 +1535,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NI",
 	},
 	"America/Manaus": {
-		Id:          152,
+		ID:          152,
 		Name:        "America/Manaus",
 		Status:      "C",
 		Offset:      -240,
@@ -1545,7 +1545,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Marigot": {
-		Id:          153,
+		ID:          153,
 		Name:        "America/Marigot",
 		Status:      "A",
 		Offset:      -240,
@@ -1555,7 +1555,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MF",
 	},
 	"America/Martinique": {
-		Id:          154,
+		ID:          154,
 		Name:        "America/Martinique",
 		Status:      "C",
 		Offset:      -240,
@@ -1565,7 +1565,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MQ",
 	},
 	"America/Matamoros": {
-		Id:          155,
+		ID:          155,
 		Name:        "America/Matamoros",
 		Status:      "C",
 		Offset:      -360,
@@ -1575,7 +1575,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Mazatlan": {
-		Id:          156,
+		ID:          156,
 		Name:        "America/Mazatlan",
 		Status:      "C",
 		Offset:      -420,
@@ -1585,7 +1585,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Mendoza": {
-		Id:          157,
+		ID:          157,
 		Name:        "America/Mendoza",
 		Status:      "A",
 		Offset:      -180,
@@ -1595,7 +1595,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Menominee": {
-		Id:          158,
+		ID:          158,
 		Name:        "America/Menominee",
 		Status:      "C",
 		Offset:      -360,
@@ -1605,7 +1605,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Merida": {
-		Id:          159,
+		ID:          159,
 		Name:        "America/Merida",
 		Status:      "C",
 		Offset:      -360,
@@ -1615,7 +1615,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Metlakatla": {
-		Id:          160,
+		ID:          160,
 		Name:        "America/Metlakatla",
 		Status:      "C",
 		Offset:      -540,
@@ -1625,7 +1625,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Mexico_City": {
-		Id:          161,
+		ID:          161,
 		Name:        "America/Mexico_City",
 		Status:      "C",
 		Offset:      -360,
@@ -1635,7 +1635,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Miquelon": {
-		Id:          162,
+		ID:          162,
 		Name:        "America/Miquelon",
 		Status:      "C",
 		Offset:      -180,
@@ -1645,7 +1645,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PM",
 	},
 	"America/Moncton": {
-		Id:          163,
+		ID:          163,
 		Name:        "America/Moncton",
 		Status:      "C",
 		Offset:      -240,
@@ -1655,7 +1655,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Monterrey": {
-		Id:          164,
+		ID:          164,
 		Name:        "America/Monterrey",
 		Status:      "C",
 		Offset:      -360,
@@ -1665,7 +1665,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Montevideo": {
-		Id:          165,
+		ID:          165,
 		Name:        "America/Montevideo",
 		Status:      "C",
 		Offset:      -180,
@@ -1675,7 +1675,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "UY",
 	},
 	"America/Montreal": {
-		Id:          166,
+		ID:          166,
 		Name:        "America/Montreal",
 		Status:      "A",
 		Offset:      -300,
@@ -1685,7 +1685,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Montserrat": {
-		Id:          167,
+		ID:          167,
 		Name:        "America/Montserrat",
 		Status:      "A",
 		Offset:      -240,
@@ -1695,7 +1695,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MS",
 	},
 	"America/Nassau": {
-		Id:          168,
+		ID:          168,
 		Name:        "America/Nassau",
 		Status:      "A",
 		Offset:      -300,
@@ -1705,7 +1705,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BS",
 	},
 	"America/New_York": {
-		Id:          169,
+		ID:          169,
 		Name:        "America/New_York",
 		Status:      "C",
 		Offset:      -300,
@@ -1715,7 +1715,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Nipigon": {
-		Id:          170,
+		ID:          170,
 		Name:        "America/Nipigon",
 		Status:      "A",
 		Offset:      -300,
@@ -1725,7 +1725,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Nome": {
-		Id:          171,
+		ID:          171,
 		Name:        "America/Nome",
 		Status:      "C",
 		Offset:      -540,
@@ -1735,7 +1735,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Noronha": {
-		Id:          172,
+		ID:          172,
 		Name:        "America/Noronha",
 		Status:      "C",
 		Offset:      -120,
@@ -1745,7 +1745,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/North_Dakota/Beulah": {
-		Id:          173,
+		ID:          173,
 		Name:        "America/North_Dakota/Beulah",
 		Status:      "C",
 		Offset:      -360,
@@ -1755,7 +1755,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/North_Dakota/Center": {
-		Id:          174,
+		ID:          174,
 		Name:        "America/North_Dakota/Center",
 		Status:      "C",
 		Offset:      -360,
@@ -1765,7 +1765,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/North_Dakota/New_Salem": {
-		Id:          175,
+		ID:          175,
 		Name:        "America/North_Dakota/New_Salem",
 		Status:      "C",
 		Offset:      -360,
@@ -1775,7 +1775,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Nuuk": {
-		Id:          477,
+		ID:          477,
 		Name:        "America/Nuuk",
 		Status:      "C",
 		Offset:      -120,
@@ -1785,7 +1785,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GL",
 	},
 	"America/Ojinaga": {
-		Id:          176,
+		ID:          176,
 		Name:        "America/Ojinaga",
 		Status:      "C",
 		Offset:      -360,
@@ -1795,7 +1795,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Panama": {
-		Id:          177,
+		ID:          177,
 		Name:        "America/Panama",
 		Status:      "C",
 		Offset:      -300,
@@ -1805,7 +1805,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PA",
 	},
 	"America/Pangnirtung": {
-		Id:          178,
+		ID:          178,
 		Name:        "America/Pangnirtung",
 		Status:      "A",
 		Offset:      -300,
@@ -1815,7 +1815,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Paramaribo": {
-		Id:          179,
+		ID:          179,
 		Name:        "America/Paramaribo",
 		Status:      "C",
 		Offset:      -180,
@@ -1825,7 +1825,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SR",
 	},
 	"America/Phoenix": {
-		Id:          180,
+		ID:          180,
 		Name:        "America/Phoenix",
 		Status:      "C",
 		Offset:      -420,
@@ -1835,7 +1835,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Port-au-Prince": {
-		Id:          182,
+		ID:          182,
 		Name:        "America/Port-au-Prince",
 		Status:      "C",
 		Offset:      -300,
@@ -1845,7 +1845,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "HT",
 	},
 	"America/Port_of_Spain": {
-		Id:          181,
+		ID:          181,
 		Name:        "America/Port_of_Spain",
 		Status:      "A",
 		Offset:      -240,
@@ -1855,7 +1855,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TT",
 	},
 	"America/Porto_Acre": {
-		Id:          183,
+		ID:          183,
 		Name:        "America/Porto_Acre",
 		Status:      "A",
 		Offset:      -300,
@@ -1865,7 +1865,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Porto_Velho": {
-		Id:          184,
+		ID:          184,
 		Name:        "America/Porto_Velho",
 		Status:      "C",
 		Offset:      -240,
@@ -1875,7 +1875,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Puerto_Rico": {
-		Id:          185,
+		ID:          185,
 		Name:        "America/Puerto_Rico",
 		Status:      "C",
 		Offset:      -240,
@@ -1885,7 +1885,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PR",
 	},
 	"America/Punta_Arenas": {
-		Id:          186,
+		ID:          186,
 		Name:        "America/Punta_Arenas",
 		Status:      "C",
 		Offset:      -180,
@@ -1895,7 +1895,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CL",
 	},
 	"America/Rainy_River": {
-		Id:          187,
+		ID:          187,
 		Name:        "America/Rainy_River",
 		Status:      "A",
 		Offset:      -360,
@@ -1905,7 +1905,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Rankin_Inlet": {
-		Id:          188,
+		ID:          188,
 		Name:        "America/Rankin_Inlet",
 		Status:      "C",
 		Offset:      -360,
@@ -1915,7 +1915,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Recife": {
-		Id:          189,
+		ID:          189,
 		Name:        "America/Recife",
 		Status:      "C",
 		Offset:      -180,
@@ -1925,7 +1925,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Regina": {
-		Id:          190,
+		ID:          190,
 		Name:        "America/Regina",
 		Status:      "C",
 		Offset:      -360,
@@ -1935,7 +1935,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Resolute": {
-		Id:          191,
+		ID:          191,
 		Name:        "America/Resolute",
 		Status:      "C",
 		Offset:      -360,
@@ -1945,7 +1945,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Rio_Branco": {
-		Id:          192,
+		ID:          192,
 		Name:        "America/Rio_Branco",
 		Status:      "C",
 		Offset:      -300,
@@ -1955,7 +1955,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Rosario": {
-		Id:          193,
+		ID:          193,
 		Name:        "America/Rosario",
 		Status:      "A",
 		Offset:      -180,
@@ -1965,7 +1965,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AR",
 	},
 	"America/Santa_Isabel": {
-		Id:          194,
+		ID:          194,
 		Name:        "America/Santa_Isabel",
 		Status:      "A",
 		Offset:      -480,
@@ -1975,7 +1975,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Santarem": {
-		Id:          195,
+		ID:          195,
 		Name:        "America/Santarem",
 		Status:      "C",
 		Offset:      -180,
@@ -1985,7 +1985,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Santiago": {
-		Id:          196,
+		ID:          196,
 		Name:        "America/Santiago",
 		Status:      "C",
 		Offset:      -240,
@@ -1995,7 +1995,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CL",
 	},
 	"America/Santo_Domingo": {
-		Id:          197,
+		ID:          197,
 		Name:        "America/Santo_Domingo",
 		Status:      "C",
 		Offset:      -240,
@@ -2005,7 +2005,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "DO",
 	},
 	"America/Sao_Paulo": {
-		Id:          198,
+		ID:          198,
 		Name:        "America/Sao_Paulo",
 		Status:      "C",
 		Offset:      -180,
@@ -2015,7 +2015,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BR",
 	},
 	"America/Scoresbysund": {
-		Id:          199,
+		ID:          199,
 		Name:        "America/Scoresbysund",
 		Status:      "C",
 		Offset:      -120,
@@ -2025,7 +2025,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GL",
 	},
 	"America/Shiprock": {
-		Id:          200,
+		ID:          200,
 		Name:        "America/Shiprock",
 		Status:      "A",
 		Offset:      -420,
@@ -2035,7 +2035,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Sitka": {
-		Id:          201,
+		ID:          201,
 		Name:        "America/Sitka",
 		Status:      "C",
 		Offset:      -540,
@@ -2045,7 +2045,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/St_Barthelemy": {
-		Id:          202,
+		ID:          202,
 		Name:        "America/St_Barthelemy",
 		Status:      "A",
 		Offset:      -240,
@@ -2055,7 +2055,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BL",
 	},
 	"America/St_Johns": {
-		Id:          203,
+		ID:          203,
 		Name:        "America/St_Johns",
 		Status:      "C",
 		Offset:      -210,
@@ -2065,7 +2065,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/St_Kitts": {
-		Id:          204,
+		ID:          204,
 		Name:        "America/St_Kitts",
 		Status:      "A",
 		Offset:      -240,
@@ -2075,7 +2075,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KN",
 	},
 	"America/St_Lucia": {
-		Id:          205,
+		ID:          205,
 		Name:        "America/St_Lucia",
 		Status:      "A",
 		Offset:      -240,
@@ -2085,7 +2085,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "LC",
 	},
 	"America/St_Thomas": {
-		Id:          206,
+		ID:          206,
 		Name:        "America/St_Thomas",
 		Status:      "A",
 		Offset:      -240,
@@ -2095,7 +2095,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "VI",
 	},
 	"America/St_Vincent": {
-		Id:          207,
+		ID:          207,
 		Name:        "America/St_Vincent",
 		Status:      "A",
 		Offset:      -240,
@@ -2105,7 +2105,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "VC",
 	},
 	"America/Swift_Current": {
-		Id:          208,
+		ID:          208,
 		Name:        "America/Swift_Current",
 		Status:      "C",
 		Offset:      -360,
@@ -2115,7 +2115,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Tegucigalpa": {
-		Id:          209,
+		ID:          209,
 		Name:        "America/Tegucigalpa",
 		Status:      "C",
 		Offset:      -360,
@@ -2125,7 +2125,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "HN",
 	},
 	"America/Thule": {
-		Id:          210,
+		ID:          210,
 		Name:        "America/Thule",
 		Status:      "C",
 		Offset:      -240,
@@ -2135,7 +2135,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GL",
 	},
 	"America/Thunder_Bay": {
-		Id:          211,
+		ID:          211,
 		Name:        "America/Thunder_Bay",
 		Status:      "A",
 		Offset:      -300,
@@ -2145,7 +2145,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Tijuana": {
-		Id:          212,
+		ID:          212,
 		Name:        "America/Tijuana",
 		Status:      "C",
 		Offset:      -480,
@@ -2155,7 +2155,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MX",
 	},
 	"America/Toronto": {
-		Id:          213,
+		ID:          213,
 		Name:        "America/Toronto",
 		Status:      "C",
 		Offset:      -300,
@@ -2165,7 +2165,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Tortola": {
-		Id:          214,
+		ID:          214,
 		Name:        "America/Tortola",
 		Status:      "A",
 		Offset:      -240,
@@ -2175,7 +2175,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "VG",
 	},
 	"America/Vancouver": {
-		Id:          215,
+		ID:          215,
 		Name:        "America/Vancouver",
 		Status:      "C",
 		Offset:      -480,
@@ -2185,7 +2185,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Virgin": {
-		Id:          216,
+		ID:          216,
 		Name:        "America/Virgin",
 		Status:      "A",
 		Offset:      -240,
@@ -2195,7 +2195,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TT",
 	},
 	"America/Whitehorse": {
-		Id:          217,
+		ID:          217,
 		Name:        "America/Whitehorse",
 		Status:      "C",
 		Offset:      -420,
@@ -2205,7 +2205,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Winnipeg": {
-		Id:          218,
+		ID:          218,
 		Name:        "America/Winnipeg",
 		Status:      "C",
 		Offset:      -360,
@@ -2215,7 +2215,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"America/Yakutat": {
-		Id:          219,
+		ID:          219,
 		Name:        "America/Yakutat",
 		Status:      "C",
 		Offset:      -540,
@@ -2225,7 +2225,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"America/Yellowknife": {
-		Id:          220,
+		ID:          220,
 		Name:        "America/Yellowknife",
 		Status:      "A",
 		Offset:      -420,
@@ -2235,7 +2235,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CA",
 	},
 	"Antarctica/Casey": {
-		Id:          221,
+		ID:          221,
 		Name:        "Antarctica/Casey",
 		Status:      "C",
 		Offset:      480,
@@ -2245,7 +2245,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AQ",
 	},
 	"Antarctica/Davis": {
-		Id:          222,
+		ID:          222,
 		Name:        "Antarctica/Davis",
 		Status:      "C",
 		Offset:      420,
@@ -2255,7 +2255,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AQ",
 	},
 	"Antarctica/DumontDUrville": {
-		Id:          223,
+		ID:          223,
 		Name:        "Antarctica/DumontDUrville",
 		Status:      "A",
 		Offset:      600,
@@ -2265,7 +2265,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AQ",
 	},
 	"Antarctica/Macquarie": {
-		Id:          224,
+		ID:          224,
 		Name:        "Antarctica/Macquarie",
 		Status:      "C",
 		Offset:      600,
@@ -2275,7 +2275,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Antarctica/Mawson": {
-		Id:          225,
+		ID:          225,
 		Name:        "Antarctica/Mawson",
 		Status:      "C",
 		Offset:      300,
@@ -2285,7 +2285,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AQ",
 	},
 	"Antarctica/McMurdo": {
-		Id:          226,
+		ID:          226,
 		Name:        "Antarctica/McMurdo",
 		Status:      "A",
 		Offset:      720,
@@ -2295,7 +2295,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AQ",
 	},
 	"Antarctica/Palmer": {
-		Id:          227,
+		ID:          227,
 		Name:        "Antarctica/Palmer",
 		Status:      "C",
 		Offset:      -180,
@@ -2305,7 +2305,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AQ",
 	},
 	"Antarctica/Rothera": {
-		Id:          228,
+		ID:          228,
 		Name:        "Antarctica/Rothera",
 		Status:      "C",
 		Offset:      -180,
@@ -2315,7 +2315,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AQ",
 	},
 	"Antarctica/South_Pole": {
-		Id:          229,
+		ID:          229,
 		Name:        "Antarctica/South_Pole",
 		Status:      "A",
 		Offset:      720,
@@ -2325,7 +2325,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NZ",
 	},
 	"Antarctica/Syowa": {
-		Id:          230,
+		ID:          230,
 		Name:        "Antarctica/Syowa",
 		Status:      "A",
 		Offset:      180,
@@ -2335,7 +2335,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AQ",
 	},
 	"Antarctica/Troll": {
-		Id:          231,
+		ID:          231,
 		Name:        "Antarctica/Troll",
 		Status:      "C",
 		Offset:      0,
@@ -2345,7 +2345,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AQ",
 	},
 	"Antarctica/Vostok": {
-		Id:          232,
+		ID:          232,
 		Name:        "Antarctica/Vostok",
 		Status:      "C",
 		Offset:      300,
@@ -2355,7 +2355,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AQ",
 	},
 	"Arctic/Longyearbyen": {
-		Id:          233,
+		ID:          233,
 		Name:        "Arctic/Longyearbyen",
 		Status:      "A",
 		Offset:      60,
@@ -2365,7 +2365,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SJ",
 	},
 	"Asia/Aden": {
-		Id:          234,
+		ID:          234,
 		Name:        "Asia/Aden",
 		Status:      "A",
 		Offset:      180,
@@ -2375,7 +2375,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "YE",
 	},
 	"Asia/Almaty": {
-		Id:          235,
+		ID:          235,
 		Name:        "Asia/Almaty",
 		Status:      "C",
 		Offset:      300,
@@ -2385,7 +2385,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KZ",
 	},
 	"Asia/Amman": {
-		Id:          236,
+		ID:          236,
 		Name:        "Asia/Amman",
 		Status:      "C",
 		Offset:      180,
@@ -2395,7 +2395,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "JO",
 	},
 	"Asia/Anadyr": {
-		Id:          237,
+		ID:          237,
 		Name:        "Asia/Anadyr",
 		Status:      "C",
 		Offset:      720,
@@ -2405,7 +2405,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Aqtau": {
-		Id:          238,
+		ID:          238,
 		Name:        "Asia/Aqtau",
 		Status:      "C",
 		Offset:      300,
@@ -2415,7 +2415,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KZ",
 	},
 	"Asia/Aqtobe": {
-		Id:          239,
+		ID:          239,
 		Name:        "Asia/Aqtobe",
 		Status:      "C",
 		Offset:      300,
@@ -2425,7 +2425,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KZ",
 	},
 	"Asia/Ashgabat": {
-		Id:          240,
+		ID:          240,
 		Name:        "Asia/Ashgabat",
 		Status:      "C",
 		Offset:      300,
@@ -2435,7 +2435,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TM",
 	},
 	"Asia/Ashkhabad": {
-		Id:          241,
+		ID:          241,
 		Name:        "Asia/Ashkhabad",
 		Status:      "A",
 		Offset:      300,
@@ -2445,7 +2445,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TM",
 	},
 	"Asia/Atyrau": {
-		Id:          242,
+		ID:          242,
 		Name:        "Asia/Atyrau",
 		Status:      "C",
 		Offset:      300,
@@ -2455,7 +2455,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KZ",
 	},
 	"Asia/Baghdad": {
-		Id:          243,
+		ID:          243,
 		Name:        "Asia/Baghdad",
 		Status:      "C",
 		Offset:      180,
@@ -2465,7 +2465,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "IQ",
 	},
 	"Asia/Bahrain": {
-		Id:          244,
+		ID:          244,
 		Name:        "Asia/Bahrain",
 		Status:      "A",
 		Offset:      180,
@@ -2475,7 +2475,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BH",
 	},
 	"Asia/Baku": {
-		Id:          245,
+		ID:          245,
 		Name:        "Asia/Baku",
 		Status:      "C",
 		Offset:      240,
@@ -2485,7 +2485,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AZ",
 	},
 	"Asia/Bangkok": {
-		Id:          246,
+		ID:          246,
 		Name:        "Asia/Bangkok",
 		Status:      "C",
 		Offset:      420,
@@ -2495,7 +2495,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TH",
 	},
 	"Asia/Barnaul": {
-		Id:          247,
+		ID:          247,
 		Name:        "Asia/Barnaul",
 		Status:      "C",
 		Offset:      420,
@@ -2505,7 +2505,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Beirut": {
-		Id:          248,
+		ID:          248,
 		Name:        "Asia/Beirut",
 		Status:      "C",
 		Offset:      120,
@@ -2515,7 +2515,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "LB",
 	},
 	"Asia/Bishkek": {
-		Id:          249,
+		ID:          249,
 		Name:        "Asia/Bishkek",
 		Status:      "C",
 		Offset:      360,
@@ -2525,7 +2525,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KG",
 	},
 	"Asia/Brunei": {
-		Id:          250,
+		ID:          250,
 		Name:        "Asia/Brunei",
 		Status:      "A",
 		Offset:      480,
@@ -2535,7 +2535,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BN",
 	},
 	"Asia/Calcutta": {
-		Id:          251,
+		ID:          251,
 		Name:        "Asia/Calcutta",
 		Status:      "A",
 		Offset:      330,
@@ -2545,7 +2545,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "IN",
 	},
 	"Asia/Chita": {
-		Id:          252,
+		ID:          252,
 		Name:        "Asia/Chita",
 		Status:      "C",
 		Offset:      540,
@@ -2555,7 +2555,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Choibalsan": {
-		Id:          253,
+		ID:          253,
 		Name:        "Asia/Choibalsan",
 		Status:      "A",
 		Offset:      480,
@@ -2565,7 +2565,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MN",
 	},
 	"Asia/Chongqing": {
-		Id:          254,
+		ID:          254,
 		Name:        "Asia/Chongqing",
 		Status:      "A",
 		Offset:      480,
@@ -2575,7 +2575,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CN",
 	},
 	"Asia/Chungking": {
-		Id:          255,
+		ID:          255,
 		Name:        "Asia/Chungking",
 		Status:      "A",
 		Offset:      480,
@@ -2585,7 +2585,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CN",
 	},
 	"Asia/Colombo": {
-		Id:          256,
+		ID:          256,
 		Name:        "Asia/Colombo",
 		Status:      "C",
 		Offset:      330,
@@ -2595,7 +2595,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "LK",
 	},
 	"Asia/Dacca": {
-		Id:          257,
+		ID:          257,
 		Name:        "Asia/Dacca",
 		Status:      "A",
 		Offset:      360,
@@ -2605,7 +2605,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BD",
 	},
 	"Asia/Damascus": {
-		Id:          258,
+		ID:          258,
 		Name:        "Asia/Damascus",
 		Status:      "C",
 		Offset:      180,
@@ -2615,7 +2615,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SY",
 	},
 	"Asia/Dhaka": {
-		Id:          259,
+		ID:          259,
 		Name:        "Asia/Dhaka",
 		Status:      "C",
 		Offset:      360,
@@ -2625,7 +2625,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BD",
 	},
 	"Asia/Dili": {
-		Id:          260,
+		ID:          260,
 		Name:        "Asia/Dili",
 		Status:      "C",
 		Offset:      540,
@@ -2635,7 +2635,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TL",
 	},
 	"Asia/Dubai": {
-		Id:          261,
+		ID:          261,
 		Name:        "Asia/Dubai",
 		Status:      "C",
 		Offset:      240,
@@ -2645,7 +2645,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AE",
 	},
 	"Asia/Dushanbe": {
-		Id:          262,
+		ID:          262,
 		Name:        "Asia/Dushanbe",
 		Status:      "C",
 		Offset:      300,
@@ -2655,7 +2655,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TJ",
 	},
 	"Asia/Famagusta": {
-		Id:          263,
+		ID:          263,
 		Name:        "Asia/Famagusta",
 		Status:      "C",
 		Offset:      120,
@@ -2665,7 +2665,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CY",
 	},
 	"Asia/Gaza": {
-		Id:          264,
+		ID:          264,
 		Name:        "Asia/Gaza",
 		Status:      "C",
 		Offset:      120,
@@ -2675,7 +2675,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PS",
 	},
 	"Asia/Harbin": {
-		Id:          265,
+		ID:          265,
 		Name:        "Asia/Harbin",
 		Status:      "A",
 		Offset:      480,
@@ -2685,7 +2685,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CN",
 	},
 	"Asia/Hebron": {
-		Id:          266,
+		ID:          266,
 		Name:        "Asia/Hebron",
 		Status:      "C",
 		Offset:      120,
@@ -2695,7 +2695,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PS",
 	},
 	"Asia/Ho_Chi_Minh": {
-		Id:          267,
+		ID:          267,
 		Name:        "Asia/Ho_Chi_Minh",
 		Status:      "C",
 		Offset:      420,
@@ -2705,7 +2705,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "VN",
 	},
 	"Asia/Hong_Kong": {
-		Id:          268,
+		ID:          268,
 		Name:        "Asia/Hong_Kong",
 		Status:      "C",
 		Offset:      480,
@@ -2715,7 +2715,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "HK",
 	},
 	"Asia/Hovd": {
-		Id:          269,
+		ID:          269,
 		Name:        "Asia/Hovd",
 		Status:      "C",
 		Offset:      420,
@@ -2725,7 +2725,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MN",
 	},
 	"Asia/Irkutsk": {
-		Id:          270,
+		ID:          270,
 		Name:        "Asia/Irkutsk",
 		Status:      "C",
 		Offset:      480,
@@ -2735,7 +2735,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Istanbul": {
-		Id:          271,
+		ID:          271,
 		Name:        "Asia/Istanbul",
 		Status:      "A",
 		Offset:      180,
@@ -2745,7 +2745,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TR",
 	},
 	"Asia/Jakarta": {
-		Id:          272,
+		ID:          272,
 		Name:        "Asia/Jakarta",
 		Status:      "C",
 		Offset:      420,
@@ -2755,7 +2755,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ID",
 	},
 	"Asia/Jayapura": {
-		Id:          273,
+		ID:          273,
 		Name:        "Asia/Jayapura",
 		Status:      "C",
 		Offset:      540,
@@ -2765,7 +2765,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ID",
 	},
 	"Asia/Jerusalem": {
-		Id:          274,
+		ID:          274,
 		Name:        "Asia/Jerusalem",
 		Status:      "C",
 		Offset:      120,
@@ -2775,7 +2775,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "IL",
 	},
 	"Asia/Kabul": {
-		Id:          275,
+		ID:          275,
 		Name:        "Asia/Kabul",
 		Status:      "C",
 		Offset:      270,
@@ -2785,7 +2785,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AF",
 	},
 	"Asia/Kamchatka": {
-		Id:          276,
+		ID:          276,
 		Name:        "Asia/Kamchatka",
 		Status:      "C",
 		Offset:      720,
@@ -2795,7 +2795,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Karachi": {
-		Id:          277,
+		ID:          277,
 		Name:        "Asia/Karachi",
 		Status:      "C",
 		Offset:      300,
@@ -2805,7 +2805,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PK",
 	},
 	"Asia/Kashgar": {
-		Id:          278,
+		ID:          278,
 		Name:        "Asia/Kashgar",
 		Status:      "A",
 		Offset:      360,
@@ -2815,7 +2815,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CN",
 	},
 	"Asia/Kathmandu": {
-		Id:          279,
+		ID:          279,
 		Name:        "Asia/Kathmandu",
 		Status:      "C",
 		Offset:      345,
@@ -2825,7 +2825,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NP",
 	},
 	"Asia/Katmandu": {
-		Id:          280,
+		ID:          280,
 		Name:        "Asia/Katmandu",
 		Status:      "A",
 		Offset:      345,
@@ -2835,7 +2835,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NP",
 	},
 	"Asia/Khandyga": {
-		Id:          281,
+		ID:          281,
 		Name:        "Asia/Khandyga",
 		Status:      "C",
 		Offset:      540,
@@ -2845,7 +2845,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Kolkata": {
-		Id:          282,
+		ID:          282,
 		Name:        "Asia/Kolkata",
 		Status:      "C",
 		Offset:      330,
@@ -2855,7 +2855,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "IN",
 	},
 	"Asia/Krasnoyarsk": {
-		Id:          283,
+		ID:          283,
 		Name:        "Asia/Krasnoyarsk",
 		Status:      "C",
 		Offset:      420,
@@ -2865,7 +2865,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Kuala_Lumpur": {
-		Id:          284,
+		ID:          284,
 		Name:        "Asia/Kuala_Lumpur",
 		Status:      "A",
 		Offset:      480,
@@ -2875,7 +2875,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MY",
 	},
 	"Asia/Kuching": {
-		Id:          285,
+		ID:          285,
 		Name:        "Asia/Kuching",
 		Status:      "C",
 		Offset:      480,
@@ -2885,7 +2885,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MY",
 	},
 	"Asia/Kuwait": {
-		Id:          286,
+		ID:          286,
 		Name:        "Asia/Kuwait",
 		Status:      "A",
 		Offset:      180,
@@ -2895,7 +2895,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KW",
 	},
 	"Asia/Macao": {
-		Id:          287,
+		ID:          287,
 		Name:        "Asia/Macao",
 		Status:      "A",
 		Offset:      480,
@@ -2905,7 +2905,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MO",
 	},
 	"Asia/Macau": {
-		Id:          288,
+		ID:          288,
 		Name:        "Asia/Macau",
 		Status:      "C",
 		Offset:      480,
@@ -2915,7 +2915,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MO",
 	},
 	"Asia/Magadan": {
-		Id:          289,
+		ID:          289,
 		Name:        "Asia/Magadan",
 		Status:      "C",
 		Offset:      660,
@@ -2925,7 +2925,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Makassar": {
-		Id:          290,
+		ID:          290,
 		Name:        "Asia/Makassar",
 		Status:      "C",
 		Offset:      480,
@@ -2935,7 +2935,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ID",
 	},
 	"Asia/Manila": {
-		Id:          291,
+		ID:          291,
 		Name:        "Asia/Manila",
 		Status:      "C",
 		Offset:      480,
@@ -2945,7 +2945,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PH",
 	},
 	"Asia/Muscat": {
-		Id:          292,
+		ID:          292,
 		Name:        "Asia/Muscat",
 		Status:      "A",
 		Offset:      240,
@@ -2955,7 +2955,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "OM",
 	},
 	"Asia/Nicosia": {
-		Id:          391,
+		ID:          391,
 		Name:        "Asia/Nicosia",
 		Status:      "C",
 		Offset:      120,
@@ -2965,7 +2965,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CY",
 	},
 	"Asia/Novokuznetsk": {
-		Id:          293,
+		ID:          293,
 		Name:        "Asia/Novokuznetsk",
 		Status:      "C",
 		Offset:      420,
@@ -2975,7 +2975,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Novosibirsk": {
-		Id:          294,
+		ID:          294,
 		Name:        "Asia/Novosibirsk",
 		Status:      "C",
 		Offset:      420,
@@ -2985,7 +2985,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Omsk": {
-		Id:          295,
+		ID:          295,
 		Name:        "Asia/Omsk",
 		Status:      "C",
 		Offset:      360,
@@ -2995,7 +2995,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Oral": {
-		Id:          296,
+		ID:          296,
 		Name:        "Asia/Oral",
 		Status:      "C",
 		Offset:      300,
@@ -3005,7 +3005,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KZ",
 	},
 	"Asia/Phnom_Penh": {
-		Id:          297,
+		ID:          297,
 		Name:        "Asia/Phnom_Penh",
 		Status:      "A",
 		Offset:      420,
@@ -3015,7 +3015,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KH",
 	},
 	"Asia/Pontianak": {
-		Id:          298,
+		ID:          298,
 		Name:        "Asia/Pontianak",
 		Status:      "C",
 		Offset:      420,
@@ -3025,7 +3025,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ID",
 	},
 	"Asia/Pyongyang": {
-		Id:          299,
+		ID:          299,
 		Name:        "Asia/Pyongyang",
 		Status:      "C",
 		Offset:      540,
@@ -3035,7 +3035,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KP",
 	},
 	"Asia/Qatar": {
-		Id:          300,
+		ID:          300,
 		Name:        "Asia/Qatar",
 		Status:      "C",
 		Offset:      180,
@@ -3045,7 +3045,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "QA",
 	},
 	"Asia/Qostanay": {
-		Id:          478,
+		ID:          478,
 		Name:        "Asia/Qostanay",
 		Status:      "C",
 		Offset:      300,
@@ -3055,7 +3055,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KZ",
 	},
 	"Asia/Qyzylorda": {
-		Id:          301,
+		ID:          301,
 		Name:        "Asia/Qyzylorda",
 		Status:      "C",
 		Offset:      300,
@@ -3065,7 +3065,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KZ",
 	},
 	"Asia/Rangoon": {
-		Id:          302,
+		ID:          302,
 		Name:        "Asia/Rangoon",
 		Status:      "A",
 		Offset:      390,
@@ -3075,7 +3075,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MM",
 	},
 	"Asia/Riyadh": {
-		Id:          303,
+		ID:          303,
 		Name:        "Asia/Riyadh",
 		Status:      "C",
 		Offset:      180,
@@ -3085,7 +3085,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SA",
 	},
 	"Asia/Saigon": {
-		Id:          304,
+		ID:          304,
 		Name:        "Asia/Saigon",
 		Status:      "A",
 		Offset:      420,
@@ -3095,7 +3095,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "VN",
 	},
 	"Asia/Sakhalin": {
-		Id:          305,
+		ID:          305,
 		Name:        "Asia/Sakhalin",
 		Status:      "C",
 		Offset:      660,
@@ -3105,7 +3105,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Samarkand": {
-		Id:          306,
+		ID:          306,
 		Name:        "Asia/Samarkand",
 		Status:      "C",
 		Offset:      300,
@@ -3115,7 +3115,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "UZ",
 	},
 	"Asia/Seoul": {
-		Id:          307,
+		ID:          307,
 		Name:        "Asia/Seoul",
 		Status:      "C",
 		Offset:      540,
@@ -3125,7 +3125,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KR",
 	},
 	"Asia/Shanghai": {
-		Id:          308,
+		ID:          308,
 		Name:        "Asia/Shanghai",
 		Status:      "C",
 		Offset:      480,
@@ -3135,7 +3135,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CN",
 	},
 	"Asia/Singapore": {
-		Id:          309,
+		ID:          309,
 		Name:        "Asia/Singapore",
 		Status:      "C",
 		Offset:      480,
@@ -3145,7 +3145,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SG",
 	},
 	"Asia/Srednekolymsk": {
-		Id:          310,
+		ID:          310,
 		Name:        "Asia/Srednekolymsk",
 		Status:      "C",
 		Offset:      660,
@@ -3155,7 +3155,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Taipei": {
-		Id:          311,
+		ID:          311,
 		Name:        "Asia/Taipei",
 		Status:      "C",
 		Offset:      480,
@@ -3165,7 +3165,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TW",
 	},
 	"Asia/Tashkent": {
-		Id:          312,
+		ID:          312,
 		Name:        "Asia/Tashkent",
 		Status:      "C",
 		Offset:      300,
@@ -3175,7 +3175,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "UZ",
 	},
 	"Asia/Tbilisi": {
-		Id:          313,
+		ID:          313,
 		Name:        "Asia/Tbilisi",
 		Status:      "C",
 		Offset:      240,
@@ -3185,7 +3185,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GE",
 	},
 	"Asia/Tehran": {
-		Id:          314,
+		ID:          314,
 		Name:        "Asia/Tehran",
 		Status:      "C",
 		Offset:      210,
@@ -3195,7 +3195,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "IR",
 	},
 	"Asia/Tel_Aviv": {
-		Id:          315,
+		ID:          315,
 		Name:        "Asia/Tel_Aviv",
 		Status:      "A",
 		Offset:      120,
@@ -3205,7 +3205,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "IL",
 	},
 	"Asia/Thimbu": {
-		Id:          316,
+		ID:          316,
 		Name:        "Asia/Thimbu",
 		Status:      "A",
 		Offset:      360,
@@ -3215,7 +3215,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BT",
 	},
 	"Asia/Thimphu": {
-		Id:          317,
+		ID:          317,
 		Name:        "Asia/Thimphu",
 		Status:      "C",
 		Offset:      360,
@@ -3225,7 +3225,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BT",
 	},
 	"Asia/Tokyo": {
-		Id:          318,
+		ID:          318,
 		Name:        "Asia/Tokyo",
 		Status:      "C",
 		Offset:      540,
@@ -3235,7 +3235,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "JP",
 	},
 	"Asia/Tomsk": {
-		Id:          319,
+		ID:          319,
 		Name:        "Asia/Tomsk",
 		Status:      "C",
 		Offset:      420,
@@ -3245,7 +3245,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Ujung_Pandang": {
-		Id:          320,
+		ID:          320,
 		Name:        "Asia/Ujung_Pandang",
 		Status:      "A",
 		Offset:      480,
@@ -3255,7 +3255,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ID",
 	},
 	"Asia/Ulaanbaatar": {
-		Id:          321,
+		ID:          321,
 		Name:        "Asia/Ulaanbaatar",
 		Status:      "C",
 		Offset:      480,
@@ -3265,7 +3265,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MN",
 	},
 	"Asia/Ulan_Bator": {
-		Id:          322,
+		ID:          322,
 		Name:        "Asia/Ulan_Bator",
 		Status:      "A",
 		Offset:      480,
@@ -3275,7 +3275,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MN",
 	},
 	"Asia/Urumqi": {
-		Id:          323,
+		ID:          323,
 		Name:        "Asia/Urumqi",
 		Status:      "C",
 		Offset:      360,
@@ -3285,7 +3285,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CN",
 	},
 	"Asia/Ust-Nera": {
-		Id:          324,
+		ID:          324,
 		Name:        "Asia/Ust-Nera",
 		Status:      "C",
 		Offset:      600,
@@ -3295,7 +3295,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Vientiane": {
-		Id:          325,
+		ID:          325,
 		Name:        "Asia/Vientiane",
 		Status:      "A",
 		Offset:      420,
@@ -3305,7 +3305,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "LA",
 	},
 	"Asia/Vladivostok": {
-		Id:          326,
+		ID:          326,
 		Name:        "Asia/Vladivostok",
 		Status:      "C",
 		Offset:      600,
@@ -3315,7 +3315,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Yakutsk": {
-		Id:          327,
+		ID:          327,
 		Name:        "Asia/Yakutsk",
 		Status:      "C",
 		Offset:      540,
@@ -3325,7 +3325,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Yangon": {
-		Id:          328,
+		ID:          328,
 		Name:        "Asia/Yangon",
 		Status:      "C",
 		Offset:      390,
@@ -3335,7 +3335,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MM",
 	},
 	"Asia/Yekaterinburg": {
-		Id:          329,
+		ID:          329,
 		Name:        "Asia/Yekaterinburg",
 		Status:      "C",
 		Offset:      300,
@@ -3345,7 +3345,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Asia/Yerevan": {
-		Id:          330,
+		ID:          330,
 		Name:        "Asia/Yerevan",
 		Status:      "C",
 		Offset:      240,
@@ -3355,7 +3355,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AM",
 	},
 	"Atlantic/Azores": {
-		Id:          331,
+		ID:          331,
 		Name:        "Atlantic/Azores",
 		Status:      "C",
 		Offset:      -60,
@@ -3365,7 +3365,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PT",
 	},
 	"Atlantic/Bermuda": {
-		Id:          332,
+		ID:          332,
 		Name:        "Atlantic/Bermuda",
 		Status:      "C",
 		Offset:      -240,
@@ -3375,7 +3375,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BM",
 	},
 	"Atlantic/Canary": {
-		Id:          333,
+		ID:          333,
 		Name:        "Atlantic/Canary",
 		Status:      "C",
 		Offset:      0,
@@ -3385,7 +3385,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ES",
 	},
 	"Atlantic/Cape_Verde": {
-		Id:          334,
+		ID:          334,
 		Name:        "Atlantic/Cape_Verde",
 		Status:      "C",
 		Offset:      -60,
@@ -3395,7 +3395,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CV",
 	},
 	"Atlantic/Faeroe": {
-		Id:          335,
+		ID:          335,
 		Name:        "Atlantic/Faeroe",
 		Status:      "A",
 		Offset:      0,
@@ -3405,7 +3405,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "FO",
 	},
 	"Atlantic/Faroe": {
-		Id:          336,
+		ID:          336,
 		Name:        "Atlantic/Faroe",
 		Status:      "C",
 		Offset:      0,
@@ -3415,7 +3415,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "FO",
 	},
 	"Atlantic/Jan_Mayen": {
-		Id:          337,
+		ID:          337,
 		Name:        "Atlantic/Jan_Mayen",
 		Status:      "A",
 		Offset:      60,
@@ -3425,7 +3425,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NO",
 	},
 	"Atlantic/Madeira": {
-		Id:          338,
+		ID:          338,
 		Name:        "Atlantic/Madeira",
 		Status:      "C",
 		Offset:      0,
@@ -3435,7 +3435,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PT",
 	},
 	"Atlantic/Reykjavik": {
-		Id:          339,
+		ID:          339,
 		Name:        "Atlantic/Reykjavik",
 		Status:      "A",
 		Offset:      0,
@@ -3445,7 +3445,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "IS",
 	},
 	"Atlantic/South_Georgia": {
-		Id:          340,
+		ID:          340,
 		Name:        "Atlantic/South_Georgia",
 		Status:      "C",
 		Offset:      -120,
@@ -3455,7 +3455,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GS",
 	},
 	"Atlantic/St_Helena": {
-		Id:          341,
+		ID:          341,
 		Name:        "Atlantic/St_Helena",
 		Status:      "A",
 		Offset:      0,
@@ -3465,7 +3465,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SH",
 	},
 	"Atlantic/Stanley": {
-		Id:          342,
+		ID:          342,
 		Name:        "Atlantic/Stanley",
 		Status:      "C",
 		Offset:      -180,
@@ -3475,7 +3475,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "FK",
 	},
 	"Australia/ACT": {
-		Id:          479,
+		ID:          479,
 		Name:        "Australia/ACT",
 		Status:      "A",
 		Offset:      600,
@@ -3485,7 +3485,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Australia/Adelaide": {
-		Id:          343,
+		ID:          343,
 		Name:        "Australia/Adelaide",
 		Status:      "C",
 		Offset:      570,
@@ -3495,7 +3495,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Australia/Brisbane": {
-		Id:          344,
+		ID:          344,
 		Name:        "Australia/Brisbane",
 		Status:      "C",
 		Offset:      600,
@@ -3505,7 +3505,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Australia/Broken_Hill": {
-		Id:          345,
+		ID:          345,
 		Name:        "Australia/Broken_Hill",
 		Status:      "C",
 		Offset:      570,
@@ -3515,7 +3515,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Australia/Canberra": {
-		Id:          346,
+		ID:          346,
 		Name:        "Australia/Canberra",
 		Status:      "A",
 		Offset:      600,
@@ -3525,7 +3525,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Australia/Currie": {
-		Id:          347,
+		ID:          347,
 		Name:        "Australia/Currie",
 		Status:      "A",
 		Offset:      600,
@@ -3535,7 +3535,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Australia/Darwin": {
-		Id:          348,
+		ID:          348,
 		Name:        "Australia/Darwin",
 		Status:      "C",
 		Offset:      570,
@@ -3545,7 +3545,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Australia/Eucla": {
-		Id:          349,
+		ID:          349,
 		Name:        "Australia/Eucla",
 		Status:      "C",
 		Offset:      525,
@@ -3555,7 +3555,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Australia/Hobart": {
-		Id:          350,
+		ID:          350,
 		Name:        "Australia/Hobart",
 		Status:      "C",
 		Offset:      600,
@@ -3565,7 +3565,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Australia/LHI": {
-		Id:          480,
+		ID:          480,
 		Name:        "Australia/LHI",
 		Status:      "A",
 		Offset:      630,
@@ -3575,7 +3575,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Australia/Lindeman": {
-		Id:          351,
+		ID:          351,
 		Name:        "Australia/Lindeman",
 		Status:      "C",
 		Offset:      600,
@@ -3585,7 +3585,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Australia/Lord_Howe": {
-		Id:          352,
+		ID:          352,
 		Name:        "Australia/Lord_Howe",
 		Status:      "C",
 		Offset:      630,
@@ -3595,7 +3595,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Australia/Melbourne": {
-		Id:          353,
+		ID:          353,
 		Name:        "Australia/Melbourne",
 		Status:      "C",
 		Offset:      600,
@@ -3605,7 +3605,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Australia/NSW": {
-		Id:          481,
+		ID:          481,
 		Name:        "Australia/NSW",
 		Status:      "A",
 		Offset:      600,
@@ -3615,7 +3615,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Australia/North": {
-		Id:          482,
+		ID:          482,
 		Name:        "Australia/North",
 		Status:      "A",
 		Offset:      570,
@@ -3625,7 +3625,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Australia/Perth": {
-		Id:          354,
+		ID:          354,
 		Name:        "Australia/Perth",
 		Status:      "C",
 		Offset:      480,
@@ -3635,7 +3635,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Australia/Queensland": {
-		Id:          483,
+		ID:          483,
 		Name:        "Australia/Queensland",
 		Status:      "A",
 		Offset:      600,
@@ -3645,7 +3645,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Australia/South": {
-		Id:          484,
+		ID:          484,
 		Name:        "Australia/South",
 		Status:      "A",
 		Offset:      570,
@@ -3655,7 +3655,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Australia/Sydney": {
-		Id:          355,
+		ID:          355,
 		Name:        "Australia/Sydney",
 		Status:      "C",
 		Offset:      600,
@@ -3665,7 +3665,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Australia/Tasmania": {
-		Id:          485,
+		ID:          485,
 		Name:        "Australia/Tasmania",
 		Status:      "A",
 		Offset:      600,
@@ -3675,7 +3675,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Australia/Victoria": {
-		Id:          486,
+		ID:          486,
 		Name:        "Australia/Victoria",
 		Status:      "A",
 		Offset:      600,
@@ -3685,7 +3685,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Australia/West": {
-		Id:          487,
+		ID:          487,
 		Name:        "Australia/West",
 		Status:      "A",
 		Offset:      480,
@@ -3695,7 +3695,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Australia/Yancowinna": {
-		Id:          356,
+		ID:          356,
 		Name:        "Australia/Yancowinna",
 		Status:      "A",
 		Offset:      570,
@@ -3705,7 +3705,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AU",
 	},
 	"Brazil/Acre": {
-		Id:          488,
+		ID:          488,
 		Name:        "Brazil/Acre",
 		Status:      "A",
 		Offset:      -300,
@@ -3715,7 +3715,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Brazil/DeNoronha": {
-		Id:          489,
+		ID:          489,
 		Name:        "Brazil/DeNoronha",
 		Status:      "A",
 		Offset:      -120,
@@ -3725,7 +3725,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Brazil/East": {
-		Id:          490,
+		ID:          490,
 		Name:        "Brazil/East",
 		Status:      "A",
 		Offset:      -180,
@@ -3735,7 +3735,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Brazil/West": {
-		Id:          491,
+		ID:          491,
 		Name:        "Brazil/West",
 		Status:      "A",
 		Offset:      -240,
@@ -3745,7 +3745,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"CET": {
-		Id:          492,
+		ID:          492,
 		Name:        "CET",
 		Status:      "A",
 		Offset:      60,
@@ -3755,7 +3755,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"CST6CDT": {
-		Id:          493,
+		ID:          493,
 		Name:        "CST6CDT",
 		Status:      "A",
 		Offset:      -360,
@@ -3765,7 +3765,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Canada/Atlantic": {
-		Id:          494,
+		ID:          494,
 		Name:        "Canada/Atlantic",
 		Status:      "A",
 		Offset:      -240,
@@ -3775,7 +3775,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Canada/Central": {
-		Id:          495,
+		ID:          495,
 		Name:        "Canada/Central",
 		Status:      "A",
 		Offset:      -360,
@@ -3785,7 +3785,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Canada/Eastern": {
-		Id:          496,
+		ID:          496,
 		Name:        "Canada/Eastern",
 		Status:      "A",
 		Offset:      -300,
@@ -3795,7 +3795,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Canada/Mountain": {
-		Id:          497,
+		ID:          497,
 		Name:        "Canada/Mountain",
 		Status:      "A",
 		Offset:      -420,
@@ -3805,7 +3805,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Canada/Newfoundland": {
-		Id:          498,
+		ID:          498,
 		Name:        "Canada/Newfoundland",
 		Status:      "A",
 		Offset:      -210,
@@ -3815,7 +3815,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Canada/Pacific": {
-		Id:          499,
+		ID:          499,
 		Name:        "Canada/Pacific",
 		Status:      "A",
 		Offset:      -480,
@@ -3825,7 +3825,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Canada/Saskatchewan": {
-		Id:          500,
+		ID:          500,
 		Name:        "Canada/Saskatchewan",
 		Status:      "A",
 		Offset:      -360,
@@ -3835,7 +3835,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Canada/Yukon": {
-		Id:          501,
+		ID:          501,
 		Name:        "Canada/Yukon",
 		Status:      "A",
 		Offset:      -420,
@@ -3845,7 +3845,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Chile/Continental": {
-		Id:          502,
+		ID:          502,
 		Name:        "Chile/Continental",
 		Status:      "A",
 		Offset:      -240,
@@ -3855,7 +3855,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Chile/EasterIsland": {
-		Id:          503,
+		ID:          503,
 		Name:        "Chile/EasterIsland",
 		Status:      "A",
 		Offset:      -360,
@@ -3865,7 +3865,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Cuba": {
-		Id:          504,
+		ID:          504,
 		Name:        "Cuba",
 		Status:      "A",
 		Offset:      -300,
@@ -3875,7 +3875,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"EET": {
-		Id:          505,
+		ID:          505,
 		Name:        "EET",
 		Status:      "A",
 		Offset:      120,
@@ -3885,7 +3885,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"EST": {
-		Id:          506,
+		ID:          506,
 		Name:        "EST",
 		Status:      "A",
 		Offset:      -300,
@@ -3895,7 +3895,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"EST5EDT": {
-		Id:          507,
+		ID:          507,
 		Name:        "EST5EDT",
 		Status:      "A",
 		Offset:      -300,
@@ -3905,7 +3905,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Egypt": {
-		Id:          508,
+		ID:          508,
 		Name:        "Egypt",
 		Status:      "A",
 		Offset:      120,
@@ -3915,7 +3915,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Eire": {
-		Id:          509,
+		ID:          509,
 		Name:        "Eire",
 		Status:      "A",
 		Offset:      60,
@@ -3925,7 +3925,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT": {
-		Id:          510,
+		ID:          510,
 		Name:        "Etc/GMT",
 		Status:      "C",
 		Offset:      0,
@@ -3935,7 +3935,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT+0": {
-		Id:          511,
+		ID:          511,
 		Name:        "Etc/GMT+0",
 		Status:      "A",
 		Offset:      0,
@@ -3945,7 +3945,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT+1": {
-		Id:          512,
+		ID:          512,
 		Name:        "Etc/GMT+1",
 		Status:      "C",
 		Offset:      -60,
@@ -3955,7 +3955,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT+10": {
-		Id:          513,
+		ID:          513,
 		Name:        "Etc/GMT+10",
 		Status:      "C",
 		Offset:      -600,
@@ -3965,7 +3965,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT+11": {
-		Id:          514,
+		ID:          514,
 		Name:        "Etc/GMT+11",
 		Status:      "C",
 		Offset:      -660,
@@ -3975,7 +3975,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT+12": {
-		Id:          515,
+		ID:          515,
 		Name:        "Etc/GMT+12",
 		Status:      "C",
 		Offset:      -720,
@@ -3985,7 +3985,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT+2": {
-		Id:          516,
+		ID:          516,
 		Name:        "Etc/GMT+2",
 		Status:      "C",
 		Offset:      -120,
@@ -3995,7 +3995,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT+3": {
-		Id:          517,
+		ID:          517,
 		Name:        "Etc/GMT+3",
 		Status:      "C",
 		Offset:      -180,
@@ -4005,7 +4005,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT+4": {
-		Id:          518,
+		ID:          518,
 		Name:        "Etc/GMT+4",
 		Status:      "C",
 		Offset:      -240,
@@ -4015,7 +4015,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT+5": {
-		Id:          519,
+		ID:          519,
 		Name:        "Etc/GMT+5",
 		Status:      "C",
 		Offset:      -300,
@@ -4025,7 +4025,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT+6": {
-		Id:          520,
+		ID:          520,
 		Name:        "Etc/GMT+6",
 		Status:      "C",
 		Offset:      -360,
@@ -4035,7 +4035,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT+7": {
-		Id:          521,
+		ID:          521,
 		Name:        "Etc/GMT+7",
 		Status:      "C",
 		Offset:      -420,
@@ -4045,7 +4045,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT+8": {
-		Id:          522,
+		ID:          522,
 		Name:        "Etc/GMT+8",
 		Status:      "C",
 		Offset:      -480,
@@ -4055,7 +4055,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT+9": {
-		Id:          523,
+		ID:          523,
 		Name:        "Etc/GMT+9",
 		Status:      "C",
 		Offset:      -540,
@@ -4065,7 +4065,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-0": {
-		Id:          524,
+		ID:          524,
 		Name:        "Etc/GMT-0",
 		Status:      "A",
 		Offset:      0,
@@ -4075,7 +4075,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-1": {
-		Id:          525,
+		ID:          525,
 		Name:        "Etc/GMT-1",
 		Status:      "C",
 		Offset:      60,
@@ -4085,7 +4085,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-10": {
-		Id:          526,
+		ID:          526,
 		Name:        "Etc/GMT-10",
 		Status:      "C",
 		Offset:      600,
@@ -4095,7 +4095,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-11": {
-		Id:          527,
+		ID:          527,
 		Name:        "Etc/GMT-11",
 		Status:      "C",
 		Offset:      660,
@@ -4105,7 +4105,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-12": {
-		Id:          528,
+		ID:          528,
 		Name:        "Etc/GMT-12",
 		Status:      "C",
 		Offset:      720,
@@ -4115,7 +4115,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-13": {
-		Id:          529,
+		ID:          529,
 		Name:        "Etc/GMT-13",
 		Status:      "C",
 		Offset:      780,
@@ -4125,7 +4125,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-14": {
-		Id:          530,
+		ID:          530,
 		Name:        "Etc/GMT-14",
 		Status:      "C",
 		Offset:      840,
@@ -4135,7 +4135,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-2": {
-		Id:          531,
+		ID:          531,
 		Name:        "Etc/GMT-2",
 		Status:      "C",
 		Offset:      120,
@@ -4145,7 +4145,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-3": {
-		Id:          532,
+		ID:          532,
 		Name:        "Etc/GMT-3",
 		Status:      "C",
 		Offset:      180,
@@ -4155,7 +4155,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-4": {
-		Id:          533,
+		ID:          533,
 		Name:        "Etc/GMT-4",
 		Status:      "C",
 		Offset:      240,
@@ -4165,7 +4165,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-5": {
-		Id:          534,
+		ID:          534,
 		Name:        "Etc/GMT-5",
 		Status:      "C",
 		Offset:      300,
@@ -4175,7 +4175,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-6": {
-		Id:          535,
+		ID:          535,
 		Name:        "Etc/GMT-6",
 		Status:      "C",
 		Offset:      360,
@@ -4185,7 +4185,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-7": {
-		Id:          536,
+		ID:          536,
 		Name:        "Etc/GMT-7",
 		Status:      "C",
 		Offset:      420,
@@ -4195,7 +4195,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-8": {
-		Id:          537,
+		ID:          537,
 		Name:        "Etc/GMT-8",
 		Status:      "C",
 		Offset:      480,
@@ -4205,7 +4205,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT-9": {
-		Id:          538,
+		ID:          538,
 		Name:        "Etc/GMT-9",
 		Status:      "C",
 		Offset:      540,
@@ -4215,7 +4215,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/GMT0": {
-		Id:          539,
+		ID:          539,
 		Name:        "Etc/GMT0",
 		Status:      "A",
 		Offset:      0,
@@ -4225,7 +4225,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/Greenwich": {
-		Id:          540,
+		ID:          540,
 		Name:        "Etc/Greenwich",
 		Status:      "A",
 		Offset:      0,
@@ -4235,7 +4235,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/UCT": {
-		Id:          541,
+		ID:          541,
 		Name:        "Etc/UCT",
 		Status:      "A",
 		Offset:      0,
@@ -4245,7 +4245,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/UTC": {
-		Id:          1,
+		ID:          1,
 		Name:        "Etc/UTC",
 		Status:      "C",
 		Offset:      0,
@@ -4255,7 +4255,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/Universal": {
-		Id:          542,
+		ID:          542,
 		Name:        "Etc/Universal",
 		Status:      "A",
 		Offset:      0,
@@ -4265,7 +4265,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Etc/Zulu": {
-		Id:          543,
+		ID:          543,
 		Name:        "Etc/Zulu",
 		Status:      "A",
 		Offset:      0,
@@ -4275,7 +4275,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Europe/Amsterdam": {
-		Id:          357,
+		ID:          357,
 		Name:        "Europe/Amsterdam",
 		Status:      "A",
 		Offset:      60,
@@ -4285,7 +4285,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NL",
 	},
 	"Europe/Andorra": {
-		Id:          358,
+		ID:          358,
 		Name:        "Europe/Andorra",
 		Status:      "C",
 		Offset:      60,
@@ -4295,7 +4295,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AD",
 	},
 	"Europe/Astrakhan": {
-		Id:          359,
+		ID:          359,
 		Name:        "Europe/Astrakhan",
 		Status:      "C",
 		Offset:      240,
@@ -4305,7 +4305,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Europe/Athens": {
-		Id:          360,
+		ID:          360,
 		Name:        "Europe/Athens",
 		Status:      "C",
 		Offset:      120,
@@ -4315,7 +4315,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GR",
 	},
 	"Europe/Belfast": {
-		Id:          361,
+		ID:          361,
 		Name:        "Europe/Belfast",
 		Status:      "A",
 		Offset:      0,
@@ -4325,7 +4325,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GB",
 	},
 	"Europe/Belgrade": {
-		Id:          362,
+		ID:          362,
 		Name:        "Europe/Belgrade",
 		Status:      "C",
 		Offset:      60,
@@ -4335,7 +4335,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RS",
 	},
 	"Europe/Berlin": {
-		Id:          363,
+		ID:          363,
 		Name:        "Europe/Berlin",
 		Status:      "C",
 		Offset:      60,
@@ -4345,7 +4345,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "DE",
 	},
 	"Europe/Bratislava": {
-		Id:          364,
+		ID:          364,
 		Name:        "Europe/Bratislava",
 		Status:      "A",
 		Offset:      60,
@@ -4355,7 +4355,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SK",
 	},
 	"Europe/Brussels": {
-		Id:          365,
+		ID:          365,
 		Name:        "Europe/Brussels",
 		Status:      "C",
 		Offset:      60,
@@ -4365,7 +4365,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BE",
 	},
 	"Europe/Bucharest": {
-		Id:          366,
+		ID:          366,
 		Name:        "Europe/Bucharest",
 		Status:      "C",
 		Offset:      120,
@@ -4375,7 +4375,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RO",
 	},
 	"Europe/Budapest": {
-		Id:          367,
+		ID:          367,
 		Name:        "Europe/Budapest",
 		Status:      "C",
 		Offset:      60,
@@ -4385,7 +4385,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "HU",
 	},
 	"Europe/Busingen": {
-		Id:          368,
+		ID:          368,
 		Name:        "Europe/Busingen",
 		Status:      "A",
 		Offset:      60,
@@ -4395,7 +4395,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "DE",
 	},
 	"Europe/Chisinau": {
-		Id:          369,
+		ID:          369,
 		Name:        "Europe/Chisinau",
 		Status:      "C",
 		Offset:      120,
@@ -4405,7 +4405,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MD",
 	},
 	"Europe/Copenhagen": {
-		Id:          370,
+		ID:          370,
 		Name:        "Europe/Copenhagen",
 		Status:      "A",
 		Offset:      60,
@@ -4415,7 +4415,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "DK",
 	},
 	"Europe/Dublin": {
-		Id:          371,
+		ID:          371,
 		Name:        "Europe/Dublin",
 		Status:      "C",
 		Offset:      60,
@@ -4425,7 +4425,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "IE",
 	},
 	"Europe/Gibraltar": {
-		Id:          372,
+		ID:          372,
 		Name:        "Europe/Gibraltar",
 		Status:      "C",
 		Offset:      60,
@@ -4435,7 +4435,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GI",
 	},
 	"Europe/Guernsey": {
-		Id:          373,
+		ID:          373,
 		Name:        "Europe/Guernsey",
 		Status:      "A",
 		Offset:      0,
@@ -4445,7 +4445,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GG",
 	},
 	"Europe/Helsinki": {
-		Id:          374,
+		ID:          374,
 		Name:        "Europe/Helsinki",
 		Status:      "C",
 		Offset:      120,
@@ -4455,7 +4455,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "FI",
 	},
 	"Europe/Isle_of_Man": {
-		Id:          375,
+		ID:          375,
 		Name:        "Europe/Isle_of_Man",
 		Status:      "A",
 		Offset:      0,
@@ -4465,7 +4465,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "IM",
 	},
 	"Europe/Istanbul": {
-		Id:          376,
+		ID:          376,
 		Name:        "Europe/Istanbul",
 		Status:      "C",
 		Offset:      180,
@@ -4475,7 +4475,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TR",
 	},
 	"Europe/Jersey": {
-		Id:          377,
+		ID:          377,
 		Name:        "Europe/Jersey",
 		Status:      "A",
 		Offset:      0,
@@ -4485,7 +4485,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "JE",
 	},
 	"Europe/Kaliningrad": {
-		Id:          378,
+		ID:          378,
 		Name:        "Europe/Kaliningrad",
 		Status:      "C",
 		Offset:      120,
@@ -4495,7 +4495,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Europe/Kiev": {
-		Id:          379,
+		ID:          379,
 		Name:        "Europe/Kiev",
 		Status:      "A",
 		Offset:      120,
@@ -4505,7 +4505,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "UA",
 	},
 	"Europe/Kirov": {
-		Id:          380,
+		ID:          380,
 		Name:        "Europe/Kirov",
 		Status:      "C",
 		Offset:      180,
@@ -4515,7 +4515,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Europe/Kyiv": {
-		Id:          544,
+		ID:          544,
 		Name:        "Europe/Kyiv",
 		Status:      "C",
 		Offset:      120,
@@ -4525,7 +4525,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "UA",
 	},
 	"Europe/Lisbon": {
-		Id:          381,
+		ID:          381,
 		Name:        "Europe/Lisbon",
 		Status:      "C",
 		Offset:      0,
@@ -4535,7 +4535,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PT",
 	},
 	"Europe/Ljubljana": {
-		Id:          382,
+		ID:          382,
 		Name:        "Europe/Ljubljana",
 		Status:      "A",
 		Offset:      60,
@@ -4545,7 +4545,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SI",
 	},
 	"Europe/London": {
-		Id:          383,
+		ID:          383,
 		Name:        "Europe/London",
 		Status:      "C",
 		Offset:      0,
@@ -4555,7 +4555,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GB",
 	},
 	"Europe/Luxembourg": {
-		Id:          384,
+		ID:          384,
 		Name:        "Europe/Luxembourg",
 		Status:      "A",
 		Offset:      60,
@@ -4565,7 +4565,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "LU",
 	},
 	"Europe/Madrid": {
-		Id:          385,
+		ID:          385,
 		Name:        "Europe/Madrid",
 		Status:      "C",
 		Offset:      60,
@@ -4575,7 +4575,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ES",
 	},
 	"Europe/Malta": {
-		Id:          386,
+		ID:          386,
 		Name:        "Europe/Malta",
 		Status:      "C",
 		Offset:      60,
@@ -4585,7 +4585,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MT",
 	},
 	"Europe/Mariehamn": {
-		Id:          387,
+		ID:          387,
 		Name:        "Europe/Mariehamn",
 		Status:      "A",
 		Offset:      120,
@@ -4595,7 +4595,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AX",
 	},
 	"Europe/Minsk": {
-		Id:          388,
+		ID:          388,
 		Name:        "Europe/Minsk",
 		Status:      "C",
 		Offset:      180,
@@ -4605,7 +4605,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BY",
 	},
 	"Europe/Monaco": {
-		Id:          389,
+		ID:          389,
 		Name:        "Europe/Monaco",
 		Status:      "A",
 		Offset:      60,
@@ -4615,7 +4615,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MC",
 	},
 	"Europe/Moscow": {
-		Id:          390,
+		ID:          390,
 		Name:        "Europe/Moscow",
 		Status:      "C",
 		Offset:      180,
@@ -4625,7 +4625,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Europe/Nicosia": {
-		Id:          545,
+		ID:          545,
 		Name:        "Europe/Nicosia",
 		Status:      "A",
 		Offset:      120,
@@ -4635,7 +4635,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Europe/Oslo": {
-		Id:          392,
+		ID:          392,
 		Name:        "Europe/Oslo",
 		Status:      "A",
 		Offset:      60,
@@ -4645,7 +4645,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NO",
 	},
 	"Europe/Paris": {
-		Id:          393,
+		ID:          393,
 		Name:        "Europe/Paris",
 		Status:      "C",
 		Offset:      60,
@@ -4655,7 +4655,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "FR",
 	},
 	"Europe/Podgorica": {
-		Id:          394,
+		ID:          394,
 		Name:        "Europe/Podgorica",
 		Status:      "A",
 		Offset:      60,
@@ -4665,7 +4665,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "ME",
 	},
 	"Europe/Prague": {
-		Id:          395,
+		ID:          395,
 		Name:        "Europe/Prague",
 		Status:      "C",
 		Offset:      60,
@@ -4675,7 +4675,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CZ",
 	},
 	"Europe/Riga": {
-		Id:          396,
+		ID:          396,
 		Name:        "Europe/Riga",
 		Status:      "C",
 		Offset:      120,
@@ -4685,7 +4685,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "LV",
 	},
 	"Europe/Rome": {
-		Id:          397,
+		ID:          397,
 		Name:        "Europe/Rome",
 		Status:      "C",
 		Offset:      60,
@@ -4695,7 +4695,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "IT",
 	},
 	"Europe/Samara": {
-		Id:          398,
+		ID:          398,
 		Name:        "Europe/Samara",
 		Status:      "C",
 		Offset:      240,
@@ -4705,7 +4705,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Europe/San_Marino": {
-		Id:          399,
+		ID:          399,
 		Name:        "Europe/San_Marino",
 		Status:      "A",
 		Offset:      60,
@@ -4715,7 +4715,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SM",
 	},
 	"Europe/Sarajevo": {
-		Id:          400,
+		ID:          400,
 		Name:        "Europe/Sarajevo",
 		Status:      "A",
 		Offset:      60,
@@ -4725,7 +4725,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BA",
 	},
 	"Europe/Saratov": {
-		Id:          401,
+		ID:          401,
 		Name:        "Europe/Saratov",
 		Status:      "C",
 		Offset:      240,
@@ -4735,7 +4735,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Europe/Simferopol": {
-		Id:          402,
+		ID:          402,
 		Name:        "Europe/Simferopol",
 		Status:      "C",
 		Offset:      180,
@@ -4745,7 +4745,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "UA",
 	},
 	"Europe/Skopje": {
-		Id:          403,
+		ID:          403,
 		Name:        "Europe/Skopje",
 		Status:      "A",
 		Offset:      60,
@@ -4755,7 +4755,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MK",
 	},
 	"Europe/Sofia": {
-		Id:          404,
+		ID:          404,
 		Name:        "Europe/Sofia",
 		Status:      "C",
 		Offset:      120,
@@ -4765,7 +4765,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "BG",
 	},
 	"Europe/Stockholm": {
-		Id:          405,
+		ID:          405,
 		Name:        "Europe/Stockholm",
 		Status:      "A",
 		Offset:      60,
@@ -4775,7 +4775,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SE",
 	},
 	"Europe/Tallinn": {
-		Id:          406,
+		ID:          406,
 		Name:        "Europe/Tallinn",
 		Status:      "C",
 		Offset:      120,
@@ -4785,7 +4785,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "EE",
 	},
 	"Europe/Tirane": {
-		Id:          407,
+		ID:          407,
 		Name:        "Europe/Tirane",
 		Status:      "C",
 		Offset:      60,
@@ -4795,7 +4795,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AL",
 	},
 	"Europe/Tiraspol": {
-		Id:          408,
+		ID:          408,
 		Name:        "Europe/Tiraspol",
 		Status:      "A",
 		Offset:      120,
@@ -4805,7 +4805,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MD",
 	},
 	"Europe/Ulyanovsk": {
-		Id:          409,
+		ID:          409,
 		Name:        "Europe/Ulyanovsk",
 		Status:      "C",
 		Offset:      240,
@@ -4815,7 +4815,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Europe/Uzhgorod": {
-		Id:          410,
+		ID:          410,
 		Name:        "Europe/Uzhgorod",
 		Status:      "A",
 		Offset:      120,
@@ -4825,7 +4825,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "UA",
 	},
 	"Europe/Vaduz": {
-		Id:          411,
+		ID:          411,
 		Name:        "Europe/Vaduz",
 		Status:      "A",
 		Offset:      60,
@@ -4835,7 +4835,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "LI",
 	},
 	"Europe/Vatican": {
-		Id:          412,
+		ID:          412,
 		Name:        "Europe/Vatican",
 		Status:      "A",
 		Offset:      60,
@@ -4845,7 +4845,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "VA",
 	},
 	"Europe/Vienna": {
-		Id:          413,
+		ID:          413,
 		Name:        "Europe/Vienna",
 		Status:      "C",
 		Offset:      60,
@@ -4855,7 +4855,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AT",
 	},
 	"Europe/Vilnius": {
-		Id:          414,
+		ID:          414,
 		Name:        "Europe/Vilnius",
 		Status:      "C",
 		Offset:      120,
@@ -4865,7 +4865,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "LT",
 	},
 	"Europe/Volgograd": {
-		Id:          415,
+		ID:          415,
 		Name:        "Europe/Volgograd",
 		Status:      "C",
 		Offset:      180,
@@ -4875,7 +4875,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RU",
 	},
 	"Europe/Warsaw": {
-		Id:          416,
+		ID:          416,
 		Name:        "Europe/Warsaw",
 		Status:      "C",
 		Offset:      60,
@@ -4885,7 +4885,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PL",
 	},
 	"Europe/Zagreb": {
-		Id:          417,
+		ID:          417,
 		Name:        "Europe/Zagreb",
 		Status:      "A",
 		Offset:      60,
@@ -4895,7 +4895,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "HR",
 	},
 	"Europe/Zaporozhye": {
-		Id:          418,
+		ID:          418,
 		Name:        "Europe/Zaporozhye",
 		Status:      "A",
 		Offset:      120,
@@ -4905,7 +4905,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "UA",
 	},
 	"Europe/Zurich": {
-		Id:          419,
+		ID:          419,
 		Name:        "Europe/Zurich",
 		Status:      "C",
 		Offset:      60,
@@ -4915,7 +4915,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CH",
 	},
 	"Factory": {
-		Id:          546,
+		ID:          546,
 		Name:        "Factory",
 		Status:      "C",
 		Offset:      0,
@@ -4925,7 +4925,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"GB": {
-		Id:          547,
+		ID:          547,
 		Name:        "GB",
 		Status:      "A",
 		Offset:      0,
@@ -4935,7 +4935,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"GB-Eire": {
-		Id:          548,
+		ID:          548,
 		Name:        "GB-Eire",
 		Status:      "A",
 		Offset:      0,
@@ -4945,7 +4945,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"GMT": {
-		Id:          549,
+		ID:          549,
 		Name:        "GMT",
 		Status:      "A",
 		Offset:      0,
@@ -4955,7 +4955,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"GMT+0": {
-		Id:          550,
+		ID:          550,
 		Name:        "GMT+0",
 		Status:      "A",
 		Offset:      0,
@@ -4965,7 +4965,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"GMT-0": {
-		Id:          551,
+		ID:          551,
 		Name:        "GMT-0",
 		Status:      "A",
 		Offset:      0,
@@ -4975,7 +4975,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"GMT0": {
-		Id:          552,
+		ID:          552,
 		Name:        "GMT0",
 		Status:      "A",
 		Offset:      0,
@@ -4985,7 +4985,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Greenwich": {
-		Id:          553,
+		ID:          553,
 		Name:        "Greenwich",
 		Status:      "A",
 		Offset:      0,
@@ -4995,7 +4995,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"HST": {
-		Id:          554,
+		ID:          554,
 		Name:        "HST",
 		Status:      "A",
 		Offset:      -600,
@@ -5005,7 +5005,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Hongkong": {
-		Id:          555,
+		ID:          555,
 		Name:        "Hongkong",
 		Status:      "A",
 		Offset:      480,
@@ -5015,7 +5015,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Iceland": {
-		Id:          556,
+		ID:          556,
 		Name:        "Iceland",
 		Status:      "A",
 		Offset:      0,
@@ -5025,7 +5025,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Indian/Antananarivo": {
-		Id:          420,
+		ID:          420,
 		Name:        "Indian/Antananarivo",
 		Status:      "A",
 		Offset:      180,
@@ -5035,7 +5035,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MG",
 	},
 	"Indian/Chagos": {
-		Id:          421,
+		ID:          421,
 		Name:        "Indian/Chagos",
 		Status:      "C",
 		Offset:      360,
@@ -5045,7 +5045,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "IO",
 	},
 	"Indian/Christmas": {
-		Id:          422,
+		ID:          422,
 		Name:        "Indian/Christmas",
 		Status:      "A",
 		Offset:      420,
@@ -5055,7 +5055,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CX",
 	},
 	"Indian/Cocos": {
-		Id:          423,
+		ID:          423,
 		Name:        "Indian/Cocos",
 		Status:      "A",
 		Offset:      390,
@@ -5065,7 +5065,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CC",
 	},
 	"Indian/Comoro": {
-		Id:          424,
+		ID:          424,
 		Name:        "Indian/Comoro",
 		Status:      "A",
 		Offset:      180,
@@ -5075,7 +5075,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KM",
 	},
 	"Indian/Kerguelen": {
-		Id:          425,
+		ID:          425,
 		Name:        "Indian/Kerguelen",
 		Status:      "A",
 		Offset:      300,
@@ -5085,7 +5085,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TF",
 	},
 	"Indian/Mahe": {
-		Id:          426,
+		ID:          426,
 		Name:        "Indian/Mahe",
 		Status:      "A",
 		Offset:      240,
@@ -5095,7 +5095,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SC",
 	},
 	"Indian/Maldives": {
-		Id:          427,
+		ID:          427,
 		Name:        "Indian/Maldives",
 		Status:      "C",
 		Offset:      300,
@@ -5105,7 +5105,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MV",
 	},
 	"Indian/Mauritius": {
-		Id:          428,
+		ID:          428,
 		Name:        "Indian/Mauritius",
 		Status:      "C",
 		Offset:      240,
@@ -5115,7 +5115,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MU",
 	},
 	"Indian/Mayotte": {
-		Id:          429,
+		ID:          429,
 		Name:        "Indian/Mayotte",
 		Status:      "A",
 		Offset:      180,
@@ -5125,7 +5125,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "YT",
 	},
 	"Indian/Reunion": {
-		Id:          430,
+		ID:          430,
 		Name:        "Indian/Reunion",
 		Status:      "A",
 		Offset:      240,
@@ -5135,7 +5135,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "RE",
 	},
 	"Iran": {
-		Id:          557,
+		ID:          557,
 		Name:        "Iran",
 		Status:      "A",
 		Offset:      210,
@@ -5145,7 +5145,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Israel": {
-		Id:          558,
+		ID:          558,
 		Name:        "Israel",
 		Status:      "A",
 		Offset:      120,
@@ -5155,7 +5155,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Jamaica": {
-		Id:          559,
+		ID:          559,
 		Name:        "Jamaica",
 		Status:      "A",
 		Offset:      -300,
@@ -5165,7 +5165,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Japan": {
-		Id:          560,
+		ID:          560,
 		Name:        "Japan",
 		Status:      "A",
 		Offset:      540,
@@ -5175,7 +5175,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Kwajalein": {
-		Id:          561,
+		ID:          561,
 		Name:        "Kwajalein",
 		Status:      "A",
 		Offset:      720,
@@ -5185,7 +5185,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Libya": {
-		Id:          562,
+		ID:          562,
 		Name:        "Libya",
 		Status:      "A",
 		Offset:      120,
@@ -5195,7 +5195,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"MET": {
-		Id:          563,
+		ID:          563,
 		Name:        "MET",
 		Status:      "A",
 		Offset:      60,
@@ -5205,7 +5205,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"MST": {
-		Id:          564,
+		ID:          564,
 		Name:        "MST",
 		Status:      "A",
 		Offset:      -420,
@@ -5215,7 +5215,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"MST7MDT": {
-		Id:          565,
+		ID:          565,
 		Name:        "MST7MDT",
 		Status:      "A",
 		Offset:      -420,
@@ -5225,7 +5225,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Mexico/BajaNorte": {
-		Id:          566,
+		ID:          566,
 		Name:        "Mexico/BajaNorte",
 		Status:      "A",
 		Offset:      -480,
@@ -5235,7 +5235,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Mexico/BajaSur": {
-		Id:          567,
+		ID:          567,
 		Name:        "Mexico/BajaSur",
 		Status:      "A",
 		Offset:      -420,
@@ -5245,7 +5245,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Mexico/General": {
-		Id:          568,
+		ID:          568,
 		Name:        "Mexico/General",
 		Status:      "A",
 		Offset:      -360,
@@ -5255,7 +5255,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"NZ": {
-		Id:          569,
+		ID:          569,
 		Name:        "NZ",
 		Status:      "A",
 		Offset:      720,
@@ -5265,7 +5265,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"NZ-CHAT": {
-		Id:          570,
+		ID:          570,
 		Name:        "NZ-CHAT",
 		Status:      "A",
 		Offset:      765,
@@ -5275,7 +5275,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Navajo": {
-		Id:          571,
+		ID:          571,
 		Name:        "Navajo",
 		Status:      "A",
 		Offset:      -420,
@@ -5285,7 +5285,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"PRC": {
-		Id:          572,
+		ID:          572,
 		Name:        "PRC",
 		Status:      "A",
 		Offset:      480,
@@ -5295,7 +5295,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"PST8PDT": {
-		Id:          573,
+		ID:          573,
 		Name:        "PST8PDT",
 		Status:      "A",
 		Offset:      -480,
@@ -5305,7 +5305,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Pacific/Apia": {
-		Id:          431,
+		ID:          431,
 		Name:        "Pacific/Apia",
 		Status:      "C",
 		Offset:      780,
@@ -5315,7 +5315,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "WS",
 	},
 	"Pacific/Auckland": {
-		Id:          432,
+		ID:          432,
 		Name:        "Pacific/Auckland",
 		Status:      "C",
 		Offset:      720,
@@ -5325,7 +5325,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NZ",
 	},
 	"Pacific/Bougainville": {
-		Id:          433,
+		ID:          433,
 		Name:        "Pacific/Bougainville",
 		Status:      "C",
 		Offset:      660,
@@ -5335,7 +5335,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PG",
 	},
 	"Pacific/Chatham": {
-		Id:          434,
+		ID:          434,
 		Name:        "Pacific/Chatham",
 		Status:      "C",
 		Offset:      765,
@@ -5345,7 +5345,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NZ",
 	},
 	"Pacific/Chuuk": {
-		Id:          435,
+		ID:          435,
 		Name:        "Pacific/Chuuk",
 		Status:      "A",
 		Offset:      600,
@@ -5355,7 +5355,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "FM",
 	},
 	"Pacific/Easter": {
-		Id:          436,
+		ID:          436,
 		Name:        "Pacific/Easter",
 		Status:      "C",
 		Offset:      -360,
@@ -5365,7 +5365,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CL",
 	},
 	"Pacific/Efate": {
-		Id:          437,
+		ID:          437,
 		Name:        "Pacific/Efate",
 		Status:      "C",
 		Offset:      660,
@@ -5375,7 +5375,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "VU",
 	},
 	"Pacific/Enderbury": {
-		Id:          438,
+		ID:          438,
 		Name:        "Pacific/Enderbury",
 		Status:      "A",
 		Offset:      780,
@@ -5385,7 +5385,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KI",
 	},
 	"Pacific/Fakaofo": {
-		Id:          439,
+		ID:          439,
 		Name:        "Pacific/Fakaofo",
 		Status:      "C",
 		Offset:      780,
@@ -5395,7 +5395,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TK",
 	},
 	"Pacific/Fiji": {
-		Id:          440,
+		ID:          440,
 		Name:        "Pacific/Fiji",
 		Status:      "C",
 		Offset:      720,
@@ -5405,7 +5405,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "FJ",
 	},
 	"Pacific/Funafuti": {
-		Id:          441,
+		ID:          441,
 		Name:        "Pacific/Funafuti",
 		Status:      "A",
 		Offset:      720,
@@ -5415,7 +5415,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TV",
 	},
 	"Pacific/Galapagos": {
-		Id:          442,
+		ID:          442,
 		Name:        "Pacific/Galapagos",
 		Status:      "C",
 		Offset:      -360,
@@ -5425,7 +5425,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "EC",
 	},
 	"Pacific/Gambier": {
-		Id:          443,
+		ID:          443,
 		Name:        "Pacific/Gambier",
 		Status:      "C",
 		Offset:      -540,
@@ -5435,7 +5435,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PF",
 	},
 	"Pacific/Guadalcanal": {
-		Id:          444,
+		ID:          444,
 		Name:        "Pacific/Guadalcanal",
 		Status:      "C",
 		Offset:      660,
@@ -5445,7 +5445,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "SB",
 	},
 	"Pacific/Guam": {
-		Id:          445,
+		ID:          445,
 		Name:        "Pacific/Guam",
 		Status:      "C",
 		Offset:      600,
@@ -5455,7 +5455,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "GU",
 	},
 	"Pacific/Honolulu": {
-		Id:          446,
+		ID:          446,
 		Name:        "Pacific/Honolulu",
 		Status:      "C",
 		Offset:      -600,
@@ -5465,7 +5465,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"Pacific/Johnston": {
-		Id:          447,
+		ID:          447,
 		Name:        "Pacific/Johnston",
 		Status:      "A",
 		Offset:      -600,
@@ -5475,7 +5475,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "US",
 	},
 	"Pacific/Kanton": {
-		Id:          574,
+		ID:          574,
 		Name:        "Pacific/Kanton",
 		Status:      "C",
 		Offset:      780,
@@ -5485,7 +5485,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KI",
 	},
 	"Pacific/Kiritimati": {
-		Id:          448,
+		ID:          448,
 		Name:        "Pacific/Kiritimati",
 		Status:      "C",
 		Offset:      840,
@@ -5495,7 +5495,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KI",
 	},
 	"Pacific/Kosrae": {
-		Id:          449,
+		ID:          449,
 		Name:        "Pacific/Kosrae",
 		Status:      "C",
 		Offset:      660,
@@ -5505,7 +5505,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "FM",
 	},
 	"Pacific/Kwajalein": {
-		Id:          450,
+		ID:          450,
 		Name:        "Pacific/Kwajalein",
 		Status:      "C",
 		Offset:      720,
@@ -5515,7 +5515,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MH",
 	},
 	"Pacific/Majuro": {
-		Id:          451,
+		ID:          451,
 		Name:        "Pacific/Majuro",
 		Status:      "A",
 		Offset:      720,
@@ -5525,7 +5525,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MH",
 	},
 	"Pacific/Marquesas": {
-		Id:          452,
+		ID:          452,
 		Name:        "Pacific/Marquesas",
 		Status:      "C",
 		Offset:      -570,
@@ -5535,7 +5535,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PF",
 	},
 	"Pacific/Midway": {
-		Id:          453,
+		ID:          453,
 		Name:        "Pacific/Midway",
 		Status:      "A",
 		Offset:      -660,
@@ -5545,7 +5545,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "UM",
 	},
 	"Pacific/Nauru": {
-		Id:          454,
+		ID:          454,
 		Name:        "Pacific/Nauru",
 		Status:      "C",
 		Offset:      720,
@@ -5555,7 +5555,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NR",
 	},
 	"Pacific/Niue": {
-		Id:          455,
+		ID:          455,
 		Name:        "Pacific/Niue",
 		Status:      "C",
 		Offset:      -660,
@@ -5565,7 +5565,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NU",
 	},
 	"Pacific/Norfolk": {
-		Id:          456,
+		ID:          456,
 		Name:        "Pacific/Norfolk",
 		Status:      "C",
 		Offset:      660,
@@ -5575,7 +5575,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NF",
 	},
 	"Pacific/Noumea": {
-		Id:          457,
+		ID:          457,
 		Name:        "Pacific/Noumea",
 		Status:      "C",
 		Offset:      660,
@@ -5585,7 +5585,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "NC",
 	},
 	"Pacific/Pago_Pago": {
-		Id:          458,
+		ID:          458,
 		Name:        "Pacific/Pago_Pago",
 		Status:      "C",
 		Offset:      -660,
@@ -5595,7 +5595,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AS",
 	},
 	"Pacific/Palau": {
-		Id:          459,
+		ID:          459,
 		Name:        "Pacific/Palau",
 		Status:      "C",
 		Offset:      540,
@@ -5605,7 +5605,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PW",
 	},
 	"Pacific/Pitcairn": {
-		Id:          460,
+		ID:          460,
 		Name:        "Pacific/Pitcairn",
 		Status:      "C",
 		Offset:      -480,
@@ -5615,7 +5615,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PN",
 	},
 	"Pacific/Pohnpei": {
-		Id:          461,
+		ID:          461,
 		Name:        "Pacific/Pohnpei",
 		Status:      "A",
 		Offset:      660,
@@ -5625,7 +5625,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "FM",
 	},
 	"Pacific/Ponape": {
-		Id:          462,
+		ID:          462,
 		Name:        "Pacific/Ponape",
 		Status:      "A",
 		Offset:      660,
@@ -5635,7 +5635,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "FM",
 	},
 	"Pacific/Port_Moresby": {
-		Id:          463,
+		ID:          463,
 		Name:        "Pacific/Port_Moresby",
 		Status:      "C",
 		Offset:      600,
@@ -5645,7 +5645,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PG",
 	},
 	"Pacific/Rarotonga": {
-		Id:          464,
+		ID:          464,
 		Name:        "Pacific/Rarotonga",
 		Status:      "C",
 		Offset:      -600,
@@ -5655,7 +5655,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "CK",
 	},
 	"Pacific/Saipan": {
-		Id:          465,
+		ID:          465,
 		Name:        "Pacific/Saipan",
 		Status:      "A",
 		Offset:      600,
@@ -5665,7 +5665,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "MP",
 	},
 	"Pacific/Samoa": {
-		Id:          466,
+		ID:          466,
 		Name:        "Pacific/Samoa",
 		Status:      "A",
 		Offset:      -660,
@@ -5675,7 +5675,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "AS",
 	},
 	"Pacific/Tahiti": {
-		Id:          467,
+		ID:          467,
 		Name:        "Pacific/Tahiti",
 		Status:      "C",
 		Offset:      -600,
@@ -5685,7 +5685,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "PF",
 	},
 	"Pacific/Tarawa": {
-		Id:          468,
+		ID:          468,
 		Name:        "Pacific/Tarawa",
 		Status:      "C",
 		Offset:      720,
@@ -5695,7 +5695,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "KI",
 	},
 	"Pacific/Tongatapu": {
-		Id:          469,
+		ID:          469,
 		Name:        "Pacific/Tongatapu",
 		Status:      "C",
 		Offset:      780,
@@ -5705,7 +5705,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "TO",
 	},
 	"Pacific/Truk": {
-		Id:          470,
+		ID:          470,
 		Name:        "Pacific/Truk",
 		Status:      "A",
 		Offset:      600,
@@ -5715,7 +5715,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "FM",
 	},
 	"Pacific/Wake": {
-		Id:          471,
+		ID:          471,
 		Name:        "Pacific/Wake",
 		Status:      "A",
 		Offset:      720,
@@ -5725,7 +5725,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "UM",
 	},
 	"Pacific/Wallis": {
-		Id:          472,
+		ID:          472,
 		Name:        "Pacific/Wallis",
 		Status:      "A",
 		Offset:      720,
@@ -5735,7 +5735,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "WF",
 	},
 	"Pacific/Yap": {
-		Id:          473,
+		ID:          473,
 		Name:        "Pacific/Yap",
 		Status:      "A",
 		Offset:      600,
@@ -5745,7 +5745,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "FM",
 	},
 	"Poland": {
-		Id:          575,
+		ID:          575,
 		Name:        "Poland",
 		Status:      "A",
 		Offset:      60,
@@ -5755,7 +5755,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Portugal": {
-		Id:          576,
+		ID:          576,
 		Name:        "Portugal",
 		Status:      "A",
 		Offset:      0,
@@ -5765,7 +5765,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"ROC": {
-		Id:          577,
+		ID:          577,
 		Name:        "ROC",
 		Status:      "A",
 		Offset:      480,
@@ -5775,7 +5775,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"ROK": {
-		Id:          578,
+		ID:          578,
 		Name:        "ROK",
 		Status:      "A",
 		Offset:      540,
@@ -5785,7 +5785,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Singapore": {
-		Id:          579,
+		ID:          579,
 		Name:        "Singapore",
 		Status:      "A",
 		Offset:      480,
@@ -5795,7 +5795,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Turkey": {
-		Id:          580,
+		ID:          580,
 		Name:        "Turkey",
 		Status:      "A",
 		Offset:      180,
@@ -5805,7 +5805,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"UCT": {
-		Id:          581,
+		ID:          581,
 		Name:        "UCT",
 		Status:      "A",
 		Offset:      0,
@@ -5815,7 +5815,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"US/Alaska": {
-		Id:          582,
+		ID:          582,
 		Name:        "US/Alaska",
 		Status:      "A",
 		Offset:      -540,
@@ -5825,7 +5825,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"US/Aleutian": {
-		Id:          583,
+		ID:          583,
 		Name:        "US/Aleutian",
 		Status:      "A",
 		Offset:      -600,
@@ -5835,7 +5835,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"US/Arizona": {
-		Id:          584,
+		ID:          584,
 		Name:        "US/Arizona",
 		Status:      "A",
 		Offset:      -420,
@@ -5845,7 +5845,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"US/Central": {
-		Id:          585,
+		ID:          585,
 		Name:        "US/Central",
 		Status:      "A",
 		Offset:      -360,
@@ -5855,7 +5855,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"US/East-Indiana": {
-		Id:          586,
+		ID:          586,
 		Name:        "US/East-Indiana",
 		Status:      "A",
 		Offset:      -300,
@@ -5865,7 +5865,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"US/Eastern": {
-		Id:          587,
+		ID:          587,
 		Name:        "US/Eastern",
 		Status:      "A",
 		Offset:      -300,
@@ -5875,7 +5875,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"US/Hawaii": {
-		Id:          588,
+		ID:          588,
 		Name:        "US/Hawaii",
 		Status:      "A",
 		Offset:      -600,
@@ -5885,7 +5885,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"US/Indiana-Starke": {
-		Id:          589,
+		ID:          589,
 		Name:        "US/Indiana-Starke",
 		Status:      "A",
 		Offset:      -360,
@@ -5895,7 +5895,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"US/Michigan": {
-		Id:          590,
+		ID:          590,
 		Name:        "US/Michigan",
 		Status:      "A",
 		Offset:      -300,
@@ -5905,7 +5905,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"US/Mountain": {
-		Id:          591,
+		ID:          591,
 		Name:        "US/Mountain",
 		Status:      "A",
 		Offset:      -420,
@@ -5915,7 +5915,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"US/Pacific": {
-		Id:          592,
+		ID:          592,
 		Name:        "US/Pacific",
 		Status:      "A",
 		Offset:      -480,
@@ -5925,7 +5925,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"US/Samoa": {
-		Id:          593,
+		ID:          593,
 		Name:        "US/Samoa",
 		Status:      "A",
 		Offset:      -660,
@@ -5935,7 +5935,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"UTC": {
-		Id:          0,
+		ID:          0,
 		Name:        "UTC",
 		Status:      "A",
 		Offset:      0,
@@ -5945,7 +5945,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Universal": {
-		Id:          594,
+		ID:          594,
 		Name:        "Universal",
 		Status:      "A",
 		Offset:      0,
@@ -5955,7 +5955,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"W-SU": {
-		Id:          595,
+		ID:          595,
 		Name:        "W-SU",
 		Status:      "A",
 		Offset:      180,
@@ -5965,7 +5965,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"WET": {
-		Id:          596,
+		ID:          596,
 		Name:        "WET",
 		Status:      "A",
 		Offset:      0,
@@ -5975,7 +5975,7 @@ var Zones = map[string]*Zone{
 		CountryCode: "",
 	},
 	"Zulu": {
-		Id:          597,
+		ID:          597,
 		Name:        "Zulu",
 		Status:      "A",
 		Offset:      0,
@@ -5989,7 +5989,7 @@ var Zones = map[string]*Zone{
 // ZoneIDs maps timezone IDs to Zone instances.
 var ZoneIDs = map[int]*Zone{
 	0: {
-		Id:          0,
+		ID:          0,
 		Name:        "UTC",
 		Status:      "A",
 		Offset:      0,
@@ -5999,7 +5999,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	1: {
-		Id:          1,
+		ID:          1,
 		Name:        "Etc/UTC",
 		Status:      "C",
 		Offset:      0,
@@ -6009,7 +6009,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	2: {
-		Id:          2,
+		ID:          2,
 		Name:        "Africa/Abidjan",
 		Status:      "C",
 		Offset:      0,
@@ -6019,7 +6019,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CI",
 	},
 	3: {
-		Id:          3,
+		ID:          3,
 		Name:        "Africa/Accra",
 		Status:      "A",
 		Offset:      0,
@@ -6029,7 +6029,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GH",
 	},
 	4: {
-		Id:          4,
+		ID:          4,
 		Name:        "Africa/Addis_Ababa",
 		Status:      "A",
 		Offset:      180,
@@ -6039,7 +6039,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ET",
 	},
 	5: {
-		Id:          5,
+		ID:          5,
 		Name:        "Africa/Algiers",
 		Status:      "C",
 		Offset:      60,
@@ -6049,7 +6049,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "DZ",
 	},
 	6: {
-		Id:          6,
+		ID:          6,
 		Name:        "Africa/Asmara",
 		Status:      "A",
 		Offset:      180,
@@ -6059,7 +6059,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ER",
 	},
 	7: {
-		Id:          7,
+		ID:          7,
 		Name:        "Africa/Bamako",
 		Status:      "A",
 		Offset:      0,
@@ -6069,7 +6069,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ML",
 	},
 	8: {
-		Id:          8,
+		ID:          8,
 		Name:        "Africa/Bangui",
 		Status:      "A",
 		Offset:      60,
@@ -6079,7 +6079,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CF",
 	},
 	9: {
-		Id:          9,
+		ID:          9,
 		Name:        "Africa/Banjul",
 		Status:      "A",
 		Offset:      0,
@@ -6089,7 +6089,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GM",
 	},
 	10: {
-		Id:          10,
+		ID:          10,
 		Name:        "Africa/Bissau",
 		Status:      "C",
 		Offset:      0,
@@ -6099,7 +6099,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GW",
 	},
 	11: {
-		Id:          11,
+		ID:          11,
 		Name:        "Africa/Blantyre",
 		Status:      "A",
 		Offset:      120,
@@ -6109,7 +6109,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MW",
 	},
 	12: {
-		Id:          12,
+		ID:          12,
 		Name:        "Africa/Brazzaville",
 		Status:      "A",
 		Offset:      60,
@@ -6119,7 +6119,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CG",
 	},
 	13: {
-		Id:          13,
+		ID:          13,
 		Name:        "Africa/Bujumbura",
 		Status:      "A",
 		Offset:      120,
@@ -6129,7 +6129,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BI",
 	},
 	14: {
-		Id:          14,
+		ID:          14,
 		Name:        "Africa/Cairo",
 		Status:      "C",
 		Offset:      120,
@@ -6139,7 +6139,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "EG",
 	},
 	15: {
-		Id:          15,
+		ID:          15,
 		Name:        "Africa/Casablanca",
 		Status:      "C",
 		Offset:      60,
@@ -6149,7 +6149,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MA",
 	},
 	16: {
-		Id:          16,
+		ID:          16,
 		Name:        "Africa/Ceuta",
 		Status:      "C",
 		Offset:      60,
@@ -6159,7 +6159,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ES",
 	},
 	17: {
-		Id:          17,
+		ID:          17,
 		Name:        "Africa/Conakry",
 		Status:      "A",
 		Offset:      0,
@@ -6169,7 +6169,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GN",
 	},
 	18: {
-		Id:          18,
+		ID:          18,
 		Name:        "Africa/Dakar",
 		Status:      "A",
 		Offset:      0,
@@ -6179,7 +6179,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SN",
 	},
 	19: {
-		Id:          19,
+		ID:          19,
 		Name:        "Africa/Dar_es_Salaam",
 		Status:      "A",
 		Offset:      180,
@@ -6189,7 +6189,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TZ",
 	},
 	20: {
-		Id:          20,
+		ID:          20,
 		Name:        "Africa/Djibouti",
 		Status:      "A",
 		Offset:      180,
@@ -6199,7 +6199,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "DJ",
 	},
 	21: {
-		Id:          21,
+		ID:          21,
 		Name:        "Africa/Douala",
 		Status:      "A",
 		Offset:      60,
@@ -6209,7 +6209,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CM",
 	},
 	22: {
-		Id:          22,
+		ID:          22,
 		Name:        "Africa/El_Aaiun",
 		Status:      "C",
 		Offset:      60,
@@ -6219,7 +6219,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "EH",
 	},
 	23: {
-		Id:          23,
+		ID:          23,
 		Name:        "Africa/Freetown",
 		Status:      "A",
 		Offset:      0,
@@ -6229,7 +6229,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SL",
 	},
 	24: {
-		Id:          24,
+		ID:          24,
 		Name:        "Africa/Gaborone",
 		Status:      "A",
 		Offset:      120,
@@ -6239,7 +6239,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BW",
 	},
 	25: {
-		Id:          25,
+		ID:          25,
 		Name:        "Africa/Harare",
 		Status:      "A",
 		Offset:      120,
@@ -6249,7 +6249,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ZW",
 	},
 	26: {
-		Id:          26,
+		ID:          26,
 		Name:        "Africa/Johannesburg",
 		Status:      "C",
 		Offset:      120,
@@ -6259,7 +6259,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ZA",
 	},
 	27: {
-		Id:          27,
+		ID:          27,
 		Name:        "Africa/Juba",
 		Status:      "C",
 		Offset:      120,
@@ -6269,7 +6269,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SS",
 	},
 	28: {
-		Id:          28,
+		ID:          28,
 		Name:        "Africa/Kampala",
 		Status:      "A",
 		Offset:      180,
@@ -6279,7 +6279,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "UG",
 	},
 	29: {
-		Id:          29,
+		ID:          29,
 		Name:        "Africa/Khartoum",
 		Status:      "C",
 		Offset:      120,
@@ -6289,7 +6289,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SD",
 	},
 	30: {
-		Id:          30,
+		ID:          30,
 		Name:        "Africa/Kigali",
 		Status:      "A",
 		Offset:      120,
@@ -6299,7 +6299,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RW",
 	},
 	31: {
-		Id:          31,
+		ID:          31,
 		Name:        "Africa/Kinshasa",
 		Status:      "A",
 		Offset:      60,
@@ -6309,7 +6309,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CD",
 	},
 	32: {
-		Id:          32,
+		ID:          32,
 		Name:        "Africa/Lagos",
 		Status:      "C",
 		Offset:      60,
@@ -6319,7 +6319,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NG",
 	},
 	33: {
-		Id:          33,
+		ID:          33,
 		Name:        "Africa/Libreville",
 		Status:      "A",
 		Offset:      60,
@@ -6329,7 +6329,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GA",
 	},
 	34: {
-		Id:          34,
+		ID:          34,
 		Name:        "Africa/Lome",
 		Status:      "A",
 		Offset:      0,
@@ -6339,7 +6339,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TG",
 	},
 	35: {
-		Id:          35,
+		ID:          35,
 		Name:        "Africa/Luanda",
 		Status:      "A",
 		Offset:      60,
@@ -6349,7 +6349,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AO",
 	},
 	36: {
-		Id:          36,
+		ID:          36,
 		Name:        "Africa/Lubumbashi",
 		Status:      "A",
 		Offset:      120,
@@ -6359,7 +6359,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CD",
 	},
 	37: {
-		Id:          37,
+		ID:          37,
 		Name:        "Africa/Lusaka",
 		Status:      "A",
 		Offset:      120,
@@ -6369,7 +6369,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ZM",
 	},
 	38: {
-		Id:          38,
+		ID:          38,
 		Name:        "Africa/Malabo",
 		Status:      "A",
 		Offset:      60,
@@ -6379,7 +6379,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GQ",
 	},
 	39: {
-		Id:          39,
+		ID:          39,
 		Name:        "Africa/Maputo",
 		Status:      "C",
 		Offset:      120,
@@ -6389,7 +6389,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MZ",
 	},
 	40: {
-		Id:          40,
+		ID:          40,
 		Name:        "Africa/Maseru",
 		Status:      "A",
 		Offset:      120,
@@ -6399,7 +6399,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "LS",
 	},
 	41: {
-		Id:          41,
+		ID:          41,
 		Name:        "Africa/Mbabane",
 		Status:      "A",
 		Offset:      120,
@@ -6409,7 +6409,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SZ",
 	},
 	42: {
-		Id:          42,
+		ID:          42,
 		Name:        "Africa/Mogadishu",
 		Status:      "A",
 		Offset:      180,
@@ -6419,7 +6419,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SO",
 	},
 	43: {
-		Id:          43,
+		ID:          43,
 		Name:        "Africa/Monrovia",
 		Status:      "C",
 		Offset:      0,
@@ -6429,7 +6429,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "LR",
 	},
 	44: {
-		Id:          44,
+		ID:          44,
 		Name:        "Africa/Nairobi",
 		Status:      "C",
 		Offset:      180,
@@ -6439,7 +6439,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KE",
 	},
 	45: {
-		Id:          45,
+		ID:          45,
 		Name:        "Africa/Ndjamena",
 		Status:      "C",
 		Offset:      60,
@@ -6449,7 +6449,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TD",
 	},
 	46: {
-		Id:          46,
+		ID:          46,
 		Name:        "Africa/Niamey",
 		Status:      "A",
 		Offset:      60,
@@ -6459,7 +6459,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NE",
 	},
 	47: {
-		Id:          47,
+		ID:          47,
 		Name:        "Africa/Nouakchott",
 		Status:      "A",
 		Offset:      0,
@@ -6469,7 +6469,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MR",
 	},
 	48: {
-		Id:          48,
+		ID:          48,
 		Name:        "Africa/Ouagadougou",
 		Status:      "A",
 		Offset:      0,
@@ -6479,7 +6479,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BF",
 	},
 	49: {
-		Id:          49,
+		ID:          49,
 		Name:        "Africa/Porto-Novo",
 		Status:      "A",
 		Offset:      60,
@@ -6489,7 +6489,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BJ",
 	},
 	50: {
-		Id:          50,
+		ID:          50,
 		Name:        "Africa/Sao_Tome",
 		Status:      "C",
 		Offset:      0,
@@ -6499,7 +6499,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ST",
 	},
 	51: {
-		Id:          51,
+		ID:          51,
 		Name:        "Africa/Timbuktu",
 		Status:      "A",
 		Offset:      0,
@@ -6509,7 +6509,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CI",
 	},
 	52: {
-		Id:          52,
+		ID:          52,
 		Name:        "Africa/Tripoli",
 		Status:      "C",
 		Offset:      120,
@@ -6519,7 +6519,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "LY",
 	},
 	53: {
-		Id:          53,
+		ID:          53,
 		Name:        "Africa/Tunis",
 		Status:      "C",
 		Offset:      60,
@@ -6529,7 +6529,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TN",
 	},
 	54: {
-		Id:          54,
+		ID:          54,
 		Name:        "Africa/Windhoek",
 		Status:      "C",
 		Offset:      120,
@@ -6539,7 +6539,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NA",
 	},
 	55: {
-		Id:          55,
+		ID:          55,
 		Name:        "America/Adak",
 		Status:      "C",
 		Offset:      -600,
@@ -6549,7 +6549,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	56: {
-		Id:          56,
+		ID:          56,
 		Name:        "America/Anchorage",
 		Status:      "C",
 		Offset:      -540,
@@ -6559,7 +6559,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	57: {
-		Id:          57,
+		ID:          57,
 		Name:        "America/Anguilla",
 		Status:      "A",
 		Offset:      -240,
@@ -6569,7 +6569,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AI",
 	},
 	58: {
-		Id:          58,
+		ID:          58,
 		Name:        "America/Antigua",
 		Status:      "A",
 		Offset:      -240,
@@ -6579,7 +6579,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AG",
 	},
 	59: {
-		Id:          59,
+		ID:          59,
 		Name:        "America/Araguaina",
 		Status:      "C",
 		Offset:      -180,
@@ -6589,7 +6589,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	60: {
-		Id:          60,
+		ID:          60,
 		Name:        "America/Argentina/Buenos_Aires",
 		Status:      "C",
 		Offset:      -180,
@@ -6599,7 +6599,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	61: {
-		Id:          61,
+		ID:          61,
 		Name:        "America/Argentina/Catamarca",
 		Status:      "C",
 		Offset:      -180,
@@ -6609,7 +6609,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	62: {
-		Id:          62,
+		ID:          62,
 		Name:        "America/Argentina/ComodRivadavia",
 		Status:      "A",
 		Offset:      -180,
@@ -6619,7 +6619,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	63: {
-		Id:          63,
+		ID:          63,
 		Name:        "America/Argentina/Cordoba",
 		Status:      "C",
 		Offset:      -180,
@@ -6629,7 +6629,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	64: {
-		Id:          64,
+		ID:          64,
 		Name:        "America/Argentina/Jujuy",
 		Status:      "C",
 		Offset:      -180,
@@ -6639,7 +6639,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	65: {
-		Id:          65,
+		ID:          65,
 		Name:        "America/Argentina/La_Rioja",
 		Status:      "C",
 		Offset:      -180,
@@ -6649,7 +6649,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	66: {
-		Id:          66,
+		ID:          66,
 		Name:        "America/Argentina/Mendoza",
 		Status:      "C",
 		Offset:      -180,
@@ -6659,7 +6659,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	67: {
-		Id:          67,
+		ID:          67,
 		Name:        "America/Argentina/Rio_Gallegos",
 		Status:      "C",
 		Offset:      -180,
@@ -6669,7 +6669,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	68: {
-		Id:          68,
+		ID:          68,
 		Name:        "America/Argentina/Salta",
 		Status:      "C",
 		Offset:      -180,
@@ -6679,7 +6679,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	69: {
-		Id:          69,
+		ID:          69,
 		Name:        "America/Argentina/San_Juan",
 		Status:      "C",
 		Offset:      -180,
@@ -6689,7 +6689,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	70: {
-		Id:          70,
+		ID:          70,
 		Name:        "America/Argentina/San_Luis",
 		Status:      "C",
 		Offset:      -180,
@@ -6699,7 +6699,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	71: {
-		Id:          71,
+		ID:          71,
 		Name:        "America/Argentina/Tucuman",
 		Status:      "C",
 		Offset:      -180,
@@ -6709,7 +6709,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	72: {
-		Id:          72,
+		ID:          72,
 		Name:        "America/Argentina/Ushuaia",
 		Status:      "C",
 		Offset:      -180,
@@ -6719,7 +6719,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	73: {
-		Id:          73,
+		ID:          73,
 		Name:        "America/Aruba",
 		Status:      "A",
 		Offset:      -240,
@@ -6729,7 +6729,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AW",
 	},
 	74: {
-		Id:          74,
+		ID:          74,
 		Name:        "America/Asuncion",
 		Status:      "C",
 		Offset:      -180,
@@ -6739,7 +6739,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PY",
 	},
 	75: {
-		Id:          75,
+		ID:          75,
 		Name:        "America/Atikokan",
 		Status:      "A",
 		Offset:      -300,
@@ -6749,7 +6749,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	76: {
-		Id:          76,
+		ID:          76,
 		Name:        "America/Atka",
 		Status:      "A",
 		Offset:      -600,
@@ -6759,7 +6759,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	77: {
-		Id:          77,
+		ID:          77,
 		Name:        "America/Bahia",
 		Status:      "C",
 		Offset:      -180,
@@ -6769,7 +6769,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	78: {
-		Id:          78,
+		ID:          78,
 		Name:        "America/Bahia_Banderas",
 		Status:      "C",
 		Offset:      -360,
@@ -6779,7 +6779,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	79: {
-		Id:          79,
+		ID:          79,
 		Name:        "America/Barbados",
 		Status:      "C",
 		Offset:      -240,
@@ -6789,7 +6789,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BB",
 	},
 	80: {
-		Id:          80,
+		ID:          80,
 		Name:        "America/Belem",
 		Status:      "C",
 		Offset:      -180,
@@ -6799,7 +6799,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	81: {
-		Id:          81,
+		ID:          81,
 		Name:        "America/Belize",
 		Status:      "C",
 		Offset:      -360,
@@ -6809,7 +6809,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BZ",
 	},
 	82: {
-		Id:          82,
+		ID:          82,
 		Name:        "America/Blanc-Sablon",
 		Status:      "A",
 		Offset:      -240,
@@ -6819,7 +6819,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	83: {
-		Id:          83,
+		ID:          83,
 		Name:        "America/Boa_Vista",
 		Status:      "C",
 		Offset:      -240,
@@ -6829,7 +6829,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	84: {
-		Id:          84,
+		ID:          84,
 		Name:        "America/Bogota",
 		Status:      "C",
 		Offset:      -300,
@@ -6839,7 +6839,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CO",
 	},
 	85: {
-		Id:          85,
+		ID:          85,
 		Name:        "America/Boise",
 		Status:      "C",
 		Offset:      -420,
@@ -6849,7 +6849,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	86: {
-		Id:          86,
+		ID:          86,
 		Name:        "America/Buenos_Aires",
 		Status:      "A",
 		Offset:      -180,
@@ -6859,7 +6859,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	87: {
-		Id:          87,
+		ID:          87,
 		Name:        "America/Cambridge_Bay",
 		Status:      "C",
 		Offset:      -420,
@@ -6869,7 +6869,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	88: {
-		Id:          88,
+		ID:          88,
 		Name:        "America/Campo_Grande",
 		Status:      "C",
 		Offset:      -240,
@@ -6879,7 +6879,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	89: {
-		Id:          89,
+		ID:          89,
 		Name:        "America/Cancun",
 		Status:      "C",
 		Offset:      -300,
@@ -6889,7 +6889,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	90: {
-		Id:          90,
+		ID:          90,
 		Name:        "America/Caracas",
 		Status:      "C",
 		Offset:      -240,
@@ -6899,7 +6899,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "VE",
 	},
 	91: {
-		Id:          91,
+		ID:          91,
 		Name:        "America/Catamarca",
 		Status:      "A",
 		Offset:      -180,
@@ -6909,7 +6909,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	92: {
-		Id:          92,
+		ID:          92,
 		Name:        "America/Cayenne",
 		Status:      "C",
 		Offset:      -180,
@@ -6919,7 +6919,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GF",
 	},
 	93: {
-		Id:          93,
+		ID:          93,
 		Name:        "America/Cayman",
 		Status:      "A",
 		Offset:      -300,
@@ -6929,7 +6929,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KY",
 	},
 	94: {
-		Id:          94,
+		ID:          94,
 		Name:        "America/Chicago",
 		Status:      "C",
 		Offset:      -360,
@@ -6939,7 +6939,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	95: {
-		Id:          95,
+		ID:          95,
 		Name:        "America/Chihuahua",
 		Status:      "C",
 		Offset:      -360,
@@ -6949,7 +6949,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	96: {
-		Id:          96,
+		ID:          96,
 		Name:        "America/Coral_Harbour",
 		Status:      "A",
 		Offset:      -300,
@@ -6959,7 +6959,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	97: {
-		Id:          97,
+		ID:          97,
 		Name:        "America/Cordoba",
 		Status:      "A",
 		Offset:      -180,
@@ -6969,7 +6969,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	98: {
-		Id:          98,
+		ID:          98,
 		Name:        "America/Costa_Rica",
 		Status:      "C",
 		Offset:      -360,
@@ -6979,7 +6979,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CR",
 	},
 	99: {
-		Id:          99,
+		ID:          99,
 		Name:        "America/Creston",
 		Status:      "A",
 		Offset:      -420,
@@ -6989,7 +6989,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	100: {
-		Id:          100,
+		ID:          100,
 		Name:        "America/Cuiaba",
 		Status:      "C",
 		Offset:      -240,
@@ -6999,7 +6999,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	101: {
-		Id:          101,
+		ID:          101,
 		Name:        "America/Curacao",
 		Status:      "A",
 		Offset:      -240,
@@ -7009,7 +7009,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CW",
 	},
 	102: {
-		Id:          102,
+		ID:          102,
 		Name:        "America/Danmarkshavn",
 		Status:      "C",
 		Offset:      0,
@@ -7019,7 +7019,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GL",
 	},
 	103: {
-		Id:          103,
+		ID:          103,
 		Name:        "America/Dawson",
 		Status:      "C",
 		Offset:      -420,
@@ -7029,7 +7029,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	104: {
-		Id:          104,
+		ID:          104,
 		Name:        "America/Dawson_Creek",
 		Status:      "C",
 		Offset:      -420,
@@ -7039,7 +7039,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	105: {
-		Id:          105,
+		ID:          105,
 		Name:        "America/Denver",
 		Status:      "C",
 		Offset:      -420,
@@ -7049,7 +7049,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	106: {
-		Id:          106,
+		ID:          106,
 		Name:        "America/Detroit",
 		Status:      "C",
 		Offset:      -300,
@@ -7059,7 +7059,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	107: {
-		Id:          107,
+		ID:          107,
 		Name:        "America/Dominica",
 		Status:      "A",
 		Offset:      -240,
@@ -7069,7 +7069,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "DM",
 	},
 	108: {
-		Id:          108,
+		ID:          108,
 		Name:        "America/Edmonton",
 		Status:      "C",
 		Offset:      -420,
@@ -7079,7 +7079,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	109: {
-		Id:          109,
+		ID:          109,
 		Name:        "America/Eirunepe",
 		Status:      "C",
 		Offset:      -300,
@@ -7089,7 +7089,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	110: {
-		Id:          110,
+		ID:          110,
 		Name:        "America/El_Salvador",
 		Status:      "C",
 		Offset:      -360,
@@ -7099,7 +7099,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SV",
 	},
 	111: {
-		Id:          111,
+		ID:          111,
 		Name:        "America/Ensenada",
 		Status:      "A",
 		Offset:      -480,
@@ -7109,7 +7109,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	112: {
-		Id:          112,
+		ID:          112,
 		Name:        "America/Fort_Nelson",
 		Status:      "C",
 		Offset:      -420,
@@ -7119,7 +7119,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	113: {
-		Id:          113,
+		ID:          113,
 		Name:        "America/Fort_Wayne",
 		Status:      "A",
 		Offset:      -300,
@@ -7129,7 +7129,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	114: {
-		Id:          114,
+		ID:          114,
 		Name:        "America/Fortaleza",
 		Status:      "C",
 		Offset:      -180,
@@ -7139,7 +7139,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	115: {
-		Id:          115,
+		ID:          115,
 		Name:        "America/Glace_Bay",
 		Status:      "C",
 		Offset:      -240,
@@ -7149,7 +7149,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	116: {
-		Id:          116,
+		ID:          116,
 		Name:        "America/Godthab",
 		Status:      "A",
 		Offset:      -120,
@@ -7159,7 +7159,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GL",
 	},
 	117: {
-		Id:          117,
+		ID:          117,
 		Name:        "America/Goose_Bay",
 		Status:      "C",
 		Offset:      -240,
@@ -7169,7 +7169,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	118: {
-		Id:          118,
+		ID:          118,
 		Name:        "America/Grand_Turk",
 		Status:      "C",
 		Offset:      -300,
@@ -7179,7 +7179,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TC",
 	},
 	119: {
-		Id:          119,
+		ID:          119,
 		Name:        "America/Grenada",
 		Status:      "A",
 		Offset:      -240,
@@ -7189,7 +7189,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GD",
 	},
 	120: {
-		Id:          120,
+		ID:          120,
 		Name:        "America/Guadeloupe",
 		Status:      "A",
 		Offset:      -240,
@@ -7199,7 +7199,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GP",
 	},
 	121: {
-		Id:          121,
+		ID:          121,
 		Name:        "America/Guatemala",
 		Status:      "C",
 		Offset:      -360,
@@ -7209,7 +7209,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GT",
 	},
 	122: {
-		Id:          122,
+		ID:          122,
 		Name:        "America/Guayaquil",
 		Status:      "C",
 		Offset:      -300,
@@ -7219,7 +7219,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "EC",
 	},
 	123: {
-		Id:          123,
+		ID:          123,
 		Name:        "America/Guyana",
 		Status:      "C",
 		Offset:      -240,
@@ -7229,7 +7229,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GY",
 	},
 	124: {
-		Id:          124,
+		ID:          124,
 		Name:        "America/Halifax",
 		Status:      "C",
 		Offset:      -240,
@@ -7239,7 +7239,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	125: {
-		Id:          125,
+		ID:          125,
 		Name:        "America/Havana",
 		Status:      "C",
 		Offset:      -300,
@@ -7249,7 +7249,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CU",
 	},
 	126: {
-		Id:          126,
+		ID:          126,
 		Name:        "America/Hermosillo",
 		Status:      "C",
 		Offset:      -420,
@@ -7259,7 +7259,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	127: {
-		Id:          127,
+		ID:          127,
 		Name:        "America/Indiana/Indianapolis",
 		Status:      "C",
 		Offset:      -300,
@@ -7269,7 +7269,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	128: {
-		Id:          128,
+		ID:          128,
 		Name:        "America/Indiana/Knox",
 		Status:      "C",
 		Offset:      -360,
@@ -7279,7 +7279,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	129: {
-		Id:          129,
+		ID:          129,
 		Name:        "America/Indiana/Marengo",
 		Status:      "C",
 		Offset:      -300,
@@ -7289,7 +7289,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	130: {
-		Id:          130,
+		ID:          130,
 		Name:        "America/Indiana/Petersburg",
 		Status:      "C",
 		Offset:      -300,
@@ -7299,7 +7299,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	131: {
-		Id:          131,
+		ID:          131,
 		Name:        "America/Indiana/Tell_City",
 		Status:      "C",
 		Offset:      -360,
@@ -7309,7 +7309,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	132: {
-		Id:          132,
+		ID:          132,
 		Name:        "America/Indiana/Vevay",
 		Status:      "C",
 		Offset:      -300,
@@ -7319,7 +7319,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	133: {
-		Id:          133,
+		ID:          133,
 		Name:        "America/Indiana/Vincennes",
 		Status:      "C",
 		Offset:      -300,
@@ -7329,7 +7329,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	134: {
-		Id:          134,
+		ID:          134,
 		Name:        "America/Indiana/Winamac",
 		Status:      "C",
 		Offset:      -300,
@@ -7339,7 +7339,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	135: {
-		Id:          135,
+		ID:          135,
 		Name:        "America/Indianapolis",
 		Status:      "A",
 		Offset:      -300,
@@ -7349,7 +7349,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	136: {
-		Id:          136,
+		ID:          136,
 		Name:        "America/Inuvik",
 		Status:      "C",
 		Offset:      -420,
@@ -7359,7 +7359,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	137: {
-		Id:          137,
+		ID:          137,
 		Name:        "America/Iqaluit",
 		Status:      "C",
 		Offset:      -300,
@@ -7369,7 +7369,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	138: {
-		Id:          138,
+		ID:          138,
 		Name:        "America/Jamaica",
 		Status:      "C",
 		Offset:      -300,
@@ -7379,7 +7379,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "JM",
 	},
 	139: {
-		Id:          139,
+		ID:          139,
 		Name:        "America/Jujuy",
 		Status:      "A",
 		Offset:      -180,
@@ -7389,7 +7389,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	140: {
-		Id:          140,
+		ID:          140,
 		Name:        "America/Juneau",
 		Status:      "C",
 		Offset:      -540,
@@ -7399,7 +7399,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	141: {
-		Id:          141,
+		ID:          141,
 		Name:        "America/Kentucky/Louisville",
 		Status:      "C",
 		Offset:      -300,
@@ -7409,7 +7409,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	142: {
-		Id:          142,
+		ID:          142,
 		Name:        "America/Kentucky/Monticello",
 		Status:      "C",
 		Offset:      -300,
@@ -7419,7 +7419,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	143: {
-		Id:          143,
+		ID:          143,
 		Name:        "America/Knox_IN",
 		Status:      "A",
 		Offset:      -360,
@@ -7429,7 +7429,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	144: {
-		Id:          144,
+		ID:          144,
 		Name:        "America/Kralendijk",
 		Status:      "A",
 		Offset:      -240,
@@ -7439,7 +7439,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BQ",
 	},
 	145: {
-		Id:          145,
+		ID:          145,
 		Name:        "America/La_Paz",
 		Status:      "C",
 		Offset:      -240,
@@ -7449,7 +7449,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BO",
 	},
 	146: {
-		Id:          146,
+		ID:          146,
 		Name:        "America/Lima",
 		Status:      "C",
 		Offset:      -300,
@@ -7459,7 +7459,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PE",
 	},
 	147: {
-		Id:          147,
+		ID:          147,
 		Name:        "America/Los_Angeles",
 		Status:      "C",
 		Offset:      -480,
@@ -7469,7 +7469,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	148: {
-		Id:          148,
+		ID:          148,
 		Name:        "America/Louisville",
 		Status:      "A",
 		Offset:      -300,
@@ -7479,7 +7479,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	149: {
-		Id:          149,
+		ID:          149,
 		Name:        "America/Lower_Princes",
 		Status:      "A",
 		Offset:      -240,
@@ -7489,7 +7489,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SX",
 	},
 	150: {
-		Id:          150,
+		ID:          150,
 		Name:        "America/Maceio",
 		Status:      "C",
 		Offset:      -180,
@@ -7499,7 +7499,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	151: {
-		Id:          151,
+		ID:          151,
 		Name:        "America/Managua",
 		Status:      "C",
 		Offset:      -360,
@@ -7509,7 +7509,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NI",
 	},
 	152: {
-		Id:          152,
+		ID:          152,
 		Name:        "America/Manaus",
 		Status:      "C",
 		Offset:      -240,
@@ -7519,7 +7519,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	153: {
-		Id:          153,
+		ID:          153,
 		Name:        "America/Marigot",
 		Status:      "A",
 		Offset:      -240,
@@ -7529,7 +7529,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MF",
 	},
 	154: {
-		Id:          154,
+		ID:          154,
 		Name:        "America/Martinique",
 		Status:      "C",
 		Offset:      -240,
@@ -7539,7 +7539,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MQ",
 	},
 	155: {
-		Id:          155,
+		ID:          155,
 		Name:        "America/Matamoros",
 		Status:      "C",
 		Offset:      -360,
@@ -7549,7 +7549,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	156: {
-		Id:          156,
+		ID:          156,
 		Name:        "America/Mazatlan",
 		Status:      "C",
 		Offset:      -420,
@@ -7559,7 +7559,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	157: {
-		Id:          157,
+		ID:          157,
 		Name:        "America/Mendoza",
 		Status:      "A",
 		Offset:      -180,
@@ -7569,7 +7569,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	158: {
-		Id:          158,
+		ID:          158,
 		Name:        "America/Menominee",
 		Status:      "C",
 		Offset:      -360,
@@ -7579,7 +7579,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	159: {
-		Id:          159,
+		ID:          159,
 		Name:        "America/Merida",
 		Status:      "C",
 		Offset:      -360,
@@ -7589,7 +7589,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	160: {
-		Id:          160,
+		ID:          160,
 		Name:        "America/Metlakatla",
 		Status:      "C",
 		Offset:      -540,
@@ -7599,7 +7599,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	161: {
-		Id:          161,
+		ID:          161,
 		Name:        "America/Mexico_City",
 		Status:      "C",
 		Offset:      -360,
@@ -7609,7 +7609,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	162: {
-		Id:          162,
+		ID:          162,
 		Name:        "America/Miquelon",
 		Status:      "C",
 		Offset:      -180,
@@ -7619,7 +7619,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PM",
 	},
 	163: {
-		Id:          163,
+		ID:          163,
 		Name:        "America/Moncton",
 		Status:      "C",
 		Offset:      -240,
@@ -7629,7 +7629,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	164: {
-		Id:          164,
+		ID:          164,
 		Name:        "America/Monterrey",
 		Status:      "C",
 		Offset:      -360,
@@ -7639,7 +7639,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	165: {
-		Id:          165,
+		ID:          165,
 		Name:        "America/Montevideo",
 		Status:      "C",
 		Offset:      -180,
@@ -7649,7 +7649,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "UY",
 	},
 	166: {
-		Id:          166,
+		ID:          166,
 		Name:        "America/Montreal",
 		Status:      "A",
 		Offset:      -300,
@@ -7659,7 +7659,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	167: {
-		Id:          167,
+		ID:          167,
 		Name:        "America/Montserrat",
 		Status:      "A",
 		Offset:      -240,
@@ -7669,7 +7669,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MS",
 	},
 	168: {
-		Id:          168,
+		ID:          168,
 		Name:        "America/Nassau",
 		Status:      "A",
 		Offset:      -300,
@@ -7679,7 +7679,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BS",
 	},
 	169: {
-		Id:          169,
+		ID:          169,
 		Name:        "America/New_York",
 		Status:      "C",
 		Offset:      -300,
@@ -7689,7 +7689,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	170: {
-		Id:          170,
+		ID:          170,
 		Name:        "America/Nipigon",
 		Status:      "A",
 		Offset:      -300,
@@ -7699,7 +7699,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	171: {
-		Id:          171,
+		ID:          171,
 		Name:        "America/Nome",
 		Status:      "C",
 		Offset:      -540,
@@ -7709,7 +7709,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	172: {
-		Id:          172,
+		ID:          172,
 		Name:        "America/Noronha",
 		Status:      "C",
 		Offset:      -120,
@@ -7719,7 +7719,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	173: {
-		Id:          173,
+		ID:          173,
 		Name:        "America/North_Dakota/Beulah",
 		Status:      "C",
 		Offset:      -360,
@@ -7729,7 +7729,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	174: {
-		Id:          174,
+		ID:          174,
 		Name:        "America/North_Dakota/Center",
 		Status:      "C",
 		Offset:      -360,
@@ -7739,7 +7739,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	175: {
-		Id:          175,
+		ID:          175,
 		Name:        "America/North_Dakota/New_Salem",
 		Status:      "C",
 		Offset:      -360,
@@ -7749,7 +7749,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	176: {
-		Id:          176,
+		ID:          176,
 		Name:        "America/Ojinaga",
 		Status:      "C",
 		Offset:      -360,
@@ -7759,7 +7759,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	177: {
-		Id:          177,
+		ID:          177,
 		Name:        "America/Panama",
 		Status:      "C",
 		Offset:      -300,
@@ -7769,7 +7769,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PA",
 	},
 	178: {
-		Id:          178,
+		ID:          178,
 		Name:        "America/Pangnirtung",
 		Status:      "A",
 		Offset:      -300,
@@ -7779,7 +7779,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	179: {
-		Id:          179,
+		ID:          179,
 		Name:        "America/Paramaribo",
 		Status:      "C",
 		Offset:      -180,
@@ -7789,7 +7789,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SR",
 	},
 	180: {
-		Id:          180,
+		ID:          180,
 		Name:        "America/Phoenix",
 		Status:      "C",
 		Offset:      -420,
@@ -7799,7 +7799,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	181: {
-		Id:          181,
+		ID:          181,
 		Name:        "America/Port_of_Spain",
 		Status:      "A",
 		Offset:      -240,
@@ -7809,7 +7809,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TT",
 	},
 	182: {
-		Id:          182,
+		ID:          182,
 		Name:        "America/Port-au-Prince",
 		Status:      "C",
 		Offset:      -300,
@@ -7819,7 +7819,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "HT",
 	},
 	183: {
-		Id:          183,
+		ID:          183,
 		Name:        "America/Porto_Acre",
 		Status:      "A",
 		Offset:      -300,
@@ -7829,7 +7829,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	184: {
-		Id:          184,
+		ID:          184,
 		Name:        "America/Porto_Velho",
 		Status:      "C",
 		Offset:      -240,
@@ -7839,7 +7839,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	185: {
-		Id:          185,
+		ID:          185,
 		Name:        "America/Puerto_Rico",
 		Status:      "C",
 		Offset:      -240,
@@ -7849,7 +7849,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PR",
 	},
 	186: {
-		Id:          186,
+		ID:          186,
 		Name:        "America/Punta_Arenas",
 		Status:      "C",
 		Offset:      -180,
@@ -7859,7 +7859,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CL",
 	},
 	187: {
-		Id:          187,
+		ID:          187,
 		Name:        "America/Rainy_River",
 		Status:      "A",
 		Offset:      -360,
@@ -7869,7 +7869,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	188: {
-		Id:          188,
+		ID:          188,
 		Name:        "America/Rankin_Inlet",
 		Status:      "C",
 		Offset:      -360,
@@ -7879,7 +7879,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	189: {
-		Id:          189,
+		ID:          189,
 		Name:        "America/Recife",
 		Status:      "C",
 		Offset:      -180,
@@ -7889,7 +7889,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	190: {
-		Id:          190,
+		ID:          190,
 		Name:        "America/Regina",
 		Status:      "C",
 		Offset:      -360,
@@ -7899,7 +7899,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	191: {
-		Id:          191,
+		ID:          191,
 		Name:        "America/Resolute",
 		Status:      "C",
 		Offset:      -360,
@@ -7909,7 +7909,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	192: {
-		Id:          192,
+		ID:          192,
 		Name:        "America/Rio_Branco",
 		Status:      "C",
 		Offset:      -300,
@@ -7919,7 +7919,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	193: {
-		Id:          193,
+		ID:          193,
 		Name:        "America/Rosario",
 		Status:      "A",
 		Offset:      -180,
@@ -7929,7 +7929,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AR",
 	},
 	194: {
-		Id:          194,
+		ID:          194,
 		Name:        "America/Santa_Isabel",
 		Status:      "A",
 		Offset:      -480,
@@ -7939,7 +7939,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	195: {
-		Id:          195,
+		ID:          195,
 		Name:        "America/Santarem",
 		Status:      "C",
 		Offset:      -180,
@@ -7949,7 +7949,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	196: {
-		Id:          196,
+		ID:          196,
 		Name:        "America/Santiago",
 		Status:      "C",
 		Offset:      -240,
@@ -7959,7 +7959,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CL",
 	},
 	197: {
-		Id:          197,
+		ID:          197,
 		Name:        "America/Santo_Domingo",
 		Status:      "C",
 		Offset:      -240,
@@ -7969,7 +7969,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "DO",
 	},
 	198: {
-		Id:          198,
+		ID:          198,
 		Name:        "America/Sao_Paulo",
 		Status:      "C",
 		Offset:      -180,
@@ -7979,7 +7979,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BR",
 	},
 	199: {
-		Id:          199,
+		ID:          199,
 		Name:        "America/Scoresbysund",
 		Status:      "C",
 		Offset:      -120,
@@ -7989,7 +7989,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GL",
 	},
 	200: {
-		Id:          200,
+		ID:          200,
 		Name:        "America/Shiprock",
 		Status:      "A",
 		Offset:      -420,
@@ -7999,7 +7999,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	201: {
-		Id:          201,
+		ID:          201,
 		Name:        "America/Sitka",
 		Status:      "C",
 		Offset:      -540,
@@ -8009,7 +8009,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	202: {
-		Id:          202,
+		ID:          202,
 		Name:        "America/St_Barthelemy",
 		Status:      "A",
 		Offset:      -240,
@@ -8019,7 +8019,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BL",
 	},
 	203: {
-		Id:          203,
+		ID:          203,
 		Name:        "America/St_Johns",
 		Status:      "C",
 		Offset:      -210,
@@ -8029,7 +8029,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	204: {
-		Id:          204,
+		ID:          204,
 		Name:        "America/St_Kitts",
 		Status:      "A",
 		Offset:      -240,
@@ -8039,7 +8039,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KN",
 	},
 	205: {
-		Id:          205,
+		ID:          205,
 		Name:        "America/St_Lucia",
 		Status:      "A",
 		Offset:      -240,
@@ -8049,7 +8049,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "LC",
 	},
 	206: {
-		Id:          206,
+		ID:          206,
 		Name:        "America/St_Thomas",
 		Status:      "A",
 		Offset:      -240,
@@ -8059,7 +8059,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "VI",
 	},
 	207: {
-		Id:          207,
+		ID:          207,
 		Name:        "America/St_Vincent",
 		Status:      "A",
 		Offset:      -240,
@@ -8069,7 +8069,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "VC",
 	},
 	208: {
-		Id:          208,
+		ID:          208,
 		Name:        "America/Swift_Current",
 		Status:      "C",
 		Offset:      -360,
@@ -8079,7 +8079,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	209: {
-		Id:          209,
+		ID:          209,
 		Name:        "America/Tegucigalpa",
 		Status:      "C",
 		Offset:      -360,
@@ -8089,7 +8089,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "HN",
 	},
 	210: {
-		Id:          210,
+		ID:          210,
 		Name:        "America/Thule",
 		Status:      "C",
 		Offset:      -240,
@@ -8099,7 +8099,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GL",
 	},
 	211: {
-		Id:          211,
+		ID:          211,
 		Name:        "America/Thunder_Bay",
 		Status:      "A",
 		Offset:      -300,
@@ -8109,7 +8109,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	212: {
-		Id:          212,
+		ID:          212,
 		Name:        "America/Tijuana",
 		Status:      "C",
 		Offset:      -480,
@@ -8119,7 +8119,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	213: {
-		Id:          213,
+		ID:          213,
 		Name:        "America/Toronto",
 		Status:      "C",
 		Offset:      -300,
@@ -8129,7 +8129,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	214: {
-		Id:          214,
+		ID:          214,
 		Name:        "America/Tortola",
 		Status:      "A",
 		Offset:      -240,
@@ -8139,7 +8139,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "VG",
 	},
 	215: {
-		Id:          215,
+		ID:          215,
 		Name:        "America/Vancouver",
 		Status:      "C",
 		Offset:      -480,
@@ -8149,7 +8149,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	216: {
-		Id:          216,
+		ID:          216,
 		Name:        "America/Virgin",
 		Status:      "A",
 		Offset:      -240,
@@ -8159,7 +8159,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TT",
 	},
 	217: {
-		Id:          217,
+		ID:          217,
 		Name:        "America/Whitehorse",
 		Status:      "C",
 		Offset:      -420,
@@ -8169,7 +8169,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	218: {
-		Id:          218,
+		ID:          218,
 		Name:        "America/Winnipeg",
 		Status:      "C",
 		Offset:      -360,
@@ -8179,7 +8179,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	219: {
-		Id:          219,
+		ID:          219,
 		Name:        "America/Yakutat",
 		Status:      "C",
 		Offset:      -540,
@@ -8189,7 +8189,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	220: {
-		Id:          220,
+		ID:          220,
 		Name:        "America/Yellowknife",
 		Status:      "A",
 		Offset:      -420,
@@ -8199,7 +8199,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CA",
 	},
 	221: {
-		Id:          221,
+		ID:          221,
 		Name:        "Antarctica/Casey",
 		Status:      "C",
 		Offset:      480,
@@ -8209,7 +8209,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AQ",
 	},
 	222: {
-		Id:          222,
+		ID:          222,
 		Name:        "Antarctica/Davis",
 		Status:      "C",
 		Offset:      420,
@@ -8219,7 +8219,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AQ",
 	},
 	223: {
-		Id:          223,
+		ID:          223,
 		Name:        "Antarctica/DumontDUrville",
 		Status:      "A",
 		Offset:      600,
@@ -8229,7 +8229,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AQ",
 	},
 	224: {
-		Id:          224,
+		ID:          224,
 		Name:        "Antarctica/Macquarie",
 		Status:      "C",
 		Offset:      600,
@@ -8239,7 +8239,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	225: {
-		Id:          225,
+		ID:          225,
 		Name:        "Antarctica/Mawson",
 		Status:      "C",
 		Offset:      300,
@@ -8249,7 +8249,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AQ",
 	},
 	226: {
-		Id:          226,
+		ID:          226,
 		Name:        "Antarctica/McMurdo",
 		Status:      "A",
 		Offset:      720,
@@ -8259,7 +8259,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AQ",
 	},
 	227: {
-		Id:          227,
+		ID:          227,
 		Name:        "Antarctica/Palmer",
 		Status:      "C",
 		Offset:      -180,
@@ -8269,7 +8269,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AQ",
 	},
 	228: {
-		Id:          228,
+		ID:          228,
 		Name:        "Antarctica/Rothera",
 		Status:      "C",
 		Offset:      -180,
@@ -8279,7 +8279,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AQ",
 	},
 	229: {
-		Id:          229,
+		ID:          229,
 		Name:        "Antarctica/South_Pole",
 		Status:      "A",
 		Offset:      720,
@@ -8289,7 +8289,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NZ",
 	},
 	230: {
-		Id:          230,
+		ID:          230,
 		Name:        "Antarctica/Syowa",
 		Status:      "A",
 		Offset:      180,
@@ -8299,7 +8299,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AQ",
 	},
 	231: {
-		Id:          231,
+		ID:          231,
 		Name:        "Antarctica/Troll",
 		Status:      "C",
 		Offset:      0,
@@ -8309,7 +8309,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AQ",
 	},
 	232: {
-		Id:          232,
+		ID:          232,
 		Name:        "Antarctica/Vostok",
 		Status:      "C",
 		Offset:      300,
@@ -8319,7 +8319,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AQ",
 	},
 	233: {
-		Id:          233,
+		ID:          233,
 		Name:        "Arctic/Longyearbyen",
 		Status:      "A",
 		Offset:      60,
@@ -8329,7 +8329,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SJ",
 	},
 	234: {
-		Id:          234,
+		ID:          234,
 		Name:        "Asia/Aden",
 		Status:      "A",
 		Offset:      180,
@@ -8339,7 +8339,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "YE",
 	},
 	235: {
-		Id:          235,
+		ID:          235,
 		Name:        "Asia/Almaty",
 		Status:      "C",
 		Offset:      300,
@@ -8349,7 +8349,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KZ",
 	},
 	236: {
-		Id:          236,
+		ID:          236,
 		Name:        "Asia/Amman",
 		Status:      "C",
 		Offset:      180,
@@ -8359,7 +8359,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "JO",
 	},
 	237: {
-		Id:          237,
+		ID:          237,
 		Name:        "Asia/Anadyr",
 		Status:      "C",
 		Offset:      720,
@@ -8369,7 +8369,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	238: {
-		Id:          238,
+		ID:          238,
 		Name:        "Asia/Aqtau",
 		Status:      "C",
 		Offset:      300,
@@ -8379,7 +8379,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KZ",
 	},
 	239: {
-		Id:          239,
+		ID:          239,
 		Name:        "Asia/Aqtobe",
 		Status:      "C",
 		Offset:      300,
@@ -8389,7 +8389,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KZ",
 	},
 	240: {
-		Id:          240,
+		ID:          240,
 		Name:        "Asia/Ashgabat",
 		Status:      "C",
 		Offset:      300,
@@ -8399,7 +8399,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TM",
 	},
 	241: {
-		Id:          241,
+		ID:          241,
 		Name:        "Asia/Ashkhabad",
 		Status:      "A",
 		Offset:      300,
@@ -8409,7 +8409,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TM",
 	},
 	242: {
-		Id:          242,
+		ID:          242,
 		Name:        "Asia/Atyrau",
 		Status:      "C",
 		Offset:      300,
@@ -8419,7 +8419,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KZ",
 	},
 	243: {
-		Id:          243,
+		ID:          243,
 		Name:        "Asia/Baghdad",
 		Status:      "C",
 		Offset:      180,
@@ -8429,7 +8429,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "IQ",
 	},
 	244: {
-		Id:          244,
+		ID:          244,
 		Name:        "Asia/Bahrain",
 		Status:      "A",
 		Offset:      180,
@@ -8439,7 +8439,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BH",
 	},
 	245: {
-		Id:          245,
+		ID:          245,
 		Name:        "Asia/Baku",
 		Status:      "C",
 		Offset:      240,
@@ -8449,7 +8449,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AZ",
 	},
 	246: {
-		Id:          246,
+		ID:          246,
 		Name:        "Asia/Bangkok",
 		Status:      "C",
 		Offset:      420,
@@ -8459,7 +8459,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TH",
 	},
 	247: {
-		Id:          247,
+		ID:          247,
 		Name:        "Asia/Barnaul",
 		Status:      "C",
 		Offset:      420,
@@ -8469,7 +8469,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	248: {
-		Id:          248,
+		ID:          248,
 		Name:        "Asia/Beirut",
 		Status:      "C",
 		Offset:      120,
@@ -8479,7 +8479,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "LB",
 	},
 	249: {
-		Id:          249,
+		ID:          249,
 		Name:        "Asia/Bishkek",
 		Status:      "C",
 		Offset:      360,
@@ -8489,7 +8489,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KG",
 	},
 	250: {
-		Id:          250,
+		ID:          250,
 		Name:        "Asia/Brunei",
 		Status:      "A",
 		Offset:      480,
@@ -8499,7 +8499,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BN",
 	},
 	251: {
-		Id:          251,
+		ID:          251,
 		Name:        "Asia/Calcutta",
 		Status:      "A",
 		Offset:      330,
@@ -8509,7 +8509,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "IN",
 	},
 	252: {
-		Id:          252,
+		ID:          252,
 		Name:        "Asia/Chita",
 		Status:      "C",
 		Offset:      540,
@@ -8519,7 +8519,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	253: {
-		Id:          253,
+		ID:          253,
 		Name:        "Asia/Choibalsan",
 		Status:      "A",
 		Offset:      480,
@@ -8529,7 +8529,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MN",
 	},
 	254: {
-		Id:          254,
+		ID:          254,
 		Name:        "Asia/Chongqing",
 		Status:      "A",
 		Offset:      480,
@@ -8539,7 +8539,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CN",
 	},
 	255: {
-		Id:          255,
+		ID:          255,
 		Name:        "Asia/Chungking",
 		Status:      "A",
 		Offset:      480,
@@ -8549,7 +8549,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CN",
 	},
 	256: {
-		Id:          256,
+		ID:          256,
 		Name:        "Asia/Colombo",
 		Status:      "C",
 		Offset:      330,
@@ -8559,7 +8559,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "LK",
 	},
 	257: {
-		Id:          257,
+		ID:          257,
 		Name:        "Asia/Dacca",
 		Status:      "A",
 		Offset:      360,
@@ -8569,7 +8569,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BD",
 	},
 	258: {
-		Id:          258,
+		ID:          258,
 		Name:        "Asia/Damascus",
 		Status:      "C",
 		Offset:      180,
@@ -8579,7 +8579,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SY",
 	},
 	259: {
-		Id:          259,
+		ID:          259,
 		Name:        "Asia/Dhaka",
 		Status:      "C",
 		Offset:      360,
@@ -8589,7 +8589,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BD",
 	},
 	260: {
-		Id:          260,
+		ID:          260,
 		Name:        "Asia/Dili",
 		Status:      "C",
 		Offset:      540,
@@ -8599,7 +8599,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TL",
 	},
 	261: {
-		Id:          261,
+		ID:          261,
 		Name:        "Asia/Dubai",
 		Status:      "C",
 		Offset:      240,
@@ -8609,7 +8609,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AE",
 	},
 	262: {
-		Id:          262,
+		ID:          262,
 		Name:        "Asia/Dushanbe",
 		Status:      "C",
 		Offset:      300,
@@ -8619,7 +8619,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TJ",
 	},
 	263: {
-		Id:          263,
+		ID:          263,
 		Name:        "Asia/Famagusta",
 		Status:      "C",
 		Offset:      120,
@@ -8629,7 +8629,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CY",
 	},
 	264: {
-		Id:          264,
+		ID:          264,
 		Name:        "Asia/Gaza",
 		Status:      "C",
 		Offset:      120,
@@ -8639,7 +8639,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PS",
 	},
 	265: {
-		Id:          265,
+		ID:          265,
 		Name:        "Asia/Harbin",
 		Status:      "A",
 		Offset:      480,
@@ -8649,7 +8649,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CN",
 	},
 	266: {
-		Id:          266,
+		ID:          266,
 		Name:        "Asia/Hebron",
 		Status:      "C",
 		Offset:      120,
@@ -8659,7 +8659,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PS",
 	},
 	267: {
-		Id:          267,
+		ID:          267,
 		Name:        "Asia/Ho_Chi_Minh",
 		Status:      "C",
 		Offset:      420,
@@ -8669,7 +8669,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "VN",
 	},
 	268: {
-		Id:          268,
+		ID:          268,
 		Name:        "Asia/Hong_Kong",
 		Status:      "C",
 		Offset:      480,
@@ -8679,7 +8679,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "HK",
 	},
 	269: {
-		Id:          269,
+		ID:          269,
 		Name:        "Asia/Hovd",
 		Status:      "C",
 		Offset:      420,
@@ -8689,7 +8689,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MN",
 	},
 	270: {
-		Id:          270,
+		ID:          270,
 		Name:        "Asia/Irkutsk",
 		Status:      "C",
 		Offset:      480,
@@ -8699,7 +8699,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	271: {
-		Id:          271,
+		ID:          271,
 		Name:        "Asia/Istanbul",
 		Status:      "A",
 		Offset:      180,
@@ -8709,7 +8709,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TR",
 	},
 	272: {
-		Id:          272,
+		ID:          272,
 		Name:        "Asia/Jakarta",
 		Status:      "C",
 		Offset:      420,
@@ -8719,7 +8719,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ID",
 	},
 	273: {
-		Id:          273,
+		ID:          273,
 		Name:        "Asia/Jayapura",
 		Status:      "C",
 		Offset:      540,
@@ -8729,7 +8729,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ID",
 	},
 	274: {
-		Id:          274,
+		ID:          274,
 		Name:        "Asia/Jerusalem",
 		Status:      "C",
 		Offset:      120,
@@ -8739,7 +8739,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "IL",
 	},
 	275: {
-		Id:          275,
+		ID:          275,
 		Name:        "Asia/Kabul",
 		Status:      "C",
 		Offset:      270,
@@ -8749,7 +8749,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AF",
 	},
 	276: {
-		Id:          276,
+		ID:          276,
 		Name:        "Asia/Kamchatka",
 		Status:      "C",
 		Offset:      720,
@@ -8759,7 +8759,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	277: {
-		Id:          277,
+		ID:          277,
 		Name:        "Asia/Karachi",
 		Status:      "C",
 		Offset:      300,
@@ -8769,7 +8769,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PK",
 	},
 	278: {
-		Id:          278,
+		ID:          278,
 		Name:        "Asia/Kashgar",
 		Status:      "A",
 		Offset:      360,
@@ -8779,7 +8779,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CN",
 	},
 	279: {
-		Id:          279,
+		ID:          279,
 		Name:        "Asia/Kathmandu",
 		Status:      "C",
 		Offset:      345,
@@ -8789,7 +8789,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NP",
 	},
 	280: {
-		Id:          280,
+		ID:          280,
 		Name:        "Asia/Katmandu",
 		Status:      "A",
 		Offset:      345,
@@ -8799,7 +8799,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NP",
 	},
 	281: {
-		Id:          281,
+		ID:          281,
 		Name:        "Asia/Khandyga",
 		Status:      "C",
 		Offset:      540,
@@ -8809,7 +8809,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	282: {
-		Id:          282,
+		ID:          282,
 		Name:        "Asia/Kolkata",
 		Status:      "C",
 		Offset:      330,
@@ -8819,7 +8819,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "IN",
 	},
 	283: {
-		Id:          283,
+		ID:          283,
 		Name:        "Asia/Krasnoyarsk",
 		Status:      "C",
 		Offset:      420,
@@ -8829,7 +8829,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	284: {
-		Id:          284,
+		ID:          284,
 		Name:        "Asia/Kuala_Lumpur",
 		Status:      "A",
 		Offset:      480,
@@ -8839,7 +8839,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MY",
 	},
 	285: {
-		Id:          285,
+		ID:          285,
 		Name:        "Asia/Kuching",
 		Status:      "C",
 		Offset:      480,
@@ -8849,7 +8849,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MY",
 	},
 	286: {
-		Id:          286,
+		ID:          286,
 		Name:        "Asia/Kuwait",
 		Status:      "A",
 		Offset:      180,
@@ -8859,7 +8859,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KW",
 	},
 	287: {
-		Id:          287,
+		ID:          287,
 		Name:        "Asia/Macao",
 		Status:      "A",
 		Offset:      480,
@@ -8869,7 +8869,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MO",
 	},
 	288: {
-		Id:          288,
+		ID:          288,
 		Name:        "Asia/Macau",
 		Status:      "C",
 		Offset:      480,
@@ -8879,7 +8879,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MO",
 	},
 	289: {
-		Id:          289,
+		ID:          289,
 		Name:        "Asia/Magadan",
 		Status:      "C",
 		Offset:      660,
@@ -8889,7 +8889,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	290: {
-		Id:          290,
+		ID:          290,
 		Name:        "Asia/Makassar",
 		Status:      "C",
 		Offset:      480,
@@ -8899,7 +8899,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ID",
 	},
 	291: {
-		Id:          291,
+		ID:          291,
 		Name:        "Asia/Manila",
 		Status:      "C",
 		Offset:      480,
@@ -8909,7 +8909,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PH",
 	},
 	292: {
-		Id:          292,
+		ID:          292,
 		Name:        "Asia/Muscat",
 		Status:      "A",
 		Offset:      240,
@@ -8919,7 +8919,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "OM",
 	},
 	293: {
-		Id:          293,
+		ID:          293,
 		Name:        "Asia/Novokuznetsk",
 		Status:      "C",
 		Offset:      420,
@@ -8929,7 +8929,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	294: {
-		Id:          294,
+		ID:          294,
 		Name:        "Asia/Novosibirsk",
 		Status:      "C",
 		Offset:      420,
@@ -8939,7 +8939,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	295: {
-		Id:          295,
+		ID:          295,
 		Name:        "Asia/Omsk",
 		Status:      "C",
 		Offset:      360,
@@ -8949,7 +8949,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	296: {
-		Id:          296,
+		ID:          296,
 		Name:        "Asia/Oral",
 		Status:      "C",
 		Offset:      300,
@@ -8959,7 +8959,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KZ",
 	},
 	297: {
-		Id:          297,
+		ID:          297,
 		Name:        "Asia/Phnom_Penh",
 		Status:      "A",
 		Offset:      420,
@@ -8969,7 +8969,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KH",
 	},
 	298: {
-		Id:          298,
+		ID:          298,
 		Name:        "Asia/Pontianak",
 		Status:      "C",
 		Offset:      420,
@@ -8979,7 +8979,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ID",
 	},
 	299: {
-		Id:          299,
+		ID:          299,
 		Name:        "Asia/Pyongyang",
 		Status:      "C",
 		Offset:      540,
@@ -8989,7 +8989,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KP",
 	},
 	300: {
-		Id:          300,
+		ID:          300,
 		Name:        "Asia/Qatar",
 		Status:      "C",
 		Offset:      180,
@@ -8999,7 +8999,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "QA",
 	},
 	301: {
-		Id:          301,
+		ID:          301,
 		Name:        "Asia/Qyzylorda",
 		Status:      "C",
 		Offset:      300,
@@ -9009,7 +9009,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KZ",
 	},
 	302: {
-		Id:          302,
+		ID:          302,
 		Name:        "Asia/Rangoon",
 		Status:      "A",
 		Offset:      390,
@@ -9019,7 +9019,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MM",
 	},
 	303: {
-		Id:          303,
+		ID:          303,
 		Name:        "Asia/Riyadh",
 		Status:      "C",
 		Offset:      180,
@@ -9029,7 +9029,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SA",
 	},
 	304: {
-		Id:          304,
+		ID:          304,
 		Name:        "Asia/Saigon",
 		Status:      "A",
 		Offset:      420,
@@ -9039,7 +9039,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "VN",
 	},
 	305: {
-		Id:          305,
+		ID:          305,
 		Name:        "Asia/Sakhalin",
 		Status:      "C",
 		Offset:      660,
@@ -9049,7 +9049,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	306: {
-		Id:          306,
+		ID:          306,
 		Name:        "Asia/Samarkand",
 		Status:      "C",
 		Offset:      300,
@@ -9059,7 +9059,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "UZ",
 	},
 	307: {
-		Id:          307,
+		ID:          307,
 		Name:        "Asia/Seoul",
 		Status:      "C",
 		Offset:      540,
@@ -9069,7 +9069,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KR",
 	},
 	308: {
-		Id:          308,
+		ID:          308,
 		Name:        "Asia/Shanghai",
 		Status:      "C",
 		Offset:      480,
@@ -9079,7 +9079,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CN",
 	},
 	309: {
-		Id:          309,
+		ID:          309,
 		Name:        "Asia/Singapore",
 		Status:      "C",
 		Offset:      480,
@@ -9089,7 +9089,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SG",
 	},
 	310: {
-		Id:          310,
+		ID:          310,
 		Name:        "Asia/Srednekolymsk",
 		Status:      "C",
 		Offset:      660,
@@ -9099,7 +9099,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	311: {
-		Id:          311,
+		ID:          311,
 		Name:        "Asia/Taipei",
 		Status:      "C",
 		Offset:      480,
@@ -9109,7 +9109,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TW",
 	},
 	312: {
-		Id:          312,
+		ID:          312,
 		Name:        "Asia/Tashkent",
 		Status:      "C",
 		Offset:      300,
@@ -9119,7 +9119,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "UZ",
 	},
 	313: {
-		Id:          313,
+		ID:          313,
 		Name:        "Asia/Tbilisi",
 		Status:      "C",
 		Offset:      240,
@@ -9129,7 +9129,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GE",
 	},
 	314: {
-		Id:          314,
+		ID:          314,
 		Name:        "Asia/Tehran",
 		Status:      "C",
 		Offset:      210,
@@ -9139,7 +9139,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "IR",
 	},
 	315: {
-		Id:          315,
+		ID:          315,
 		Name:        "Asia/Tel_Aviv",
 		Status:      "A",
 		Offset:      120,
@@ -9149,7 +9149,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "IL",
 	},
 	316: {
-		Id:          316,
+		ID:          316,
 		Name:        "Asia/Thimbu",
 		Status:      "A",
 		Offset:      360,
@@ -9159,7 +9159,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BT",
 	},
 	317: {
-		Id:          317,
+		ID:          317,
 		Name:        "Asia/Thimphu",
 		Status:      "C",
 		Offset:      360,
@@ -9169,7 +9169,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BT",
 	},
 	318: {
-		Id:          318,
+		ID:          318,
 		Name:        "Asia/Tokyo",
 		Status:      "C",
 		Offset:      540,
@@ -9179,7 +9179,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "JP",
 	},
 	319: {
-		Id:          319,
+		ID:          319,
 		Name:        "Asia/Tomsk",
 		Status:      "C",
 		Offset:      420,
@@ -9189,7 +9189,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	320: {
-		Id:          320,
+		ID:          320,
 		Name:        "Asia/Ujung_Pandang",
 		Status:      "A",
 		Offset:      480,
@@ -9199,7 +9199,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ID",
 	},
 	321: {
-		Id:          321,
+		ID:          321,
 		Name:        "Asia/Ulaanbaatar",
 		Status:      "C",
 		Offset:      480,
@@ -9209,7 +9209,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MN",
 	},
 	322: {
-		Id:          322,
+		ID:          322,
 		Name:        "Asia/Ulan_Bator",
 		Status:      "A",
 		Offset:      480,
@@ -9219,7 +9219,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MN",
 	},
 	323: {
-		Id:          323,
+		ID:          323,
 		Name:        "Asia/Urumqi",
 		Status:      "C",
 		Offset:      360,
@@ -9229,7 +9229,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CN",
 	},
 	324: {
-		Id:          324,
+		ID:          324,
 		Name:        "Asia/Ust-Nera",
 		Status:      "C",
 		Offset:      600,
@@ -9239,7 +9239,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	325: {
-		Id:          325,
+		ID:          325,
 		Name:        "Asia/Vientiane",
 		Status:      "A",
 		Offset:      420,
@@ -9249,7 +9249,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "LA",
 	},
 	326: {
-		Id:          326,
+		ID:          326,
 		Name:        "Asia/Vladivostok",
 		Status:      "C",
 		Offset:      600,
@@ -9259,7 +9259,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	327: {
-		Id:          327,
+		ID:          327,
 		Name:        "Asia/Yakutsk",
 		Status:      "C",
 		Offset:      540,
@@ -9269,7 +9269,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	328: {
-		Id:          328,
+		ID:          328,
 		Name:        "Asia/Yangon",
 		Status:      "C",
 		Offset:      390,
@@ -9279,7 +9279,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MM",
 	},
 	329: {
-		Id:          329,
+		ID:          329,
 		Name:        "Asia/Yekaterinburg",
 		Status:      "C",
 		Offset:      300,
@@ -9289,7 +9289,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	330: {
-		Id:          330,
+		ID:          330,
 		Name:        "Asia/Yerevan",
 		Status:      "C",
 		Offset:      240,
@@ -9299,7 +9299,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AM",
 	},
 	331: {
-		Id:          331,
+		ID:          331,
 		Name:        "Atlantic/Azores",
 		Status:      "C",
 		Offset:      -60,
@@ -9309,7 +9309,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PT",
 	},
 	332: {
-		Id:          332,
+		ID:          332,
 		Name:        "Atlantic/Bermuda",
 		Status:      "C",
 		Offset:      -240,
@@ -9319,7 +9319,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BM",
 	},
 	333: {
-		Id:          333,
+		ID:          333,
 		Name:        "Atlantic/Canary",
 		Status:      "C",
 		Offset:      0,
@@ -9329,7 +9329,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ES",
 	},
 	334: {
-		Id:          334,
+		ID:          334,
 		Name:        "Atlantic/Cape_Verde",
 		Status:      "C",
 		Offset:      -60,
@@ -9339,7 +9339,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CV",
 	},
 	335: {
-		Id:          335,
+		ID:          335,
 		Name:        "Atlantic/Faeroe",
 		Status:      "A",
 		Offset:      0,
@@ -9349,7 +9349,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "FO",
 	},
 	336: {
-		Id:          336,
+		ID:          336,
 		Name:        "Atlantic/Faroe",
 		Status:      "C",
 		Offset:      0,
@@ -9359,7 +9359,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "FO",
 	},
 	337: {
-		Id:          337,
+		ID:          337,
 		Name:        "Atlantic/Jan_Mayen",
 		Status:      "A",
 		Offset:      60,
@@ -9369,7 +9369,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NO",
 	},
 	338: {
-		Id:          338,
+		ID:          338,
 		Name:        "Atlantic/Madeira",
 		Status:      "C",
 		Offset:      0,
@@ -9379,7 +9379,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PT",
 	},
 	339: {
-		Id:          339,
+		ID:          339,
 		Name:        "Atlantic/Reykjavik",
 		Status:      "A",
 		Offset:      0,
@@ -9389,7 +9389,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "IS",
 	},
 	340: {
-		Id:          340,
+		ID:          340,
 		Name:        "Atlantic/South_Georgia",
 		Status:      "C",
 		Offset:      -120,
@@ -9399,7 +9399,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GS",
 	},
 	341: {
-		Id:          341,
+		ID:          341,
 		Name:        "Atlantic/St_Helena",
 		Status:      "A",
 		Offset:      0,
@@ -9409,7 +9409,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SH",
 	},
 	342: {
-		Id:          342,
+		ID:          342,
 		Name:        "Atlantic/Stanley",
 		Status:      "C",
 		Offset:      -180,
@@ -9419,7 +9419,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "FK",
 	},
 	343: {
-		Id:          343,
+		ID:          343,
 		Name:        "Australia/Adelaide",
 		Status:      "C",
 		Offset:      570,
@@ -9429,7 +9429,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	344: {
-		Id:          344,
+		ID:          344,
 		Name:        "Australia/Brisbane",
 		Status:      "C",
 		Offset:      600,
@@ -9439,7 +9439,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	345: {
-		Id:          345,
+		ID:          345,
 		Name:        "Australia/Broken_Hill",
 		Status:      "C",
 		Offset:      570,
@@ -9449,7 +9449,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	346: {
-		Id:          346,
+		ID:          346,
 		Name:        "Australia/Canberra",
 		Status:      "A",
 		Offset:      600,
@@ -9459,7 +9459,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	347: {
-		Id:          347,
+		ID:          347,
 		Name:        "Australia/Currie",
 		Status:      "A",
 		Offset:      600,
@@ -9469,7 +9469,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	348: {
-		Id:          348,
+		ID:          348,
 		Name:        "Australia/Darwin",
 		Status:      "C",
 		Offset:      570,
@@ -9479,7 +9479,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	349: {
-		Id:          349,
+		ID:          349,
 		Name:        "Australia/Eucla",
 		Status:      "C",
 		Offset:      525,
@@ -9489,7 +9489,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	350: {
-		Id:          350,
+		ID:          350,
 		Name:        "Australia/Hobart",
 		Status:      "C",
 		Offset:      600,
@@ -9499,7 +9499,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	351: {
-		Id:          351,
+		ID:          351,
 		Name:        "Australia/Lindeman",
 		Status:      "C",
 		Offset:      600,
@@ -9509,7 +9509,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	352: {
-		Id:          352,
+		ID:          352,
 		Name:        "Australia/Lord_Howe",
 		Status:      "C",
 		Offset:      630,
@@ -9519,7 +9519,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	353: {
-		Id:          353,
+		ID:          353,
 		Name:        "Australia/Melbourne",
 		Status:      "C",
 		Offset:      600,
@@ -9529,7 +9529,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	354: {
-		Id:          354,
+		ID:          354,
 		Name:        "Australia/Perth",
 		Status:      "C",
 		Offset:      480,
@@ -9539,7 +9539,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	355: {
-		Id:          355,
+		ID:          355,
 		Name:        "Australia/Sydney",
 		Status:      "C",
 		Offset:      600,
@@ -9549,7 +9549,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	356: {
-		Id:          356,
+		ID:          356,
 		Name:        "Australia/Yancowinna",
 		Status:      "A",
 		Offset:      570,
@@ -9559,7 +9559,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AU",
 	},
 	357: {
-		Id:          357,
+		ID:          357,
 		Name:        "Europe/Amsterdam",
 		Status:      "A",
 		Offset:      60,
@@ -9569,7 +9569,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NL",
 	},
 	358: {
-		Id:          358,
+		ID:          358,
 		Name:        "Europe/Andorra",
 		Status:      "C",
 		Offset:      60,
@@ -9579,7 +9579,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AD",
 	},
 	359: {
-		Id:          359,
+		ID:          359,
 		Name:        "Europe/Astrakhan",
 		Status:      "C",
 		Offset:      240,
@@ -9589,7 +9589,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	360: {
-		Id:          360,
+		ID:          360,
 		Name:        "Europe/Athens",
 		Status:      "C",
 		Offset:      120,
@@ -9599,7 +9599,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GR",
 	},
 	361: {
-		Id:          361,
+		ID:          361,
 		Name:        "Europe/Belfast",
 		Status:      "A",
 		Offset:      0,
@@ -9609,7 +9609,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GB",
 	},
 	362: {
-		Id:          362,
+		ID:          362,
 		Name:        "Europe/Belgrade",
 		Status:      "C",
 		Offset:      60,
@@ -9619,7 +9619,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RS",
 	},
 	363: {
-		Id:          363,
+		ID:          363,
 		Name:        "Europe/Berlin",
 		Status:      "C",
 		Offset:      60,
@@ -9629,7 +9629,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "DE",
 	},
 	364: {
-		Id:          364,
+		ID:          364,
 		Name:        "Europe/Bratislava",
 		Status:      "A",
 		Offset:      60,
@@ -9639,7 +9639,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SK",
 	},
 	365: {
-		Id:          365,
+		ID:          365,
 		Name:        "Europe/Brussels",
 		Status:      "C",
 		Offset:      60,
@@ -9649,7 +9649,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BE",
 	},
 	366: {
-		Id:          366,
+		ID:          366,
 		Name:        "Europe/Bucharest",
 		Status:      "C",
 		Offset:      120,
@@ -9659,7 +9659,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RO",
 	},
 	367: {
-		Id:          367,
+		ID:          367,
 		Name:        "Europe/Budapest",
 		Status:      "C",
 		Offset:      60,
@@ -9669,7 +9669,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "HU",
 	},
 	368: {
-		Id:          368,
+		ID:          368,
 		Name:        "Europe/Busingen",
 		Status:      "A",
 		Offset:      60,
@@ -9679,7 +9679,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "DE",
 	},
 	369: {
-		Id:          369,
+		ID:          369,
 		Name:        "Europe/Chisinau",
 		Status:      "C",
 		Offset:      120,
@@ -9689,7 +9689,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MD",
 	},
 	370: {
-		Id:          370,
+		ID:          370,
 		Name:        "Europe/Copenhagen",
 		Status:      "A",
 		Offset:      60,
@@ -9699,7 +9699,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "DK",
 	},
 	371: {
-		Id:          371,
+		ID:          371,
 		Name:        "Europe/Dublin",
 		Status:      "C",
 		Offset:      60,
@@ -9709,7 +9709,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "IE",
 	},
 	372: {
-		Id:          372,
+		ID:          372,
 		Name:        "Europe/Gibraltar",
 		Status:      "C",
 		Offset:      60,
@@ -9719,7 +9719,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GI",
 	},
 	373: {
-		Id:          373,
+		ID:          373,
 		Name:        "Europe/Guernsey",
 		Status:      "A",
 		Offset:      0,
@@ -9729,7 +9729,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GG",
 	},
 	374: {
-		Id:          374,
+		ID:          374,
 		Name:        "Europe/Helsinki",
 		Status:      "C",
 		Offset:      120,
@@ -9739,7 +9739,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "FI",
 	},
 	375: {
-		Id:          375,
+		ID:          375,
 		Name:        "Europe/Isle_of_Man",
 		Status:      "A",
 		Offset:      0,
@@ -9749,7 +9749,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "IM",
 	},
 	376: {
-		Id:          376,
+		ID:          376,
 		Name:        "Europe/Istanbul",
 		Status:      "C",
 		Offset:      180,
@@ -9759,7 +9759,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TR",
 	},
 	377: {
-		Id:          377,
+		ID:          377,
 		Name:        "Europe/Jersey",
 		Status:      "A",
 		Offset:      0,
@@ -9769,7 +9769,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "JE",
 	},
 	378: {
-		Id:          378,
+		ID:          378,
 		Name:        "Europe/Kaliningrad",
 		Status:      "C",
 		Offset:      120,
@@ -9779,7 +9779,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	379: {
-		Id:          379,
+		ID:          379,
 		Name:        "Europe/Kiev",
 		Status:      "A",
 		Offset:      120,
@@ -9789,7 +9789,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "UA",
 	},
 	380: {
-		Id:          380,
+		ID:          380,
 		Name:        "Europe/Kirov",
 		Status:      "C",
 		Offset:      180,
@@ -9799,7 +9799,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	381: {
-		Id:          381,
+		ID:          381,
 		Name:        "Europe/Lisbon",
 		Status:      "C",
 		Offset:      0,
@@ -9809,7 +9809,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PT",
 	},
 	382: {
-		Id:          382,
+		ID:          382,
 		Name:        "Europe/Ljubljana",
 		Status:      "A",
 		Offset:      60,
@@ -9819,7 +9819,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SI",
 	},
 	383: {
-		Id:          383,
+		ID:          383,
 		Name:        "Europe/London",
 		Status:      "C",
 		Offset:      0,
@@ -9829,7 +9829,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GB",
 	},
 	384: {
-		Id:          384,
+		ID:          384,
 		Name:        "Europe/Luxembourg",
 		Status:      "A",
 		Offset:      60,
@@ -9839,7 +9839,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "LU",
 	},
 	385: {
-		Id:          385,
+		ID:          385,
 		Name:        "Europe/Madrid",
 		Status:      "C",
 		Offset:      60,
@@ -9849,7 +9849,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ES",
 	},
 	386: {
-		Id:          386,
+		ID:          386,
 		Name:        "Europe/Malta",
 		Status:      "C",
 		Offset:      60,
@@ -9859,7 +9859,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MT",
 	},
 	387: {
-		Id:          387,
+		ID:          387,
 		Name:        "Europe/Mariehamn",
 		Status:      "A",
 		Offset:      120,
@@ -9869,7 +9869,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AX",
 	},
 	388: {
-		Id:          388,
+		ID:          388,
 		Name:        "Europe/Minsk",
 		Status:      "C",
 		Offset:      180,
@@ -9879,7 +9879,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BY",
 	},
 	389: {
-		Id:          389,
+		ID:          389,
 		Name:        "Europe/Monaco",
 		Status:      "A",
 		Offset:      60,
@@ -9889,7 +9889,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MC",
 	},
 	390: {
-		Id:          390,
+		ID:          390,
 		Name:        "Europe/Moscow",
 		Status:      "C",
 		Offset:      180,
@@ -9899,7 +9899,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	391: {
-		Id:          391,
+		ID:          391,
 		Name:        "Asia/Nicosia",
 		Status:      "C",
 		Offset:      120,
@@ -9909,7 +9909,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CY",
 	},
 	392: {
-		Id:          392,
+		ID:          392,
 		Name:        "Europe/Oslo",
 		Status:      "A",
 		Offset:      60,
@@ -9919,7 +9919,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NO",
 	},
 	393: {
-		Id:          393,
+		ID:          393,
 		Name:        "Europe/Paris",
 		Status:      "C",
 		Offset:      60,
@@ -9929,7 +9929,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "FR",
 	},
 	394: {
-		Id:          394,
+		ID:          394,
 		Name:        "Europe/Podgorica",
 		Status:      "A",
 		Offset:      60,
@@ -9939,7 +9939,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "ME",
 	},
 	395: {
-		Id:          395,
+		ID:          395,
 		Name:        "Europe/Prague",
 		Status:      "C",
 		Offset:      60,
@@ -9949,7 +9949,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CZ",
 	},
 	396: {
-		Id:          396,
+		ID:          396,
 		Name:        "Europe/Riga",
 		Status:      "C",
 		Offset:      120,
@@ -9959,7 +9959,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "LV",
 	},
 	397: {
-		Id:          397,
+		ID:          397,
 		Name:        "Europe/Rome",
 		Status:      "C",
 		Offset:      60,
@@ -9969,7 +9969,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "IT",
 	},
 	398: {
-		Id:          398,
+		ID:          398,
 		Name:        "Europe/Samara",
 		Status:      "C",
 		Offset:      240,
@@ -9979,7 +9979,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	399: {
-		Id:          399,
+		ID:          399,
 		Name:        "Europe/San_Marino",
 		Status:      "A",
 		Offset:      60,
@@ -9989,7 +9989,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SM",
 	},
 	400: {
-		Id:          400,
+		ID:          400,
 		Name:        "Europe/Sarajevo",
 		Status:      "A",
 		Offset:      60,
@@ -9999,7 +9999,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BA",
 	},
 	401: {
-		Id:          401,
+		ID:          401,
 		Name:        "Europe/Saratov",
 		Status:      "C",
 		Offset:      240,
@@ -10009,7 +10009,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	402: {
-		Id:          402,
+		ID:          402,
 		Name:        "Europe/Simferopol",
 		Status:      "C",
 		Offset:      180,
@@ -10019,7 +10019,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "UA",
 	},
 	403: {
-		Id:          403,
+		ID:          403,
 		Name:        "Europe/Skopje",
 		Status:      "A",
 		Offset:      60,
@@ -10029,7 +10029,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MK",
 	},
 	404: {
-		Id:          404,
+		ID:          404,
 		Name:        "Europe/Sofia",
 		Status:      "C",
 		Offset:      120,
@@ -10039,7 +10039,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "BG",
 	},
 	405: {
-		Id:          405,
+		ID:          405,
 		Name:        "Europe/Stockholm",
 		Status:      "A",
 		Offset:      60,
@@ -10049,7 +10049,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SE",
 	},
 	406: {
-		Id:          406,
+		ID:          406,
 		Name:        "Europe/Tallinn",
 		Status:      "C",
 		Offset:      120,
@@ -10059,7 +10059,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "EE",
 	},
 	407: {
-		Id:          407,
+		ID:          407,
 		Name:        "Europe/Tirane",
 		Status:      "C",
 		Offset:      60,
@@ -10069,7 +10069,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AL",
 	},
 	408: {
-		Id:          408,
+		ID:          408,
 		Name:        "Europe/Tiraspol",
 		Status:      "A",
 		Offset:      120,
@@ -10079,7 +10079,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MD",
 	},
 	409: {
-		Id:          409,
+		ID:          409,
 		Name:        "Europe/Ulyanovsk",
 		Status:      "C",
 		Offset:      240,
@@ -10089,7 +10089,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	410: {
-		Id:          410,
+		ID:          410,
 		Name:        "Europe/Uzhgorod",
 		Status:      "A",
 		Offset:      120,
@@ -10099,7 +10099,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "UA",
 	},
 	411: {
-		Id:          411,
+		ID:          411,
 		Name:        "Europe/Vaduz",
 		Status:      "A",
 		Offset:      60,
@@ -10109,7 +10109,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "LI",
 	},
 	412: {
-		Id:          412,
+		ID:          412,
 		Name:        "Europe/Vatican",
 		Status:      "A",
 		Offset:      60,
@@ -10119,7 +10119,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "VA",
 	},
 	413: {
-		Id:          413,
+		ID:          413,
 		Name:        "Europe/Vienna",
 		Status:      "C",
 		Offset:      60,
@@ -10129,7 +10129,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AT",
 	},
 	414: {
-		Id:          414,
+		ID:          414,
 		Name:        "Europe/Vilnius",
 		Status:      "C",
 		Offset:      120,
@@ -10139,7 +10139,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "LT",
 	},
 	415: {
-		Id:          415,
+		ID:          415,
 		Name:        "Europe/Volgograd",
 		Status:      "C",
 		Offset:      180,
@@ -10149,7 +10149,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RU",
 	},
 	416: {
-		Id:          416,
+		ID:          416,
 		Name:        "Europe/Warsaw",
 		Status:      "C",
 		Offset:      60,
@@ -10159,7 +10159,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PL",
 	},
 	417: {
-		Id:          417,
+		ID:          417,
 		Name:        "Europe/Zagreb",
 		Status:      "A",
 		Offset:      60,
@@ -10169,7 +10169,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "HR",
 	},
 	418: {
-		Id:          418,
+		ID:          418,
 		Name:        "Europe/Zaporozhye",
 		Status:      "A",
 		Offset:      120,
@@ -10179,7 +10179,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "UA",
 	},
 	419: {
-		Id:          419,
+		ID:          419,
 		Name:        "Europe/Zurich",
 		Status:      "C",
 		Offset:      60,
@@ -10189,7 +10189,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CH",
 	},
 	420: {
-		Id:          420,
+		ID:          420,
 		Name:        "Indian/Antananarivo",
 		Status:      "A",
 		Offset:      180,
@@ -10199,7 +10199,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MG",
 	},
 	421: {
-		Id:          421,
+		ID:          421,
 		Name:        "Indian/Chagos",
 		Status:      "C",
 		Offset:      360,
@@ -10209,7 +10209,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "IO",
 	},
 	422: {
-		Id:          422,
+		ID:          422,
 		Name:        "Indian/Christmas",
 		Status:      "A",
 		Offset:      420,
@@ -10219,7 +10219,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CX",
 	},
 	423: {
-		Id:          423,
+		ID:          423,
 		Name:        "Indian/Cocos",
 		Status:      "A",
 		Offset:      390,
@@ -10229,7 +10229,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CC",
 	},
 	424: {
-		Id:          424,
+		ID:          424,
 		Name:        "Indian/Comoro",
 		Status:      "A",
 		Offset:      180,
@@ -10239,7 +10239,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KM",
 	},
 	425: {
-		Id:          425,
+		ID:          425,
 		Name:        "Indian/Kerguelen",
 		Status:      "A",
 		Offset:      300,
@@ -10249,7 +10249,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TF",
 	},
 	426: {
-		Id:          426,
+		ID:          426,
 		Name:        "Indian/Mahe",
 		Status:      "A",
 		Offset:      240,
@@ -10259,7 +10259,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SC",
 	},
 	427: {
-		Id:          427,
+		ID:          427,
 		Name:        "Indian/Maldives",
 		Status:      "C",
 		Offset:      300,
@@ -10269,7 +10269,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MV",
 	},
 	428: {
-		Id:          428,
+		ID:          428,
 		Name:        "Indian/Mauritius",
 		Status:      "C",
 		Offset:      240,
@@ -10279,7 +10279,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MU",
 	},
 	429: {
-		Id:          429,
+		ID:          429,
 		Name:        "Indian/Mayotte",
 		Status:      "A",
 		Offset:      180,
@@ -10289,7 +10289,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "YT",
 	},
 	430: {
-		Id:          430,
+		ID:          430,
 		Name:        "Indian/Reunion",
 		Status:      "A",
 		Offset:      240,
@@ -10299,7 +10299,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "RE",
 	},
 	431: {
-		Id:          431,
+		ID:          431,
 		Name:        "Pacific/Apia",
 		Status:      "C",
 		Offset:      780,
@@ -10309,7 +10309,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "WS",
 	},
 	432: {
-		Id:          432,
+		ID:          432,
 		Name:        "Pacific/Auckland",
 		Status:      "C",
 		Offset:      720,
@@ -10319,7 +10319,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NZ",
 	},
 	433: {
-		Id:          433,
+		ID:          433,
 		Name:        "Pacific/Bougainville",
 		Status:      "C",
 		Offset:      660,
@@ -10329,7 +10329,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PG",
 	},
 	434: {
-		Id:          434,
+		ID:          434,
 		Name:        "Pacific/Chatham",
 		Status:      "C",
 		Offset:      765,
@@ -10339,7 +10339,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NZ",
 	},
 	435: {
-		Id:          435,
+		ID:          435,
 		Name:        "Pacific/Chuuk",
 		Status:      "A",
 		Offset:      600,
@@ -10349,7 +10349,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "FM",
 	},
 	436: {
-		Id:          436,
+		ID:          436,
 		Name:        "Pacific/Easter",
 		Status:      "C",
 		Offset:      -360,
@@ -10359,7 +10359,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CL",
 	},
 	437: {
-		Id:          437,
+		ID:          437,
 		Name:        "Pacific/Efate",
 		Status:      "C",
 		Offset:      660,
@@ -10369,7 +10369,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "VU",
 	},
 	438: {
-		Id:          438,
+		ID:          438,
 		Name:        "Pacific/Enderbury",
 		Status:      "A",
 		Offset:      780,
@@ -10379,7 +10379,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KI",
 	},
 	439: {
-		Id:          439,
+		ID:          439,
 		Name:        "Pacific/Fakaofo",
 		Status:      "C",
 		Offset:      780,
@@ -10389,7 +10389,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TK",
 	},
 	440: {
-		Id:          440,
+		ID:          440,
 		Name:        "Pacific/Fiji",
 		Status:      "C",
 		Offset:      720,
@@ -10399,7 +10399,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "FJ",
 	},
 	441: {
-		Id:          441,
+		ID:          441,
 		Name:        "Pacific/Funafuti",
 		Status:      "A",
 		Offset:      720,
@@ -10409,7 +10409,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TV",
 	},
 	442: {
-		Id:          442,
+		ID:          442,
 		Name:        "Pacific/Galapagos",
 		Status:      "C",
 		Offset:      -360,
@@ -10419,7 +10419,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "EC",
 	},
 	443: {
-		Id:          443,
+		ID:          443,
 		Name:        "Pacific/Gambier",
 		Status:      "C",
 		Offset:      -540,
@@ -10429,7 +10429,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PF",
 	},
 	444: {
-		Id:          444,
+		ID:          444,
 		Name:        "Pacific/Guadalcanal",
 		Status:      "C",
 		Offset:      660,
@@ -10439,7 +10439,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "SB",
 	},
 	445: {
-		Id:          445,
+		ID:          445,
 		Name:        "Pacific/Guam",
 		Status:      "C",
 		Offset:      600,
@@ -10449,7 +10449,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GU",
 	},
 	446: {
-		Id:          446,
+		ID:          446,
 		Name:        "Pacific/Honolulu",
 		Status:      "C",
 		Offset:      -600,
@@ -10459,7 +10459,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	447: {
-		Id:          447,
+		ID:          447,
 		Name:        "Pacific/Johnston",
 		Status:      "A",
 		Offset:      -600,
@@ -10469,7 +10469,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "US",
 	},
 	448: {
-		Id:          448,
+		ID:          448,
 		Name:        "Pacific/Kiritimati",
 		Status:      "C",
 		Offset:      840,
@@ -10479,7 +10479,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KI",
 	},
 	449: {
-		Id:          449,
+		ID:          449,
 		Name:        "Pacific/Kosrae",
 		Status:      "C",
 		Offset:      660,
@@ -10489,7 +10489,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "FM",
 	},
 	450: {
-		Id:          450,
+		ID:          450,
 		Name:        "Pacific/Kwajalein",
 		Status:      "C",
 		Offset:      720,
@@ -10499,7 +10499,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MH",
 	},
 	451: {
-		Id:          451,
+		ID:          451,
 		Name:        "Pacific/Majuro",
 		Status:      "A",
 		Offset:      720,
@@ -10509,7 +10509,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MH",
 	},
 	452: {
-		Id:          452,
+		ID:          452,
 		Name:        "Pacific/Marquesas",
 		Status:      "C",
 		Offset:      -570,
@@ -10519,7 +10519,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PF",
 	},
 	453: {
-		Id:          453,
+		ID:          453,
 		Name:        "Pacific/Midway",
 		Status:      "A",
 		Offset:      -660,
@@ -10529,7 +10529,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "UM",
 	},
 	454: {
-		Id:          454,
+		ID:          454,
 		Name:        "Pacific/Nauru",
 		Status:      "C",
 		Offset:      720,
@@ -10539,7 +10539,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NR",
 	},
 	455: {
-		Id:          455,
+		ID:          455,
 		Name:        "Pacific/Niue",
 		Status:      "C",
 		Offset:      -660,
@@ -10549,7 +10549,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NU",
 	},
 	456: {
-		Id:          456,
+		ID:          456,
 		Name:        "Pacific/Norfolk",
 		Status:      "C",
 		Offset:      660,
@@ -10559,7 +10559,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NF",
 	},
 	457: {
-		Id:          457,
+		ID:          457,
 		Name:        "Pacific/Noumea",
 		Status:      "C",
 		Offset:      660,
@@ -10569,7 +10569,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "NC",
 	},
 	458: {
-		Id:          458,
+		ID:          458,
 		Name:        "Pacific/Pago_Pago",
 		Status:      "C",
 		Offset:      -660,
@@ -10579,7 +10579,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AS",
 	},
 	459: {
-		Id:          459,
+		ID:          459,
 		Name:        "Pacific/Palau",
 		Status:      "C",
 		Offset:      540,
@@ -10589,7 +10589,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PW",
 	},
 	460: {
-		Id:          460,
+		ID:          460,
 		Name:        "Pacific/Pitcairn",
 		Status:      "C",
 		Offset:      -480,
@@ -10599,7 +10599,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PN",
 	},
 	461: {
-		Id:          461,
+		ID:          461,
 		Name:        "Pacific/Pohnpei",
 		Status:      "A",
 		Offset:      660,
@@ -10609,7 +10609,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "FM",
 	},
 	462: {
-		Id:          462,
+		ID:          462,
 		Name:        "Pacific/Ponape",
 		Status:      "A",
 		Offset:      660,
@@ -10619,7 +10619,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "FM",
 	},
 	463: {
-		Id:          463,
+		ID:          463,
 		Name:        "Pacific/Port_Moresby",
 		Status:      "C",
 		Offset:      600,
@@ -10629,7 +10629,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PG",
 	},
 	464: {
-		Id:          464,
+		ID:          464,
 		Name:        "Pacific/Rarotonga",
 		Status:      "C",
 		Offset:      -600,
@@ -10639,7 +10639,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CK",
 	},
 	465: {
-		Id:          465,
+		ID:          465,
 		Name:        "Pacific/Saipan",
 		Status:      "A",
 		Offset:      600,
@@ -10649,7 +10649,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MP",
 	},
 	466: {
-		Id:          466,
+		ID:          466,
 		Name:        "Pacific/Samoa",
 		Status:      "A",
 		Offset:      -660,
@@ -10659,7 +10659,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "AS",
 	},
 	467: {
-		Id:          467,
+		ID:          467,
 		Name:        "Pacific/Tahiti",
 		Status:      "C",
 		Offset:      -600,
@@ -10669,7 +10669,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "PF",
 	},
 	468: {
-		Id:          468,
+		ID:          468,
 		Name:        "Pacific/Tarawa",
 		Status:      "C",
 		Offset:      720,
@@ -10679,7 +10679,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KI",
 	},
 	469: {
-		Id:          469,
+		ID:          469,
 		Name:        "Pacific/Tongatapu",
 		Status:      "C",
 		Offset:      780,
@@ -10689,7 +10689,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "TO",
 	},
 	470: {
-		Id:          470,
+		ID:          470,
 		Name:        "Pacific/Truk",
 		Status:      "A",
 		Offset:      600,
@@ -10699,7 +10699,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "FM",
 	},
 	471: {
-		Id:          471,
+		ID:          471,
 		Name:        "Pacific/Wake",
 		Status:      "A",
 		Offset:      720,
@@ -10709,7 +10709,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "UM",
 	},
 	472: {
-		Id:          472,
+		ID:          472,
 		Name:        "Pacific/Wallis",
 		Status:      "A",
 		Offset:      720,
@@ -10719,7 +10719,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "WF",
 	},
 	473: {
-		Id:          473,
+		ID:          473,
 		Name:        "Pacific/Yap",
 		Status:      "A",
 		Offset:      600,
@@ -10729,7 +10729,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "FM",
 	},
 	474: {
-		Id:          474,
+		ID:          474,
 		Name:        "Africa/Asmera",
 		Status:      "A",
 		Offset:      180,
@@ -10739,7 +10739,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	475: {
-		Id:          475,
+		ID:          475,
 		Name:        "America/Ciudad_Juarez",
 		Status:      "C",
 		Offset:      -420,
@@ -10749,7 +10749,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "MX",
 	},
 	476: {
-		Id:          476,
+		ID:          476,
 		Name:        "America/Coyhaique",
 		Status:      "C",
 		Offset:      -180,
@@ -10759,7 +10759,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "CL",
 	},
 	477: {
-		Id:          477,
+		ID:          477,
 		Name:        "America/Nuuk",
 		Status:      "C",
 		Offset:      -120,
@@ -10769,7 +10769,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "GL",
 	},
 	478: {
-		Id:          478,
+		ID:          478,
 		Name:        "Asia/Qostanay",
 		Status:      "C",
 		Offset:      300,
@@ -10779,7 +10779,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KZ",
 	},
 	479: {
-		Id:          479,
+		ID:          479,
 		Name:        "Australia/ACT",
 		Status:      "A",
 		Offset:      600,
@@ -10789,7 +10789,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	480: {
-		Id:          480,
+		ID:          480,
 		Name:        "Australia/LHI",
 		Status:      "A",
 		Offset:      630,
@@ -10799,7 +10799,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	481: {
-		Id:          481,
+		ID:          481,
 		Name:        "Australia/NSW",
 		Status:      "A",
 		Offset:      600,
@@ -10809,7 +10809,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	482: {
-		Id:          482,
+		ID:          482,
 		Name:        "Australia/North",
 		Status:      "A",
 		Offset:      570,
@@ -10819,7 +10819,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	483: {
-		Id:          483,
+		ID:          483,
 		Name:        "Australia/Queensland",
 		Status:      "A",
 		Offset:      600,
@@ -10829,7 +10829,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	484: {
-		Id:          484,
+		ID:          484,
 		Name:        "Australia/South",
 		Status:      "A",
 		Offset:      570,
@@ -10839,7 +10839,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	485: {
-		Id:          485,
+		ID:          485,
 		Name:        "Australia/Tasmania",
 		Status:      "A",
 		Offset:      600,
@@ -10849,7 +10849,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	486: {
-		Id:          486,
+		ID:          486,
 		Name:        "Australia/Victoria",
 		Status:      "A",
 		Offset:      600,
@@ -10859,7 +10859,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	487: {
-		Id:          487,
+		ID:          487,
 		Name:        "Australia/West",
 		Status:      "A",
 		Offset:      480,
@@ -10869,7 +10869,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	488: {
-		Id:          488,
+		ID:          488,
 		Name:        "Brazil/Acre",
 		Status:      "A",
 		Offset:      -300,
@@ -10879,7 +10879,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	489: {
-		Id:          489,
+		ID:          489,
 		Name:        "Brazil/DeNoronha",
 		Status:      "A",
 		Offset:      -120,
@@ -10889,7 +10889,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	490: {
-		Id:          490,
+		ID:          490,
 		Name:        "Brazil/East",
 		Status:      "A",
 		Offset:      -180,
@@ -10899,7 +10899,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	491: {
-		Id:          491,
+		ID:          491,
 		Name:        "Brazil/West",
 		Status:      "A",
 		Offset:      -240,
@@ -10909,7 +10909,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	492: {
-		Id:          492,
+		ID:          492,
 		Name:        "CET",
 		Status:      "A",
 		Offset:      60,
@@ -10919,7 +10919,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	493: {
-		Id:          493,
+		ID:          493,
 		Name:        "CST6CDT",
 		Status:      "A",
 		Offset:      -360,
@@ -10929,7 +10929,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	494: {
-		Id:          494,
+		ID:          494,
 		Name:        "Canada/Atlantic",
 		Status:      "A",
 		Offset:      -240,
@@ -10939,7 +10939,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	495: {
-		Id:          495,
+		ID:          495,
 		Name:        "Canada/Central",
 		Status:      "A",
 		Offset:      -360,
@@ -10949,7 +10949,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	496: {
-		Id:          496,
+		ID:          496,
 		Name:        "Canada/Eastern",
 		Status:      "A",
 		Offset:      -300,
@@ -10959,7 +10959,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	497: {
-		Id:          497,
+		ID:          497,
 		Name:        "Canada/Mountain",
 		Status:      "A",
 		Offset:      -420,
@@ -10969,7 +10969,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	498: {
-		Id:          498,
+		ID:          498,
 		Name:        "Canada/Newfoundland",
 		Status:      "A",
 		Offset:      -210,
@@ -10979,7 +10979,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	499: {
-		Id:          499,
+		ID:          499,
 		Name:        "Canada/Pacific",
 		Status:      "A",
 		Offset:      -480,
@@ -10989,7 +10989,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	500: {
-		Id:          500,
+		ID:          500,
 		Name:        "Canada/Saskatchewan",
 		Status:      "A",
 		Offset:      -360,
@@ -10999,7 +10999,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	501: {
-		Id:          501,
+		ID:          501,
 		Name:        "Canada/Yukon",
 		Status:      "A",
 		Offset:      -420,
@@ -11009,7 +11009,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	502: {
-		Id:          502,
+		ID:          502,
 		Name:        "Chile/Continental",
 		Status:      "A",
 		Offset:      -240,
@@ -11019,7 +11019,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	503: {
-		Id:          503,
+		ID:          503,
 		Name:        "Chile/EasterIsland",
 		Status:      "A",
 		Offset:      -360,
@@ -11029,7 +11029,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	504: {
-		Id:          504,
+		ID:          504,
 		Name:        "Cuba",
 		Status:      "A",
 		Offset:      -300,
@@ -11039,7 +11039,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	505: {
-		Id:          505,
+		ID:          505,
 		Name:        "EET",
 		Status:      "A",
 		Offset:      120,
@@ -11049,7 +11049,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	506: {
-		Id:          506,
+		ID:          506,
 		Name:        "EST",
 		Status:      "A",
 		Offset:      -300,
@@ -11059,7 +11059,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	507: {
-		Id:          507,
+		ID:          507,
 		Name:        "EST5EDT",
 		Status:      "A",
 		Offset:      -300,
@@ -11069,7 +11069,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	508: {
-		Id:          508,
+		ID:          508,
 		Name:        "Egypt",
 		Status:      "A",
 		Offset:      120,
@@ -11079,7 +11079,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	509: {
-		Id:          509,
+		ID:          509,
 		Name:        "Eire",
 		Status:      "A",
 		Offset:      60,
@@ -11089,7 +11089,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	510: {
-		Id:          510,
+		ID:          510,
 		Name:        "Etc/GMT",
 		Status:      "C",
 		Offset:      0,
@@ -11099,7 +11099,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	511: {
-		Id:          511,
+		ID:          511,
 		Name:        "Etc/GMT+0",
 		Status:      "A",
 		Offset:      0,
@@ -11109,7 +11109,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	512: {
-		Id:          512,
+		ID:          512,
 		Name:        "Etc/GMT+1",
 		Status:      "C",
 		Offset:      -60,
@@ -11119,7 +11119,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	513: {
-		Id:          513,
+		ID:          513,
 		Name:        "Etc/GMT+10",
 		Status:      "C",
 		Offset:      -600,
@@ -11129,7 +11129,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	514: {
-		Id:          514,
+		ID:          514,
 		Name:        "Etc/GMT+11",
 		Status:      "C",
 		Offset:      -660,
@@ -11139,7 +11139,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	515: {
-		Id:          515,
+		ID:          515,
 		Name:        "Etc/GMT+12",
 		Status:      "C",
 		Offset:      -720,
@@ -11149,7 +11149,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	516: {
-		Id:          516,
+		ID:          516,
 		Name:        "Etc/GMT+2",
 		Status:      "C",
 		Offset:      -120,
@@ -11159,7 +11159,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	517: {
-		Id:          517,
+		ID:          517,
 		Name:        "Etc/GMT+3",
 		Status:      "C",
 		Offset:      -180,
@@ -11169,7 +11169,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	518: {
-		Id:          518,
+		ID:          518,
 		Name:        "Etc/GMT+4",
 		Status:      "C",
 		Offset:      -240,
@@ -11179,7 +11179,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	519: {
-		Id:          519,
+		ID:          519,
 		Name:        "Etc/GMT+5",
 		Status:      "C",
 		Offset:      -300,
@@ -11189,7 +11189,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	520: {
-		Id:          520,
+		ID:          520,
 		Name:        "Etc/GMT+6",
 		Status:      "C",
 		Offset:      -360,
@@ -11199,7 +11199,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	521: {
-		Id:          521,
+		ID:          521,
 		Name:        "Etc/GMT+7",
 		Status:      "C",
 		Offset:      -420,
@@ -11209,7 +11209,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	522: {
-		Id:          522,
+		ID:          522,
 		Name:        "Etc/GMT+8",
 		Status:      "C",
 		Offset:      -480,
@@ -11219,7 +11219,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	523: {
-		Id:          523,
+		ID:          523,
 		Name:        "Etc/GMT+9",
 		Status:      "C",
 		Offset:      -540,
@@ -11229,7 +11229,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	524: {
-		Id:          524,
+		ID:          524,
 		Name:        "Etc/GMT-0",
 		Status:      "A",
 		Offset:      0,
@@ -11239,7 +11239,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	525: {
-		Id:          525,
+		ID:          525,
 		Name:        "Etc/GMT-1",
 		Status:      "C",
 		Offset:      60,
@@ -11249,7 +11249,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	526: {
-		Id:          526,
+		ID:          526,
 		Name:        "Etc/GMT-10",
 		Status:      "C",
 		Offset:      600,
@@ -11259,7 +11259,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	527: {
-		Id:          527,
+		ID:          527,
 		Name:        "Etc/GMT-11",
 		Status:      "C",
 		Offset:      660,
@@ -11269,7 +11269,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	528: {
-		Id:          528,
+		ID:          528,
 		Name:        "Etc/GMT-12",
 		Status:      "C",
 		Offset:      720,
@@ -11279,7 +11279,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	529: {
-		Id:          529,
+		ID:          529,
 		Name:        "Etc/GMT-13",
 		Status:      "C",
 		Offset:      780,
@@ -11289,7 +11289,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	530: {
-		Id:          530,
+		ID:          530,
 		Name:        "Etc/GMT-14",
 		Status:      "C",
 		Offset:      840,
@@ -11299,7 +11299,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	531: {
-		Id:          531,
+		ID:          531,
 		Name:        "Etc/GMT-2",
 		Status:      "C",
 		Offset:      120,
@@ -11309,7 +11309,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	532: {
-		Id:          532,
+		ID:          532,
 		Name:        "Etc/GMT-3",
 		Status:      "C",
 		Offset:      180,
@@ -11319,7 +11319,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	533: {
-		Id:          533,
+		ID:          533,
 		Name:        "Etc/GMT-4",
 		Status:      "C",
 		Offset:      240,
@@ -11329,7 +11329,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	534: {
-		Id:          534,
+		ID:          534,
 		Name:        "Etc/GMT-5",
 		Status:      "C",
 		Offset:      300,
@@ -11339,7 +11339,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	535: {
-		Id:          535,
+		ID:          535,
 		Name:        "Etc/GMT-6",
 		Status:      "C",
 		Offset:      360,
@@ -11349,7 +11349,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	536: {
-		Id:          536,
+		ID:          536,
 		Name:        "Etc/GMT-7",
 		Status:      "C",
 		Offset:      420,
@@ -11359,7 +11359,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	537: {
-		Id:          537,
+		ID:          537,
 		Name:        "Etc/GMT-8",
 		Status:      "C",
 		Offset:      480,
@@ -11369,7 +11369,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	538: {
-		Id:          538,
+		ID:          538,
 		Name:        "Etc/GMT-9",
 		Status:      "C",
 		Offset:      540,
@@ -11379,7 +11379,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	539: {
-		Id:          539,
+		ID:          539,
 		Name:        "Etc/GMT0",
 		Status:      "A",
 		Offset:      0,
@@ -11389,7 +11389,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	540: {
-		Id:          540,
+		ID:          540,
 		Name:        "Etc/Greenwich",
 		Status:      "A",
 		Offset:      0,
@@ -11399,7 +11399,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	541: {
-		Id:          541,
+		ID:          541,
 		Name:        "Etc/UCT",
 		Status:      "A",
 		Offset:      0,
@@ -11409,7 +11409,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	542: {
-		Id:          542,
+		ID:          542,
 		Name:        "Etc/Universal",
 		Status:      "A",
 		Offset:      0,
@@ -11419,7 +11419,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	543: {
-		Id:          543,
+		ID:          543,
 		Name:        "Etc/Zulu",
 		Status:      "A",
 		Offset:      0,
@@ -11429,7 +11429,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	544: {
-		Id:          544,
+		ID:          544,
 		Name:        "Europe/Kyiv",
 		Status:      "C",
 		Offset:      120,
@@ -11439,7 +11439,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "UA",
 	},
 	545: {
-		Id:          545,
+		ID:          545,
 		Name:        "Europe/Nicosia",
 		Status:      "A",
 		Offset:      120,
@@ -11449,7 +11449,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	546: {
-		Id:          546,
+		ID:          546,
 		Name:        "Factory",
 		Status:      "C",
 		Offset:      0,
@@ -11459,7 +11459,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	547: {
-		Id:          547,
+		ID:          547,
 		Name:        "GB",
 		Status:      "A",
 		Offset:      0,
@@ -11469,7 +11469,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	548: {
-		Id:          548,
+		ID:          548,
 		Name:        "GB-Eire",
 		Status:      "A",
 		Offset:      0,
@@ -11479,7 +11479,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	549: {
-		Id:          549,
+		ID:          549,
 		Name:        "GMT",
 		Status:      "A",
 		Offset:      0,
@@ -11489,7 +11489,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	550: {
-		Id:          550,
+		ID:          550,
 		Name:        "GMT+0",
 		Status:      "A",
 		Offset:      0,
@@ -11499,7 +11499,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	551: {
-		Id:          551,
+		ID:          551,
 		Name:        "GMT-0",
 		Status:      "A",
 		Offset:      0,
@@ -11509,7 +11509,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	552: {
-		Id:          552,
+		ID:          552,
 		Name:        "GMT0",
 		Status:      "A",
 		Offset:      0,
@@ -11519,7 +11519,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	553: {
-		Id:          553,
+		ID:          553,
 		Name:        "Greenwich",
 		Status:      "A",
 		Offset:      0,
@@ -11529,7 +11529,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	554: {
-		Id:          554,
+		ID:          554,
 		Name:        "HST",
 		Status:      "A",
 		Offset:      -600,
@@ -11539,7 +11539,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	555: {
-		Id:          555,
+		ID:          555,
 		Name:        "Hongkong",
 		Status:      "A",
 		Offset:      480,
@@ -11549,7 +11549,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	556: {
-		Id:          556,
+		ID:          556,
 		Name:        "Iceland",
 		Status:      "A",
 		Offset:      0,
@@ -11559,7 +11559,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	557: {
-		Id:          557,
+		ID:          557,
 		Name:        "Iran",
 		Status:      "A",
 		Offset:      210,
@@ -11569,7 +11569,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	558: {
-		Id:          558,
+		ID:          558,
 		Name:        "Israel",
 		Status:      "A",
 		Offset:      120,
@@ -11579,7 +11579,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	559: {
-		Id:          559,
+		ID:          559,
 		Name:        "Jamaica",
 		Status:      "A",
 		Offset:      -300,
@@ -11589,7 +11589,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	560: {
-		Id:          560,
+		ID:          560,
 		Name:        "Japan",
 		Status:      "A",
 		Offset:      540,
@@ -11599,7 +11599,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	561: {
-		Id:          561,
+		ID:          561,
 		Name:        "Kwajalein",
 		Status:      "A",
 		Offset:      720,
@@ -11609,7 +11609,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	562: {
-		Id:          562,
+		ID:          562,
 		Name:        "Libya",
 		Status:      "A",
 		Offset:      120,
@@ -11619,7 +11619,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	563: {
-		Id:          563,
+		ID:          563,
 		Name:        "MET",
 		Status:      "A",
 		Offset:      60,
@@ -11629,7 +11629,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	564: {
-		Id:          564,
+		ID:          564,
 		Name:        "MST",
 		Status:      "A",
 		Offset:      -420,
@@ -11639,7 +11639,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	565: {
-		Id:          565,
+		ID:          565,
 		Name:        "MST7MDT",
 		Status:      "A",
 		Offset:      -420,
@@ -11649,7 +11649,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	566: {
-		Id:          566,
+		ID:          566,
 		Name:        "Mexico/BajaNorte",
 		Status:      "A",
 		Offset:      -480,
@@ -11659,7 +11659,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	567: {
-		Id:          567,
+		ID:          567,
 		Name:        "Mexico/BajaSur",
 		Status:      "A",
 		Offset:      -420,
@@ -11669,7 +11669,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	568: {
-		Id:          568,
+		ID:          568,
 		Name:        "Mexico/General",
 		Status:      "A",
 		Offset:      -360,
@@ -11679,7 +11679,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	569: {
-		Id:          569,
+		ID:          569,
 		Name:        "NZ",
 		Status:      "A",
 		Offset:      720,
@@ -11689,7 +11689,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	570: {
-		Id:          570,
+		ID:          570,
 		Name:        "NZ-CHAT",
 		Status:      "A",
 		Offset:      765,
@@ -11699,7 +11699,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	571: {
-		Id:          571,
+		ID:          571,
 		Name:        "Navajo",
 		Status:      "A",
 		Offset:      -420,
@@ -11709,7 +11709,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	572: {
-		Id:          572,
+		ID:          572,
 		Name:        "PRC",
 		Status:      "A",
 		Offset:      480,
@@ -11719,7 +11719,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	573: {
-		Id:          573,
+		ID:          573,
 		Name:        "PST8PDT",
 		Status:      "A",
 		Offset:      -480,
@@ -11729,7 +11729,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	574: {
-		Id:          574,
+		ID:          574,
 		Name:        "Pacific/Kanton",
 		Status:      "C",
 		Offset:      780,
@@ -11739,7 +11739,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "KI",
 	},
 	575: {
-		Id:          575,
+		ID:          575,
 		Name:        "Poland",
 		Status:      "A",
 		Offset:      60,
@@ -11749,7 +11749,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	576: {
-		Id:          576,
+		ID:          576,
 		Name:        "Portugal",
 		Status:      "A",
 		Offset:      0,
@@ -11759,7 +11759,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	577: {
-		Id:          577,
+		ID:          577,
 		Name:        "ROC",
 		Status:      "A",
 		Offset:      480,
@@ -11769,7 +11769,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	578: {
-		Id:          578,
+		ID:          578,
 		Name:        "ROK",
 		Status:      "A",
 		Offset:      540,
@@ -11779,7 +11779,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	579: {
-		Id:          579,
+		ID:          579,
 		Name:        "Singapore",
 		Status:      "A",
 		Offset:      480,
@@ -11789,7 +11789,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	580: {
-		Id:          580,
+		ID:          580,
 		Name:        "Turkey",
 		Status:      "A",
 		Offset:      180,
@@ -11799,7 +11799,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	581: {
-		Id:          581,
+		ID:          581,
 		Name:        "UCT",
 		Status:      "A",
 		Offset:      0,
@@ -11809,7 +11809,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	582: {
-		Id:          582,
+		ID:          582,
 		Name:        "US/Alaska",
 		Status:      "A",
 		Offset:      -540,
@@ -11819,7 +11819,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	583: {
-		Id:          583,
+		ID:          583,
 		Name:        "US/Aleutian",
 		Status:      "A",
 		Offset:      -600,
@@ -11829,7 +11829,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	584: {
-		Id:          584,
+		ID:          584,
 		Name:        "US/Arizona",
 		Status:      "A",
 		Offset:      -420,
@@ -11839,7 +11839,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	585: {
-		Id:          585,
+		ID:          585,
 		Name:        "US/Central",
 		Status:      "A",
 		Offset:      -360,
@@ -11849,7 +11849,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	586: {
-		Id:          586,
+		ID:          586,
 		Name:        "US/East-Indiana",
 		Status:      "A",
 		Offset:      -300,
@@ -11859,7 +11859,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	587: {
-		Id:          587,
+		ID:          587,
 		Name:        "US/Eastern",
 		Status:      "A",
 		Offset:      -300,
@@ -11869,7 +11869,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	588: {
-		Id:          588,
+		ID:          588,
 		Name:        "US/Hawaii",
 		Status:      "A",
 		Offset:      -600,
@@ -11879,7 +11879,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	589: {
-		Id:          589,
+		ID:          589,
 		Name:        "US/Indiana-Starke",
 		Status:      "A",
 		Offset:      -360,
@@ -11889,7 +11889,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	590: {
-		Id:          590,
+		ID:          590,
 		Name:        "US/Michigan",
 		Status:      "A",
 		Offset:      -300,
@@ -11899,7 +11899,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	591: {
-		Id:          591,
+		ID:          591,
 		Name:        "US/Mountain",
 		Status:      "A",
 		Offset:      -420,
@@ -11909,7 +11909,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	592: {
-		Id:          592,
+		ID:          592,
 		Name:        "US/Pacific",
 		Status:      "A",
 		Offset:      -480,
@@ -11919,7 +11919,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	593: {
-		Id:          593,
+		ID:          593,
 		Name:        "US/Samoa",
 		Status:      "A",
 		Offset:      -660,
@@ -11929,7 +11929,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	594: {
-		Id:          594,
+		ID:          594,
 		Name:        "Universal",
 		Status:      "A",
 		Offset:      0,
@@ -11939,7 +11939,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	595: {
-		Id:          595,
+		ID:          595,
 		Name:        "W-SU",
 		Status:      "A",
 		Offset:      180,
@@ -11949,7 +11949,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	596: {
-		Id:          596,
+		ID:          596,
 		Name:        "WET",
 		Status:      "A",
 		Offset:      0,
@@ -11959,7 +11959,7 @@ var ZoneIDs = map[int]*Zone{
 		CountryCode: "",
 	},
 	597: {
-		Id:          597,
+		ID:          597,
 		Name:        "Zulu",
 		Status:      "A",
 		Offset:      0,

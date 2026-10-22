@@ -95,7 +95,7 @@ func Test_ToZone(t *testing.T) {
 
 	// --- Then ---
 	assert.NoError(t, err)
-	assert.Equal(t, 416, have.Id)
+	assert.Equal(t, 416, have.ID)
 }
 
 func Test_ToZone_Local(t *testing.T) {
@@ -141,7 +141,7 @@ func Test_ByZoneID_unknownLocation(t *testing.T) {
 	// --- Given ---
 	ZoneIDs[1000] = &Zone{
 		CountryCode: "",
-		Id:          1000,
+		ID:          1000,
 		Link:        "",
 		Name:        "MyZone",
 		Notes:       "",

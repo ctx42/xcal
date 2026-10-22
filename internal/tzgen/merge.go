@@ -22,7 +22,7 @@ func Merge(prev, upstream []*xcal.Zone) ([]*xcal.Zone, error) {
 	next := 0
 	for _, zon := range prev {
 		byName[zon.Name] = zon
-		next = max(next, zon.Id+1)
+		next = max(next, zon.ID+1)
 	}
 
 	byNameAsc := func(a, b *xcal.Zone) int {
@@ -34,11 +34,11 @@ func Merge(prev, upstream []*xcal.Zone) ([]*xcal.Zone, error) {
 	for _, up := range ups {
 		zon := *up
 		if old, ok := byName[zon.Name]; ok {
-			zon.Id = old.Id
+			zon.ID = old.ID
 			zon.CountryCode = cmp.Or(zon.CountryCode, old.CountryCode)
 			zon.Notes = cmp.Or(zon.Notes, old.Notes)
 		} else {
-			zon.Id = next
+			zon.ID = next
 			next++
 		}
 		seen[zon.Name] = true
@@ -66,7 +66,7 @@ func Merge(prev, upstream []*xcal.Zone) ([]*xcal.Zone, error) {
 	}
 
 	slices.SortFunc(zs, func(a, b *xcal.Zone) int {
-		return cmp.Compare(a.Id, b.Id)
+		return cmp.Compare(a.ID, b.ID)
 	})
 	if err := CheckStable(byName, zs); err != nil {
 		return nil, err

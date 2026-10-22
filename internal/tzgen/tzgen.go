@@ -89,11 +89,11 @@ func ReadZones(pth string) ([]*xcal.Zone, error) {
 			format := "at index %d: duplicate timezone %s"
 			return nil, fmt.Errorf(format, i, zon.Name)
 		}
-		if seenIDs[zon.Id] {
+		if seenIDs[zon.ID] {
 			format := "at index %d: duplicate ZoneID %d"
-			return nil, fmt.Errorf(format, i, zon.Id)
+			return nil, fmt.Errorf(format, i, zon.ID)
 		}
-		seenIDs[zon.Id] = true
+		seenIDs[zon.ID] = true
 		seenNames[zon.Name] = true
 	}
 	return zs, nil
@@ -106,9 +106,9 @@ func ReadZones(pth string) ([]*xcal.Zone, error) {
 func CheckStable(prev map[string]*xcal.Zone, zs []*xcal.Zone) error {
 	if len(prev) == 0 {
 		for i, zon := range zs {
-			if zon.Id != i {
+			if zon.ID != i {
 				format := "at index %d: expected ZoneID %d got %d"
-				return fmt.Errorf(format, i, i, zon.Id)
+				return fmt.Errorf(format, i, i, zon.ID)
 			}
 		}
 		return nil
@@ -116,30 +116,30 @@ func CheckStable(prev map[string]*xcal.Zone, zs []*xcal.Zone) error {
 
 	top := -1
 	for _, zon := range prev {
-		top = max(top, zon.Id)
+		top = max(top, zon.ID)
 	}
 
 	names := make(map[string]bool, len(zs))
 	for i, zon := range zs {
 		names[zon.Name] = true
 		old, ok := prev[zon.Name]
-		if ok && old.Id != zon.Id {
+		if ok && old.ID != zon.ID {
 			format := "at index %d: expected ZoneID %d got %d"
-			return fmt.Errorf(format, i, old.Id, zon.Id)
+			return fmt.Errorf(format, i, old.ID, zon.ID)
 		}
-		if !ok && zon.Id <= top {
+		if !ok && zon.ID <= top {
 			format := "at index %d: new zone %s has ID %d, expected above %d"
-			return fmt.Errorf(format, i, zon.Name, zon.Id, top)
+			return fmt.Errorf(format, i, zon.Name, zon.ID, top)
 		}
 	}
 
 	olds := slices.SortedFunc(maps.Values(prev), func(a, b *xcal.Zone) int {
-		return cmp.Compare(a.Id, b.Id)
+		return cmp.Compare(a.ID, b.ID)
 	})
 	for _, old := range olds {
 		if !names[old.Name] {
 			format := "zone %s with ID %d is missing"
-			return fmt.Errorf(format, old.Name, old.Id)
+			return fmt.Errorf(format, old.Name, old.ID)
 		}
 	}
 	return nil
@@ -152,7 +152,7 @@ func GenerateTZGo(zs []*xcal.Zone, dst, name string) error {
 		return strings.Compare(a.Name, b.Name)
 	})
 	byID := slices.SortedFunc(slices.Values(zs), func(a, b *xcal.Zone) int {
-		return cmp.Compare(a.Id, b.Id)
+		return cmp.Compare(a.ID, b.ID)
 	})
 
 	var buf bytes.Buffer
@@ -172,7 +172,7 @@ func GenerateTZGo(zs []*xcal.Zone, dst, name string) error {
 		"var ZoneIDs = map[int]*Zone{\n"
 	_, _ = fmt.Fprint(&buf, middle)
 	for _, zon := range byID {
-		_, _ = fmt.Fprintf(&buf, "%d: %s,\n", zon.Id, zoneLit(zon))
+		_, _ = fmt.Fprintf(&buf, "%d: %s,\n", zon.ID, zoneLit(zon))
 	}
 	_, _ = fmt.Fprint(&buf, "}\n")
 
@@ -187,7 +187,7 @@ func GenerateTZGo(zs []*xcal.Zone, dst, name string) error {
 func zoneLit(zon *xcal.Zone) string {
 	format := "" +
 		"{\n" +
-		"Id: %d,\n" +
+		"ID: %d,\n" +
 		"Name: %q,\n" +
 		"Status: %q,\n" +
 		"Offset: %d,\n" +
@@ -198,7 +198,7 @@ func zoneLit(zon *xcal.Zone) string {
 		"}"
 	return fmt.Sprintf(
 		format,
-		zon.Id,
+		zon.ID,
 		zon.Name,
 		zon.Status,
 		zon.Offset,

@@ -14,9 +14,9 @@ import (
 func Test_Merge(t *testing.T) {
 	// --- Given ---
 	prev := []*xcal.Zone{
-		{Id: 0, Name: "UTC", Status: xcal.Alias, Link: "Etc/UTC"},
+		{ID: 0, Name: "UTC", Status: xcal.Alias, Link: "Etc/UTC"},
 		{
-			Id:          416,
+			ID:          416,
 			Name:        "Europe/Warsaw",
 			Status:      xcal.Canonical,
 			Offset:      120,
@@ -25,7 +25,7 @@ func Test_Merge(t *testing.T) {
 			CountryCode: "PL",
 		},
 		{
-			Id:     417,
+			ID:     417,
 			Name:   "Europe/Gone",
 			Status: xcal.Removed,
 			Link:   "Europe/Berlin",
@@ -43,9 +43,9 @@ func Test_Merge(t *testing.T) {
 	// --- Then ---
 	assert.NoError(t, err)
 	want := []*xcal.Zone{
-		{Id: 0, Name: "UTC", Status: xcal.Alias, Link: "Etc/UTC"},
+		{ID: 0, Name: "UTC", Status: xcal.Alias, Link: "Etc/UTC"},
 		{
-			Id:          416,
+			ID:          416,
 			Name:        "Europe/Warsaw",
 			Status:      xcal.Canonical,
 			Offset:      60,
@@ -54,14 +54,14 @@ func Test_Merge(t *testing.T) {
 			CountryCode: "PL",
 		},
 		{
-			Id:     417,
+			ID:     417,
 			Name:   "Europe/Gone",
 			Status: xcal.Removed,
 			Link:   "Europe/Berlin",
 		},
-		{Id: 418, Name: "Etc/UTC", Status: xcal.Canonical},
+		{ID: 418, Name: "Etc/UTC", Status: xcal.Canonical},
 		{
-			Id:        419,
+			ID:        419,
 			Name:      "Europe/Kiev",
 			Status:    xcal.Alias,
 			Offset:    120,
@@ -69,7 +69,7 @@ func Test_Merge(t *testing.T) {
 			Link:      "Europe/Kyiv",
 		},
 		{
-			Id:          420,
+			ID:          420,
 			Name:        "Europe/Kyiv",
 			Status:      xcal.Canonical,
 			Offset:      120,
@@ -79,7 +79,7 @@ func Test_Merge(t *testing.T) {
 		},
 	}
 	assert.Equal(t, want, have)
-	assert.Equal(t, 0, ups[0].Id)
+	assert.Equal(t, 0, ups[0].ID)
 }
 
 func Test_Merge_errors_tabular(t *testing.T) {
@@ -93,8 +93,8 @@ func Test_Merge_errors_tabular(t *testing.T) {
 		{
 			"error - zone missing upstream",
 			[]*xcal.Zone{
-				{Id: 0, Name: "Etc/UTC", Status: xcal.Canonical},
-				{Id: 1, Name: "Europe/Paris", Status: xcal.Canonical},
+				{ID: 0, Name: "Etc/UTC", Status: xcal.Canonical},
+				{ID: 1, Name: "Europe/Paris", Status: xcal.Canonical},
 			},
 			[]*xcal.Zone{{Name: "Etc/UTC", Status: xcal.Canonical}},
 			"" +
@@ -128,7 +128,7 @@ func Test_WriteZones(t *testing.T) {
 	pth := filepath.Join(t.TempDir(), "timezones.json")
 	zs := []*xcal.Zone{
 		{
-			Id:          7,
+			ID:          7,
 			Name:        "Europe/Warsaw",
 			Status:      xcal.Canonical,
 			Offset:      60,
