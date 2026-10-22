@@ -19,6 +19,11 @@ const (
 	// Deprecated represents an older style name, left in the tz database for
 	// backwards compatibility, which should generally not be used.
 	Deprecated = "D"
+
+	// Removed represents a name dropped from the tz database. It is kept so
+	// its ID stays reserved and keeps loading: it loads as the zone its Link
+	// names, so its location reports that zone's name.
+	Removed = "R"
 )
 
 // Zone represents timezone information taken from
@@ -56,8 +61,10 @@ func (zon *Zone) Check() error {
 		return fmt.Errorf("invalid ZoneID %d", zon.Id)
 	}
 
-	if _, err := time.LoadLocation(zon.Name); err != nil {
-		return fmt.Errorf("%w: %s", ErrInvTimezone, zon.Name)
+	if zon.Status != Removed {
+		if _, err := time.LoadLocation(zon.Name); err != nil {
+			return fmt.Errorf("%w: %s", ErrInvTimezone, zon.Name)
+		}
 	}
 
 	if zon.Offset < -12*60 || zon.Offset > 14*60 {
@@ -69,18 +76,19 @@ func (zon *Zone) Check() error {
 	}
 
 	switch zon.Status {
-	case Canonical, Alias, Deprecated:
+	case Canonical, Alias, Deprecated, Removed:
 	default:
 		return fmt.Errorf("invalid Zone status %q", zon.Status)
 	}
 
-	if zon.Status == Alias {
+	if zon.Status == Alias || zon.Status == Removed {
 		if zon.Link == "" {
-			return fmt.Errorf("alias without link for %s", zon.Name)
+			format := "zone %s with status %q has no link"
+			return fmt.Errorf(format, zon.Name, zon.Status)
 		}
 
 		if _, err := time.LoadLocation(zon.Link); err != nil {
-			return fmt.Errorf("invalid alias link %s", zon.Link)
+			return fmt.Errorf("invalid link %s", zon.Link)
 		}
 	}
 
@@ -99,12 +107,16 @@ func (zon *Zone) Validate() error {
 	return nil
 }
 
-// Loc returns the zone's location. The zone name must be in [Zones], or
-// [ErrInvTimezone] is returned.
+// Loc returns the zone's location, or [ErrInvTimezone] when the Go location
+// database does not know it. A [Removed] zone returns its Link's location.
 func (zon *Zone) Loc() (*time.Location, error) {
-	loc, err := LoadLocation(zon.Name)
-	if err != nil {
-		return nil, err
+	name := zon.Name
+	if zon.Status == Removed {
+		name = zon.Link
 	}
-	return loc.Loc, nil
+	loc, err := time.LoadLocation(name)
+	if err != nil {
+		return nil, ErrInvTimezone
+	}
+	return loc, nil
 }

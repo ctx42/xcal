@@ -43,6 +43,20 @@ func Test_Zone_Check(t *testing.T) {
 		assert.NoError(t, err)
 	})
 
+	t.Run("ok - removed with link", func(t *testing.T) {
+		// --- Given ---
+		zon := validZone()
+		zon.Name = "Europe/Gone"
+		zon.Status = Removed
+		zon.Link = "Europe/Berlin"
+
+		// --- When ---
+		err := zon.Check()
+
+		// --- Then ---
+		assert.NoError(t, err)
+	})
+
 	t.Run("error - negative ID", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
@@ -113,7 +127,21 @@ func Test_Zone_Check(t *testing.T) {
 		err := zon.Check()
 
 		// --- Then ---
-		assert.ErrorEqual(t, "alias without link for Europe/Warsaw", err)
+		want := `zone Europe/Warsaw with status "A" has no link`
+		assert.ErrorEqual(t, want, err)
+	})
+
+	t.Run("error - removed without link", func(t *testing.T) {
+		// --- Given ---
+		zon := validZone()
+		zon.Status = Removed
+
+		// --- When ---
+		err := zon.Check()
+
+		// --- Then ---
+		want := `zone Europe/Warsaw with status "R" has no link`
+		assert.ErrorEqual(t, want, err)
 	})
 
 	t.Run("error - alias with invalid link", func(t *testing.T) {
@@ -126,7 +154,7 @@ func Test_Zone_Check(t *testing.T) {
 		err := zon.Check()
 
 		// --- Then ---
-		assert.ErrorEqual(t, "invalid alias link Unknown/Unknown", err)
+		assert.ErrorEqual(t, "invalid link Unknown/Unknown", err)
 	})
 }
 
@@ -176,6 +204,18 @@ func Test_Zone_Loc(t *testing.T) {
 	// --- Then ---
 	assert.NoError(t, err)
 	assert.Equal(t, "Europe/Warsaw", have.String())
+}
+
+func Test_Zone_Loc_removed(t *testing.T) {
+	// --- Given ---
+	zon := &Zone{Name: "Europe/Gone", Status: Removed, Link: "Europe/Berlin"}
+
+	// --- When ---
+	have, err := zon.Loc()
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, "Europe/Berlin", have.String())
 }
 
 func Test_Zone_Loc_unknownTimezone(t *testing.T) {

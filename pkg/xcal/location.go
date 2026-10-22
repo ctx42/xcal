@@ -14,44 +14,23 @@ type Location struct {
 }
 
 // LoadLocation creates a new instance of [Location] from a full time zone name
-// or its string numerical representation (e.g. "Europe/Warsaw" or "416").
+// or its string numerical representation (e.g. "Europe/Warsaw" or "416"). The
+// zone must be in [Zones]; a [Removed] zone loads as the zone its Link names.
 func LoadLocation(locS string) (*Location, error) {
-	if locS == "" {
-		return nil, ErrInvTimezone
-	}
-
-	// Handle location being Zone ID.
-	if locS[0] >= '0' && locS[0] <= '9' {
+	zon, ok := Zones[locS]
+	if !ok && locS != "" && locS[0] >= '0' && locS[0] <= '9' {
 		zid, err := strconv.Atoi(locS)
 		if err != nil {
 			return nil, ErrInvTimezone
 		}
-		zon, ok := ZoneIDs[zid]
-		if !ok {
-			return nil, ErrInvTimezone
-		}
-		tLoc, err := zon.Loc()
-		if err != nil {
-			// Zone name is missing from Zones or the Go location database.
-			return nil, ErrInvTimezone
-		}
-
-		loc := &Location{
-			ID:  zon.Id,
-			Loc: tLoc,
-		}
-
-		return loc, nil
+		zon, ok = ZoneIDs[zid]
 	}
-
-	tLoc, err := time.LoadLocation(locS)
-	if err != nil {
+	if !ok {
 		return nil, ErrInvTimezone
 	}
 
-	zon, ok := Zones[tLoc.String()]
-	if !ok {
-		// Location name is not on our timezone list.
+	tLoc, err := zon.Loc()
+	if err != nil {
 		return nil, ErrInvTimezone
 	}
 
@@ -59,7 +38,6 @@ func LoadLocation(locS string) (*Location, error) {
 		ID:  zon.Id,
 		Loc: tLoc,
 	}
-
 	return loc, nil
 }
 

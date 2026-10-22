@@ -105,6 +105,43 @@ func Test_LoadLocation_timezoneInGoDatabaseButNotOurs(t *testing.T) {
 	assert.Nil(t, have)
 }
 
+func Test_LoadLocation_removed_tabular(t *testing.T) {
+	tt := []struct {
+		testN string
+
+		locS string
+	}{
+		{"by name", "Europe/Gone"},
+		{"by ID", "999"},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- Given ---
+			zon := &Zone{
+				Id:     999,
+				Name:   "Europe/Gone",
+				Status: Removed,
+				Link:   "Europe/Berlin",
+			}
+			Zones[zon.Name] = zon
+			ZoneIDs[zon.Id] = zon
+			t.Cleanup(func() {
+				delete(Zones, zon.Name)
+				delete(ZoneIDs, zon.Id)
+			})
+
+			// --- When ---
+			have, err := LoadLocation(tc.locS)
+
+			// --- Then ---
+			assert.NoError(t, err)
+			assert.Equal(t, 999, have.ID)
+			assert.Equal(t, "Europe/Berlin", have.Loc.String())
+		})
+	}
+}
+
 func Test_LoadLocation_emptyLocationString(t *testing.T) {
 	// --- When ---
 	_, err := LoadLocation("")
