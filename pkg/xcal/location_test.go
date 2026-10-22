@@ -73,7 +73,10 @@ func Test_LoadLocation_timezoneNotInGoDatabase(t *testing.T) {
 	}
 	Zones["Europe/Krakow"] = z
 	ZoneIDs[999] = z
-	defer func() { delete(Zones, "Europe/Krakow") }()
+	t.Cleanup(func() {
+		delete(Zones, "Europe/Krakow")
+		delete(ZoneIDs, 999)
+	})
 
 	// --- When ---
 	loc, err := LoadLocation("999")
