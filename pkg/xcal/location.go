@@ -5,6 +5,9 @@ import (
 	"errors"
 	"strconv"
 	"time"
+
+	// Embed the timezone database, so zones load on hosts without zoneinfo.
+	_ "time/tzdata"
 )
 
 // Useful time.Location instances.
