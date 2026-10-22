@@ -7,8 +7,8 @@ import (
 )
 
 func Test_ZoneMap(t *testing.T) {
-	for _, z := range Zones {
-		_, err := z.Loc()
+	for _, zon := range Zones {
+		_, err := zon.Loc()
 		assert.NoError(t, err)
 	}
 }

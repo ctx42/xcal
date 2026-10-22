@@ -62,7 +62,7 @@ func Test_LoadLocation_unknownTimezoneName(t *testing.T) {
 
 func Test_LoadLocation_timezoneNotInGoDatabase(t *testing.T) {
 	// --- Given ---
-	z := &Zone{
+	zon := &Zone{
 		Id:          999,
 		Name:        "Europe/Krakow",
 		Status:      "C",
@@ -72,8 +72,8 @@ func Test_LoadLocation_timezoneNotInGoDatabase(t *testing.T) {
 		Notes:       "",
 		CountryCode: "PL",
 	}
-	Zones["Europe/Krakow"] = z
-	ZoneIDs[999] = z
+	Zones["Europe/Krakow"] = zon
+	ZoneIDs[999] = zon
 	t.Cleanup(func() {
 		delete(Zones, "Europe/Krakow")
 		delete(ZoneIDs, 999)

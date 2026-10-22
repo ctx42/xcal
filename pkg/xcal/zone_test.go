@@ -17,12 +17,12 @@ func Test_Zone_Loc(t *testing.T) {
 
 func Test_Zone_Loc_unknownTimezone(t *testing.T) {
 	// --- Given ---
-	z := &Zone{
+	zon := &Zone{
 		Name: "Unknown/Unknown",
 	}
 
 	// --- When ---
-	have, err := z.Loc()
+	have, err := zon.Loc()
 
 	// --- Then ---
 	assert.ErrorIs(t, ErrInvTimezone, err)
@@ -45,10 +45,10 @@ func Test_Zone_Check(t *testing.T) {
 
 	t.Run("ok", func(t *testing.T) {
 		// --- Given ---
-		z := validZone()
+		zon := validZone()
 
 		// --- When ---
-		err := z.Check()
+		err := zon.Check()
 
 		// --- Then ---
 		assert.NoError(t, err)
@@ -56,11 +56,11 @@ func Test_Zone_Check(t *testing.T) {
 
 	t.Run("negative idx", func(t *testing.T) {
 		// --- Given ---
-		z := validZone()
-		z.Id = -1
+		zon := validZone()
+		zon.Id = -1
 
 		// --- When ---
-		err := z.Check()
+		err := zon.Check()
 
 		// --- Then ---
 		assert.ErrorEqual(t, "invalid ZoneID -1", err)
@@ -68,11 +68,11 @@ func Test_Zone_Check(t *testing.T) {
 
 	t.Run("unknown timezone name", func(t *testing.T) {
 		// --- Given ---
-		z := validZone()
-		z.Name = "Unknown/Unknown"
+		zon := validZone()
+		zon.Name = "Unknown/Unknown"
 
 		// --- When ---
-		err := z.Check()
+		err := zon.Check()
 
 		// --- Then ---
 		assert.ErrorIs(t, ErrInvTimezone, err)
@@ -81,11 +81,11 @@ func Test_Zone_Check(t *testing.T) {
 
 	t.Run("invalid offset", func(t *testing.T) {
 		// --- Given ---
-		z := validZone()
-		z.Offset = -1000
+		zon := validZone()
+		zon.Offset = -1000
 
 		// --- When ---
-		err := z.Check()
+		err := zon.Check()
 
 		// --- Then ---
 		assert.ErrorEqual(t, "invalid Zone offset -1000", err)
@@ -93,11 +93,11 @@ func Test_Zone_Check(t *testing.T) {
 
 	t.Run("invalid DST offset", func(t *testing.T) {
 		// --- Given ---
-		z := validZone()
-		z.OffsetDST = -1000
+		zon := validZone()
+		zon.OffsetDST = -1000
 
 		// --- When ---
-		err := z.Check()
+		err := zon.Check()
 
 		// --- Then ---
 		assert.ErrorEqual(t, "invalid Zone DST offset -1000", err)
@@ -105,11 +105,11 @@ func Test_Zone_Check(t *testing.T) {
 
 	t.Run("alias without link", func(t *testing.T) {
 		// --- Given ---
-		z := validZone()
-		z.Status = Alias
+		zon := validZone()
+		zon.Status = Alias
 
 		// --- When ---
-		err := z.Check()
+		err := zon.Check()
 
 		// --- Then ---
 		assert.ErrorEqual(t, "alias without link for Europe/Warsaw", err)
@@ -117,12 +117,12 @@ func Test_Zone_Check(t *testing.T) {
 
 	t.Run("alias with invalid link", func(t *testing.T) {
 		// --- Given ---
-		z := validZone()
-		z.Status = Alias
-		z.Link = "Unknown/Unknown"
+		zon := validZone()
+		zon.Status = Alias
+		zon.Link = "Unknown/Unknown"
 
 		// --- When ---
-		err := z.Check()
+		err := zon.Check()
 
 		// --- Then ---
 		assert.ErrorEqual(t, "invalid alias link Unknown/Unknown", err)
@@ -145,10 +145,10 @@ func Test_Zone_Validate(t *testing.T) {
 
 	t.Run("ok", func(t *testing.T) {
 		// --- Given ---
-		z := validZone()
+		zon := validZone()
 
 		// --- When ---
-		err := z.Validate()
+		err := zon.Validate()
 
 		// --- Then ---
 		assert.NoError(t, err)
@@ -156,11 +156,11 @@ func Test_Zone_Validate(t *testing.T) {
 
 	t.Run("negative idx", func(t *testing.T) {
 		// --- Given ---
-		z := validZone()
-		z.Id = -1
+		zon := validZone()
+		zon.Id = -1
 
 		// --- When ---
-		err := z.Validate()
+		err := zon.Validate()
 
 		// --- Then ---
 		assert.ErrorEqual(t, "invalid ZoneID -1", err)
@@ -168,13 +168,13 @@ func Test_Zone_Validate(t *testing.T) {
 
 	t.Run("not in zone table", func(t *testing.T) {
 		// --- Given ---
-		z := validZone()
-		save := Zones[z.Name]
-		delete(Zones, z.Name)
+		zon := validZone()
+		save := Zones[zon.Name]
+		delete(Zones, zon.Name)
 		t.Cleanup(func() { Zones[save.Name] = save })
 
 		// --- When ---
-		err := z.Validate()
+		err := zon.Validate()
 
 		// --- Then ---
 		assert.ErrorIs(t, ErrInvTimezone, err)

@@ -18,25 +18,25 @@ func Test_ReadZones(t *testing.T) {
 	assert.NoError(t, err)
 	assert.Len(t, 2, zs)
 
-	z := zs[0]
-	assert.Equal(t, 0, z.Id)
-	assert.Equal(t, "UTC", z.Name)
-	assert.Equal(t, "A", z.Status)
-	assert.Equal(t, 0, z.Offset)
-	assert.Equal(t, 0, z.OffsetDST)
-	assert.Equal(t, "Etc/UTC", z.Link)
-	assert.Equal(t, "test note", z.Notes)
-	assert.Equal(t, "", z.CountryCode)
+	zon := zs[0]
+	assert.Equal(t, 0, zon.Id)
+	assert.Equal(t, "UTC", zon.Name)
+	assert.Equal(t, "A", zon.Status)
+	assert.Equal(t, 0, zon.Offset)
+	assert.Equal(t, 0, zon.OffsetDST)
+	assert.Equal(t, "Etc/UTC", zon.Link)
+	assert.Equal(t, "test note", zon.Notes)
+	assert.Equal(t, "", zon.CountryCode)
 
-	z = zs[1]
-	assert.Equal(t, 416, z.Id)
-	assert.Equal(t, "Europe/Warsaw", z.Name)
-	assert.Equal(t, "C", z.Status)
-	assert.Equal(t, 120, z.Offset)
-	assert.Equal(t, 180, z.OffsetDST)
-	assert.Equal(t, "", z.Link)
-	assert.Equal(t, "", z.Notes)
-	assert.Equal(t, "PL", z.CountryCode)
+	zon = zs[1]
+	assert.Equal(t, 416, zon.Id)
+	assert.Equal(t, "Europe/Warsaw", zon.Name)
+	assert.Equal(t, "C", zon.Status)
+	assert.Equal(t, 120, zon.Offset)
+	assert.Equal(t, 180, zon.OffsetDST)
+	assert.Equal(t, "", zon.Link)
+	assert.Equal(t, "", zon.Notes)
+	assert.Equal(t, "PL", zon.CountryCode)
 }
 
 func Test_ReadZones_mismatchedIDs(t *testing.T) {
@@ -164,7 +164,7 @@ func Test_GenerateTZGo(t *testing.T) {
 
 func Test_zoneLit(t *testing.T) {
 	// --- Given ---
-	z := &xcal.Zone{
+	zon := &xcal.Zone{
 		Id:          416,
 		Name:        "Europe/Warsaw",
 		Status:      "C",
@@ -176,7 +176,7 @@ func Test_zoneLit(t *testing.T) {
 	}
 
 	// --- When ---
-	have := zoneLit(z)
+	have := zoneLit(zon)
 
 	// --- Then ---
 	want := "" +

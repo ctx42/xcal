@@ -45,26 +45,27 @@ func ReadZones(pth string) ([]*xcal.Zone, error) {
 
 	seenIDs := make(map[int]bool, len(zs))
 	seenNames := make(map[string]bool, len(zs))
-	for i, z := range zs {
-		if err = z.Check(); err != nil {
+	for i, zon := range zs {
+		if err = zon.Check(); err != nil {
 			return nil, fmt.Errorf("at index %d: %w", i, err)
 		}
-		if seenNames[z.Name] {
+		if seenNames[zon.Name] {
 			format := "at index %d: duplicate timezone %s"
-			return nil, fmt.Errorf(format, i, z.Name)
+			return nil, fmt.Errorf(format, i, zon.Name)
 		}
-		if seenIDs[z.Id] {
-			return nil, fmt.Errorf("at index %d: duplicate ZoneID %d", i, z.Id)
+		if seenIDs[zon.Id] {
+			format := "at index %d: duplicate ZoneID %d"
+			return nil, fmt.Errorf(format, i, zon.Id)
 		}
-		seenIDs[z.Id] = true
-		seenNames[z.Name] = true
+		seenIDs[zon.Id] = true
+		seenNames[zon.Name] = true
 		if len(xcal.Zones) > 0 {
-			if have, ok := xcal.Zones[z.Name]; ok && have.Id != z.Id {
+			if have, ok := xcal.Zones[zon.Name]; ok && have.Id != zon.Id {
 				format := "at index %d: expected ZoneID %d got %d"
-				return nil, fmt.Errorf(format, i, have.Id, z.Id)
+				return nil, fmt.Errorf(format, i, have.Id, zon.Id)
 			}
-		} else if z.Id != i {
-			return nil, fmt.Errorf("expected ZoneID %d got %d", i, z.Id)
+		} else if zon.Id != i {
+			return nil, fmt.Errorf("expected ZoneID %d got %d", i, zon.Id)
 		}
 	}
 	return zs, nil
@@ -87,8 +88,8 @@ func GenerateTZGo(zs []*xcal.Zone, dst, name string) error {
 		"// Zones maps timezone names to Zone instances.\n" +
 		"var Zones = map[string]*Zone{\n"
 	_, _ = fmt.Fprintf(&buf, header, name)
-	for _, z := range byName {
-		_, _ = fmt.Fprintf(&buf, "%q: %s,\n", z.Name, zoneLit(z))
+	for _, zon := range byName {
+		_, _ = fmt.Fprintf(&buf, "%q: %s,\n", zon.Name, zoneLit(zon))
 	}
 
 	middle := "" +
@@ -96,8 +97,8 @@ func GenerateTZGo(zs []*xcal.Zone, dst, name string) error {
 		"// ZoneIDs maps timezone IDs to Zone instances.\n" +
 		"var ZoneIDs = map[int]*Zone{\n"
 	_, _ = fmt.Fprint(&buf, middle)
-	for _, z := range byID {
-		_, _ = fmt.Fprintf(&buf, "%d: %s,\n", z.Id, zoneLit(z))
+	for _, zon := range byID {
+		_, _ = fmt.Fprintf(&buf, "%d: %s,\n", zon.Id, zoneLit(zon))
 	}
 	_, _ = fmt.Fprint(&buf, "}\n")
 
@@ -109,7 +110,7 @@ func GenerateTZGo(zs []*xcal.Zone, dst, name string) error {
 }
 
 // zoneLit returns the zone as a Go composite literal with the type elided.
-func zoneLit(z *xcal.Zone) string {
+func zoneLit(zon *xcal.Zone) string {
 	format := "" +
 		"{\n" +
 		"Id: %d,\n" +
@@ -123,13 +124,13 @@ func zoneLit(z *xcal.Zone) string {
 		"}"
 	return fmt.Sprintf(
 		format,
-		z.Id,
-		z.Name,
-		z.Status,
-		z.Offset,
-		z.OffsetDST,
-		z.Link,
-		z.Notes,
-		z.CountryCode,
+		zon.Id,
+		zon.Name,
+		zon.Status,
+		zon.Offset,
+		zon.OffsetDST,
+		zon.Link,
+		zon.Notes,
+		zon.CountryCode,
 	)
 }

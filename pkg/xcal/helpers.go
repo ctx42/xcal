@@ -23,11 +23,11 @@ func ToZone(loc *time.Location) (*Zone, error) {
 	if tzs == "Local" {
 		return nil, ErrLocalTimezone
 	}
-	z, ok := Zones[tzs]
+	zon, ok := Zones[tzs]
 	if !ok {
 		return nil, ErrInvTimezone
 	}
-	return z, nil
+	return zon, nil
 }
 
 // ByZoneID takes timezone ID and returns corresponding time.Location instance.
