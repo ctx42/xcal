@@ -91,11 +91,6 @@ func Test_ToZone(t *testing.T) {
 }
 
 func Test_ToZone_Local(t *testing.T) {
-	// --- Given ---
-	orig := time.Local
-	time.Local = time.FixedZone("Local", 120)
-	t.Cleanup(func() { time.Local = orig })
-
 	// --- When ---
 	have, err := ToZone(time.Local)
 
