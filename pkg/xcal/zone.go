@@ -5,6 +5,8 @@ import (
 	"time"
 )
 
+//go:generate go run 00_generate_main.go
+
 // Timezone statuses.
 const (
 	// Canonical represents the primary, preferred zone name.

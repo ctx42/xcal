@@ -1,4 +1,4 @@
-package xcal
+package tzgen
 
 import (
 	"os"
@@ -6,6 +6,8 @@ import (
 	"testing"
 
 	"github.com/ctx42/testing/pkg/assert"
+
+	"github.com/ctx42/xcal/pkg/xcal"
 )
 
 func Test_ReadZones(t *testing.T) {
@@ -119,9 +121,9 @@ func Test_GenerateTZGo(t *testing.T) {
 	assert.Equal(t, string(exp), string(got))
 }
 
-func Test_Zone_goLit(t *testing.T) {
+func Test_zoneLit(t *testing.T) {
 	// --- Given ---
-	z := &Zone{
+	z := &xcal.Zone{
 		Id:          416,
 		Name:        "Europe/Warsaw",
 		Status:      "C",
@@ -133,7 +135,7 @@ func Test_Zone_goLit(t *testing.T) {
 	}
 
 	// --- When ---
-	have := z.goLit()
+	have := zoneLit(z)
 
 	// --- Then ---
 	want := "" +

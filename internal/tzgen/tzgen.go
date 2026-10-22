@@ -1,4 +1,6 @@
-package xcal
+// Package tzgen generates the Go source of the xcal timezone tables from a
+// JSON file.
+package tzgen
 
 import (
 	"bytes"
@@ -9,9 +11,9 @@ import (
 	"os"
 	"slices"
 	"strings"
-)
 
-//go:generate go run 00_generate_main.go
+	"github.com/ctx42/xcal/pkg/xcal"
+)
 
 // GenerateTZ generates a go source file at dst from src JSON file with package
 // name.
@@ -30,13 +32,13 @@ func GenerateTZ(src, dst, name string) error {
 
 // ReadZones reads timezone.json file and returns slice of validated Zone
 // instances.
-func ReadZones(pth string) ([]*Zone, error) {
+func ReadZones(pth string) ([]*xcal.Zone, error) {
 	data, err := os.ReadFile(pth)
 	if err != nil {
 		return nil, err
 	}
 
-	var zs []*Zone
+	var zs []*xcal.Zone
 	if err = json.Unmarshal(data, &zs); err != nil {
 		return nil, err
 	}
@@ -45,8 +47,8 @@ func ReadZones(pth string) ([]*Zone, error) {
 		if err = z.Check(); err != nil {
 			return nil, fmt.Errorf("at index %d: %w", i, err)
 		}
-		if len(Zones) > 0 {
-			if have, ok := Zones[z.Name]; ok && have.Id != z.Id {
+		if len(xcal.Zones) > 0 {
+			if have, ok := xcal.Zones[z.Name]; ok && have.Id != z.Id {
 				format := "at index %d: expected ZoneID %d got %d"
 				return nil, fmt.Errorf(format, i, have.Id, z.Id)
 			}
@@ -59,11 +61,11 @@ func ReadZones(pth string) ([]*Zone, error) {
 
 // GenerateTZGo generates go source file with timezones. The map entries are
 // sorted by key, so the output is the same for the same input.
-func GenerateTZGo(zs []*Zone, dst, name string) error {
-	byName := slices.SortedFunc(slices.Values(zs), func(a, b *Zone) int {
+func GenerateTZGo(zs []*xcal.Zone, dst, name string) error {
+	byName := slices.SortedFunc(slices.Values(zs), func(a, b *xcal.Zone) int {
 		return strings.Compare(a.Name, b.Name)
 	})
-	byID := slices.SortedFunc(slices.Values(zs), func(a, b *Zone) int {
+	byID := slices.SortedFunc(slices.Values(zs), func(a, b *xcal.Zone) int {
 		return cmp.Compare(a.Id, b.Id)
 	})
 
@@ -75,7 +77,7 @@ func GenerateTZGo(zs []*Zone, dst, name string) error {
 		"var Zones = map[string]*Zone{\n"
 	_, _ = fmt.Fprintf(&buf, header, name)
 	for _, z := range byName {
-		_, _ = fmt.Fprintf(&buf, "%q: %s,\n", z.Name, z.goLit())
+		_, _ = fmt.Fprintf(&buf, "%q: %s,\n", z.Name, zoneLit(z))
 	}
 
 	middle := "" +
@@ -84,7 +86,7 @@ func GenerateTZGo(zs []*Zone, dst, name string) error {
 		"var ZoneIDs = map[int]*Zone{\n"
 	_, _ = fmt.Fprint(&buf, middle)
 	for _, z := range byID {
-		_, _ = fmt.Fprintf(&buf, "%d: %s,\n", z.Id, z.goLit())
+		_, _ = fmt.Fprintf(&buf, "%d: %s,\n", z.Id, zoneLit(z))
 	}
 	_, _ = fmt.Fprint(&buf, "}\n")
 
@@ -95,8 +97,8 @@ func GenerateTZGo(zs []*Zone, dst, name string) error {
 	return os.WriteFile(dst, src, 0644)
 }
 
-// goLit returns the zone as a Go composite literal with the type elided.
-func (z *Zone) goLit() string {
+// zoneLit returns the zone as a Go composite literal with the type elided.
+func zoneLit(z *xcal.Zone) string {
 	format := "" +
 		"{\n" +
 		"Id: %d,\n" +
