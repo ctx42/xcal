@@ -169,8 +169,9 @@ func Test_Zone_Validate(t *testing.T) {
 	t.Run("not in zone table", func(t *testing.T) {
 		// --- Given ---
 		z := validZone()
-		z.Name = "Europe/Kyiv"
-		z.CountryCode = "UA"
+		save := Zones[z.Name]
+		delete(Zones, z.Name)
+		t.Cleanup(func() { Zones[save.Name] = save })
 
 		// --- When ---
 		err := z.Validate()
