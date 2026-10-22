@@ -1,6 +1,7 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/ctx42/xcal.svg)](https://pkg.go.dev/github.com/ctx42/xcal)
 [![Go Version](https://img.shields.io/github/go-mod/go-version/ctx42/xcal)](go.mod)
 [![License](https://img.shields.io/github/license/ctx42/xcal)](LICENSE.md)
+[![Tests](https://github.com/ctx42/xcal/actions/workflows/go.yml/badge.svg)](https://github.com/ctx42/xcal/actions/workflows/go.yml)
 
 # xcal
 
