@@ -7,9 +7,12 @@ import (
 	"compress/gzip"
 	"context"
 	"maps"
+	"net/http"
+	"net/http/httptest"
 	"os"
 	"path/filepath"
 	"slices"
+	"sync/atomic"
 
 	"github.com/ctx42/testing/pkg/must"
 	"github.com/ctx42/testing/pkg/tester"
@@ -101,4 +104,37 @@ func zipEntry(t tester.T, name string) *zip.File {
 	}
 	t.Fatalf("no %s in testdata/zoneinfo.zip", name)
 	return nil
+}
+
+// newRelease starts a server returning the testdata/tzdata release and
+// counting its requests.
+func newRelease(t tester.T, reqs *atomic.Int32) *httptest.Server {
+	t.Helper()
+	read := func(name string) string {
+		pth := filepath.Join("testdata", "tzdata", name)
+		return string(must.Value(os.ReadFile(pth)))
+	}
+	body := tarGz(t, map[string]string{
+		"version":  read(VersionFile),
+		"zone.tab": read(ZoneTabFile),
+		"backward": read(LinksFile),
+	})
+	srv := httptest.NewServer(http.HandlerFunc(
+		func(w http.ResponseWriter, r *http.Request) {
+			reqs.Add(1)
+			_, _ = w.Write(body)
+		},
+	))
+	t.Cleanup(srv.Close)
+	return srv
+}
+
+// newDataDir creates a data directory holding testdata/timezones.json and
+// returns its path.
+func newDataDir(t tester.T) string {
+	t.Helper()
+	dir := t.TempDir()
+	data := must.Value(os.ReadFile("testdata/timezones.json"))
+	must.Nil(os.WriteFile(filepath.Join(dir, ZonesFile), data, 0644))
+	return dir
 }

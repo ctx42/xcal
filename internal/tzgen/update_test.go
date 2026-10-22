@@ -14,39 +14,6 @@ import (
 	"github.com/ctx42/xcal/pkg/xcal"
 )
 
-// newRelease starts a server returning the testdata/tzdata release and
-// counting its requests.
-func newRelease(t *testing.T, reqs *atomic.Int32) *httptest.Server {
-	t.Helper()
-	read := func(name string) string {
-		pth := filepath.Join("testdata", "tzdata", name)
-		return string(must.Value(os.ReadFile(pth)))
-	}
-	body := tarGz(t, map[string]string{
-		"version":  read(VersionFile),
-		"zone.tab": read(ZoneTabFile),
-		"backward": read(LinksFile),
-	})
-	srv := httptest.NewServer(http.HandlerFunc(
-		func(w http.ResponseWriter, r *http.Request) {
-			reqs.Add(1)
-			_, _ = w.Write(body)
-		},
-	))
-	t.Cleanup(srv.Close)
-	return srv
-}
-
-// newDataDir creates a data directory holding testdata/timezones.json and
-// returns its path.
-func newDataDir(t *testing.T) string {
-	t.Helper()
-	dir := t.TempDir()
-	data := must.Value(os.ReadFile("testdata/timezones.json"))
-	must.Nil(os.WriteFile(filepath.Join(dir, ZonesFile), data, 0644))
-	return dir
-}
-
 func Test_Updater_Run(t *testing.T) {
 	// --- Given ---
 	var reqs atomic.Int32
