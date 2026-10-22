@@ -1,0 +1,4742 @@
+[
+ {
+  "id": 0,
+  "timezone": "UTC",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/UTC",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 1,
+  "timezone": "Etc/UTC",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 2,
+  "timezone": "Africa/Abidjan",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "",
+  "notes": "",
+  "country_code": "CI"
+ },
+ {
+  "id": 3,
+  "timezone": "Africa/Accra",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "",
+  "notes": "",
+  "country_code": "GH"
+ },
+ {
+  "id": 4,
+  "timezone": "Africa/Addis_Ababa",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Africa/Nairobi",
+  "notes": "",
+  "country_code": "ET"
+ },
+ {
+  "id": 5,
+  "timezone": "Africa/Algiers",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "",
+  "notes": "",
+  "country_code": "DZ"
+ },
+ {
+  "id": 6,
+  "timezone": "Africa/Asmara",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Africa/Nairobi",
+  "notes": "",
+  "country_code": "ER"
+ },
+ {
+  "id": 7,
+  "timezone": "Africa/Bamako",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Africa/Abidjan",
+  "notes": "",
+  "country_code": "ML"
+ },
+ {
+  "id": 8,
+  "timezone": "Africa/Bangui",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "Africa/Lagos",
+  "notes": "",
+  "country_code": "CF"
+ },
+ {
+  "id": 9,
+  "timezone": "Africa/Banjul",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Africa/Abidjan",
+  "notes": "",
+  "country_code": "GM"
+ },
+ {
+  "id": 10,
+  "timezone": "Africa/Bissau",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "",
+  "notes": "",
+  "country_code": "GW"
+ },
+ {
+  "id": 11,
+  "timezone": "Africa/Blantyre",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "Africa/Maputo",
+  "notes": "",
+  "country_code": "MW"
+ },
+ {
+  "id": 12,
+  "timezone": "Africa/Brazzaville",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "Africa/Lagos",
+  "notes": "",
+  "country_code": "CG"
+ },
+ {
+  "id": 13,
+  "timezone": "Africa/Bujumbura",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "Africa/Maputo",
+  "notes": "",
+  "country_code": "BI"
+ },
+ {
+  "id": 14,
+  "timezone": "Africa/Cairo",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "EG"
+ },
+ {
+  "id": 15,
+  "timezone": "Africa/Casablanca",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "",
+  "notes": "",
+  "country_code": "MA"
+ },
+ {
+  "id": 16,
+  "timezone": "Africa/Ceuta",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "Ceuta, Melilla",
+  "country_code": "ES"
+ },
+ {
+  "id": 17,
+  "timezone": "Africa/Conakry",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Africa/Abidjan",
+  "notes": "",
+  "country_code": "GN"
+ },
+ {
+  "id": 18,
+  "timezone": "Africa/Dakar",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Africa/Abidjan",
+  "notes": "",
+  "country_code": "SN"
+ },
+ {
+  "id": 19,
+  "timezone": "Africa/Dar_es_Salaam",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Africa/Nairobi",
+  "notes": "",
+  "country_code": "TZ"
+ },
+ {
+  "id": 20,
+  "timezone": "Africa/Djibouti",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Africa/Nairobi",
+  "notes": "",
+  "country_code": "DJ"
+ },
+ {
+  "id": 21,
+  "timezone": "Africa/Douala",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "Africa/Lagos",
+  "notes": "",
+  "country_code": "CM"
+ },
+ {
+  "id": 22,
+  "timezone": "Africa/El_Aaiun",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "",
+  "notes": "",
+  "country_code": "EH"
+ },
+ {
+  "id": 23,
+  "timezone": "Africa/Freetown",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Africa/Abidjan",
+  "notes": "",
+  "country_code": "SL"
+ },
+ {
+  "id": 24,
+  "timezone": "Africa/Gaborone",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "Africa/Maputo",
+  "notes": "",
+  "country_code": "BW"
+ },
+ {
+  "id": 25,
+  "timezone": "Africa/Harare",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "Africa/Maputo",
+  "notes": "",
+  "country_code": "ZW"
+ },
+ {
+  "id": 26,
+  "timezone": "Africa/Johannesburg",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "ZA"
+ },
+ {
+  "id": 27,
+  "timezone": "Africa/Juba",
+  "status": "C",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "SS"
+ },
+ {
+  "id": 28,
+  "timezone": "Africa/Kampala",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Africa/Nairobi",
+  "notes": "",
+  "country_code": "UG"
+ },
+ {
+  "id": 29,
+  "timezone": "Africa/Khartoum",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "SD"
+ },
+ {
+  "id": 30,
+  "timezone": "Africa/Kigali",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "Africa/Maputo",
+  "notes": "",
+  "country_code": "RW"
+ },
+ {
+  "id": 31,
+  "timezone": "Africa/Kinshasa",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "Africa/Lagos",
+  "notes": "Dem. Rep. of Congo (west)",
+  "country_code": "CD"
+ },
+ {
+  "id": 32,
+  "timezone": "Africa/Lagos",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "",
+  "notes": "",
+  "country_code": "NG"
+ },
+ {
+  "id": 33,
+  "timezone": "Africa/Libreville",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "Africa/Lagos",
+  "notes": "",
+  "country_code": "GA"
+ },
+ {
+  "id": 34,
+  "timezone": "Africa/Lome",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Africa/Abidjan",
+  "notes": "",
+  "country_code": "TG"
+ },
+ {
+  "id": 35,
+  "timezone": "Africa/Luanda",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "Africa/Lagos",
+  "notes": "",
+  "country_code": "AO"
+ },
+ {
+  "id": 36,
+  "timezone": "Africa/Lubumbashi",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "Africa/Maputo",
+  "notes": "Dem. Rep. of Congo (east)",
+  "country_code": "CD"
+ },
+ {
+  "id": 37,
+  "timezone": "Africa/Lusaka",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "Africa/Maputo",
+  "notes": "",
+  "country_code": "ZM"
+ },
+ {
+  "id": 38,
+  "timezone": "Africa/Malabo",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "Africa/Lagos",
+  "notes": "",
+  "country_code": "GQ"
+ },
+ {
+  "id": 39,
+  "timezone": "Africa/Maputo",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "MZ"
+ },
+ {
+  "id": 40,
+  "timezone": "Africa/Maseru",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "Africa/Johannesburg",
+  "notes": "",
+  "country_code": "LS"
+ },
+ {
+  "id": 41,
+  "timezone": "Africa/Mbabane",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "Africa/Johannesburg",
+  "notes": "",
+  "country_code": "SZ"
+ },
+ {
+  "id": 42,
+  "timezone": "Africa/Mogadishu",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Africa/Nairobi",
+  "notes": "",
+  "country_code": "SO"
+ },
+ {
+  "id": 43,
+  "timezone": "Africa/Monrovia",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "",
+  "notes": "",
+  "country_code": "LR"
+ },
+ {
+  "id": 44,
+  "timezone": "Africa/Nairobi",
+  "status": "C",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "KE"
+ },
+ {
+  "id": 45,
+  "timezone": "Africa/Ndjamena",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "",
+  "notes": "",
+  "country_code": "TD"
+ },
+ {
+  "id": 46,
+  "timezone": "Africa/Niamey",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "Africa/Lagos",
+  "notes": "",
+  "country_code": "NE"
+ },
+ {
+  "id": 47,
+  "timezone": "Africa/Nouakchott",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Africa/Abidjan",
+  "notes": "",
+  "country_code": "MR"
+ },
+ {
+  "id": 48,
+  "timezone": "Africa/Ouagadougou",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Africa/Abidjan",
+  "notes": "",
+  "country_code": "BF"
+ },
+ {
+  "id": 49,
+  "timezone": "Africa/Porto-Novo",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "Africa/Lagos",
+  "notes": "",
+  "country_code": "BJ"
+ },
+ {
+  "id": 50,
+  "timezone": "Africa/Sao_Tome",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Africa/Lagos",
+  "notes": "",
+  "country_code": "ST"
+ },
+ {
+  "id": 51,
+  "timezone": "Africa/Timbuktu",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Africa/Abidjan",
+  "notes": "",
+  "country_code": "CI"
+ },
+ {
+  "id": 52,
+  "timezone": "Africa/Tripoli",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "LY"
+ },
+ {
+  "id": 53,
+  "timezone": "Africa/Tunis",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "",
+  "notes": "",
+  "country_code": "TN"
+ },
+ {
+  "id": 54,
+  "timezone": "Africa/Windhoek",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "NA"
+ },
+ {
+  "id": 55,
+  "timezone": "America/Adak",
+  "status": "C",
+  "offset": -600,
+  "offset_dst": -540,
+  "link": "",
+  "notes": "Aleutian Islands",
+  "country_code": "US"
+ },
+ {
+  "id": 56,
+  "timezone": "America/Anchorage",
+  "status": "C",
+  "offset": -540,
+  "offset_dst": -480,
+  "link": "",
+  "notes": "Alaska (most areas)",
+  "country_code": "US"
+ },
+ {
+  "id": 57,
+  "timezone": "America/Anguilla",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "AI"
+ },
+ {
+  "id": 58,
+  "timezone": "America/Antigua",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "AG"
+ },
+ {
+  "id": 59,
+  "timezone": "America/Araguaina",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Tocantins",
+  "country_code": "BR"
+ },
+ {
+  "id": 60,
+  "timezone": "America/Argentina/Buenos_Aires",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Buenos Aires (BA, CF)",
+  "country_code": "AR"
+ },
+ {
+  "id": 61,
+  "timezone": "America/Argentina/Catamarca",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Catamarca (CT); Chubut (CH)",
+  "country_code": "AR"
+ },
+ {
+  "id": 62,
+  "timezone": "America/Argentina/ComodRivadavia",
+  "status": "A",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "America/Argentina/Catamarca",
+  "notes": "",
+  "country_code": "AR"
+ },
+ {
+  "id": 63,
+  "timezone": "America/Argentina/Cordoba",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Argentina (most areas: CB, CC, CN, ER, FM, MN, SE, SF)",
+  "country_code": "AR"
+ },
+ {
+  "id": 64,
+  "timezone": "America/Argentina/Jujuy",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Jujuy (JY)",
+  "country_code": "AR"
+ },
+ {
+  "id": 65,
+  "timezone": "America/Argentina/La_Rioja",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "La Rioja (LR)",
+  "country_code": "AR"
+ },
+ {
+  "id": 66,
+  "timezone": "America/Argentina/Mendoza",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Mendoza (MZ)",
+  "country_code": "AR"
+ },
+ {
+  "id": 67,
+  "timezone": "America/Argentina/Rio_Gallegos",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Santa Cruz (SC)",
+  "country_code": "AR"
+ },
+ {
+  "id": 68,
+  "timezone": "America/Argentina/Salta",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Salta (SA, LP, NQ, RN)",
+  "country_code": "AR"
+ },
+ {
+  "id": 69,
+  "timezone": "America/Argentina/San_Juan",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "San Juan (SJ)",
+  "country_code": "AR"
+ },
+ {
+  "id": 70,
+  "timezone": "America/Argentina/San_Luis",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "San Luis (SL)",
+  "country_code": "AR"
+ },
+ {
+  "id": 71,
+  "timezone": "America/Argentina/Tucuman",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Tucuman (TM)",
+  "country_code": "AR"
+ },
+ {
+  "id": 72,
+  "timezone": "America/Argentina/Ushuaia",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Tierra del Fuego (TF)",
+  "country_code": "AR"
+ },
+ {
+  "id": 73,
+  "timezone": "America/Aruba",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Curacao",
+  "notes": "",
+  "country_code": "AW"
+ },
+ {
+  "id": 74,
+  "timezone": "America/Asuncion",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "",
+  "country_code": "PY"
+ },
+ {
+  "id": 75,
+  "timezone": "America/Atikokan",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "EST - ON (Atikokan); NU (Coral H)",
+  "country_code": "CA"
+ },
+ {
+  "id": 76,
+  "timezone": "America/Atka",
+  "status": "A",
+  "offset": -600,
+  "offset_dst": -540,
+  "link": "America/Adak",
+  "notes": "",
+  "country_code": "US"
+ },
+ {
+  "id": 77,
+  "timezone": "America/Bahia",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Bahia",
+  "country_code": "BR"
+ },
+ {
+  "id": 78,
+  "timezone": "America/Bahia_Banderas",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central Time - Bahia de Banderas",
+  "country_code": "MX"
+ },
+ {
+  "id": 79,
+  "timezone": "America/Barbados",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": "BB"
+ },
+ {
+  "id": 80,
+  "timezone": "America/Belem",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Para (east); Amapa",
+  "country_code": "BR"
+ },
+ {
+  "id": 81,
+  "timezone": "America/Belize",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "",
+  "country_code": "BZ"
+ },
+ {
+  "id": 82,
+  "timezone": "America/Blanc-Sablon",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "AST - QC (Lower North Shore)",
+  "country_code": "CA"
+ },
+ {
+  "id": 83,
+  "timezone": "America/Boa_Vista",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Roraima",
+  "country_code": "BR"
+ },
+ {
+  "id": 84,
+  "timezone": "America/Bogota",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "",
+  "country_code": "CO"
+ },
+ {
+  "id": 85,
+  "timezone": "America/Boise",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "Mountain - ID (south); OR (east)",
+  "country_code": "US"
+ },
+ {
+  "id": 86,
+  "timezone": "America/Buenos_Aires",
+  "status": "A",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "America/Argentina/Buenos_Aires",
+  "notes": "",
+  "country_code": "AR"
+ },
+ {
+  "id": 87,
+  "timezone": "America/Cambridge_Bay",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "Mountain - NU (west)",
+  "country_code": "CA"
+ },
+ {
+  "id": 88,
+  "timezone": "America/Campo_Grande",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Mato Grosso do Sul",
+  "country_code": "BR"
+ },
+ {
+  "id": 89,
+  "timezone": "America/Cancun",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Eastern Standard Time - Quintana Roo",
+  "country_code": "MX"
+ },
+ {
+  "id": 90,
+  "timezone": "America/Caracas",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": "VE"
+ },
+ {
+  "id": 91,
+  "timezone": "America/Catamarca",
+  "status": "A",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "America/Argentina/Catamarca",
+  "notes": "",
+  "country_code": "AR"
+ },
+ {
+  "id": 92,
+  "timezone": "America/Cayenne",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "",
+  "country_code": "GF"
+ },
+ {
+  "id": 93,
+  "timezone": "America/Cayman",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "America/Panama",
+  "notes": "",
+  "country_code": "KY"
+ },
+ {
+  "id": 94,
+  "timezone": "America/Chicago",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central (most areas)",
+  "country_code": "US"
+ },
+ {
+  "id": 95,
+  "timezone": "America/Chihuahua",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "Mountain Time - Chihuahua (most areas)",
+  "country_code": "MX"
+ },
+ {
+  "id": 96,
+  "timezone": "America/Coral_Harbour",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "America/Atikokan",
+  "notes": "",
+  "country_code": "CA"
+ },
+ {
+  "id": 97,
+  "timezone": "America/Cordoba",
+  "status": "A",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "America/Argentina/Cordoba",
+  "notes": "",
+  "country_code": "AR"
+ },
+ {
+  "id": 98,
+  "timezone": "America/Costa_Rica",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "",
+  "country_code": "CR"
+ },
+ {
+  "id": 99,
+  "timezone": "America/Creston",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -420,
+  "link": "",
+  "notes": "MST - BC (Creston)",
+  "country_code": "CA"
+ },
+ {
+  "id": 100,
+  "timezone": "America/Cuiaba",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Mato Grosso",
+  "country_code": "BR"
+ },
+ {
+  "id": 101,
+  "timezone": "America/Curacao",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": "CW"
+ },
+ {
+  "id": 102,
+  "timezone": "America/Danmarkshavn",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "",
+  "notes": "National Park (east coast)",
+  "country_code": "GL"
+ },
+ {
+  "id": 103,
+  "timezone": "America/Dawson",
+  "status": "C",
+  "offset": -480,
+  "offset_dst": -420,
+  "link": "",
+  "notes": "Pacific - Yukon (north)",
+  "country_code": "CA"
+ },
+ {
+  "id": 104,
+  "timezone": "America/Dawson_Creek",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -420,
+  "link": "",
+  "notes": "MST - BC (Dawson Cr, Ft St John)",
+  "country_code": "CA"
+ },
+ {
+  "id": 105,
+  "timezone": "America/Denver",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "Mountain (most areas)",
+  "country_code": "US"
+ },
+ {
+  "id": 106,
+  "timezone": "America/Detroit",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - MI (most areas)",
+  "country_code": "US"
+ },
+ {
+  "id": 107,
+  "timezone": "America/Dominica",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "DM"
+ },
+ {
+  "id": 108,
+  "timezone": "America/Edmonton",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "Mountain - AB; BC (E); SK (W)",
+  "country_code": "CA"
+ },
+ {
+  "id": 109,
+  "timezone": "America/Eirunepe",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Amazonas (west)",
+  "country_code": "BR"
+ },
+ {
+  "id": 110,
+  "timezone": "America/El_Salvador",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "",
+  "country_code": "SV"
+ },
+ {
+  "id": 111,
+  "timezone": "America/Ensenada",
+  "status": "A",
+  "offset": -480,
+  "offset_dst": -420,
+  "link": "America/Tijuana",
+  "notes": "",
+  "country_code": "MX"
+ },
+ {
+  "id": 112,
+  "timezone": "America/Fort_Nelson",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -420,
+  "link": "",
+  "notes": "MST - BC (Ft Nelson)",
+  "country_code": "CA"
+ },
+ {
+  "id": 113,
+  "timezone": "America/Fort_Wayne",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "America/Indiana/Indianapolis",
+  "notes": "",
+  "country_code": "US"
+ },
+ {
+  "id": 114,
+  "timezone": "America/Fortaleza",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Brazil (northeast: MA, PI, CE, RN, PB)",
+  "country_code": "BR"
+ },
+ {
+  "id": 115,
+  "timezone": "America/Glace_Bay",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Atlantic - NS (Cape Breton)",
+  "country_code": "CA"
+ },
+ {
+  "id": 116,
+  "timezone": "America/Godthab",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -120,
+  "link": "",
+  "notes": "Greenland (most areas)",
+  "country_code": "GL"
+ },
+ {
+  "id": 117,
+  "timezone": "America/Goose_Bay",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Atlantic - Labrador (most areas)",
+  "country_code": "CA"
+ },
+ {
+  "id": 118,
+  "timezone": "America/Grand_Turk",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": "TC"
+ },
+ {
+  "id": 119,
+  "timezone": "America/Grenada",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "GD"
+ },
+ {
+  "id": 120,
+  "timezone": "America/Guadeloupe",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "GP"
+ },
+ {
+  "id": 121,
+  "timezone": "America/Guatemala",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "",
+  "country_code": "GT"
+ },
+ {
+  "id": 122,
+  "timezone": "America/Guayaquil",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Ecuador (mainland)",
+  "country_code": "EC"
+ },
+ {
+  "id": 123,
+  "timezone": "America/Guyana",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": "GY"
+ },
+ {
+  "id": 124,
+  "timezone": "America/Halifax",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Atlantic - NS (most areas); PE",
+  "country_code": "CA"
+ },
+ {
+  "id": 125,
+  "timezone": "America/Havana",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": "CU"
+ },
+ {
+  "id": 126,
+  "timezone": "America/Hermosillo",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -420,
+  "link": "",
+  "notes": "Mountain Standard Time - Sonora",
+  "country_code": "MX"
+ },
+ {
+  "id": 127,
+  "timezone": "America/Indiana/Indianapolis",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - IN (most areas)",
+  "country_code": "US"
+ },
+ {
+  "id": 128,
+  "timezone": "America/Indiana/Knox",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central - IN (Starke)",
+  "country_code": "US"
+ },
+ {
+  "id": 129,
+  "timezone": "America/Indiana/Marengo",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - IN (Crawford)",
+  "country_code": "US"
+ },
+ {
+  "id": 130,
+  "timezone": "America/Indiana/Petersburg",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - IN (Pike)",
+  "country_code": "US"
+ },
+ {
+  "id": 131,
+  "timezone": "America/Indiana/Tell_City",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central - IN (Perry)",
+  "country_code": "US"
+ },
+ {
+  "id": 132,
+  "timezone": "America/Indiana/Vevay",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - IN (Switzerland)",
+  "country_code": "US"
+ },
+ {
+  "id": 133,
+  "timezone": "America/Indiana/Vincennes",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - IN (Da, Du, K, Mn)",
+  "country_code": "US"
+ },
+ {
+  "id": 134,
+  "timezone": "America/Indiana/Winamac",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - IN (Pulaski)",
+  "country_code": "US"
+ },
+ {
+  "id": 135,
+  "timezone": "America/Indianapolis",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "America/Indiana/Indianapolis",
+  "notes": "",
+  "country_code": "US"
+ },
+ {
+  "id": 136,
+  "timezone": "America/Inuvik",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "Mountain - NT (west)",
+  "country_code": "CA"
+ },
+ {
+  "id": 137,
+  "timezone": "America/Iqaluit",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - NU (most east areas)",
+  "country_code": "CA"
+ },
+ {
+  "id": 138,
+  "timezone": "America/Jamaica",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "",
+  "country_code": "JM"
+ },
+ {
+  "id": 139,
+  "timezone": "America/Jujuy",
+  "status": "A",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "America/Argentina/Jujuy",
+  "notes": "",
+  "country_code": "AR"
+ },
+ {
+  "id": 140,
+  "timezone": "America/Juneau",
+  "status": "C",
+  "offset": -540,
+  "offset_dst": -480,
+  "link": "",
+  "notes": "Alaska - Juneau area",
+  "country_code": "US"
+ },
+ {
+  "id": 141,
+  "timezone": "America/Kentucky/Louisville",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - KY (Louisville area)",
+  "country_code": "US"
+ },
+ {
+  "id": 142,
+  "timezone": "America/Kentucky/Monticello",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - KY (Wayne)",
+  "country_code": "US"
+ },
+ {
+  "id": 143,
+  "timezone": "America/Knox_IN",
+  "status": "A",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "America/Indiana/Knox",
+  "notes": "",
+  "country_code": "US"
+ },
+ {
+  "id": 144,
+  "timezone": "America/Kralendijk",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Curacao",
+  "notes": "",
+  "country_code": "BQ"
+ },
+ {
+  "id": 145,
+  "timezone": "America/La_Paz",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": "BO"
+ },
+ {
+  "id": 146,
+  "timezone": "America/Lima",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "",
+  "country_code": "PE"
+ },
+ {
+  "id": 147,
+  "timezone": "America/Los_Angeles",
+  "status": "C",
+  "offset": -480,
+  "offset_dst": -420,
+  "link": "",
+  "notes": "Pacific",
+  "country_code": "US"
+ },
+ {
+  "id": 148,
+  "timezone": "America/Louisville",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "America/Kentucky/Louisville",
+  "notes": "",
+  "country_code": "US"
+ },
+ {
+  "id": 149,
+  "timezone": "America/Lower_Princes",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Curacao",
+  "notes": "",
+  "country_code": "SX"
+ },
+ {
+  "id": 150,
+  "timezone": "America/Maceio",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Alagoas, Sergipe",
+  "country_code": "BR"
+ },
+ {
+  "id": 151,
+  "timezone": "America/Managua",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "",
+  "country_code": "NI"
+ },
+ {
+  "id": 152,
+  "timezone": "America/Manaus",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Amazonas (east)",
+  "country_code": "BR"
+ },
+ {
+  "id": 153,
+  "timezone": "America/Marigot",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "MF"
+ },
+ {
+  "id": 154,
+  "timezone": "America/Martinique",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": "MQ"
+ },
+ {
+  "id": 155,
+  "timezone": "America/Matamoros",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central Time US - Coahuila, Nuevo Leon, Tamaulipas (US border)",
+  "country_code": "MX"
+ },
+ {
+  "id": 156,
+  "timezone": "America/Mazatlan",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "Mountain Time - Baja California Sur, Nayarit, Sinaloa",
+  "country_code": "MX"
+ },
+ {
+  "id": 157,
+  "timezone": "America/Mendoza",
+  "status": "A",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "America/Argentina/Mendoza",
+  "notes": "",
+  "country_code": "AR"
+ },
+ {
+  "id": 158,
+  "timezone": "America/Menominee",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central - MI (Wisconsin border)",
+  "country_code": "US"
+ },
+ {
+  "id": 159,
+  "timezone": "America/Merida",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central Time - Campeche, Yucatan",
+  "country_code": "MX"
+ },
+ {
+  "id": 160,
+  "timezone": "America/Metlakatla",
+  "status": "C",
+  "offset": -540,
+  "offset_dst": -480,
+  "link": "",
+  "notes": "Alaska - Annette Island",
+  "country_code": "US"
+ },
+ {
+  "id": 161,
+  "timezone": "America/Mexico_City",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central Time",
+  "country_code": "MX"
+ },
+ {
+  "id": 162,
+  "timezone": "America/Miquelon",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -120,
+  "link": "",
+  "notes": "",
+  "country_code": "PM"
+ },
+ {
+  "id": 163,
+  "timezone": "America/Moncton",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Atlantic - New Brunswick",
+  "country_code": "CA"
+ },
+ {
+  "id": 164,
+  "timezone": "America/Monterrey",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central Time - Durango; Coahuila, Nuevo Leon, Tamaulipas (most areas)",
+  "country_code": "MX"
+ },
+ {
+  "id": 165,
+  "timezone": "America/Montevideo",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "",
+  "country_code": "UY"
+ },
+ {
+  "id": 166,
+  "timezone": "America/Montreal",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "America/Toronto",
+  "notes": "",
+  "country_code": "CA"
+ },
+ {
+  "id": 167,
+  "timezone": "America/Montserrat",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "MS"
+ },
+ {
+  "id": 168,
+  "timezone": "America/Nassau",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": "BS"
+ },
+ {
+  "id": 169,
+  "timezone": "America/New_York",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern (most areas)",
+  "country_code": "US"
+ },
+ {
+  "id": 170,
+  "timezone": "America/Nipigon",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - ON, QC (no DST 1967−73)",
+  "country_code": "CA"
+ },
+ {
+  "id": 171,
+  "timezone": "America/Nome",
+  "status": "C",
+  "offset": -540,
+  "offset_dst": -480,
+  "link": "",
+  "notes": "Alaska (west)",
+  "country_code": "US"
+ },
+ {
+  "id": 172,
+  "timezone": "America/Noronha",
+  "status": "C",
+  "offset": -120,
+  "offset_dst": -120,
+  "link": "",
+  "notes": "Atlantic islands",
+  "country_code": "BR"
+ },
+ {
+  "id": 173,
+  "timezone": "America/North_Dakota/Beulah",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central - ND (Mercer)",
+  "country_code": "US"
+ },
+ {
+  "id": 174,
+  "timezone": "America/North_Dakota/Center",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central - ND (Oliver)",
+  "country_code": "US"
+ },
+ {
+  "id": 175,
+  "timezone": "America/North_Dakota/New_Salem",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central - ND (Morton rural)",
+  "country_code": "US"
+ },
+ {
+  "id": 176,
+  "timezone": "America/Ojinaga",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "Mountain Time US - Chihuahua (US border)",
+  "country_code": "MX"
+ },
+ {
+  "id": 177,
+  "timezone": "America/Panama",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "",
+  "country_code": "PA"
+ },
+ {
+  "id": 178,
+  "timezone": "America/Pangnirtung",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - NU (Pangnirtung)",
+  "country_code": "CA"
+ },
+ {
+  "id": 179,
+  "timezone": "America/Paramaribo",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "",
+  "country_code": "SR"
+ },
+ {
+  "id": 180,
+  "timezone": "America/Phoenix",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -420,
+  "link": "",
+  "notes": "MST - Arizona (except Navajo)",
+  "country_code": "US"
+ },
+ {
+  "id": 181,
+  "timezone": "America/Port_of_Spain",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": "TT"
+ },
+ {
+  "id": 182,
+  "timezone": "America/Port-au-Prince",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": "HT"
+ },
+ {
+  "id": 183,
+  "timezone": "America/Porto_Acre",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "America/Rio_Branco",
+  "notes": "",
+  "country_code": "BR"
+ },
+ {
+  "id": 184,
+  "timezone": "America/Porto_Velho",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Rondonia",
+  "country_code": "BR"
+ },
+ {
+  "id": 185,
+  "timezone": "America/Puerto_Rico",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": "PR"
+ },
+ {
+  "id": 186,
+  "timezone": "America/Punta_Arenas",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Region of Magallanes",
+  "country_code": "CL"
+ },
+ {
+  "id": 187,
+  "timezone": "America/Rainy_River",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central - ON (Rainy R, Ft Frances)",
+  "country_code": "CA"
+ },
+ {
+  "id": 188,
+  "timezone": "America/Rankin_Inlet",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central - NU (central)",
+  "country_code": "CA"
+ },
+ {
+  "id": 189,
+  "timezone": "America/Recife",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Pernambuco",
+  "country_code": "BR"
+ },
+ {
+  "id": 190,
+  "timezone": "America/Regina",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "CST - SK (most areas)",
+  "country_code": "CA"
+ },
+ {
+  "id": 191,
+  "timezone": "America/Resolute",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central - NU (Resolute)",
+  "country_code": "CA"
+ },
+ {
+  "id": 192,
+  "timezone": "America/Rio_Branco",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Acre",
+  "country_code": "BR"
+ },
+ {
+  "id": 193,
+  "timezone": "America/Rosario",
+  "status": "A",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "America/Argentina/Cordoba",
+  "notes": "",
+  "country_code": "AR"
+ },
+ {
+  "id": 194,
+  "timezone": "America/Santa_Isabel",
+  "status": "A",
+  "offset": -480,
+  "offset_dst": -420,
+  "link": "America/Tijuana",
+  "notes": "",
+  "country_code": "MX"
+ },
+ {
+  "id": 195,
+  "timezone": "America/Santarem",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Para (west)",
+  "country_code": "BR"
+ },
+ {
+  "id": 196,
+  "timezone": "America/Santiago",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Chile (most areas)",
+  "country_code": "CL"
+ },
+ {
+  "id": 197,
+  "timezone": "America/Santo_Domingo",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": "DO"
+ },
+ {
+  "id": 198,
+  "timezone": "America/Sao_Paulo",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -120,
+  "link": "",
+  "notes": "Brazil (southeast: GO, DF, MG, ES, RJ, SP, PR, SC, RS)",
+  "country_code": "BR"
+ },
+ {
+  "id": 199,
+  "timezone": "America/Scoresbysund",
+  "status": "C",
+  "offset": -60,
+  "offset_dst": 0,
+  "link": "",
+  "notes": "Scoresbysund/Ittoqqortoormiit",
+  "country_code": "GL"
+ },
+ {
+  "id": 200,
+  "timezone": "America/Shiprock",
+  "status": "A",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "America/Denver",
+  "notes": "",
+  "country_code": "US"
+ },
+ {
+  "id": 201,
+  "timezone": "America/Sitka",
+  "status": "C",
+  "offset": -540,
+  "offset_dst": -480,
+  "link": "",
+  "notes": "Alaska - Sitka area",
+  "country_code": "US"
+ },
+ {
+  "id": 202,
+  "timezone": "America/St_Barthelemy",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "BL"
+ },
+ {
+  "id": 203,
+  "timezone": "America/St_Johns",
+  "status": "C",
+  "offset": -150,
+  "offset_dst": -90,
+  "link": "",
+  "notes": "Newfoundland; Labrador (southeast)",
+  "country_code": "CA"
+ },
+ {
+  "id": 204,
+  "timezone": "America/St_Kitts",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "KN"
+ },
+ {
+  "id": 205,
+  "timezone": "America/St_Lucia",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "LC"
+ },
+ {
+  "id": 206,
+  "timezone": "America/St_Thomas",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "VI"
+ },
+ {
+  "id": 207,
+  "timezone": "America/St_Vincent",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "VC"
+ },
+ {
+  "id": 208,
+  "timezone": "America/Swift_Current",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "CST - SK (midwest)",
+  "country_code": "CA"
+ },
+ {
+  "id": 209,
+  "timezone": "America/Tegucigalpa",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "",
+  "country_code": "HN"
+ },
+ {
+  "id": 210,
+  "timezone": "America/Thule",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Thule/Pituffik",
+  "country_code": "GL"
+ },
+ {
+  "id": 211,
+  "timezone": "America/Thunder_Bay",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - ON (Thunder Bay)",
+  "country_code": "CA"
+ },
+ {
+  "id": 212,
+  "timezone": "America/Tijuana",
+  "status": "C",
+  "offset": -480,
+  "offset_dst": -420,
+  "link": "",
+  "notes": "Pacific Time US - Baja California",
+  "country_code": "MX"
+ },
+ {
+  "id": 213,
+  "timezone": "America/Toronto",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "Eastern - ON, QC (most areas)",
+  "country_code": "CA"
+ },
+ {
+  "id": 214,
+  "timezone": "America/Tortola",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "VG"
+ },
+ {
+  "id": 215,
+  "timezone": "America/Vancouver",
+  "status": "C",
+  "offset": -480,
+  "offset_dst": -420,
+  "link": "",
+  "notes": "Pacific - BC (most areas)",
+  "country_code": "CA"
+ },
+ {
+  "id": 216,
+  "timezone": "America/Virgin",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Port_of_Spain",
+  "notes": "",
+  "country_code": "TT"
+ },
+ {
+  "id": 217,
+  "timezone": "America/Whitehorse",
+  "status": "C",
+  "offset": -480,
+  "offset_dst": -420,
+  "link": "",
+  "notes": "Pacific - Yukon (south)",
+  "country_code": "CA"
+ },
+ {
+  "id": 218,
+  "timezone": "America/Winnipeg",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Central - ON (west); Manitoba",
+  "country_code": "CA"
+ },
+ {
+  "id": 219,
+  "timezone": "America/Yakutat",
+  "status": "C",
+  "offset": -540,
+  "offset_dst": -480,
+  "link": "",
+  "notes": "Alaska - Yakutat",
+  "country_code": "US"
+ },
+ {
+  "id": 220,
+  "timezone": "America/Yellowknife",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "Mountain - NT (central)",
+  "country_code": "CA"
+ },
+ {
+  "id": 221,
+  "timezone": "Antarctica/Casey",
+  "status": "C",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "Casey",
+  "country_code": "AQ"
+ },
+ {
+  "id": 222,
+  "timezone": "Antarctica/Davis",
+  "status": "C",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "",
+  "notes": "Davis",
+  "country_code": "AQ"
+ },
+ {
+  "id": 223,
+  "timezone": "Antarctica/DumontDUrville",
+  "status": "C",
+  "offset": 600,
+  "offset_dst": 600,
+  "link": "",
+  "notes": "Dumont-d'Urville",
+  "country_code": "AQ"
+ },
+ {
+  "id": 224,
+  "timezone": "Antarctica/Macquarie",
+  "status": "C",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "Macquarie Island",
+  "country_code": "AU"
+ },
+ {
+  "id": 225,
+  "timezone": "Antarctica/Mawson",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "Mawson",
+  "country_code": "AQ"
+ },
+ {
+  "id": 226,
+  "timezone": "Antarctica/McMurdo",
+  "status": "A",
+  "offset": 720,
+  "offset_dst": 780,
+  "link": "Pacific/Auckland",
+  "notes": "New Zealand time - McMurdo, South Pole",
+  "country_code": "AQ"
+ },
+ {
+  "id": 227,
+  "timezone": "Antarctica/Palmer",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Palmer",
+  "country_code": "AQ"
+ },
+ {
+  "id": 228,
+  "timezone": "Antarctica/Rothera",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Rothera",
+  "country_code": "AQ"
+ },
+ {
+  "id": 229,
+  "timezone": "Antarctica/South_Pole",
+  "status": "A",
+  "offset": 720,
+  "offset_dst": 780,
+  "link": "Pacific/Auckland",
+  "notes": "",
+  "country_code": "NZ"
+ },
+ {
+  "id": 230,
+  "timezone": "Antarctica/Syowa",
+  "status": "C",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "Syowa",
+  "country_code": "AQ"
+ },
+ {
+  "id": 231,
+  "timezone": "Antarctica/Troll",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "Troll",
+  "country_code": "AQ"
+ },
+ {
+  "id": 232,
+  "timezone": "Antarctica/Vostok",
+  "status": "C",
+  "offset": 360,
+  "offset_dst": 360,
+  "link": "",
+  "notes": "Vostok",
+  "country_code": "AQ"
+ },
+ {
+  "id": 233,
+  "timezone": "Arctic/Longyearbyen",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Oslo",
+  "notes": "",
+  "country_code": "SJ"
+ },
+ {
+  "id": 234,
+  "timezone": "Asia/Aden",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Asia/Riyadh",
+  "notes": "",
+  "country_code": "YE"
+ },
+ {
+  "id": 235,
+  "timezone": "Asia/Almaty",
+  "status": "C",
+  "offset": 360,
+  "offset_dst": 360,
+  "link": "",
+  "notes": "Kazakhstan (most areas)",
+  "country_code": "KZ"
+ },
+ {
+  "id": 236,
+  "timezone": "Asia/Amman",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "JO"
+ },
+ {
+  "id": 237,
+  "timezone": "Asia/Anadyr",
+  "status": "C",
+  "offset": 720,
+  "offset_dst": 720,
+  "link": "",
+  "notes": "MSK+09 - Bering Sea",
+  "country_code": "RU"
+ },
+ {
+  "id": 238,
+  "timezone": "Asia/Aqtau",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "Mangghystau/Mankistau",
+  "country_code": "KZ"
+ },
+ {
+  "id": 239,
+  "timezone": "Asia/Aqtobe",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "Aqtobe/Aktobe",
+  "country_code": "KZ"
+ },
+ {
+  "id": 240,
+  "timezone": "Asia/Ashgabat",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "",
+  "country_code": "TM"
+ },
+ {
+  "id": 241,
+  "timezone": "Asia/Ashkhabad",
+  "status": "A",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "Asia/Ashgabat",
+  "notes": "",
+  "country_code": "TM"
+ },
+ {
+  "id": 242,
+  "timezone": "Asia/Atyrau",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "Atyrau/Atirau/Gur'yev",
+  "country_code": "KZ"
+ },
+ {
+  "id": 243,
+  "timezone": "Asia/Baghdad",
+  "status": "C",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "IQ"
+ },
+ {
+  "id": 244,
+  "timezone": "Asia/Bahrain",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Asia/Qatar",
+  "notes": "",
+  "country_code": "BH"
+ },
+ {
+  "id": 245,
+  "timezone": "Asia/Baku",
+  "status": "C",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "",
+  "notes": "",
+  "country_code": "AZ"
+ },
+ {
+  "id": 246,
+  "timezone": "Asia/Bangkok",
+  "status": "C",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "",
+  "notes": "",
+  "country_code": "TH"
+ },
+ {
+  "id": 247,
+  "timezone": "Asia/Barnaul",
+  "status": "C",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "",
+  "notes": "MSK+04 - Altai",
+  "country_code": "RU"
+ },
+ {
+  "id": 248,
+  "timezone": "Asia/Beirut",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "LB"
+ },
+ {
+  "id": 249,
+  "timezone": "Asia/Bishkek",
+  "status": "C",
+  "offset": 360,
+  "offset_dst": 360,
+  "link": "",
+  "notes": "",
+  "country_code": "KG"
+ },
+ {
+  "id": 250,
+  "timezone": "Asia/Brunei",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "",
+  "country_code": "BN"
+ },
+ {
+  "id": 251,
+  "timezone": "Asia/Calcutta",
+  "status": "A",
+  "offset": 330,
+  "offset_dst": 330,
+  "link": "Asia/Kolkata",
+  "notes": "",
+  "country_code": "IN"
+ },
+ {
+  "id": 252,
+  "timezone": "Asia/Chita",
+  "status": "C",
+  "offset": 540,
+  "offset_dst": 540,
+  "link": "",
+  "notes": "MSK+06 - Zabaykalsky",
+  "country_code": "RU"
+ },
+ {
+  "id": 253,
+  "timezone": "Asia/Choibalsan",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "Dornod, Sukhbaatar",
+  "country_code": "MN"
+ },
+ {
+  "id": 254,
+  "timezone": "Asia/Chongqing",
+  "status": "A",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "Asia/Shanghai",
+  "notes": "",
+  "country_code": "CN"
+ },
+ {
+  "id": 255,
+  "timezone": "Asia/Chungking",
+  "status": "A",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "Asia/Shanghai",
+  "notes": "",
+  "country_code": "CN"
+ },
+ {
+  "id": 256,
+  "timezone": "Asia/Colombo",
+  "status": "C",
+  "offset": 330,
+  "offset_dst": 330,
+  "link": "",
+  "notes": "",
+  "country_code": "LK"
+ },
+ {
+  "id": 257,
+  "timezone": "Asia/Dacca",
+  "status": "A",
+  "offset": 360,
+  "offset_dst": 360,
+  "link": "Asia/Dhaka",
+  "notes": "",
+  "country_code": "BD"
+ },
+ {
+  "id": 258,
+  "timezone": "Asia/Damascus",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "SY"
+ },
+ {
+  "id": 259,
+  "timezone": "Asia/Dhaka",
+  "status": "C",
+  "offset": 360,
+  "offset_dst": 360,
+  "link": "",
+  "notes": "",
+  "country_code": "BD"
+ },
+ {
+  "id": 260,
+  "timezone": "Asia/Dili",
+  "status": "C",
+  "offset": 540,
+  "offset_dst": 540,
+  "link": "",
+  "notes": "",
+  "country_code": "TL"
+ },
+ {
+  "id": 261,
+  "timezone": "Asia/Dubai",
+  "status": "C",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "",
+  "notes": "",
+  "country_code": "AE"
+ },
+ {
+  "id": 262,
+  "timezone": "Asia/Dushanbe",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "",
+  "country_code": "TJ"
+ },
+ {
+  "id": 263,
+  "timezone": "Asia/Famagusta",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "Northern Cyprus",
+  "country_code": "CY"
+ },
+ {
+  "id": 264,
+  "timezone": "Asia/Gaza",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "Gaza Strip",
+  "country_code": "PS"
+ },
+ {
+  "id": 265,
+  "timezone": "Asia/Harbin",
+  "status": "A",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "Asia/Shanghai",
+  "notes": "",
+  "country_code": "CN"
+ },
+ {
+  "id": 266,
+  "timezone": "Asia/Hebron",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "West Bank",
+  "country_code": "PS"
+ },
+ {
+  "id": 267,
+  "timezone": "Asia/Ho_Chi_Minh",
+  "status": "C",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "",
+  "notes": "",
+  "country_code": "VN"
+ },
+ {
+  "id": 268,
+  "timezone": "Asia/Hong_Kong",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "",
+  "country_code": "HK"
+ },
+ {
+  "id": 269,
+  "timezone": "Asia/Hovd",
+  "status": "C",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "",
+  "notes": "Bayan-Olgiy, Govi-Altai, Hovd, Uvs, Zavkhan",
+  "country_code": "MN"
+ },
+ {
+  "id": 270,
+  "timezone": "Asia/Irkutsk",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "MSK+05 - Irkutsk, Buryatia",
+  "country_code": "RU"
+ },
+ {
+  "id": 271,
+  "timezone": "Asia/Istanbul",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Europe/Istanbul",
+  "notes": "",
+  "country_code": "TR"
+ },
+ {
+  "id": 272,
+  "timezone": "Asia/Jakarta",
+  "status": "C",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "",
+  "notes": "Java, Sumatra",
+  "country_code": "ID"
+ },
+ {
+  "id": 273,
+  "timezone": "Asia/Jayapura",
+  "status": "C",
+  "offset": 540,
+  "offset_dst": 540,
+  "link": "",
+  "notes": "New Guinea (West Papua / Irian Jaya); Malukus/Moluccas",
+  "country_code": "ID"
+ },
+ {
+  "id": 274,
+  "timezone": "Asia/Jerusalem",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "IL"
+ },
+ {
+  "id": 275,
+  "timezone": "Asia/Kabul",
+  "status": "C",
+  "offset": 270,
+  "offset_dst": 270,
+  "link": "",
+  "notes": "",
+  "country_code": "AF"
+ },
+ {
+  "id": 276,
+  "timezone": "Asia/Kamchatka",
+  "status": "C",
+  "offset": 720,
+  "offset_dst": 720,
+  "link": "",
+  "notes": "MSK+09 - Kamchatka",
+  "country_code": "RU"
+ },
+ {
+  "id": 277,
+  "timezone": "Asia/Karachi",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "",
+  "country_code": "PK"
+ },
+ {
+  "id": 278,
+  "timezone": "Asia/Kashgar",
+  "status": "A",
+  "offset": 360,
+  "offset_dst": 360,
+  "link": "Asia/Urumqi",
+  "notes": "",
+  "country_code": "CN"
+ },
+ {
+  "id": 279,
+  "timezone": "Asia/Kathmandu",
+  "status": "C",
+  "offset": 345,
+  "offset_dst": 345,
+  "link": "",
+  "notes": "",
+  "country_code": "NP"
+ },
+ {
+  "id": 280,
+  "timezone": "Asia/Katmandu",
+  "status": "A",
+  "offset": 345,
+  "offset_dst": 345,
+  "link": "Asia/Kathmandu",
+  "notes": "",
+  "country_code": "NP"
+ },
+ {
+  "id": 281,
+  "timezone": "Asia/Khandyga",
+  "status": "C",
+  "offset": 540,
+  "offset_dst": 540,
+  "link": "",
+  "notes": "MSK+06 - Tomponsky, Ust-Maysky",
+  "country_code": "RU"
+ },
+ {
+  "id": 282,
+  "timezone": "Asia/Kolkata",
+  "status": "C",
+  "offset": 330,
+  "offset_dst": 330,
+  "link": "",
+  "notes": "",
+  "country_code": "IN"
+ },
+ {
+  "id": 283,
+  "timezone": "Asia/Krasnoyarsk",
+  "status": "C",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "",
+  "notes": "MSK+04 - Krasnoyarsk area",
+  "country_code": "RU"
+ },
+ {
+  "id": 284,
+  "timezone": "Asia/Kuala_Lumpur",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "Malaysia (peninsula)",
+  "country_code": "MY"
+ },
+ {
+  "id": 285,
+  "timezone": "Asia/Kuching",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "Sabah, Sarawak",
+  "country_code": "MY"
+ },
+ {
+  "id": 286,
+  "timezone": "Asia/Kuwait",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Asia/Riyadh",
+  "notes": "",
+  "country_code": "KW"
+ },
+ {
+  "id": 287,
+  "timezone": "Asia/Macao",
+  "status": "A",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "Asia/Macau",
+  "notes": "",
+  "country_code": "MO"
+ },
+ {
+  "id": 288,
+  "timezone": "Asia/Macau",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "",
+  "country_code": "MO"
+ },
+ {
+  "id": 289,
+  "timezone": "Asia/Magadan",
+  "status": "C",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "MSK+08 - Magadan",
+  "country_code": "RU"
+ },
+ {
+  "id": 290,
+  "timezone": "Asia/Makassar",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "Borneo (east, south); Sulawesi/Celebes, Bali, Nusa Tengarra; Timor (west)",
+  "country_code": "ID"
+ },
+ {
+  "id": 291,
+  "timezone": "Asia/Manila",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "",
+  "country_code": "PH"
+ },
+ {
+  "id": 292,
+  "timezone": "Asia/Muscat",
+  "status": "A",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "Asia/Dubai",
+  "notes": "",
+  "country_code": "OM"
+ },
+ {
+  "id": 293,
+  "timezone": "Asia/Novokuznetsk",
+  "status": "C",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "",
+  "notes": "MSK+04 - Kemerovo",
+  "country_code": "RU"
+ },
+ {
+  "id": 294,
+  "timezone": "Asia/Novosibirsk",
+  "status": "C",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "",
+  "notes": "MSK+04 - Novosibirsk",
+  "country_code": "RU"
+ },
+ {
+  "id": 295,
+  "timezone": "Asia/Omsk",
+  "status": "C",
+  "offset": 360,
+  "offset_dst": 360,
+  "link": "",
+  "notes": "MSK+03 - Omsk",
+  "country_code": "RU"
+ },
+ {
+  "id": 296,
+  "timezone": "Asia/Oral",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "West Kazakhstan",
+  "country_code": "KZ"
+ },
+ {
+  "id": 297,
+  "timezone": "Asia/Phnom_Penh",
+  "status": "A",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "Asia/Bangkok",
+  "notes": "",
+  "country_code": "KH"
+ },
+ {
+  "id": 298,
+  "timezone": "Asia/Pontianak",
+  "status": "C",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "",
+  "notes": "Borneo (west, central)",
+  "country_code": "ID"
+ },
+ {
+  "id": 299,
+  "timezone": "Asia/Pyongyang",
+  "status": "C",
+  "offset": 540,
+  "offset_dst": 540,
+  "link": "",
+  "notes": "",
+  "country_code": "KP"
+ },
+ {
+  "id": 300,
+  "timezone": "Asia/Qatar",
+  "status": "C",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "QA"
+ },
+ {
+  "id": 301,
+  "timezone": "Asia/Qyzylorda",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "Qyzylorda/Kyzylorda/Kzyl-Orda",
+  "country_code": "KZ"
+ },
+ {
+  "id": 302,
+  "timezone": "Asia/Rangoon",
+  "status": "A",
+  "offset": 390,
+  "offset_dst": 390,
+  "link": "Asia/Yangon",
+  "notes": "",
+  "country_code": "MM"
+ },
+ {
+  "id": 303,
+  "timezone": "Asia/Riyadh",
+  "status": "C",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "SA"
+ },
+ {
+  "id": 304,
+  "timezone": "Asia/Saigon",
+  "status": "A",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "Asia/Ho_Chi_Minh",
+  "notes": "",
+  "country_code": "VN"
+ },
+ {
+  "id": 305,
+  "timezone": "Asia/Sakhalin",
+  "status": "C",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "MSK+08 - Sakhalin Island",
+  "country_code": "RU"
+ },
+ {
+  "id": 306,
+  "timezone": "Asia/Samarkand",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "Uzbekistan (west)",
+  "country_code": "UZ"
+ },
+ {
+  "id": 307,
+  "timezone": "Asia/Seoul",
+  "status": "C",
+  "offset": 540,
+  "offset_dst": 540,
+  "link": "",
+  "notes": "",
+  "country_code": "KR"
+ },
+ {
+  "id": 308,
+  "timezone": "Asia/Shanghai",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "Beijing Time",
+  "country_code": "CN"
+ },
+ {
+  "id": 309,
+  "timezone": "Asia/Singapore",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "",
+  "country_code": "SG"
+ },
+ {
+  "id": 310,
+  "timezone": "Asia/Srednekolymsk",
+  "status": "C",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "MSK+08 - Sakha (E); North Kuril Is",
+  "country_code": "RU"
+ },
+ {
+  "id": 311,
+  "timezone": "Asia/Taipei",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "",
+  "country_code": "TW"
+ },
+ {
+  "id": 312,
+  "timezone": "Asia/Tashkent",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "Uzbekistan (east)",
+  "country_code": "UZ"
+ },
+ {
+  "id": 313,
+  "timezone": "Asia/Tbilisi",
+  "status": "C",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "",
+  "notes": "",
+  "country_code": "GE"
+ },
+ {
+  "id": 314,
+  "timezone": "Asia/Tehran",
+  "status": "C",
+  "offset": 210,
+  "offset_dst": 270,
+  "link": "",
+  "notes": "",
+  "country_code": "IR"
+ },
+ {
+  "id": 315,
+  "timezone": "Asia/Tel_Aviv",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "Asia/Jerusalem",
+  "notes": "",
+  "country_code": "IL"
+ },
+ {
+  "id": 316,
+  "timezone": "Asia/Thimbu",
+  "status": "A",
+  "offset": 360,
+  "offset_dst": 360,
+  "link": "Asia/Thimphu",
+  "notes": "",
+  "country_code": "BT"
+ },
+ {
+  "id": 317,
+  "timezone": "Asia/Thimphu",
+  "status": "C",
+  "offset": 360,
+  "offset_dst": 360,
+  "link": "",
+  "notes": "",
+  "country_code": "BT"
+ },
+ {
+  "id": 318,
+  "timezone": "Asia/Tokyo",
+  "status": "C",
+  "offset": 540,
+  "offset_dst": 540,
+  "link": "",
+  "notes": "",
+  "country_code": "JP"
+ },
+ {
+  "id": 319,
+  "timezone": "Asia/Tomsk",
+  "status": "C",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "",
+  "notes": "MSK+04 - Tomsk",
+  "country_code": "RU"
+ },
+ {
+  "id": 320,
+  "timezone": "Asia/Ujung_Pandang",
+  "status": "A",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "Asia/Makassar",
+  "notes": "",
+  "country_code": "ID"
+ },
+ {
+  "id": 321,
+  "timezone": "Asia/Ulaanbaatar",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "Mongolia (most areas)",
+  "country_code": "MN"
+ },
+ {
+  "id": 322,
+  "timezone": "Asia/Ulan_Bator",
+  "status": "A",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "Asia/Ulaanbaatar",
+  "notes": "",
+  "country_code": "MN"
+ },
+ {
+  "id": 323,
+  "timezone": "Asia/Urumqi",
+  "status": "C",
+  "offset": 360,
+  "offset_dst": 360,
+  "link": "Asia/Urumqi",
+  "notes": "Xinjiang Time",
+  "country_code": "CN"
+ },
+ {
+  "id": 324,
+  "timezone": "Asia/Ust-Nera",
+  "status": "C",
+  "offset": 600,
+  "offset_dst": 600,
+  "link": "",
+  "notes": "MSK+07 - Oymyakonsky",
+  "country_code": "RU"
+ },
+ {
+  "id": 325,
+  "timezone": "Asia/Vientiane",
+  "status": "A",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "Asia/Bangkok",
+  "notes": "",
+  "country_code": "LA"
+ },
+ {
+  "id": 326,
+  "timezone": "Asia/Vladivostok",
+  "status": "C",
+  "offset": 600,
+  "offset_dst": 600,
+  "link": "",
+  "notes": "MSK+07 - Amur River",
+  "country_code": "RU"
+ },
+ {
+  "id": 327,
+  "timezone": "Asia/Yakutsk",
+  "status": "C",
+  "offset": 540,
+  "offset_dst": 540,
+  "link": "",
+  "notes": "MSK+06 - Lena River",
+  "country_code": "RU"
+ },
+ {
+  "id": 328,
+  "timezone": "Asia/Yangon",
+  "status": "C",
+  "offset": 390,
+  "offset_dst": 390,
+  "link": "",
+  "notes": "",
+  "country_code": "MM"
+ },
+ {
+  "id": 329,
+  "timezone": "Asia/Yekaterinburg",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "MSK+02 - Urals",
+  "country_code": "RU"
+ },
+ {
+  "id": 330,
+  "timezone": "Asia/Yerevan",
+  "status": "C",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "",
+  "notes": "",
+  "country_code": "AM"
+ },
+ {
+  "id": 331,
+  "timezone": "Atlantic/Azores",
+  "status": "C",
+  "offset": -60,
+  "offset_dst": 0,
+  "link": "",
+  "notes": "Azores",
+  "country_code": "PT"
+ },
+ {
+  "id": 332,
+  "timezone": "Atlantic/Bermuda",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "",
+  "country_code": "BM"
+ },
+ {
+  "id": 333,
+  "timezone": "Atlantic/Canary",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "",
+  "notes": "Canary Islands",
+  "country_code": "ES"
+ },
+ {
+  "id": 334,
+  "timezone": "Atlantic/Cape_Verde",
+  "status": "C",
+  "offset": -60,
+  "offset_dst": -60,
+  "link": "",
+  "notes": "",
+  "country_code": "CV"
+ },
+ {
+  "id": 335,
+  "timezone": "Atlantic/Faeroe",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "Atlantic/Faroe",
+  "notes": "",
+  "country_code": "FO"
+ },
+ {
+  "id": 336,
+  "timezone": "Atlantic/Faroe",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "",
+  "notes": "",
+  "country_code": "FO"
+ },
+ {
+  "id": 337,
+  "timezone": "Atlantic/Jan_Mayen",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Oslo",
+  "notes": "",
+  "country_code": "NO"
+ },
+ {
+  "id": 338,
+  "timezone": "Atlantic/Madeira",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "",
+  "notes": "Madeira Islands",
+  "country_code": "PT"
+ },
+ {
+  "id": 339,
+  "timezone": "Atlantic/Reykjavik",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "",
+  "notes": "",
+  "country_code": "IS"
+ },
+ {
+  "id": 340,
+  "timezone": "Atlantic/South_Georgia",
+  "status": "C",
+  "offset": -120,
+  "offset_dst": -120,
+  "link": "",
+  "notes": "",
+  "country_code": "GS"
+ },
+ {
+  "id": 341,
+  "timezone": "Atlantic/St_Helena",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Africa/Abidjan",
+  "notes": "",
+  "country_code": "SH"
+ },
+ {
+  "id": 342,
+  "timezone": "Atlantic/Stanley",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "",
+  "country_code": "FK"
+ },
+ {
+  "id": 343,
+  "timezone": "Australia/Adelaide",
+  "status": "C",
+  "offset": 570,
+  "offset_dst": 630,
+  "link": "",
+  "notes": "South Australia",
+  "country_code": "AU"
+ },
+ {
+  "id": 344,
+  "timezone": "Australia/Brisbane",
+  "status": "C",
+  "offset": 600,
+  "offset_dst": 600,
+  "link": "",
+  "notes": "Queensland (most areas)",
+  "country_code": "AU"
+ },
+ {
+  "id": 345,
+  "timezone": "Australia/Broken_Hill",
+  "status": "C",
+  "offset": 570,
+  "offset_dst": 630,
+  "link": "",
+  "notes": "New South Wales (Yancowinna)",
+  "country_code": "AU"
+ },
+ {
+  "id": 346,
+  "timezone": "Australia/Canberra",
+  "status": "A",
+  "offset": 600,
+  "offset_dst": 660,
+  "link": "Australia/Sydney",
+  "notes": "",
+  "country_code": "AU"
+ },
+ {
+  "id": 347,
+  "timezone": "Australia/Currie",
+  "status": "C",
+  "offset": 600,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "Tasmania (King Island)",
+  "country_code": "AU"
+ },
+ {
+  "id": 348,
+  "timezone": "Australia/Darwin",
+  "status": "C",
+  "offset": 570,
+  "offset_dst": 570,
+  "link": "",
+  "notes": "Northern Territory",
+  "country_code": "AU"
+ },
+ {
+  "id": 349,
+  "timezone": "Australia/Eucla",
+  "status": "C",
+  "offset": 525,
+  "offset_dst": 525,
+  "link": "",
+  "notes": "Western Australia (Eucla)",
+  "country_code": "AU"
+ },
+ {
+  "id": 350,
+  "timezone": "Australia/Hobart",
+  "status": "C",
+  "offset": 600,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "Tasmania (most areas)",
+  "country_code": "AU"
+ },
+ {
+  "id": 351,
+  "timezone": "Australia/Lindeman",
+  "status": "C",
+  "offset": 600,
+  "offset_dst": 600,
+  "link": "",
+  "notes": "Queensland (Whitsunday Islands)",
+  "country_code": "AU"
+ },
+ {
+  "id": 352,
+  "timezone": "Australia/Lord_Howe",
+  "status": "C",
+  "offset": 630,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "Lord Howe Island",
+  "country_code": "AU"
+ },
+ {
+  "id": 353,
+  "timezone": "Australia/Melbourne",
+  "status": "C",
+  "offset": 600,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "Victoria",
+  "country_code": "AU"
+ },
+ {
+  "id": 354,
+  "timezone": "Australia/Perth",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "Western Australia (most areas)",
+  "country_code": "AU"
+ },
+ {
+  "id": 355,
+  "timezone": "Australia/Sydney",
+  "status": "C",
+  "offset": 600,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "New South Wales (most areas)",
+  "country_code": "AU"
+ },
+ {
+  "id": 356,
+  "timezone": "Australia/Yancowinna",
+  "status": "A",
+  "offset": 570,
+  "offset_dst": 630,
+  "link": "Australia/Broken_Hill",
+  "notes": "",
+  "country_code": "AU"
+ },
+ {
+  "id": 357,
+  "timezone": "Europe/Amsterdam",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "NL"
+ },
+ {
+  "id": 358,
+  "timezone": "Europe/Andorra",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "AD"
+ },
+ {
+  "id": 359,
+  "timezone": "Europe/Astrakhan",
+  "status": "C",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "",
+  "notes": "MSK+01 - Astrakhan",
+  "country_code": "RU"
+ },
+ {
+  "id": 360,
+  "timezone": "Europe/Athens",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "GR"
+ },
+ {
+  "id": 361,
+  "timezone": "Europe/Belfast",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "Europe/London",
+  "notes": "",
+  "country_code": "GB"
+ },
+ {
+  "id": 362,
+  "timezone": "Europe/Belgrade",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "RS"
+ },
+ {
+  "id": 363,
+  "timezone": "Europe/Berlin",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "Germany (most areas)",
+  "country_code": "DE"
+ },
+ {
+  "id": 364,
+  "timezone": "Europe/Bratislava",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Prague",
+  "notes": "",
+  "country_code": "SK"
+ },
+ {
+  "id": 365,
+  "timezone": "Europe/Brussels",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "BE"
+ },
+ {
+  "id": 366,
+  "timezone": "Europe/Bucharest",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "RO"
+ },
+ {
+  "id": 367,
+  "timezone": "Europe/Budapest",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "HU"
+ },
+ {
+  "id": 368,
+  "timezone": "Europe/Busingen",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Zurich",
+  "notes": "Büsingen am Hochrhein",
+  "country_code": "DE"
+ },
+ {
+  "id": 369,
+  "timezone": "Europe/Chisinau",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "MD"
+ },
+ {
+  "id": 370,
+  "timezone": "Europe/Copenhagen",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "DK"
+ },
+ {
+  "id": 371,
+  "timezone": "Europe/Dublin",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "",
+  "notes": "",
+  "country_code": "IE"
+ },
+ {
+  "id": 372,
+  "timezone": "Europe/Gibraltar",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "GI"
+ },
+ {
+  "id": 373,
+  "timezone": "Europe/Guernsey",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "Europe/London",
+  "notes": "",
+  "country_code": "GG"
+ },
+ {
+  "id": 374,
+  "timezone": "Europe/Helsinki",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "FI"
+ },
+ {
+  "id": 375,
+  "timezone": "Europe/Isle_of_Man",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "Europe/London",
+  "notes": "",
+  "country_code": "IM"
+ },
+ {
+  "id": 376,
+  "timezone": "Europe/Istanbul",
+  "status": "C",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "TR"
+ },
+ {
+  "id": 377,
+  "timezone": "Europe/Jersey",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "Europe/London",
+  "notes": "",
+  "country_code": "JE"
+ },
+ {
+  "id": 378,
+  "timezone": "Europe/Kaliningrad",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "MSK−01 - Kaliningrad",
+  "country_code": "RU"
+ },
+ {
+  "id": 379,
+  "timezone": "Europe/Kiev",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "Ukraine (most areas)",
+  "country_code": "UA"
+ },
+ {
+  "id": 380,
+  "timezone": "Europe/Kirov",
+  "status": "C",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "MSK+00 - Kirov",
+  "country_code": "RU"
+ },
+ {
+  "id": 381,
+  "timezone": "Europe/Lisbon",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "",
+  "notes": "Portugal (mainland)",
+  "country_code": "PT"
+ },
+ {
+  "id": 382,
+  "timezone": "Europe/Ljubljana",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Belgrade",
+  "notes": "",
+  "country_code": "SI"
+ },
+ {
+  "id": 383,
+  "timezone": "Europe/London",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "",
+  "notes": "",
+  "country_code": "GB"
+ },
+ {
+  "id": 384,
+  "timezone": "Europe/Luxembourg",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "LU"
+ },
+ {
+  "id": 385,
+  "timezone": "Europe/Madrid",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "Spain (mainland)",
+  "country_code": "ES"
+ },
+ {
+  "id": 386,
+  "timezone": "Europe/Malta",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "MT"
+ },
+ {
+  "id": 387,
+  "timezone": "Europe/Mariehamn",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "Europe/Helsinki",
+  "notes": "",
+  "country_code": "AX"
+ },
+ {
+  "id": 388,
+  "timezone": "Europe/Minsk",
+  "status": "C",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "BY"
+ },
+ {
+  "id": 389,
+  "timezone": "Europe/Monaco",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "MC"
+ },
+ {
+  "id": 390,
+  "timezone": "Europe/Moscow",
+  "status": "C",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "MSK+00 - Moscow area",
+  "country_code": "RU"
+ },
+ {
+  "id": 391,
+  "timezone": "Asia/Nicosia",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "Cyprus (most areas)",
+  "country_code": "CY"
+ },
+ {
+  "id": 392,
+  "timezone": "Europe/Oslo",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "NO"
+ },
+ {
+  "id": 393,
+  "timezone": "Europe/Paris",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "FR"
+ },
+ {
+  "id": 394,
+  "timezone": "Europe/Podgorica",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Belgrade",
+  "notes": "",
+  "country_code": "ME"
+ },
+ {
+  "id": 395,
+  "timezone": "Europe/Prague",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "CZ"
+ },
+ {
+  "id": 396,
+  "timezone": "Europe/Riga",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "LV"
+ },
+ {
+  "id": 397,
+  "timezone": "Europe/Rome",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "IT"
+ },
+ {
+  "id": 398,
+  "timezone": "Europe/Samara",
+  "status": "C",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "",
+  "notes": "MSK+01 - Samara, Udmurtia",
+  "country_code": "RU"
+ },
+ {
+  "id": 399,
+  "timezone": "Europe/San_Marino",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Rome",
+  "notes": "",
+  "country_code": "SM"
+ },
+ {
+  "id": 400,
+  "timezone": "Europe/Sarajevo",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Belgrade",
+  "notes": "",
+  "country_code": "BA"
+ },
+ {
+  "id": 401,
+  "timezone": "Europe/Saratov",
+  "status": "C",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "",
+  "notes": "MSK+01 - Saratov",
+  "country_code": "RU"
+ },
+ {
+  "id": 402,
+  "timezone": "Europe/Simferopol",
+  "status": "C",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "Crimea",
+  "country_code": "UA"
+ },
+ {
+  "id": 403,
+  "timezone": "Europe/Skopje",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Belgrade",
+  "notes": "",
+  "country_code": "MK"
+ },
+ {
+  "id": 404,
+  "timezone": "Europe/Sofia",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "BG"
+ },
+ {
+  "id": 405,
+  "timezone": "Europe/Stockholm",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "SE"
+ },
+ {
+  "id": 406,
+  "timezone": "Europe/Tallinn",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "EE"
+ },
+ {
+  "id": 407,
+  "timezone": "Europe/Tirane",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "AL"
+ },
+ {
+  "id": 408,
+  "timezone": "Europe/Tiraspol",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "Europe/Chisinau",
+  "notes": "",
+  "country_code": "MD"
+ },
+ {
+  "id": 409,
+  "timezone": "Europe/Ulyanovsk",
+  "status": "C",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "",
+  "notes": "MSK+01 - Ulyanovsk",
+  "country_code": "RU"
+ },
+ {
+  "id": 410,
+  "timezone": "Europe/Uzhgorod",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "Ruthenia",
+  "country_code": "UA"
+ },
+ {
+  "id": 411,
+  "timezone": "Europe/Vaduz",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Zurich",
+  "notes": "",
+  "country_code": "LI"
+ },
+ {
+  "id": 412,
+  "timezone": "Europe/Vatican",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Rome",
+  "notes": "",
+  "country_code": "VA"
+ },
+ {
+  "id": 413,
+  "timezone": "Europe/Vienna",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "AT"
+ },
+ {
+  "id": 414,
+  "timezone": "Europe/Vilnius",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "LT"
+ },
+ {
+  "id": 415,
+  "timezone": "Europe/Volgograd",
+  "status": "C",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "",
+  "notes": "MSK+01 - Volgograd",
+  "country_code": "RU"
+ },
+ {
+  "id": 416,
+  "timezone": "Europe/Warsaw",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": "PL"
+ },
+ {
+  "id": 417,
+  "timezone": "Europe/Zagreb",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Belgrade",
+  "notes": "",
+  "country_code": "HR"
+ },
+ {
+  "id": 418,
+  "timezone": "Europe/Zaporozhye",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "Zaporozh'ye/Zaporizhia; Lugansk/Luhansk (east)",
+  "country_code": "UA"
+ },
+ {
+  "id": 419,
+  "timezone": "Europe/Zurich",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": "CH"
+ },
+ {
+  "id": 420,
+  "timezone": "Indian/Antananarivo",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Africa/Nairobi",
+  "notes": "",
+  "country_code": "MG"
+ },
+ {
+  "id": 421,
+  "timezone": "Indian/Chagos",
+  "status": "C",
+  "offset": 360,
+  "offset_dst": 360,
+  "link": "",
+  "notes": "",
+  "country_code": "IO"
+ },
+ {
+  "id": 422,
+  "timezone": "Indian/Christmas",
+  "status": "C",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "",
+  "notes": "",
+  "country_code": "CX"
+ },
+ {
+  "id": 423,
+  "timezone": "Indian/Cocos",
+  "status": "C",
+  "offset": 390,
+  "offset_dst": 390,
+  "link": "",
+  "notes": "",
+  "country_code": "CC"
+ },
+ {
+  "id": 424,
+  "timezone": "Indian/Comoro",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Africa/Nairobi",
+  "notes": "",
+  "country_code": "KM"
+ },
+ {
+  "id": 425,
+  "timezone": "Indian/Kerguelen",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "",
+  "country_code": "TF"
+ },
+ {
+  "id": 426,
+  "timezone": "Indian/Mahe",
+  "status": "C",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "",
+  "notes": "",
+  "country_code": "SC"
+ },
+ {
+  "id": 427,
+  "timezone": "Indian/Maldives",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "",
+  "country_code": "MV"
+ },
+ {
+  "id": 428,
+  "timezone": "Indian/Mauritius",
+  "status": "C",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "",
+  "notes": "",
+  "country_code": "MU"
+ },
+ {
+  "id": 429,
+  "timezone": "Indian/Mayotte",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Africa/Nairobi",
+  "notes": "",
+  "country_code": "YT"
+ },
+ {
+  "id": 430,
+  "timezone": "Indian/Reunion",
+  "status": "C",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "",
+  "notes": "",
+  "country_code": "RE"
+ },
+ {
+  "id": 431,
+  "timezone": "Pacific/Apia",
+  "status": "C",
+  "offset": 780,
+  "offset_dst": 840,
+  "link": "",
+  "notes": "",
+  "country_code": "WS"
+ },
+ {
+  "id": 432,
+  "timezone": "Pacific/Auckland",
+  "status": "C",
+  "offset": 720,
+  "offset_dst": 780,
+  "link": "",
+  "notes": "New Zealand (most areas)",
+  "country_code": "NZ"
+ },
+ {
+  "id": 433,
+  "timezone": "Pacific/Bougainville",
+  "status": "C",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "Bougainville",
+  "country_code": "PG"
+ },
+ {
+  "id": 434,
+  "timezone": "Pacific/Chatham",
+  "status": "C",
+  "offset": 765,
+  "offset_dst": 825,
+  "link": "",
+  "notes": "Chatham Islands",
+  "country_code": "NZ"
+ },
+ {
+  "id": 435,
+  "timezone": "Pacific/Chuuk",
+  "status": "C",
+  "offset": 600,
+  "offset_dst": 600,
+  "link": "",
+  "notes": "Chuuk/Truk, Yap",
+  "country_code": "FM"
+ },
+ {
+  "id": 436,
+  "timezone": "Pacific/Easter",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "Easter Island",
+  "country_code": "CL"
+ },
+ {
+  "id": 437,
+  "timezone": "Pacific/Efate",
+  "status": "C",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "",
+  "country_code": "VU"
+ },
+ {
+  "id": 438,
+  "timezone": "Pacific/Enderbury",
+  "status": "C",
+  "offset": 780,
+  "offset_dst": 780,
+  "link": "",
+  "notes": "Phoenix Islands",
+  "country_code": "KI"
+ },
+ {
+  "id": 439,
+  "timezone": "Pacific/Fakaofo",
+  "status": "C",
+  "offset": 780,
+  "offset_dst": 780,
+  "link": "",
+  "notes": "",
+  "country_code": "TK"
+ },
+ {
+  "id": 440,
+  "timezone": "Pacific/Fiji",
+  "status": "C",
+  "offset": 720,
+  "offset_dst": 780,
+  "link": "",
+  "notes": "",
+  "country_code": "FJ"
+ },
+ {
+  "id": 441,
+  "timezone": "Pacific/Funafuti",
+  "status": "C",
+  "offset": 720,
+  "offset_dst": 720,
+  "link": "",
+  "notes": "",
+  "country_code": "TV"
+ },
+ {
+  "id": 442,
+  "timezone": "Pacific/Galapagos",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "Galapagos Islands",
+  "country_code": "EC"
+ },
+ {
+  "id": 443,
+  "timezone": "Pacific/Gambier",
+  "status": "C",
+  "offset": -540,
+  "offset_dst": -540,
+  "link": "",
+  "notes": "Gambier Islands",
+  "country_code": "PF"
+ },
+ {
+  "id": 444,
+  "timezone": "Pacific/Guadalcanal",
+  "status": "C",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "",
+  "country_code": "SB"
+ },
+ {
+  "id": 445,
+  "timezone": "Pacific/Guam",
+  "status": "C",
+  "offset": 600,
+  "offset_dst": 600,
+  "link": "",
+  "notes": "",
+  "country_code": "GU"
+ },
+ {
+  "id": 446,
+  "timezone": "Pacific/Honolulu",
+  "status": "C",
+  "offset": -600,
+  "offset_dst": -600,
+  "link": "",
+  "notes": "Hawaii",
+  "country_code": "US"
+ },
+ {
+  "id": 447,
+  "timezone": "Pacific/Johnston",
+  "status": "A",
+  "offset": -600,
+  "offset_dst": -600,
+  "link": "Pacific/Honolulu",
+  "notes": "",
+  "country_code": "US"
+ },
+ {
+  "id": 448,
+  "timezone": "Pacific/Kiritimati",
+  "status": "C",
+  "offset": 840,
+  "offset_dst": 840,
+  "link": "",
+  "notes": "Line Islands",
+  "country_code": "KI"
+ },
+ {
+  "id": 449,
+  "timezone": "Pacific/Kosrae",
+  "status": "C",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "Kosrae",
+  "country_code": "FM"
+ },
+ {
+  "id": 450,
+  "timezone": "Pacific/Kwajalein",
+  "status": "C",
+  "offset": 720,
+  "offset_dst": 720,
+  "link": "",
+  "notes": "Kwajalein",
+  "country_code": "MH"
+ },
+ {
+  "id": 451,
+  "timezone": "Pacific/Majuro",
+  "status": "C",
+  "offset": 720,
+  "offset_dst": 720,
+  "link": "",
+  "notes": "Marshall Islands (most areas)",
+  "country_code": "MH"
+ },
+ {
+  "id": 452,
+  "timezone": "Pacific/Marquesas",
+  "status": "C",
+  "offset": -510,
+  "offset_dst": -510,
+  "link": "",
+  "notes": "Marquesas Islands",
+  "country_code": "PF"
+ },
+ {
+  "id": 453,
+  "timezone": "Pacific/Midway",
+  "status": "A",
+  "offset": -660,
+  "offset_dst": -660,
+  "link": "Pacific/Pago_Pago",
+  "notes": "Midway Islands",
+  "country_code": "UM"
+ },
+ {
+  "id": 454,
+  "timezone": "Pacific/Nauru",
+  "status": "C",
+  "offset": 720,
+  "offset_dst": 720,
+  "link": "",
+  "notes": "",
+  "country_code": "NR"
+ },
+ {
+  "id": 455,
+  "timezone": "Pacific/Niue",
+  "status": "C",
+  "offset": -660,
+  "offset_dst": -660,
+  "link": "",
+  "notes": "",
+  "country_code": "NU"
+ },
+ {
+  "id": 456,
+  "timezone": "Pacific/Norfolk",
+  "status": "C",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "",
+  "country_code": "NF"
+ },
+ {
+  "id": 457,
+  "timezone": "Pacific/Noumea",
+  "status": "C",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "",
+  "country_code": "NC"
+ },
+ {
+  "id": 458,
+  "timezone": "Pacific/Pago_Pago",
+  "status": "C",
+  "offset": -660,
+  "offset_dst": -660,
+  "link": "",
+  "notes": "",
+  "country_code": "AS"
+ },
+ {
+  "id": 459,
+  "timezone": "Pacific/Palau",
+  "status": "C",
+  "offset": 540,
+  "offset_dst": 540,
+  "link": "",
+  "notes": "",
+  "country_code": "PW"
+ },
+ {
+  "id": 460,
+  "timezone": "Pacific/Pitcairn",
+  "status": "C",
+  "offset": -480,
+  "offset_dst": -480,
+  "link": "",
+  "notes": "",
+  "country_code": "PN"
+ },
+ {
+  "id": 461,
+  "timezone": "Pacific/Pohnpei",
+  "status": "C",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "Pohnpei/Ponape",
+  "country_code": "FM"
+ },
+ {
+  "id": 462,
+  "timezone": "Pacific/Ponape",
+  "status": "A",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "Pacific/Pohnpei",
+  "notes": "",
+  "country_code": "FM"
+ },
+ {
+  "id": 463,
+  "timezone": "Pacific/Port_Moresby",
+  "status": "C",
+  "offset": 600,
+  "offset_dst": 600,
+  "link": "",
+  "notes": "Papua New Guinea (most areas)",
+  "country_code": "PG"
+ },
+ {
+  "id": 464,
+  "timezone": "Pacific/Rarotonga",
+  "status": "C",
+  "offset": -600,
+  "offset_dst": -600,
+  "link": "",
+  "notes": "",
+  "country_code": "CK"
+ },
+ {
+  "id": 465,
+  "timezone": "Pacific/Saipan",
+  "status": "A",
+  "offset": 600,
+  "offset_dst": 600,
+  "link": "Pacific/Guam",
+  "notes": "",
+  "country_code": "MP"
+ },
+ {
+  "id": 466,
+  "timezone": "Pacific/Samoa",
+  "status": "A",
+  "offset": -660,
+  "offset_dst": -660,
+  "link": "Pacific/Pago_Pago",
+  "notes": "",
+  "country_code": "AS"
+ },
+ {
+  "id": 467,
+  "timezone": "Pacific/Tahiti",
+  "status": "C",
+  "offset": -600,
+  "offset_dst": -600,
+  "link": "",
+  "notes": "Society Islands",
+  "country_code": "PF"
+ },
+ {
+  "id": 468,
+  "timezone": "Pacific/Tarawa",
+  "status": "C",
+  "offset": 720,
+  "offset_dst": 720,
+  "link": "",
+  "notes": "Gilbert Islands",
+  "country_code": "KI"
+ },
+ {
+  "id": 469,
+  "timezone": "Pacific/Tongatapu",
+  "status": "C",
+  "offset": 780,
+  "offset_dst": 840,
+  "link": "",
+  "notes": "",
+  "country_code": "TO"
+ },
+ {
+  "id": 470,
+  "timezone": "Pacific/Truk",
+  "status": "A",
+  "offset": 600,
+  "offset_dst": 600,
+  "link": "Pacific/Chuuk",
+  "notes": "",
+  "country_code": "FM"
+ },
+ {
+  "id": 471,
+  "timezone": "Pacific/Wake",
+  "status": "C",
+  "offset": 720,
+  "offset_dst": 720,
+  "link": "",
+  "notes": "Wake Island",
+  "country_code": "UM"
+ },
+ {
+  "id": 472,
+  "timezone": "Pacific/Wallis",
+  "status": "C",
+  "offset": 720,
+  "offset_dst": 720,
+  "link": "",
+  "notes": "",
+  "country_code": "WF"
+ },
+ {
+  "id": 473,
+  "timezone": "Pacific/Yap",
+  "status": "A",
+  "offset": 600,
+  "offset_dst": 600,
+  "link": "Pacific/Chuuk",
+  "notes": "",
+  "country_code": "FM"
+ }
+]
