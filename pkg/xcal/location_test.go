@@ -182,6 +182,49 @@ func Test_Location_UnmarshalJSON_badTimezone(t *testing.T) {
 	assert.ErrorIs(t, ErrInvTimezone, err)
 }
 
+func Test_Location_UnmarshalJSON_escapedString(t *testing.T) {
+	// --- Given ---
+	loc := &Location{}
+
+	// --- When ---
+	err := json.Unmarshal([]byte(`"Europe\/Warsaw"`), loc)
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, "Europe/Warsaw", loc.Loc.String())
+	assert.Equal(t, 416, loc.ID)
+}
+
+func Test_Location_UnmarshalJSON_number(t *testing.T) {
+	// --- Given ---
+	loc := &Location{}
+
+	// --- When ---
+	err := json.Unmarshal([]byte(`416`), loc)
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, "Europe/Warsaw", loc.Loc.String())
+	assert.Equal(t, 416, loc.ID)
+}
+
+func Test_Location_UnmarshalJSON_null(t *testing.T) {
+	// --- Given ---
+	have := struct {
+		Loc Location `json:"my_loc"`
+	}{
+		Loc: Location{ID: 416, Loc: WAW},
+	}
+
+	// --- When ---
+	err := json.Unmarshal([]byte(`{"my_loc":null}`), &have)
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, 416, have.Loc.ID)
+	assert.Same(t, WAW, have.Loc.Loc)
+}
+
 func Test_Location_UnmarshalJSON_inStructure(t *testing.T) {
 	// --- Given ---
 	type ts struct {

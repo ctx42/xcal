@@ -1,7 +1,7 @@
 package xcal
 
 import (
-	"bytes"
+	"encoding/json"
 	"errors"
 	"strconv"
 	"time"
@@ -119,8 +119,19 @@ func (loc Location) MarshalJSON() ([]byte, error) {
 	return []byte(`"` + loc.Loc.String() + `"`), nil
 }
 
+// UnmarshalJSON accepts a zone name or ID, as a JSON string or a number. A
+// JSON null leaves the Location unchanged.
 func (loc *Location) UnmarshalJSON(b []byte) error {
-	tz, err := LoadLocation(string(bytes.Trim(b, `"`)))
+	if string(b) == "null" {
+		return nil
+	}
+	locS := string(b)
+	if len(b) > 0 && b[0] == '"' {
+		if err := json.Unmarshal(b, &locS); err != nil {
+			return ErrInvTimezone
+		}
+	}
+	tz, err := LoadLocation(locS)
 	if err != nil {
 		return ErrInvTimezone
 	}
