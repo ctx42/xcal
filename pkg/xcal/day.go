@@ -56,9 +56,6 @@ func (day *Day) UnmarshalText(text []byte) error {
 // same "YYYY-MM-DD" format UnmarshalText accepts. The zero Day encodes as
 // empty text.
 func (day Day) MarshalText() ([]byte, error) {
-	if day.IsZero() {
-		return []byte{}, nil
-	}
 	return []byte(day.String()), nil
 }
 
@@ -89,6 +86,11 @@ func (day Day) DaysUntil(other Day) int {
 	return int(diff / (24 * time.Hour))
 }
 
+// String returns the day in "YYYY-MM-DD" format, or an empty string for the
+// zero Day.
 func (day Day) String() string {
+	if day.IsZero() {
+		return ""
+	}
 	return day.In(time.UTC).Format(dayLayout)
 }

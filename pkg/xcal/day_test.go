@@ -197,3 +197,11 @@ func Test_Day_DaysUntil(t *testing.T) {
 func Test_Day_String(t *testing.T) {
 	assert.Equal(t, "2026-03-05", NewDay(2026, time.March, 5).String())
 }
+
+func Test_Day_String_zero(t *testing.T) {
+	// --- When ---
+	have := Day{}.String()
+
+	// --- Then ---
+	assert.Equal(t, "", have)
+}
