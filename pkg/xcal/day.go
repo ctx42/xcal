@@ -47,6 +47,12 @@ func (d *Day) UnmarshalText(text []byte) error {
 	return nil
 }
 
+// MarshalText implements encoding.TextMarshaler, so a Day encodes in the
+// same "YYYY-MM-DD" format UnmarshalText accepts.
+func (d Day) MarshalText() ([]byte, error) {
+	return []byte(d.String()), nil
+}
+
 // IsZero reports whether the day is unset.
 func (d Day) IsZero() bool {
 	return d == Day{}

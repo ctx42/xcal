@@ -1,6 +1,7 @@
 package xcal
 
 import (
+	"encoding/json"
 	"testing"
 	"time"
 
@@ -58,6 +59,22 @@ func Test_Day_UnmarshalText(t *testing.T) {
 		assert.Error(t, err)
 		assert.Equal(t, NewDay(2026, time.March, 25), have)
 	})
+}
+
+func Test_Day_MarshalText(t *testing.T) {
+	// --- Given ---
+	ts := struct {
+		Day Day `json:"day"`
+	}{
+		Day: NewDay(2026, time.March, 5),
+	}
+
+	// --- When ---
+	have, err := json.Marshal(ts)
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, `{"day":"2026-03-05"}`, string(have))
 }
 
 func Test_Day_IsZero(t *testing.T) {
