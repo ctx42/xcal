@@ -9,8 +9,8 @@ import (
 // Location is a wrapper for time.Location instance providing
 // MarshalJSON and UnmarshalJSON methods.
 type Location struct {
-	ID  int            `json:"ID"`  // Timezone ID.
-	Loc *time.Location `json:"Loc"` // Timezone.
+	ID  int            // Timezone ID.
+	Loc *time.Location // Timezone.
 }
 
 // LoadLocation creates a new instance of [Location] from a full time zone name
