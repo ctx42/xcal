@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"github.com/ctx42/testing/pkg/assert"
+	"github.com/ctx42/testing/pkg/must"
 )
 
 func Test_parseDay(t *testing.T) {
@@ -48,6 +49,18 @@ func Test_Day_UnmarshalText(t *testing.T) {
 		assert.Equal(t, NewDay(2026, time.March, 25), have)
 	})
 
+	t.Run("empty", func(t *testing.T) {
+		// --- Given ---
+		have := NewDay(2026, time.March, 25)
+
+		// --- When ---
+		err := have.UnmarshalText([]byte(""))
+
+		// --- Then ---
+		assert.NoError(t, err)
+		assert.Equal(t, Day{}, have)
+	})
+
 	t.Run("error - leaves the value untouched", func(t *testing.T) {
 		// --- Given ---
 		have := NewDay(2026, time.March, 25)
@@ -75,6 +88,33 @@ func Test_Day_MarshalText(t *testing.T) {
 	// --- Then ---
 	assert.NoError(t, err)
 	assert.Equal(t, `{"day":"2026-03-05"}`, string(have))
+}
+
+func Test_Day_MarshalText_zero(t *testing.T) {
+	// --- Given ---
+	ts := struct {
+		Day Day `json:"day"`
+	}{}
+
+	// --- When ---
+	have, err := json.Marshal(ts)
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, `{"day":""}`, string(have))
+}
+
+func Test_Day_zeroRoundTrip(t *testing.T) {
+	// --- Given ---
+	data := must.Value(json.Marshal(struct{ Day Day }{}))
+	have := struct{ Day Day }{Day: NewDay(2026, time.March, 25)}
+
+	// --- When ---
+	err := json.Unmarshal(data, &have)
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.True(t, have.Day.IsZero())
 }
 
 func Test_Day_IsZero(t *testing.T) {

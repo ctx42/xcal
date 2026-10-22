@@ -37,8 +37,12 @@ func parseDay(s string) (Day, error) {
 }
 
 // UnmarshalText implements encoding.TextUnmarshaler so a Day can be bound
-// from a query parameter.
+// from a query parameter. Empty text sets the zero Day.
 func (day *Day) UnmarshalText(text []byte) error {
+	if len(text) == 0 {
+		*day = Day{}
+		return nil
+	}
 	parsed, err := parseDay(string(text))
 	if err != nil {
 		return err
@@ -48,8 +52,12 @@ func (day *Day) UnmarshalText(text []byte) error {
 }
 
 // MarshalText implements encoding.TextMarshaler, so a Day encodes in the
-// same "YYYY-MM-DD" format UnmarshalText accepts.
+// same "YYYY-MM-DD" format UnmarshalText accepts. The zero Day encodes as
+// empty text.
 func (day Day) MarshalText() ([]byte, error) {
+	if day.IsZero() {
+		return []byte{}, nil
+	}
 	return []byte(day.String()), nil
 }
 
