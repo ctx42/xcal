@@ -26,8 +26,8 @@ func GenerateTZ(src, dst, name string) error {
 	return GenerateTZGo(zs, dst, name)
 }
 
-// ReadZones reads timezone.json file and returns slice of validated Zone
-// instances.
+// ReadZones reads a timezones JSON file and returns a slice of validated
+// Zone instances.
 func ReadZones(pth string) ([]*xcal.Zone, error) {
 	data, err := os.ReadFile(pth)
 	if err != nil {
@@ -68,7 +68,7 @@ func ReadZones(pth string) ([]*xcal.Zone, error) {
 	return zs, nil
 }
 
-// GenerateTZGo generates go source file with timezones. The map entries are
+// GenerateTZGo generates a Go source file with timezones. The map entries are
 // sorted by key, so the output is the same for the same input.
 func GenerateTZGo(zs []*xcal.Zone, dst, name string) error {
 	byName := slices.SortedFunc(slices.Values(zs), func(a, b *xcal.Zone) int {
