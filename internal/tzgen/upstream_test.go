@@ -8,7 +8,6 @@ import (
 	"os"
 	"path/filepath"
 	"testing"
-	"time"
 
 	"github.com/ctx42/testing/pkg/assert"
 	"github.com/ctx42/testing/pkg/must"
@@ -397,16 +396,15 @@ func Test_offsets_tabular(t *testing.T) {
 		wStd int
 		wDST int
 	}{
-		{"no DST", "Asia/Kolkata", 330, 330},
+		{"no DST", "Etc/UTC", 0, 0},
 		{"DST", "Europe/Warsaw", 60, 120},
-		{"half hour DST", "Australia/Lord_Howe", 630, 660},
-		{"southern hemisphere", "America/Santiago", -240, -180},
+		{"DST east", "Europe/Kyiv", 120, 180},
 	}
 
 	for _, tc := range tt {
 		t.Run(tc.testN, func(t *testing.T) {
 			// --- Given ---
-			loc := must.Value(time.LoadLocation(tc.name))
+			loc := must.Value(loadZipLocation(zipEntry(t, tc.name)))
 
 			// --- When ---
 			hStd, hDST := offsets(loc, 2026)

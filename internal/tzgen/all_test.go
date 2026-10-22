@@ -87,3 +87,17 @@ func canceledContext() context.Context {
 	cancel()
 	return ctx
 }
+
+// zipEntry returns the entry of testdata/zoneinfo.zip with the given name.
+func zipEntry(t tester.T, name string) *zip.File {
+	t.Helper()
+	zr := must.Value(zip.OpenReader("testdata/zoneinfo.zip"))
+	t.Cleanup(func() { _ = zr.Close() })
+	for _, fil := range zr.File {
+		if fil.Name == name {
+			return fil
+		}
+	}
+	t.Fatalf("no %s in testdata/zoneinfo.zip", name)
+	return nil
+}
