@@ -7,7 +7,7 @@ import (
 	"cmp"
 	"encoding/json"
 	"fmt"
-	"go/format"
+	goformat "go/format"
 	"os"
 	"slices"
 	"strings"
@@ -102,7 +102,7 @@ func GenerateTZGo(zs []*xcal.Zone, dst, name string) error {
 	}
 	_, _ = fmt.Fprint(&buf, "}\n")
 
-	src, err := format.Source(buf.Bytes())
+	src, err := goformat.Source(buf.Bytes())
 	if err != nil {
 		return fmt.Errorf("format generated code: %w", err)
 	}
