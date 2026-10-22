@@ -26,7 +26,8 @@ its zone name, and helpers for midnights, month ranges, and time windows.
 - `Location` — a `*time.Location` paired with its zone ID; it encodes to JSON
   as the zone name and decodes from a zone name or ID.
 - Zone tables — `Zones` and `ZoneIDs` map names and IDs to `Zone` records
-  with offsets, status, alias links, and country codes.
+  with offsets, status, alias links, and country codes, kept in step with the
+  IANA tz database the Go toolchain embeds.
 - Embedded tz database — zones load on hosts without zoneinfo, such as scratch
   or distroless containers.
 - Date helpers — `Midnight`, `MonthStartEnd`, `InWindow`, `ChangeLocation`,
@@ -121,15 +122,26 @@ fmt.Println(day.In(xcal.WAW).UTC())
 
 ## Updating the zone table
 
-The table is generated from `pkg/xcal/data/timezones.json`. After editing it,
-regenerate `timezones.go`:
+The table follows the IANA tz database release the Go toolchain embeds. After
+upgrading Go, refresh the registry and regenerate the tables from the module
+root:
 
 ```shell
+go run ./internal/tzgen/cmd/tzupdate
 go generate ./pkg/xcal
 ```
 
-The generator rejects invalid zones, duplicate names or IDs, and any entry
-whose ID differs from the one already assigned to that zone name.
+`tzupdate` downloads the release's `zone.tab` and links into
+`pkg/xcal/data/tzdata` unless they are already there, and merges them into
+`pkg/xcal/data/timezones.json`, the registry of zone IDs:
+
+- Existing zones keep their IDs; new zones get IDs above every existing one.
+- A renamed zone stays as an alias of its new name, under its old ID.
+- A zone dropped from the database stops the update until its registry entry
+  is marked removed (`"status": "R"`) with a `link` to its replacement. It
+  keeps its ID and loads as the replacement.
+
+`go generate` refuses a registry that changes, drops, or reuses an ID.
 
 ## License
 
