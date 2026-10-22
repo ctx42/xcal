@@ -23,11 +23,7 @@ func GenerateTZ(src, dst, name string) error {
 		return err
 	}
 
-	if err = GenerateTZGo(zs, dst, name); err != nil {
-		return err
-	}
-
-	return nil
+	return GenerateTZGo(zs, dst, name)
 }
 
 // ReadZones reads timezone.json file and returns slice of validated Zone
