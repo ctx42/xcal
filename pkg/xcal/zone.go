@@ -51,30 +51,30 @@ type Zone struct {
 }
 
 // Check validates zone during import of new timezones.
-func (z *Zone) Check() error {
-	if z.Id < 0 {
-		return fmt.Errorf("invalid ZoneID %d", z.Id)
+func (zon *Zone) Check() error {
+	if zon.Id < 0 {
+		return fmt.Errorf("invalid ZoneID %d", zon.Id)
 	}
 
-	if _, err := time.LoadLocation(z.Name); err != nil {
-		return fmt.Errorf("%w: %s", ErrInvTimezone, z.Name)
+	if _, err := time.LoadLocation(zon.Name); err != nil {
+		return fmt.Errorf("%w: %s", ErrInvTimezone, zon.Name)
 	}
 
-	if z.Offset < -12*60 || z.Offset > 14*60 {
-		return fmt.Errorf("invalid Zone offset %d", z.Offset)
+	if zon.Offset < -12*60 || zon.Offset > 14*60 {
+		return fmt.Errorf("invalid Zone offset %d", zon.Offset)
 	}
 
-	if z.OffsetDST < -12*60 || z.OffsetDST > 14*60 {
-		return fmt.Errorf("invalid Zone DST offset %d", z.OffsetDST)
+	if zon.OffsetDST < -12*60 || zon.OffsetDST > 14*60 {
+		return fmt.Errorf("invalid Zone DST offset %d", zon.OffsetDST)
 	}
 
-	if z.Status == Alias {
-		if z.Link == "" {
-			return fmt.Errorf("alias without link for %s", z.Name)
+	if zon.Status == Alias {
+		if zon.Link == "" {
+			return fmt.Errorf("alias without link for %s", zon.Name)
 		}
 
-		if _, err := time.LoadLocation(z.Link); err != nil {
-			return fmt.Errorf("invalid alias link %s", z.Link)
+		if _, err := time.LoadLocation(zon.Link); err != nil {
+			return fmt.Errorf("invalid alias link %s", zon.Link)
 		}
 	}
 
@@ -82,19 +82,19 @@ func (z *Zone) Check() error {
 }
 
 // Validate validates zone.
-func (z *Zone) Validate() error {
-	if err := z.Check(); err != nil {
+func (zon *Zone) Validate() error {
+	if err := zon.Check(); err != nil {
 		return err
 	}
-	if _, err := LoadLocation(z.Name); err != nil {
+	if _, err := LoadLocation(zon.Name); err != nil {
 		return err
 	}
 	return nil
 }
 
 // Loc returns timezone location.
-func (z *Zone) Loc() (*time.Location, error) {
-	loc, err := LoadLocation(z.Name)
+func (zon *Zone) Loc() (*time.Location, error) {
+	loc, err := LoadLocation(zon.Name)
 	if err != nil {
 		return nil, err
 	}

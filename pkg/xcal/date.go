@@ -59,9 +59,9 @@ func IsAfterOrEqual(a, b time.Time) bool { return a.After(b) || a.Equal(b) }
 //	sort.Sort(TimeSortASC(in))
 type TimeSortASC []time.Time
 
-func (d TimeSortASC) Len() int           { return len(d) }
-func (d TimeSortASC) Less(i, j int) bool { return d[i].Before(d[j]) }
-func (d TimeSortASC) Swap(i, j int)      { d[i], d[j] = d[j], d[i] }
+func (tsa TimeSortASC) Len() int           { return len(tsa) }
+func (tsa TimeSortASC) Less(i, j int) bool { return tsa[i].Before(tsa[j]) }
+func (tsa TimeSortASC) Swap(i, j int)      { tsa[i], tsa[j] = tsa[j], tsa[i] }
 
 // ChangeLocation changes the timezone for the date.
 // It does not change the date string representation.

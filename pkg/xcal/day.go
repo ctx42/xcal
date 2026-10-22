@@ -38,48 +38,48 @@ func parseDay(s string) (Day, error) {
 
 // UnmarshalText implements encoding.TextUnmarshaler so a Day can be bound
 // from a query parameter.
-func (d *Day) UnmarshalText(text []byte) error {
-	day, err := parseDay(string(text))
+func (day *Day) UnmarshalText(text []byte) error {
+	parsed, err := parseDay(string(text))
 	if err != nil {
 		return err
 	}
-	*d = day
+	*day = parsed
 	return nil
 }
 
 // MarshalText implements encoding.TextMarshaler, so a Day encodes in the
 // same "YYYY-MM-DD" format UnmarshalText accepts.
-func (d Day) MarshalText() ([]byte, error) {
-	return []byte(d.String()), nil
+func (day Day) MarshalText() ([]byte, error) {
+	return []byte(day.String()), nil
 }
 
 // IsZero reports whether the day is unset.
-func (d Day) IsZero() bool {
-	return d == Day{}
+func (day Day) IsZero() bool {
+	return day == Day{}
 }
 
 // In returns the instant the day starts at in the location.
-func (d Day) In(loc *time.Location) time.Time {
-	return time.Date(d.year, d.month, d.day, 0, 0, 0, 0, loc)
+func (day Day) In(loc *time.Location) time.Time {
+	return time.Date(day.year, day.month, day.day, 0, 0, 0, 0, loc)
 }
 
 // AddDays returns the day n calendar days later (or earlier for negative n).
-func (d Day) AddDays(n int) Day {
-	return DayOf(d.In(time.UTC).AddDate(0, 0, n))
+func (day Day) AddDays(n int) Day {
+	return DayOf(day.In(time.UTC).AddDate(0, 0, n))
 }
 
-// Before reports whether d is before other.
-func (d Day) Before(other Day) bool {
-	return d.In(time.UTC).Before(other.In(time.UTC))
+// Before reports whether the day is before other.
+func (day Day) Before(other Day) bool {
+	return day.In(time.UTC).Before(other.In(time.UTC))
 }
 
-// DaysUntil returns the number of calendar days from d to other - zero for
-// the same day, negative when other is earlier.
-func (d Day) DaysUntil(other Day) int {
-	diff := other.In(time.UTC).Sub(d.In(time.UTC))
+// DaysUntil returns the number of calendar days from the day to other - zero
+// for the same day, negative when other is earlier.
+func (day Day) DaysUntil(other Day) int {
+	diff := other.In(time.UTC).Sub(day.In(time.UTC))
 	return int(diff / (24 * time.Hour))
 }
 
-func (d Day) String() string {
-	return d.In(time.UTC).Format(dayLayout)
+func (day Day) String() string {
+	return day.In(time.UTC).Format(dayLayout)
 }
