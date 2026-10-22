@@ -165,13 +165,13 @@ func Test_Fetch_requestErrors_tabular(t *testing.T) {
 	}{
 		{
 			"error - invalid URL",
-			context.Background(),
+			t.Context(),
 			"://%s",
 			"missing protocol scheme",
 		},
 		{
 			"error - canceled context",
-			canceledContext(),
+			canceledContext(t),
 			"http://127.0.0.1:1/%s",
 			"context canceled",
 		},

@@ -81,9 +81,10 @@ func newGoRoot(t tester.T, version string) string {
 	return root
 }
 
-// canceledContext returns a context that is already canceled.
-func canceledContext() context.Context {
-	ctx, cancel := context.WithCancel(context.Background())
+// canceledContext returns a canceled context derived from t.Context().
+func canceledContext(t tester.T) context.Context {
+	t.Helper()
+	ctx, cancel := context.WithCancel(t.Context())
 	cancel()
 	return ctx
 }
