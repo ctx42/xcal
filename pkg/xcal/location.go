@@ -115,7 +115,7 @@ func FromTimeLoc(loc *time.Location) (*Location, error) {
 	return nil, ErrNoZoneID
 }
 
-func (loc *Location) MarshalJSON() ([]byte, error) {
+func (loc Location) MarshalJSON() ([]byte, error) {
 	return []byte(`"` + loc.Loc.String() + `"`), nil
 }
 

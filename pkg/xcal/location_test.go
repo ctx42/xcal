@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"github.com/ctx42/testing/pkg/assert"
+	"github.com/ctx42/testing/pkg/must"
 )
 
 func Test_LoadLocation(t *testing.T) {
@@ -138,6 +139,23 @@ func Test_Location_MarshalJSON_inStructure(t *testing.T) {
 	// --- Then ---
 	assert.NoError(t, err)
 	assert.Equal(t, `{"my_loc":"Europe/Warsaw"}`, string(data))
+}
+
+func Test_Location_MarshalJSON_valueInStructure(t *testing.T) {
+	// --- Given ---
+	loc := must.Value(LoadLocation("Europe/Warsaw"))
+	ts := struct {
+		Loc Location `json:"my_loc"`
+	}{
+		Loc: *loc,
+	}
+
+	// --- When ---
+	have, err := json.Marshal(ts)
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, `{"my_loc":"Europe/Warsaw"}`, string(have))
 }
 
 func Test_Location_UnmarshalJSON(t *testing.T) {
