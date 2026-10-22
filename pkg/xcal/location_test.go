@@ -80,11 +80,11 @@ func Test_LoadLocation_timezoneNotInGoDatabase(t *testing.T) {
 	})
 
 	// --- When ---
-	loc, err := LoadLocation("999")
+	have, err := LoadLocation("999")
 
 	// --- Then ---
 	assert.ErrorIs(t, ErrInvTimezone, err)
-	assert.Nil(t, loc)
+	assert.Nil(t, have)
 }
 
 func Test_LoadLocation_timezoneInGoDatabaseButNotOurs(t *testing.T) {
@@ -98,11 +98,11 @@ func Test_LoadLocation_timezoneInGoDatabaseButNotOurs(t *testing.T) {
 	}()
 
 	// --- When ---
-	loc, err := LoadLocation("Europe/Warsaw")
+	have, err := LoadLocation("Europe/Warsaw")
 
 	// --- Then ---
 	assert.ErrorIs(t, ErrInvTimezone, err)
-	assert.Nil(t, loc)
+	assert.Nil(t, have)
 }
 
 func Test_LoadLocation_emptyLocationString(t *testing.T) {
@@ -115,12 +115,12 @@ func Test_LoadLocation_emptyLocationString(t *testing.T) {
 
 func Test_FromTimeLoc(t *testing.T) {
 	// --- When ---
-	loc, err := FromTimeLoc(WAW)
+	have, err := FromTimeLoc(WAW)
 
 	// --- Then ---
 	assert.NoError(t, err)
-	assert.Equal(t, "Europe/Warsaw", loc.Loc.String())
-	assert.Equal(t, 416, loc.ID)
+	assert.Equal(t, "Europe/Warsaw", have.Loc.String())
+	assert.Equal(t, 416, have.ID)
 }
 
 func Test_FromTimeLoc_nil(t *testing.T) {
@@ -138,11 +138,11 @@ func Test_FromTimeLoc_UnknownTimezone(t *testing.T) {
 	tz := time.FixedZone("Europe/Krakow", int((2 * time.Hour).Seconds()))
 
 	// --- When ---
-	loc, err := FromTimeLoc(tz)
+	have, err := FromTimeLoc(tz)
 
 	// --- Then ---
 	assert.ErrorIs(t, ErrNoZoneID, err)
-	assert.Nil(t, loc)
+	assert.Nil(t, have)
 }
 
 func Test_Location_MarshalJSON(t *testing.T) {
@@ -168,11 +168,11 @@ func Test_Location_MarshalJSON_inStructure(t *testing.T) {
 	}
 
 	// --- When ---
-	data, err := json.Marshal(ts)
+	have, err := json.Marshal(ts)
 
 	// --- Then ---
 	assert.NoError(t, err)
-	assert.Equal(t, `{"my_loc":"Europe/Warsaw"}`, string(data))
+	assert.Equal(t, `{"my_loc":"Europe/Warsaw"}`, string(have))
 }
 
 func Test_Location_MarshalJSON_valueInStructure(t *testing.T) {

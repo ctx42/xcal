@@ -13,13 +13,13 @@ import (
 
 func Test_ReadZones(t *testing.T) {
 	// --- When ---
-	zs, err := ReadZones("testdata/timezones.json")
+	have, err := ReadZones("testdata/timezones.json")
 
 	// --- Then ---
 	assert.NoError(t, err)
-	assert.Len(t, 2, zs)
+	assert.Len(t, 2, have)
 
-	zon := zs[0]
+	zon := have[0]
 	assert.Equal(t, 0, zon.Id)
 	assert.Equal(t, "UTC", zon.Name)
 	assert.Equal(t, "A", zon.Status)
@@ -29,7 +29,7 @@ func Test_ReadZones(t *testing.T) {
 	assert.Equal(t, "test note", zon.Notes)
 	assert.Equal(t, "", zon.CountryCode)
 
-	zon = zs[1]
+	zon = have[1]
 	assert.Equal(t, 416, zon.Id)
 	assert.Equal(t, "Europe/Warsaw", zon.Name)
 	assert.Equal(t, "C", zon.Status)
@@ -42,38 +42,38 @@ func Test_ReadZones(t *testing.T) {
 
 func Test_ReadZones_mismatchedIDs(t *testing.T) {
 	// --- When ---
-	zs, err := ReadZones("testdata/timezones_mismatched_ids.json")
+	have, err := ReadZones("testdata/timezones_mismatched_ids.json")
 
 	// --- Then ---
 	assert.ErrorEqual(t, "at index 1: expected ZoneID 416 got 2", err)
-	assert.Nil(t, zs)
+	assert.Nil(t, have)
 }
 
 func Test_ReadZones_duplicateID(t *testing.T) {
 	// --- When ---
-	zs, err := ReadZones("testdata/timezones_duplicate_id.json")
+	have, err := ReadZones("testdata/timezones_duplicate_id.json")
 
 	// --- Then ---
 	assert.ErrorEqual(t, "at index 2: duplicate ZoneID 416", err)
-	assert.Nil(t, zs)
+	assert.Nil(t, have)
 }
 
 func Test_ReadZones_duplicateName(t *testing.T) {
 	// --- When ---
-	zs, err := ReadZones("testdata/timezones_duplicate_name.json")
+	have, err := ReadZones("testdata/timezones_duplicate_name.json")
 
 	// --- Then ---
 	assert.ErrorEqual(t, "at index 2: duplicate timezone UTC", err)
-	assert.Nil(t, zs)
+	assert.Nil(t, have)
 }
 
 func Test_ReadZones_invalidZone(t *testing.T) {
 	// --- When ---
-	zs, err := ReadZones("testdata/timezones_invalid_zone.json")
+	have, err := ReadZones("testdata/timezones_invalid_zone.json")
 
 	// --- Then ---
 	assert.ErrorEqual(t, "at index 1: invalid Zone offset 1000", err)
-	assert.Nil(t, zs)
+	assert.Nil(t, have)
 }
 
 func Test_ReadZones_noGeneratedZones(t *testing.T) {
@@ -83,29 +83,29 @@ func Test_ReadZones_noGeneratedZones(t *testing.T) {
 	t.Cleanup(func() { xcal.Zones = save })
 
 	// --- When ---
-	zs, err := ReadZones("testdata/timezones_mismatched_ids.json")
+	have, err := ReadZones("testdata/timezones_mismatched_ids.json")
 
 	// --- Then ---
 	assert.ErrorEqual(t, "at index 1: expected ZoneID 1 got 2", err)
-	assert.Nil(t, zs)
+	assert.Nil(t, have)
 }
 
 func Test_ReadZones_invalidJSON(t *testing.T) {
 	// --- When ---
-	zs, err := ReadZones("testdata/timezones_invalid_json.json")
+	have, err := ReadZones("testdata/timezones_invalid_json.json")
 
 	// --- Then ---
 	assert.ErrorEqual(t, "unexpected end of JSON input", err)
-	assert.Nil(t, zs)
+	assert.Nil(t, have)
 }
 
 func Test_ReadZones_notExistingFile(t *testing.T) {
 	// --- When ---
-	zs, err := ReadZones("testdata/not_existing.json")
+	have, err := ReadZones("testdata/not_existing.json")
 
 	// --- Then ---
 	assert.ErrorContain(t, "testdata/not_existing.json", err)
-	assert.Nil(t, zs)
+	assert.Nil(t, have)
 }
 
 func Test_GenerateTZ(t *testing.T) {

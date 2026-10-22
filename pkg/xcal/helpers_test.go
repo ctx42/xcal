@@ -121,20 +121,20 @@ func Test_ToZone_UnknownTimezone(t *testing.T) {
 
 func Test_ByZoneID(t *testing.T) {
 	// --- When ---
-	loc, err := ByZoneID(416)
+	have, err := ByZoneID(416)
 
 	// --- Then ---
 	assert.NoError(t, err)
-	assert.Equal(t, "Europe/Warsaw", loc.String())
+	assert.Equal(t, "Europe/Warsaw", have.String())
 }
 
 func Test_ByZoneID_unknownID(t *testing.T) {
 	// --- When ---
-	loc, err := ByZoneID(1000)
+	have, err := ByZoneID(1000)
 
 	// --- Then ---
 	assert.ErrorIs(t, ErrInvTimezone, err)
-	assert.Nil(t, loc)
+	assert.Nil(t, have)
 }
 
 func Test_ByZoneID_unknownLocation(t *testing.T) {
@@ -152,9 +152,9 @@ func Test_ByZoneID_unknownLocation(t *testing.T) {
 	defer func() { delete(ZoneIDs, 1000) }()
 
 	// --- When ---
-	loc, err := ByZoneID(1000)
+	have, err := ByZoneID(1000)
 
 	// --- Then ---
 	assert.ErrorIs(t, ErrInvTimezone, err)
-	assert.Nil(t, loc)
+	assert.Nil(t, have)
 }
