@@ -12,6 +12,6 @@ func Test_ZoneMap(t *testing.T) {
 		_, err := zon.Loc()
 
 		// --- Then ---
-		assert.NoError(t, err, zon.Name)
+		assert.NoError(t, err, "zone %s", zon.Name)
 	}
 }
