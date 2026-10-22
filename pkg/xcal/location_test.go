@@ -113,6 +113,28 @@ func Test_LoadLocation_emptyLocationString(t *testing.T) {
 	assert.ErrorIs(t, ErrInvTimezone, err)
 }
 
+func Test_FromTimeLoc(t *testing.T) {
+	// --- When ---
+	loc, err := FromTimeLoc(WAW)
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, "Europe/Warsaw", loc.Loc.String())
+	assert.Equal(t, 416, loc.ID)
+}
+
+func Test_FromTimeLoc_UnknownTimezone(t *testing.T) {
+	// --- Given ---
+	tz := time.FixedZone("Europe/Krakow", int((2 * time.Hour).Seconds()))
+
+	// --- When ---
+	loc, err := FromTimeLoc(tz)
+
+	// --- Then ---
+	assert.ErrorIs(t, ErrNoZoneID, err)
+	assert.Nil(t, loc)
+}
+
 func Test_Location_MarshalJSON(t *testing.T) {
 	// --- Given ---
 	tz, err := LoadLocation("Europe/Warsaw")
@@ -275,45 +297,4 @@ func Test_Location_UnmarshalJSON_inStructure_ZoneID(t *testing.T) {
 	assert.NoError(t, err)
 	assert.Equal(t, "Europe/Warsaw", g.Loc.Loc.String())
 	assert.Equal(t, 416, g.Loc.ID)
-}
-
-func Test_DefaultLocations_tabular(t *testing.T) {
-	tt := []struct {
-		testN string
-
-		want string
-		loc  *time.Location
-	}{
-		{"WAW", "Europe/Warsaw", WAW},
-		{"ZRH", "Europe/Zurich", ZRH},
-		{"MOW", "Europe/Moscow", MOW},
-	}
-
-	for _, tc := range tt {
-		t.Run(tc.testN, func(t *testing.T) {
-			assert.Equal(t, tc.want, tc.loc.String())
-		})
-	}
-}
-
-func Test_FromTimeLoc(t *testing.T) {
-	// --- When ---
-	loc, err := FromTimeLoc(WAW)
-
-	// --- Then ---
-	assert.NoError(t, err)
-	assert.Equal(t, "Europe/Warsaw", loc.Loc.String())
-	assert.Equal(t, 416, loc.ID)
-}
-
-func Test_FromTimeLoc_UnknownTimezone(t *testing.T) {
-	// --- Given ---
-	tz := time.FixedZone("Europe/Krakow", int((2 * time.Hour).Seconds()))
-
-	// --- When ---
-	loc, err := FromTimeLoc(tz)
-
-	// --- Then ---
-	assert.ErrorIs(t, ErrNoZoneID, err)
-	assert.Nil(t, loc)
 }

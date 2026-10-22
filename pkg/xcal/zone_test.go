@@ -6,29 +6,6 @@ import (
 	"github.com/ctx42/testing/pkg/assert"
 )
 
-func Test_Zone_Loc(t *testing.T) {
-	// --- When ---
-	have, err := Zones["Europe/Warsaw"].Loc()
-
-	// --- Then ---
-	assert.NoError(t, err)
-	assert.Equal(t, "Europe/Warsaw", have.String())
-}
-
-func Test_Zone_Loc_unknownTimezone(t *testing.T) {
-	// --- Given ---
-	zon := &Zone{
-		Name: "Unknown/Unknown",
-	}
-
-	// --- When ---
-	have, err := zon.Loc()
-
-	// --- Then ---
-	assert.ErrorIs(t, ErrInvTimezone, err)
-	assert.Nil(t, have)
-}
-
 func Test_Zone_Check(t *testing.T) {
 	validZone := func() *Zone {
 		return &Zone{
@@ -179,4 +156,27 @@ func Test_Zone_Validate(t *testing.T) {
 		// --- Then ---
 		assert.ErrorIs(t, ErrInvTimezone, err)
 	})
+}
+
+func Test_Zone_Loc(t *testing.T) {
+	// --- When ---
+	have, err := Zones["Europe/Warsaw"].Loc()
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, "Europe/Warsaw", have.String())
+}
+
+func Test_Zone_Loc_unknownTimezone(t *testing.T) {
+	// --- Given ---
+	zon := &Zone{
+		Name: "Unknown/Unknown",
+	}
+
+	// --- When ---
+	have, err := zon.Loc()
+
+	// --- Then ---
+	assert.ErrorIs(t, ErrInvTimezone, err)
+	assert.Nil(t, have)
 }

@@ -9,6 +9,19 @@ import (
 	"github.com/ctx42/testing/pkg/must"
 )
 
+func Test_DayOf(t *testing.T) {
+	// --- Given ---
+	tim := time.Date(2026, time.March, 24, 23, 30, 0, 0, time.UTC)
+
+	// --- When ---
+	hUTC := DayOf(tim)
+	hLoc := DayOf(tim.In(WAW))
+
+	// --- Then ---
+	assert.Equal(t, NewDay(2026, time.March, 24), hUTC)
+	assert.Equal(t, NewDay(2026, time.March, 25), hLoc)
+}
+
 func Test_parseDay(t *testing.T) {
 	t.Run("ok", func(t *testing.T) {
 		// --- When ---
@@ -139,19 +152,6 @@ func Test_Day_In(t *testing.T) {
 		assert.Equal(t, "2026-03-25T00:00:00+01:00", have.Format(time.RFC3339))
 		assert.Equal(t, "2026-03-24T23:00:00Z", have.UTC().Format(time.RFC3339))
 	})
-}
-
-func Test_DayOf(t *testing.T) {
-	// --- Given ---
-	tim := time.Date(2026, time.March, 24, 23, 30, 0, 0, time.UTC)
-
-	// --- When ---
-	hUTC := DayOf(tim)
-	hLoc := DayOf(tim.In(WAW))
-
-	// --- Then ---
-	assert.Equal(t, NewDay(2026, time.March, 24), hUTC)
-	assert.Equal(t, NewDay(2026, time.March, 25), hLoc)
 }
 
 func Test_Day_AddDays(t *testing.T) {
