@@ -37,7 +37,7 @@ func Test_parseDay(t *testing.T) {
 		_, err := parseDay("2026-03-25T00:00:00Z")
 
 		// --- Then ---
-		assert.Error(t, err)
+		assert.ErrorContain(t, "extra text", err)
 	})
 
 	t.Run("error - invalid date", func(t *testing.T) {
@@ -45,7 +45,7 @@ func Test_parseDay(t *testing.T) {
 		_, err := parseDay("2026-02-30")
 
 		// --- Then ---
-		assert.Error(t, err)
+		assert.ErrorContain(t, "day out of range", err)
 	})
 }
 
@@ -82,7 +82,7 @@ func Test_Day_UnmarshalText(t *testing.T) {
 		err := have.UnmarshalText([]byte("abc"))
 
 		// --- Then ---
-		assert.Error(t, err)
+		assert.ErrorContain(t, `cannot parse "abc"`, err)
 		assert.Equal(t, NewDay(2026, time.March, 25), have)
 	})
 }
