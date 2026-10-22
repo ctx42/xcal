@@ -76,7 +76,11 @@ func FromTimeLoc(loc *time.Location) (*Location, error) {
 	return nil, ErrNoZoneID
 }
 
+// MarshalJSON encodes the zone name, or null when Loc is nil.
 func (loc Location) MarshalJSON() ([]byte, error) {
+	if loc.Loc == nil {
+		return []byte("null"), nil
+	}
 	return []byte(`"` + loc.Loc.String() + `"`), nil
 }
 

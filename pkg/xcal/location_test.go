@@ -162,6 +162,20 @@ func Test_Location_MarshalJSON_valueInStructure(t *testing.T) {
 	assert.Equal(t, `{"my_loc":"Europe/Warsaw"}`, string(have))
 }
 
+func Test_Location_MarshalJSON_zero(t *testing.T) {
+	// --- Given ---
+	ts := struct {
+		Loc Location `json:"my_loc"`
+	}{}
+
+	// --- When ---
+	have, err := json.Marshal(ts)
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, `{"my_loc":null}`, string(have))
+}
+
 func Test_Location_UnmarshalJSON(t *testing.T) {
 	// --- Given ---
 	loc := &Location{}
