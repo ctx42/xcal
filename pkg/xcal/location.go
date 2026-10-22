@@ -64,8 +64,12 @@ func LoadLocation(locS string) (*Location, error) {
 }
 
 // FromTimeLoc creates Location from time.Location. If the zone ID for the
-// given [time.Location] cannot be found, [ErrNoZoneID] is returned.
+// given [time.Location] cannot be found, [ErrNoZoneID] is returned. A nil loc
+// is treated as [time.UTC].
 func FromTimeLoc(loc *time.Location) (*Location, error) {
+	if loc == nil {
+		loc = time.UTC
+	}
 	if zone, ok := Zones[loc.String()]; ok {
 		ret := &Location{
 			ID:  zone.Id,

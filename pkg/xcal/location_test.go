@@ -123,6 +123,16 @@ func Test_FromTimeLoc(t *testing.T) {
 	assert.Equal(t, 416, loc.ID)
 }
 
+func Test_FromTimeLoc_nil(t *testing.T) {
+	// --- When ---
+	have, err := FromTimeLoc(nil)
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Same(t, time.UTC, have.Loc)
+	assert.Equal(t, Zones["UTC"].Id, have.ID)
+}
+
 func Test_FromTimeLoc_UnknownTimezone(t *testing.T) {
 	// --- Given ---
 	tz := time.FixedZone("Europe/Krakow", int((2 * time.Hour).Seconds()))
