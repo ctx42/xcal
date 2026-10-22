@@ -104,7 +104,7 @@ func Test_ReadZones_notExistingFile(t *testing.T) {
 	zs, err := ReadZones("testdata/not_existing.json")
 
 	// --- Then ---
-	assert.Error(t, err)
+	assert.ErrorContain(t, "testdata/not_existing.json", err)
 	assert.Nil(t, zs)
 }
 
@@ -128,7 +128,7 @@ func Test_GenerateTZ_noSourceFile(t *testing.T) {
 	err := GenerateTZ("testdata/not_existing.json", "", "xcal")
 
 	// --- Then ---
-	assert.Error(t, err)
+	assert.ErrorContain(t, "testdata/not_existing.json", err)
 }
 
 func Test_GenerateTZ_noDestinationDir(t *testing.T) {
@@ -139,7 +139,7 @@ func Test_GenerateTZ_noDestinationDir(t *testing.T) {
 	err := GenerateTZ("testdata/timezones.json", dst, "xcal")
 
 	// --- Then ---
-	assert.Error(t, err)
+	assert.ErrorContain(t, "testdata/not_existing/timezones.go", err)
 }
 
 func Test_GenerateTZGo(t *testing.T) {
