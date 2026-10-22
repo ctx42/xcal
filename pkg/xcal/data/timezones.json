@@ -32,10 +32,10 @@
  {
   "id": 3,
   "timezone": "Africa/Accra",
-  "status": "C",
+  "status": "A",
   "offset": 0,
   "offset_dst": 0,
-  "link": "",
+  "link": "Africa/Abidjan",
   "notes": "",
   "country_code": "GH"
  },
@@ -144,7 +144,7 @@
   "timezone": "Africa/Cairo",
   "status": "C",
   "offset": 120,
-  "offset_dst": 120,
+  "offset_dst": 180,
   "link": "",
   "notes": "",
   "country_code": "EG"
@@ -154,7 +154,7 @@
   "timezone": "Africa/Casablanca",
   "status": "C",
   "offset": 60,
-  "offset_dst": 60,
+  "offset_dst": 0,
   "link": "",
   "notes": "",
   "country_code": "MA"
@@ -223,8 +223,8 @@
   "id": 22,
   "timezone": "Africa/El_Aaiun",
   "status": "C",
-  "offset": 0,
-  "offset_dst": 60,
+  "offset": 60,
+  "offset_dst": 0,
   "link": "",
   "notes": "",
   "country_code": "EH"
@@ -273,8 +273,8 @@
   "id": 27,
   "timezone": "Africa/Juba",
   "status": "C",
-  "offset": 180,
-  "offset_dst": 180,
+  "offset": 120,
+  "offset_dst": 120,
   "link": "",
   "notes": "",
   "country_code": "SS"
@@ -502,10 +502,10 @@
  {
   "id": 50,
   "timezone": "Africa/Sao_Tome",
-  "status": "A",
+  "status": "C",
   "offset": 0,
   "offset_dst": 0,
-  "link": "Africa/Lagos",
+  "link": "",
   "notes": "",
   "country_code": "ST"
  },
@@ -556,7 +556,7 @@
   "offset": -600,
   "offset_dst": -540,
   "link": "",
-  "notes": "Aleutian Islands",
+  "notes": "Alaska - western Aleutians",
   "country_code": "US"
  },
  {
@@ -575,7 +575,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "AI"
  },
@@ -585,7 +585,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "AG"
  },
@@ -616,7 +616,7 @@
   "offset": -180,
   "offset_dst": -180,
   "link": "",
-  "notes": "Catamarca (CT); Chubut (CH)",
+  "notes": "Catamarca (CT), Chubut (CH)",
   "country_code": "AR"
  },
  {
@@ -735,7 +735,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Curacao",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "AW"
  },
@@ -743,7 +743,7 @@
   "id": 74,
   "timezone": "America/Asuncion",
   "status": "C",
-  "offset": -240,
+  "offset": -180,
   "offset_dst": -180,
   "link": "",
   "notes": "",
@@ -752,11 +752,11 @@
  {
   "id": 75,
   "timezone": "America/Atikokan",
-  "status": "C",
+  "status": "A",
   "offset": -300,
   "offset_dst": -300,
-  "link": "",
-  "notes": "EST - ON (Atikokan); NU (Coral H)",
+  "link": "America/Panama",
+  "notes": "EST - ON (Atikokan), NU (Coral H)",
   "country_code": "CA"
  },
  {
@@ -784,9 +784,9 @@
   "timezone": "America/Bahia_Banderas",
   "status": "C",
   "offset": -360,
-  "offset_dst": -300,
+  "offset_dst": -360,
   "link": "",
-  "notes": "Central Time - Bahia de Banderas",
+  "notes": "Bahia de Banderas",
   "country_code": "MX"
  },
  {
@@ -806,7 +806,7 @@
   "offset": -180,
   "offset_dst": -180,
   "link": "",
-  "notes": "Para (east); Amapa",
+  "notes": "Para (east), Amapa",
   "country_code": "BR"
  },
  {
@@ -822,10 +822,10 @@
  {
   "id": 82,
   "timezone": "America/Blanc-Sablon",
-  "status": "C",
+  "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "",
+  "link": "America/Puerto_Rico",
   "notes": "AST - QC (Lower North Shore)",
   "country_code": "CA"
  },
@@ -856,7 +856,7 @@
   "offset": -420,
   "offset_dst": -360,
   "link": "",
-  "notes": "Mountain - ID (south); OR (east)",
+  "notes": "Mountain - ID (south), OR (east)",
   "country_code": "US"
  },
  {
@@ -884,7 +884,7 @@
   "timezone": "America/Campo_Grande",
   "status": "C",
   "offset": -240,
-  "offset_dst": -180,
+  "offset_dst": -240,
   "link": "",
   "notes": "Mato Grosso do Sul",
   "country_code": "BR"
@@ -896,7 +896,7 @@
   "offset": -300,
   "offset_dst": -300,
   "link": "",
-  "notes": "Eastern Standard Time - Quintana Roo",
+  "notes": "Quintana Roo",
   "country_code": "MX"
  },
  {
@@ -953,10 +953,10 @@
   "id": 95,
   "timezone": "America/Chihuahua",
   "status": "C",
-  "offset": -420,
+  "offset": -360,
   "offset_dst": -360,
   "link": "",
-  "notes": "Mountain Time - Chihuahua (most areas)",
+  "notes": "Chihuahua (most areas)",
   "country_code": "MX"
  },
  {
@@ -965,7 +965,7 @@
   "status": "A",
   "offset": -300,
   "offset_dst": -300,
-  "link": "America/Atikokan",
+  "link": "America/Panama",
   "notes": "",
   "country_code": "CA"
  },
@@ -992,10 +992,10 @@
  {
   "id": 99,
   "timezone": "America/Creston",
-  "status": "C",
+  "status": "A",
   "offset": -420,
   "offset_dst": -420,
-  "link": "",
+  "link": "America/Phoenix",
   "notes": "MST - BC (Creston)",
   "country_code": "CA"
  },
@@ -1004,7 +1004,7 @@
   "timezone": "America/Cuiaba",
   "status": "C",
   "offset": -240,
-  "offset_dst": -180,
+  "offset_dst": -240,
   "link": "",
   "notes": "Mato Grosso",
   "country_code": "BR"
@@ -1012,10 +1012,10 @@
  {
   "id": 101,
   "timezone": "America/Curacao",
-  "status": "C",
+  "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "CW"
  },
@@ -1033,10 +1033,10 @@
   "id": 103,
   "timezone": "America/Dawson",
   "status": "C",
-  "offset": -480,
+  "offset": -420,
   "offset_dst": -420,
   "link": "",
-  "notes": "Pacific - Yukon (north)",
+  "notes": "MST - Yukon (west)",
   "country_code": "CA"
  },
  {
@@ -1075,7 +1075,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "DM"
  },
@@ -1086,7 +1086,7 @@
   "offset": -420,
   "offset_dst": -360,
   "link": "",
-  "notes": "Mountain - AB; BC (E); SK (W)",
+  "notes": "CST - AB, BC(E), NT(E), SK(W)",
   "country_code": "CA"
  },
  {
@@ -1162,10 +1162,10 @@
  {
   "id": 116,
   "timezone": "America/Godthab",
-  "status": "C",
-  "offset": -180,
-  "offset_dst": -120,
-  "link": "",
+  "status": "A",
+  "offset": -120,
+  "offset_dst": -60,
+  "link": "America/Nuuk",
   "notes": "Greenland (most areas)",
   "country_code": "GL"
  },
@@ -1195,7 +1195,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "GD"
  },
@@ -1205,7 +1205,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "GP"
  },
@@ -1246,7 +1246,7 @@
   "offset": -240,
   "offset_dst": -180,
   "link": "",
-  "notes": "Atlantic - NS (most areas); PE",
+  "notes": "Atlantic - NS (most areas), PE",
   "country_code": "CA"
  },
  {
@@ -1266,7 +1266,7 @@
   "offset": -420,
   "offset_dst": -420,
   "link": "",
-  "notes": "Mountain Standard Time - Sonora",
+  "notes": "Sonora",
   "country_code": "MX"
  },
  {
@@ -1376,7 +1376,7 @@
   "offset": -300,
   "offset_dst": -240,
   "link": "",
-  "notes": "Eastern - NU (most east areas)",
+  "notes": "Eastern - NU (most areas)",
   "country_code": "CA"
  },
  {
@@ -1445,7 +1445,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Curacao",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "BQ"
  },
@@ -1495,7 +1495,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Curacao",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "SX"
  },
@@ -1535,7 +1535,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "MF"
  },
@@ -1556,7 +1556,7 @@
   "offset": -360,
   "offset_dst": -300,
   "link": "",
-  "notes": "Central Time US - Coahuila, Nuevo Leon, Tamaulipas (US border)",
+  "notes": "Coahuila, Nuevo Leon, Tamaulipas (US border)",
   "country_code": "MX"
  },
  {
@@ -1564,9 +1564,9 @@
   "timezone": "America/Mazatlan",
   "status": "C",
   "offset": -420,
-  "offset_dst": -360,
+  "offset_dst": -420,
   "link": "",
-  "notes": "Mountain Time - Baja California Sur, Nayarit, Sinaloa",
+  "notes": "Baja California Sur, Nayarit (most areas), Sinaloa",
   "country_code": "MX"
  },
  {
@@ -1594,9 +1594,9 @@
   "timezone": "America/Merida",
   "status": "C",
   "offset": -360,
-  "offset_dst": -300,
+  "offset_dst": -360,
   "link": "",
-  "notes": "Central Time - Campeche, Yucatan",
+  "notes": "Campeche, Yucatan",
   "country_code": "MX"
  },
  {
@@ -1614,9 +1614,9 @@
   "timezone": "America/Mexico_City",
   "status": "C",
   "offset": -360,
-  "offset_dst": -300,
+  "offset_dst": -360,
   "link": "",
-  "notes": "Central Time",
+  "notes": "Central Mexico",
   "country_code": "MX"
  },
  {
@@ -1644,9 +1644,9 @@
   "timezone": "America/Monterrey",
   "status": "C",
   "offset": -360,
-  "offset_dst": -300,
+  "offset_dst": -360,
   "link": "",
-  "notes": "Central Time - Durango; Coahuila, Nuevo Leon, Tamaulipas (most areas)",
+  "notes": "Durango; Coahuila, Nuevo Leon, Tamaulipas (most areas)",
   "country_code": "MX"
  },
  {
@@ -1675,17 +1675,17 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "MS"
  },
  {
   "id": 168,
   "timezone": "America/Nassau",
-  "status": "C",
+  "status": "A",
   "offset": -300,
   "offset_dst": -240,
-  "link": "",
+  "link": "America/Toronto",
   "notes": "",
   "country_code": "BS"
  },
@@ -1702,10 +1702,10 @@
  {
   "id": 170,
   "timezone": "America/Nipigon",
-  "status": "C",
+  "status": "A",
   "offset": -300,
   "offset_dst": -240,
-  "link": "",
+  "link": "America/Toronto",
   "notes": "Eastern - ON, QC (no DST 1967−73)",
   "country_code": "CA"
  },
@@ -1763,10 +1763,10 @@
   "id": 176,
   "timezone": "America/Ojinaga",
   "status": "C",
-  "offset": -420,
-  "offset_dst": -360,
+  "offset": -360,
+  "offset_dst": -300,
   "link": "",
-  "notes": "Mountain Time US - Chihuahua (US border)",
+  "notes": "Chihuahua (US border - east)",
   "country_code": "MX"
  },
  {
@@ -1782,10 +1782,10 @@
  {
   "id": 178,
   "timezone": "America/Pangnirtung",
-  "status": "C",
+  "status": "A",
   "offset": -300,
   "offset_dst": -240,
-  "link": "",
+  "link": "America/Iqaluit",
   "notes": "Eastern - NU (Pangnirtung)",
   "country_code": "CA"
  },
@@ -1806,16 +1806,16 @@
   "offset": -420,
   "offset_dst": -420,
   "link": "",
-  "notes": "MST - Arizona (except Navajo)",
+  "notes": "MST - AZ (except Navajo)",
   "country_code": "US"
  },
  {
   "id": 181,
   "timezone": "America/Port_of_Spain",
-  "status": "C",
+  "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "TT"
  },
@@ -1866,16 +1866,16 @@
   "offset": -180,
   "offset_dst": -180,
   "link": "",
-  "notes": "Region of Magallanes",
+  "notes": "Magallanes Region",
   "country_code": "CL"
  },
  {
   "id": 187,
   "timezone": "America/Rainy_River",
-  "status": "C",
+  "status": "A",
   "offset": -360,
   "offset_dst": -300,
-  "link": "",
+  "link": "America/Winnipeg",
   "notes": "Central - ON (Rainy R, Ft Frances)",
   "country_code": "CA"
  },
@@ -1966,7 +1966,7 @@
   "offset": -240,
   "offset_dst": -180,
   "link": "",
-  "notes": "Chile (most areas)",
+  "notes": "most of Chile",
   "country_code": "CL"
  },
  {
@@ -1984,7 +1984,7 @@
   "timezone": "America/Sao_Paulo",
   "status": "C",
   "offset": -180,
-  "offset_dst": -120,
+  "offset_dst": -180,
   "link": "",
   "notes": "Brazil (southeast: GO, DF, MG, ES, RJ, SP, PR, SC, RS)",
   "country_code": "BR"
@@ -1993,8 +1993,8 @@
   "id": 199,
   "timezone": "America/Scoresbysund",
   "status": "C",
-  "offset": -60,
-  "offset_dst": 0,
+  "offset": -120,
+  "offset_dst": -60,
   "link": "",
   "notes": "Scoresbysund/Ittoqqortoormiit",
   "country_code": "GL"
@@ -2025,7 +2025,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "BL"
  },
@@ -2033,10 +2033,10 @@
   "id": 203,
   "timezone": "America/St_Johns",
   "status": "C",
-  "offset": -150,
-  "offset_dst": -90,
+  "offset": -210,
+  "offset_dst": -150,
   "link": "",
-  "notes": "Newfoundland; Labrador (southeast)",
+  "notes": "Newfoundland, Labrador (SE)",
   "country_code": "CA"
  },
  {
@@ -2045,7 +2045,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "KN"
  },
@@ -2055,7 +2055,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "LC"
  },
@@ -2065,7 +2065,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "VI"
  },
@@ -2075,7 +2075,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "VC"
  },
@@ -2112,10 +2112,10 @@
  {
   "id": 211,
   "timezone": "America/Thunder_Bay",
-  "status": "C",
+  "status": "A",
   "offset": -300,
   "offset_dst": -240,
-  "link": "",
+  "link": "America/Toronto",
   "notes": "Eastern - ON (Thunder Bay)",
   "country_code": "CA"
  },
@@ -2126,7 +2126,7 @@
   "offset": -480,
   "offset_dst": -420,
   "link": "",
-  "notes": "Pacific Time US - Baja California",
+  "notes": "Baja California",
   "country_code": "MX"
  },
  {
@@ -2136,7 +2136,7 @@
   "offset": -300,
   "offset_dst": -240,
   "link": "",
-  "notes": "Eastern - ON, QC (most areas)",
+  "notes": "Eastern - ON & QC (most areas)",
   "country_code": "CA"
  },
  {
@@ -2145,7 +2145,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "VG"
  },
@@ -2156,7 +2156,7 @@
   "offset": -480,
   "offset_dst": -420,
   "link": "",
-  "notes": "Pacific - BC (most areas)",
+  "notes": "MST - BC (most areas)",
   "country_code": "CA"
  },
  {
@@ -2165,7 +2165,7 @@
   "status": "A",
   "offset": -240,
   "offset_dst": -240,
-  "link": "America/Port_of_Spain",
+  "link": "America/Puerto_Rico",
   "notes": "",
   "country_code": "TT"
  },
@@ -2173,10 +2173,10 @@
   "id": 217,
   "timezone": "America/Whitehorse",
   "status": "C",
-  "offset": -480,
+  "offset": -420,
   "offset_dst": -420,
   "link": "",
-  "notes": "Pacific - Yukon (south)",
+  "notes": "MST - Yukon (east)",
   "country_code": "CA"
  },
  {
@@ -2186,7 +2186,7 @@
   "offset": -360,
   "offset_dst": -300,
   "link": "",
-  "notes": "Central - ON (west); Manitoba",
+  "notes": "Central - ON (west), Manitoba",
   "country_code": "CA"
  },
  {
@@ -2202,10 +2202,10 @@
  {
   "id": 220,
   "timezone": "America/Yellowknife",
-  "status": "C",
+  "status": "A",
   "offset": -420,
   "offset_dst": -360,
-  "link": "",
+  "link": "America/Edmonton",
   "notes": "Mountain - NT (central)",
   "country_code": "CA"
  },
@@ -2213,8 +2213,8 @@
   "id": 221,
   "timezone": "Antarctica/Casey",
   "status": "C",
-  "offset": 660,
-  "offset_dst": 660,
+  "offset": 480,
+  "offset_dst": 480,
   "link": "",
   "notes": "Casey",
   "country_code": "AQ"
@@ -2232,10 +2232,10 @@
  {
   "id": 223,
   "timezone": "Antarctica/DumontDUrville",
-  "status": "C",
+  "status": "A",
   "offset": 600,
   "offset_dst": 600,
-  "link": "",
+  "link": "Pacific/Port_Moresby",
   "notes": "Dumont-d'Urville",
   "country_code": "AQ"
  },
@@ -2243,7 +2243,7 @@
   "id": 224,
   "timezone": "Antarctica/Macquarie",
   "status": "C",
-  "offset": 660,
+  "offset": 600,
   "offset_dst": 660,
   "link": "",
   "notes": "Macquarie Island",
@@ -2302,10 +2302,10 @@
  {
   "id": 230,
   "timezone": "Antarctica/Syowa",
-  "status": "C",
+  "status": "A",
   "offset": 180,
   "offset_dst": 180,
-  "link": "",
+  "link": "Asia/Riyadh",
   "notes": "Syowa",
   "country_code": "AQ"
  },
@@ -2323,8 +2323,8 @@
   "id": 232,
   "timezone": "Antarctica/Vostok",
   "status": "C",
-  "offset": 360,
-  "offset_dst": 360,
+  "offset": 300,
+  "offset_dst": 300,
   "link": "",
   "notes": "Vostok",
   "country_code": "AQ"
@@ -2335,7 +2335,7 @@
   "status": "A",
   "offset": 60,
   "offset_dst": 120,
-  "link": "Europe/Oslo",
+  "link": "Europe/Berlin",
   "notes": "",
   "country_code": "SJ"
  },
@@ -2353,17 +2353,17 @@
   "id": 235,
   "timezone": "Asia/Almaty",
   "status": "C",
-  "offset": 360,
-  "offset_dst": 360,
+  "offset": 300,
+  "offset_dst": 300,
   "link": "",
-  "notes": "Kazakhstan (most areas)",
+  "notes": "most of Kazakhstan",
   "country_code": "KZ"
  },
  {
   "id": 236,
   "timezone": "Asia/Amman",
   "status": "C",
-  "offset": 120,
+  "offset": 180,
   "offset_dst": 180,
   "link": "",
   "notes": "",
@@ -2502,10 +2502,10 @@
  {
   "id": 250,
   "timezone": "Asia/Brunei",
-  "status": "C",
+  "status": "A",
   "offset": 480,
   "offset_dst": 480,
-  "link": "",
+  "link": "Asia/Kuching",
   "notes": "",
   "country_code": "BN"
  },
@@ -2532,10 +2532,10 @@
  {
   "id": 253,
   "timezone": "Asia/Choibalsan",
-  "status": "C",
+  "status": "A",
   "offset": 480,
   "offset_dst": 480,
-  "link": "",
+  "link": "Asia/Ulaanbaatar",
   "notes": "Dornod, Sukhbaatar",
   "country_code": "MN"
  },
@@ -2583,7 +2583,7 @@
   "id": 258,
   "timezone": "Asia/Damascus",
   "status": "C",
-  "offset": 120,
+  "offset": 180,
   "offset_dst": 180,
   "link": "",
   "notes": "",
@@ -2634,7 +2634,7 @@
   "timezone": "Asia/Famagusta",
   "status": "C",
   "offset": 120,
-  "offset_dst": 120,
+  "offset_dst": 180,
   "link": "",
   "notes": "Northern Cyprus",
   "country_code": "CY"
@@ -2696,7 +2696,7 @@
   "offset": 420,
   "offset_dst": 420,
   "link": "",
-  "notes": "Bayan-Olgiy, Govi-Altai, Hovd, Uvs, Zavkhan",
+  "notes": "Bayan-Olgii, Hovd, Uvs",
   "country_code": "MN"
  },
  {
@@ -2736,7 +2736,7 @@
   "offset": 540,
   "offset_dst": 540,
   "link": "",
-  "notes": "New Guinea (West Papua / Irian Jaya); Malukus/Moluccas",
+  "notes": "New Guinea (West Papua / Irian Jaya), Malukus/Moluccas",
   "country_code": "ID"
  },
  {
@@ -2842,10 +2842,10 @@
  {
   "id": 284,
   "timezone": "Asia/Kuala_Lumpur",
-  "status": "C",
+  "status": "A",
   "offset": 480,
   "offset_dst": 480,
-  "link": "",
+  "link": "Asia/Singapore",
   "notes": "Malaysia (peninsula)",
   "country_code": "MY"
  },
@@ -2906,7 +2906,7 @@
   "offset": 480,
   "offset_dst": 480,
   "link": "",
-  "notes": "Borneo (east, south); Sulawesi/Celebes, Bali, Nusa Tengarra; Timor (west)",
+  "notes": "Borneo (east, south), Sulawesi/Celebes, Bali, Nusa Tengarra, Timor (west)",
   "country_code": "ID"
  },
  {
@@ -3106,7 +3106,7 @@
   "offset": 660,
   "offset_dst": 660,
   "link": "",
-  "notes": "MSK+08 - Sakha (E); North Kuril Is",
+  "notes": "MSK+08 - Sakha (E), N Kuril Is",
   "country_code": "RU"
  },
  {
@@ -3144,7 +3144,7 @@
   "timezone": "Asia/Tehran",
   "status": "C",
   "offset": 210,
-  "offset_dst": 270,
+  "offset_dst": 210,
   "link": "",
   "notes": "",
   "country_code": "IR"
@@ -3216,7 +3216,7 @@
   "offset": 480,
   "offset_dst": 480,
   "link": "",
-  "notes": "Mongolia (most areas)",
+  "notes": "most of Mongolia",
   "country_code": "MN"
  },
  {
@@ -3235,7 +3235,7 @@
   "status": "C",
   "offset": 360,
   "offset_dst": 360,
-  "link": "Asia/Urumqi",
+  "link": "",
   "notes": "Xinjiang Time",
   "country_code": "CN"
  },
@@ -3375,7 +3375,7 @@
   "status": "A",
   "offset": 60,
   "offset_dst": 120,
-  "link": "Europe/Oslo",
+  "link": "Europe/Berlin",
   "notes": "",
   "country_code": "NO"
  },
@@ -3392,10 +3392,10 @@
  {
   "id": 339,
   "timezone": "Atlantic/Reykjavik",
-  "status": "C",
+  "status": "A",
   "offset": 0,
   "offset_dst": 0,
-  "link": "",
+  "link": "Africa/Abidjan",
   "notes": "",
   "country_code": "IS"
  },
@@ -3472,10 +3472,10 @@
  {
   "id": 347,
   "timezone": "Australia/Currie",
-  "status": "C",
+  "status": "A",
   "offset": 600,
   "offset_dst": 660,
-  "link": "",
+  "link": "Australia/Hobart",
   "notes": "Tasmania (King Island)",
   "country_code": "AU"
  },
@@ -3506,7 +3506,7 @@
   "offset": 600,
   "offset_dst": 660,
   "link": "",
-  "notes": "Tasmania (most areas)",
+  "notes": "Tasmania",
   "country_code": "AU"
  },
  {
@@ -3572,10 +3572,10 @@
  {
   "id": 357,
   "timezone": "Europe/Amsterdam",
-  "status": "C",
+  "status": "A",
   "offset": 60,
   "offset_dst": 120,
-  "link": "",
+  "link": "Europe/Brussels",
   "notes": "",
   "country_code": "NL"
  },
@@ -3636,7 +3636,7 @@
   "offset": 60,
   "offset_dst": 120,
   "link": "",
-  "notes": "Germany (most areas)",
+  "notes": "most of Germany",
   "country_code": "DE"
  },
  {
@@ -3686,7 +3686,7 @@
   "offset": 60,
   "offset_dst": 120,
   "link": "Europe/Zurich",
-  "notes": "Büsingen am Hochrhein",
+  "notes": "Busingen",
   "country_code": "DE"
  },
  {
@@ -3702,10 +3702,10 @@
  {
   "id": 370,
   "timezone": "Europe/Copenhagen",
-  "status": "C",
+  "status": "A",
   "offset": 60,
   "offset_dst": 120,
-  "link": "",
+  "link": "Europe/Berlin",
   "notes": "",
   "country_code": "DK"
  },
@@ -3713,8 +3713,8 @@
   "id": 371,
   "timezone": "Europe/Dublin",
   "status": "C",
-  "offset": 0,
-  "offset_dst": 60,
+  "offset": 60,
+  "offset_dst": 0,
   "link": "",
   "notes": "",
   "country_code": "IE"
@@ -3786,16 +3786,16 @@
   "offset": 120,
   "offset_dst": 120,
   "link": "",
-  "notes": "MSK−01 - Kaliningrad",
+  "notes": "MSK-01 - Kaliningrad",
   "country_code": "RU"
  },
  {
   "id": 379,
   "timezone": "Europe/Kiev",
-  "status": "C",
+  "status": "A",
   "offset": 120,
   "offset_dst": 180,
-  "link": "",
+  "link": "Europe/Kyiv",
   "notes": "Ukraine (most areas)",
   "country_code": "UA"
  },
@@ -3842,10 +3842,10 @@
  {
   "id": 384,
   "timezone": "Europe/Luxembourg",
-  "status": "C",
+  "status": "A",
   "offset": 60,
   "offset_dst": 120,
-  "link": "",
+  "link": "Europe/Brussels",
   "notes": "",
   "country_code": "LU"
  },
@@ -3892,10 +3892,10 @@
  {
   "id": 389,
   "timezone": "Europe/Monaco",
-  "status": "C",
+  "status": "A",
   "offset": 60,
   "offset_dst": 120,
-  "link": "",
+  "link": "Europe/Paris",
   "notes": "",
   "country_code": "MC"
  },
@@ -3916,16 +3916,16 @@
   "offset": 120,
   "offset_dst": 180,
   "link": "",
-  "notes": "Cyprus (most areas)",
+  "notes": "most of Cyprus",
   "country_code": "CY"
  },
  {
   "id": 392,
   "timezone": "Europe/Oslo",
-  "status": "C",
+  "status": "A",
   "offset": 60,
   "offset_dst": 120,
-  "link": "",
+  "link": "Europe/Berlin",
   "notes": "",
   "country_code": "NO"
  },
@@ -4052,10 +4052,10 @@
  {
   "id": 405,
   "timezone": "Europe/Stockholm",
-  "status": "C",
+  "status": "A",
   "offset": 60,
   "offset_dst": 120,
-  "link": "",
+  "link": "Europe/Berlin",
   "notes": "",
   "country_code": "SE"
  },
@@ -4102,10 +4102,10 @@
  {
   "id": 410,
   "timezone": "Europe/Uzhgorod",
-  "status": "C",
+  "status": "A",
   "offset": 120,
   "offset_dst": 180,
-  "link": "",
+  "link": "Europe/Kyiv",
   "notes": "Ruthenia",
   "country_code": "UA"
  },
@@ -4153,18 +4153,18 @@
   "id": 415,
   "timezone": "Europe/Volgograd",
   "status": "C",
-  "offset": 240,
-  "offset_dst": 240,
+  "offset": 180,
+  "offset_dst": 180,
   "link": "",
-  "notes": "MSK+01 - Volgograd",
+  "notes": "MSK+00 - Volgograd",
   "country_code": "RU"
  },
  {
   "id": 416,
   "timezone": "Europe/Warsaw",
   "status": "C",
-  "offset": 120,
-  "offset_dst": 180,
+  "offset": 60,
+  "offset_dst": 120,
   "link": "",
   "notes": "",
   "country_code": "PL"
@@ -4182,10 +4182,10 @@
  {
   "id": 418,
   "timezone": "Europe/Zaporozhye",
-  "status": "C",
+  "status": "A",
   "offset": 120,
   "offset_dst": 180,
-  "link": "",
+  "link": "Europe/Kyiv",
   "notes": "Zaporozh'ye/Zaporizhia; Lugansk/Luhansk (east)",
   "country_code": "UA"
  },
@@ -4222,20 +4222,20 @@
  {
   "id": 422,
   "timezone": "Indian/Christmas",
-  "status": "C",
+  "status": "A",
   "offset": 420,
   "offset_dst": 420,
-  "link": "",
+  "link": "Asia/Bangkok",
   "notes": "",
   "country_code": "CX"
  },
  {
   "id": 423,
   "timezone": "Indian/Cocos",
-  "status": "C",
+  "status": "A",
   "offset": 390,
   "offset_dst": 390,
-  "link": "",
+  "link": "Asia/Yangon",
   "notes": "",
   "country_code": "CC"
  },
@@ -4252,20 +4252,20 @@
  {
   "id": 425,
   "timezone": "Indian/Kerguelen",
-  "status": "C",
+  "status": "A",
   "offset": 300,
   "offset_dst": 300,
-  "link": "",
+  "link": "Indian/Maldives",
   "notes": "",
   "country_code": "TF"
  },
  {
   "id": 426,
   "timezone": "Indian/Mahe",
-  "status": "C",
+  "status": "A",
   "offset": 240,
   "offset_dst": 240,
-  "link": "",
+  "link": "Asia/Dubai",
   "notes": "",
   "country_code": "SC"
  },
@@ -4302,10 +4302,10 @@
  {
   "id": 430,
   "timezone": "Indian/Reunion",
-  "status": "C",
+  "status": "A",
   "offset": 240,
   "offset_dst": 240,
-  "link": "",
+  "link": "Asia/Dubai",
   "notes": "",
   "country_code": "RE"
  },
@@ -4314,7 +4314,7 @@
   "timezone": "Pacific/Apia",
   "status": "C",
   "offset": 780,
-  "offset_dst": 840,
+  "offset_dst": 780,
   "link": "",
   "notes": "",
   "country_code": "WS"
@@ -4326,7 +4326,7 @@
   "offset": 720,
   "offset_dst": 780,
   "link": "",
-  "notes": "New Zealand (most areas)",
+  "notes": "most of New Zealand",
   "country_code": "NZ"
  },
  {
@@ -4352,10 +4352,10 @@
  {
   "id": 435,
   "timezone": "Pacific/Chuuk",
-  "status": "C",
+  "status": "A",
   "offset": 600,
   "offset_dst": 600,
-  "link": "",
+  "link": "Pacific/Port_Moresby",
   "notes": "Chuuk/Truk, Yap",
   "country_code": "FM"
  },
@@ -4382,10 +4382,10 @@
  {
   "id": 438,
   "timezone": "Pacific/Enderbury",
-  "status": "C",
+  "status": "A",
   "offset": 780,
   "offset_dst": 780,
-  "link": "",
+  "link": "Pacific/Kanton",
   "notes": "Phoenix Islands",
   "country_code": "KI"
  },
@@ -4404,7 +4404,7 @@
   "timezone": "Pacific/Fiji",
   "status": "C",
   "offset": 720,
-  "offset_dst": 780,
+  "offset_dst": 720,
   "link": "",
   "notes": "",
   "country_code": "FJ"
@@ -4412,10 +4412,10 @@
  {
   "id": 441,
   "timezone": "Pacific/Funafuti",
-  "status": "C",
+  "status": "A",
   "offset": 720,
   "offset_dst": 720,
-  "link": "",
+  "link": "Pacific/Tarawa",
   "notes": "",
   "country_code": "TV"
  },
@@ -4512,19 +4512,19 @@
  {
   "id": 451,
   "timezone": "Pacific/Majuro",
-  "status": "C",
+  "status": "A",
   "offset": 720,
   "offset_dst": 720,
-  "link": "",
-  "notes": "Marshall Islands (most areas)",
+  "link": "Pacific/Tarawa",
+  "notes": "most of Marshall Islands",
   "country_code": "MH"
  },
  {
   "id": 452,
   "timezone": "Pacific/Marquesas",
   "status": "C",
-  "offset": -510,
-  "offset_dst": -510,
+  "offset": -570,
+  "offset_dst": -570,
   "link": "",
   "notes": "Marquesas Islands",
   "country_code": "PF"
@@ -4564,7 +4564,7 @@
   "timezone": "Pacific/Norfolk",
   "status": "C",
   "offset": 660,
-  "offset_dst": 660,
+  "offset_dst": 720,
   "link": "",
   "notes": "",
   "country_code": "NF"
@@ -4612,10 +4612,10 @@
  {
   "id": 461,
   "timezone": "Pacific/Pohnpei",
-  "status": "C",
+  "status": "A",
   "offset": 660,
   "offset_dst": 660,
-  "link": "",
+  "link": "Pacific/Guadalcanal",
   "notes": "Pohnpei/Ponape",
   "country_code": "FM"
  },
@@ -4625,7 +4625,7 @@
   "status": "A",
   "offset": 660,
   "offset_dst": 660,
-  "link": "Pacific/Pohnpei",
+  "link": "Pacific/Guadalcanal",
   "notes": "",
   "country_code": "FM"
  },
@@ -4636,7 +4636,7 @@
   "offset": 600,
   "offset_dst": 600,
   "link": "",
-  "notes": "Papua New Guinea (most areas)",
+  "notes": "most of Papua New Guinea",
   "country_code": "PG"
  },
  {
@@ -4694,7 +4694,7 @@
   "timezone": "Pacific/Tongatapu",
   "status": "C",
   "offset": 780,
-  "offset_dst": 840,
+  "offset_dst": 780,
   "link": "",
   "notes": "",
   "country_code": "TO"
@@ -4705,27 +4705,27 @@
   "status": "A",
   "offset": 600,
   "offset_dst": 600,
-  "link": "Pacific/Chuuk",
+  "link": "Pacific/Port_Moresby",
   "notes": "",
   "country_code": "FM"
  },
  {
   "id": 471,
   "timezone": "Pacific/Wake",
-  "status": "C",
+  "status": "A",
   "offset": 720,
   "offset_dst": 720,
-  "link": "",
+  "link": "Pacific/Tarawa",
   "notes": "Wake Island",
   "country_code": "UM"
  },
  {
   "id": 472,
   "timezone": "Pacific/Wallis",
-  "status": "C",
+  "status": "A",
   "offset": 720,
   "offset_dst": 720,
-  "link": "",
+  "link": "Pacific/Tarawa",
   "notes": "",
   "country_code": "WF"
  },
@@ -4735,8 +4735,1248 @@
   "status": "A",
   "offset": 600,
   "offset_dst": 600,
-  "link": "Pacific/Chuuk",
+  "link": "Pacific/Port_Moresby",
   "notes": "",
   "country_code": "FM"
+ },
+ {
+  "id": 474,
+  "timezone": "Africa/Asmera",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Africa/Nairobi",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 475,
+  "timezone": "America/Ciudad_Juarez",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "Chihuahua (US border - west)",
+  "country_code": "MX"
+ },
+ {
+  "id": 476,
+  "timezone": "America/Coyhaique",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "Aysen Region",
+  "country_code": "CL"
+ },
+ {
+  "id": 477,
+  "timezone": "America/Nuuk",
+  "status": "C",
+  "offset": -120,
+  "offset_dst": -60,
+  "link": "",
+  "notes": "most of Greenland",
+  "country_code": "GL"
+ },
+ {
+  "id": 478,
+  "timezone": "Asia/Qostanay",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "Qostanay/Kostanay/Kustanay",
+  "country_code": "KZ"
+ },
+ {
+  "id": 479,
+  "timezone": "Australia/ACT",
+  "status": "A",
+  "offset": 600,
+  "offset_dst": 660,
+  "link": "Australia/Sydney",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 480,
+  "timezone": "Australia/LHI",
+  "status": "A",
+  "offset": 630,
+  "offset_dst": 660,
+  "link": "Australia/Lord_Howe",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 481,
+  "timezone": "Australia/NSW",
+  "status": "A",
+  "offset": 600,
+  "offset_dst": 660,
+  "link": "Australia/Sydney",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 482,
+  "timezone": "Australia/North",
+  "status": "A",
+  "offset": 570,
+  "offset_dst": 570,
+  "link": "Australia/Darwin",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 483,
+  "timezone": "Australia/Queensland",
+  "status": "A",
+  "offset": 600,
+  "offset_dst": 600,
+  "link": "Australia/Brisbane",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 484,
+  "timezone": "Australia/South",
+  "status": "A",
+  "offset": 570,
+  "offset_dst": 630,
+  "link": "Australia/Adelaide",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 485,
+  "timezone": "Australia/Tasmania",
+  "status": "A",
+  "offset": 600,
+  "offset_dst": 660,
+  "link": "Australia/Hobart",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 486,
+  "timezone": "Australia/Victoria",
+  "status": "A",
+  "offset": 600,
+  "offset_dst": 660,
+  "link": "Australia/Melbourne",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 487,
+  "timezone": "Australia/West",
+  "status": "A",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "Australia/Perth",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 488,
+  "timezone": "Brazil/Acre",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "America/Rio_Branco",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 489,
+  "timezone": "Brazil/DeNoronha",
+  "status": "A",
+  "offset": -120,
+  "offset_dst": -120,
+  "link": "America/Noronha",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 490,
+  "timezone": "Brazil/East",
+  "status": "A",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "America/Sao_Paulo",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 491,
+  "timezone": "Brazil/West",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "America/Manaus",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 492,
+  "timezone": "CET",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Brussels",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 493,
+  "timezone": "CST6CDT",
+  "status": "A",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "America/Chicago",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 494,
+  "timezone": "Canada/Atlantic",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -180,
+  "link": "America/Halifax",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 495,
+  "timezone": "Canada/Central",
+  "status": "A",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "America/Winnipeg",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 496,
+  "timezone": "Canada/Eastern",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "America/Toronto",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 497,
+  "timezone": "Canada/Mountain",
+  "status": "A",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "America/Edmonton",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 498,
+  "timezone": "Canada/Newfoundland",
+  "status": "A",
+  "offset": -210,
+  "offset_dst": -150,
+  "link": "America/St_Johns",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 499,
+  "timezone": "Canada/Pacific",
+  "status": "A",
+  "offset": -480,
+  "offset_dst": -420,
+  "link": "America/Vancouver",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 500,
+  "timezone": "Canada/Saskatchewan",
+  "status": "A",
+  "offset": -360,
+  "offset_dst": -360,
+  "link": "America/Regina",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 501,
+  "timezone": "Canada/Yukon",
+  "status": "A",
+  "offset": -420,
+  "offset_dst": -420,
+  "link": "America/Whitehorse",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 502,
+  "timezone": "Chile/Continental",
+  "status": "A",
+  "offset": -240,
+  "offset_dst": -180,
+  "link": "America/Santiago",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 503,
+  "timezone": "Chile/EasterIsland",
+  "status": "A",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "Pacific/Easter",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 504,
+  "timezone": "Cuba",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "America/Havana",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 505,
+  "timezone": "EET",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "Europe/Athens",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 506,
+  "timezone": "EST",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "America/Panama",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 507,
+  "timezone": "EST5EDT",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "America/New_York",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 508,
+  "timezone": "Egypt",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "Africa/Cairo",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 509,
+  "timezone": "Eire",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 0,
+  "link": "Europe/Dublin",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 510,
+  "timezone": "Etc/GMT",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 511,
+  "timezone": "Etc/GMT+0",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/GMT",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 512,
+  "timezone": "Etc/GMT+1",
+  "status": "C",
+  "offset": -60,
+  "offset_dst": -60,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 513,
+  "timezone": "Etc/GMT+10",
+  "status": "C",
+  "offset": -600,
+  "offset_dst": -600,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 514,
+  "timezone": "Etc/GMT+11",
+  "status": "C",
+  "offset": -660,
+  "offset_dst": -660,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 515,
+  "timezone": "Etc/GMT+12",
+  "status": "C",
+  "offset": -720,
+  "offset_dst": -720,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 516,
+  "timezone": "Etc/GMT+2",
+  "status": "C",
+  "offset": -120,
+  "offset_dst": -120,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 517,
+  "timezone": "Etc/GMT+3",
+  "status": "C",
+  "offset": -180,
+  "offset_dst": -180,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 518,
+  "timezone": "Etc/GMT+4",
+  "status": "C",
+  "offset": -240,
+  "offset_dst": -240,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 519,
+  "timezone": "Etc/GMT+5",
+  "status": "C",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 520,
+  "timezone": "Etc/GMT+6",
+  "status": "C",
+  "offset": -360,
+  "offset_dst": -360,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 521,
+  "timezone": "Etc/GMT+7",
+  "status": "C",
+  "offset": -420,
+  "offset_dst": -420,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 522,
+  "timezone": "Etc/GMT+8",
+  "status": "C",
+  "offset": -480,
+  "offset_dst": -480,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 523,
+  "timezone": "Etc/GMT+9",
+  "status": "C",
+  "offset": -540,
+  "offset_dst": -540,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 524,
+  "timezone": "Etc/GMT-0",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/GMT",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 525,
+  "timezone": "Etc/GMT-1",
+  "status": "C",
+  "offset": 60,
+  "offset_dst": 60,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 526,
+  "timezone": "Etc/GMT-10",
+  "status": "C",
+  "offset": 600,
+  "offset_dst": 600,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 527,
+  "timezone": "Etc/GMT-11",
+  "status": "C",
+  "offset": 660,
+  "offset_dst": 660,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 528,
+  "timezone": "Etc/GMT-12",
+  "status": "C",
+  "offset": 720,
+  "offset_dst": 720,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 529,
+  "timezone": "Etc/GMT-13",
+  "status": "C",
+  "offset": 780,
+  "offset_dst": 780,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 530,
+  "timezone": "Etc/GMT-14",
+  "status": "C",
+  "offset": 840,
+  "offset_dst": 840,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 531,
+  "timezone": "Etc/GMT-2",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 532,
+  "timezone": "Etc/GMT-3",
+  "status": "C",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 533,
+  "timezone": "Etc/GMT-4",
+  "status": "C",
+  "offset": 240,
+  "offset_dst": 240,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 534,
+  "timezone": "Etc/GMT-5",
+  "status": "C",
+  "offset": 300,
+  "offset_dst": 300,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 535,
+  "timezone": "Etc/GMT-6",
+  "status": "C",
+  "offset": 360,
+  "offset_dst": 360,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 536,
+  "timezone": "Etc/GMT-7",
+  "status": "C",
+  "offset": 420,
+  "offset_dst": 420,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 537,
+  "timezone": "Etc/GMT-8",
+  "status": "C",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 538,
+  "timezone": "Etc/GMT-9",
+  "status": "C",
+  "offset": 540,
+  "offset_dst": 540,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 539,
+  "timezone": "Etc/GMT0",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/GMT",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 540,
+  "timezone": "Etc/Greenwich",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/GMT",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 541,
+  "timezone": "Etc/UCT",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/UTC",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 542,
+  "timezone": "Etc/Universal",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/UTC",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 543,
+  "timezone": "Etc/Zulu",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/UTC",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 544,
+  "timezone": "Europe/Kyiv",
+  "status": "C",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "",
+  "notes": "most of Ukraine",
+  "country_code": "UA"
+ },
+ {
+  "id": 545,
+  "timezone": "Europe/Nicosia",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "Asia/Nicosia",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 546,
+  "timezone": "Factory",
+  "status": "C",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 547,
+  "timezone": "GB",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "Europe/London",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 548,
+  "timezone": "GB-Eire",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "Europe/London",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 549,
+  "timezone": "GMT",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/GMT",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 550,
+  "timezone": "GMT+0",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/GMT",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 551,
+  "timezone": "GMT-0",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/GMT",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 552,
+  "timezone": "GMT0",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/GMT",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 553,
+  "timezone": "Greenwich",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/GMT",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 554,
+  "timezone": "HST",
+  "status": "A",
+  "offset": -600,
+  "offset_dst": -600,
+  "link": "Pacific/Honolulu",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 555,
+  "timezone": "Hongkong",
+  "status": "A",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "Asia/Hong_Kong",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 556,
+  "timezone": "Iceland",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Africa/Abidjan",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 557,
+  "timezone": "Iran",
+  "status": "A",
+  "offset": 210,
+  "offset_dst": 210,
+  "link": "Asia/Tehran",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 558,
+  "timezone": "Israel",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 180,
+  "link": "Asia/Jerusalem",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 559,
+  "timezone": "Jamaica",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -300,
+  "link": "America/Jamaica",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 560,
+  "timezone": "Japan",
+  "status": "A",
+  "offset": 540,
+  "offset_dst": 540,
+  "link": "Asia/Tokyo",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 561,
+  "timezone": "Kwajalein",
+  "status": "A",
+  "offset": 720,
+  "offset_dst": 720,
+  "link": "Pacific/Kwajalein",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 562,
+  "timezone": "Libya",
+  "status": "A",
+  "offset": 120,
+  "offset_dst": 120,
+  "link": "Africa/Tripoli",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 563,
+  "timezone": "MET",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Brussels",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 564,
+  "timezone": "MST",
+  "status": "A",
+  "offset": -420,
+  "offset_dst": -420,
+  "link": "America/Phoenix",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 565,
+  "timezone": "MST7MDT",
+  "status": "A",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "America/Denver",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 566,
+  "timezone": "Mexico/BajaNorte",
+  "status": "A",
+  "offset": -480,
+  "offset_dst": -420,
+  "link": "America/Tijuana",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 567,
+  "timezone": "Mexico/BajaSur",
+  "status": "A",
+  "offset": -420,
+  "offset_dst": -420,
+  "link": "America/Mazatlan",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 568,
+  "timezone": "Mexico/General",
+  "status": "A",
+  "offset": -360,
+  "offset_dst": -360,
+  "link": "America/Mexico_City",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 569,
+  "timezone": "NZ",
+  "status": "A",
+  "offset": 720,
+  "offset_dst": 780,
+  "link": "Pacific/Auckland",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 570,
+  "timezone": "NZ-CHAT",
+  "status": "A",
+  "offset": 765,
+  "offset_dst": 825,
+  "link": "Pacific/Chatham",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 571,
+  "timezone": "Navajo",
+  "status": "A",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "America/Denver",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 572,
+  "timezone": "PRC",
+  "status": "A",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "Asia/Shanghai",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 573,
+  "timezone": "PST8PDT",
+  "status": "A",
+  "offset": -480,
+  "offset_dst": -420,
+  "link": "America/Los_Angeles",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 574,
+  "timezone": "Pacific/Kanton",
+  "status": "C",
+  "offset": 780,
+  "offset_dst": 780,
+  "link": "",
+  "notes": "Phoenix Islands",
+  "country_code": "KI"
+ },
+ {
+  "id": 575,
+  "timezone": "Poland",
+  "status": "A",
+  "offset": 60,
+  "offset_dst": 120,
+  "link": "Europe/Warsaw",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 576,
+  "timezone": "Portugal",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "Europe/Lisbon",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 577,
+  "timezone": "ROC",
+  "status": "A",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "Asia/Taipei",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 578,
+  "timezone": "ROK",
+  "status": "A",
+  "offset": 540,
+  "offset_dst": 540,
+  "link": "Asia/Seoul",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 579,
+  "timezone": "Singapore",
+  "status": "A",
+  "offset": 480,
+  "offset_dst": 480,
+  "link": "Asia/Singapore",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 580,
+  "timezone": "Turkey",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Europe/Istanbul",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 581,
+  "timezone": "UCT",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/UTC",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 582,
+  "timezone": "US/Alaska",
+  "status": "A",
+  "offset": -540,
+  "offset_dst": -480,
+  "link": "America/Anchorage",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 583,
+  "timezone": "US/Aleutian",
+  "status": "A",
+  "offset": -600,
+  "offset_dst": -540,
+  "link": "America/Adak",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 584,
+  "timezone": "US/Arizona",
+  "status": "A",
+  "offset": -420,
+  "offset_dst": -420,
+  "link": "America/Phoenix",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 585,
+  "timezone": "US/Central",
+  "status": "A",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "America/Chicago",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 586,
+  "timezone": "US/East-Indiana",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "America/Indiana/Indianapolis",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 587,
+  "timezone": "US/Eastern",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "America/New_York",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 588,
+  "timezone": "US/Hawaii",
+  "status": "A",
+  "offset": -600,
+  "offset_dst": -600,
+  "link": "Pacific/Honolulu",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 589,
+  "timezone": "US/Indiana-Starke",
+  "status": "A",
+  "offset": -360,
+  "offset_dst": -300,
+  "link": "America/Indiana/Knox",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 590,
+  "timezone": "US/Michigan",
+  "status": "A",
+  "offset": -300,
+  "offset_dst": -240,
+  "link": "America/Detroit",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 591,
+  "timezone": "US/Mountain",
+  "status": "A",
+  "offset": -420,
+  "offset_dst": -360,
+  "link": "America/Denver",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 592,
+  "timezone": "US/Pacific",
+  "status": "A",
+  "offset": -480,
+  "offset_dst": -420,
+  "link": "America/Los_Angeles",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 593,
+  "timezone": "US/Samoa",
+  "status": "A",
+  "offset": -660,
+  "offset_dst": -660,
+  "link": "Pacific/Pago_Pago",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 594,
+  "timezone": "Universal",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/UTC",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 595,
+  "timezone": "W-SU",
+  "status": "A",
+  "offset": 180,
+  "offset_dst": 180,
+  "link": "Europe/Moscow",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 596,
+  "timezone": "WET",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 60,
+  "link": "Europe/Lisbon",
+  "notes": "",
+  "country_code": ""
+ },
+ {
+  "id": 597,
+  "timezone": "Zulu",
+  "status": "A",
+  "offset": 0,
+  "offset_dst": 0,
+  "link": "Etc/UTC",
+  "notes": "",
+  "country_code": ""
  }
 ]
