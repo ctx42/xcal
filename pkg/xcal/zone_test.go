@@ -18,6 +18,31 @@ func Test_Zone_Check(t *testing.T) {
 		assert.NoError(t, err)
 	})
 
+	t.Run("ok - alias with link", func(t *testing.T) {
+		// --- Given ---
+		zon := validZone()
+		zon.Status = Alias
+		zon.Link = "Europe/Berlin"
+
+		// --- When ---
+		err := zon.Check()
+
+		// --- Then ---
+		assert.NoError(t, err)
+	})
+
+	t.Run("ok - deprecated", func(t *testing.T) {
+		// --- Given ---
+		zon := validZone()
+		zon.Status = Deprecated
+
+		// --- When ---
+		err := zon.Check()
+
+		// --- Then ---
+		assert.NoError(t, err)
+	})
+
 	t.Run("error - negative ID", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
