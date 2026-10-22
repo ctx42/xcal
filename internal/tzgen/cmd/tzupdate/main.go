@@ -1,6 +1,8 @@
 // Command tzupdate refreshes the xcal zone registry from the IANA tz database
 // release the Go toolchain embeds. Run it from the module root, then run
-// "go generate ./pkg/xcal" to regenerate the zone tables.
+// "go generate ./pkg/xcal" to regenerate the zone tables. With -check it only
+// reports whether the registry holds that release, and fails when it does
+// not.
 package main
 
 import (
@@ -32,6 +34,7 @@ func run(ctx context.Context, args []string, out io.Writer) error {
 	fs.StringVar(&upd.DataDir, "data", "pkg/xcal/data", "registry directory")
 	fs.StringVar(&upd.GoRoot, "goroot", "", "Go root (default: go env GOROOT)")
 	fs.IntVar(&upd.Year, "year", time.Now().Year(), "year of zone offsets")
+	check := fs.Bool("check", false, "fail when the registry is outdated")
 	if err := fs.Parse(args); err != nil {
 		return err
 	}
@@ -41,6 +44,10 @@ func run(ctx context.Context, args []string, out io.Writer) error {
 			return fmt.Errorf("go env GOROOT: %w", err)
 		}
 		upd.GoRoot = strings.TrimSpace(string(root))
+	}
+
+	if *check {
+		return checkRegistry(upd, out)
 	}
 
 	sum, err := upd.Run(ctx)
@@ -58,5 +65,19 @@ func run(ctx context.Context, args []string, out io.Writer) error {
 	}
 	hint := "run \"go generate ./pkg/xcal\" to regenerate the zone tables\n"
 	_, _ = fmt.Fprint(out, hint)
+	return nil
+}
+
+// checkRegistry reports to out that the registry holds the tz database
+// release the Go toolchain embeds, or returns an error saying how to update
+// it.
+func checkRegistry(upd *tzgen.Updater, out io.Writer) error {
+	if err := upd.Check(); err != nil {
+		format := "" +
+			"%w; run \"go run ./internal/tzgen/cmd/tzupdate\" and " +
+			"\"go generate ./pkg/xcal\""
+		return fmt.Errorf(format, err)
+	}
+	_, _ = fmt.Fprintln(out, "zone registry is current")
 	return nil
 }

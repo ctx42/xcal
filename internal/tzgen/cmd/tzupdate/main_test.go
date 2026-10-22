@@ -48,6 +48,46 @@ func Test_run(t *testing.T) {
 	assert.Len(t, 5, zs)
 }
 
+func Test_run_checkCurrent(t *testing.T) {
+	// --- Given ---
+	root := newGoRoot(t)
+	dir := t.TempDir()
+	for _, name := range []string{
+		tzgen.VersionFile,
+		tzgen.LinksFile,
+		tzgen.ZoneTabFile,
+	} {
+		src := filepath.Join(testdata, "tzdata", name)
+		copyFile(t, src, filepath.Join(dir, tzgen.TZDataDir, name))
+	}
+	args := []string{"-check", "-goroot", root, "-data", dir}
+	var out bytes.Buffer
+
+	// --- When ---
+	err := run(t.Context(), args, &out)
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, "zone registry is current\n", out.String())
+}
+
+func Test_run_checkOutdated(t *testing.T) {
+	// --- Given ---
+	args := []string{"-check", "-goroot", newGoRoot(t), "-data", t.TempDir()}
+	var out bytes.Buffer
+
+	// --- When ---
+	err := run(t.Context(), args, &out)
+
+	// --- Then ---
+	want := "" +
+		"zone registry outdated: Go embeds tz database 2026c, the registry " +
+		"has none; run \"go run ./internal/tzgen/cmd/tzupdate\" and " +
+		"\"go generate ./pkg/xcal\""
+	assert.ErrorEqual(t, want, err)
+	assert.Equal(t, "", out.String())
+}
+
 func Test_run_errors_tabular(t *testing.T) {
 	tt := []struct {
 		testN string

@@ -207,6 +207,85 @@ func Test_Updater_Run_missingReleaseFile(t *testing.T) {
 	assert.Equal(t, int32(2), reqs.Load())
 }
 
+func Test_Updater_Check(t *testing.T) {
+	// --- Given ---
+	dir := newDataDir(t)
+	tzd := filepath.Join(dir, TZDataDir)
+	must.Nil(os.MkdirAll(tzd, 0o750))
+	for _, name := range []string{VersionFile, LinksFile, ZoneTabFile} {
+		data := must.Value(os.ReadFile(filepath.Join("testdata/tzdata", name)))
+		must.Nil(os.WriteFile(filepath.Join(tzd, name), data, 0o600))
+	}
+	upd := &Updater{GoRoot: newGoRoot(t), DataDir: dir}
+
+	// --- When ---
+	err := upd.Check()
+
+	// --- Then ---
+	assert.NoError(t, err)
+}
+
+func Test_Updater_Check_outdated_tabular(t *testing.T) {
+	tt := []struct {
+		testN string
+
+		files map[string]string
+		want  string
+	}{
+		{
+			"other release",
+			map[string]string{
+				VersionFile: "2026b\n",
+				LinksFile:   "",
+				ZoneTabFile: "",
+			},
+			"Go embeds tz database 2026c, the registry has 2026b",
+		},
+		{
+			"missing links",
+			map[string]string{VersionFile: "2026c\n", ZoneTabFile: ""},
+			"Go embeds tz database 2026c, the registry has 2026c",
+		},
+		{
+			"no release",
+			nil,
+			"Go embeds tz database 2026c, the registry has none",
+		},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- Given ---
+			dir := t.TempDir()
+			tzd := filepath.Join(dir, TZDataDir)
+			must.Nil(os.MkdirAll(tzd, 0o750))
+			for name, data := range tc.files {
+				pth := filepath.Join(tzd, name)
+				must.Nil(os.WriteFile(pth, []byte(data), 0o600))
+			}
+			upd := &Updater{GoRoot: newGoRoot(t), DataDir: dir}
+
+			// --- When ---
+			err := upd.Check()
+
+			// --- Then ---
+			assert.ErrorIs(t, ErrOutdated, err)
+			assert.ErrorEqual(t, "zone registry outdated: "+tc.want, err)
+		})
+	}
+}
+
+func Test_Updater_Check_noGoRoot(t *testing.T) {
+	// --- Given ---
+	upd := &Updater{GoRoot: t.TempDir(), DataDir: t.TempDir()}
+
+	// --- When ---
+	err := upd.Check()
+
+	// --- Then ---
+	assert.ErrorContain(t, "update.bash: no such file or directory", err)
+}
+
 func Test_haveRelease_tabular(t *testing.T) {
 	all := map[string]string{
 		VersionFile: "2026c\n",

@@ -8,6 +8,7 @@ import (
 	"bytes"
 	"cmp"
 	"encoding/json"
+	"errors"
 	"fmt"
 	goformat "go/format"
 	"maps"
@@ -41,6 +42,10 @@ const (
 
 // ReleaseURL is the IANA tz database release URL; %s is the version.
 const ReleaseURL = "https://data.iana.org/time-zones/releases/tzdata%s.tar.gz"
+
+// ErrOutdated is returned by [Updater.Check] when the registry does not hold
+// the tz database release the Go toolchain embeds.
+var ErrOutdated = errors.New("zone registry outdated")
 
 // GenerateTZ generates a Go source file at dst from the src JSON file, with
 // the given package name. The zones must keep the IDs prev assigns, as

@@ -3,6 +3,7 @@ package tzgen
 import (
 	"cmp"
 	"context"
+	"fmt"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -76,6 +77,25 @@ func (upd *Updater) Run(ctx context.Context) (Summary, error) {
 		return Summary{}, err
 	}
 	return summarize(ver, prev, zs), nil
+}
+
+// Check returns an error wrapping [ErrOutdated] when the tzdata directory
+// does not hold every file of the release the Go toolchain embeds, which
+// [Updater.Run] would fetch.
+func (upd *Updater) Check() error {
+	ver, err := GoTZVersion(upd.GoRoot)
+	if err != nil {
+		return err
+	}
+	dir := filepath.Join(upd.DataDir, TZDataDir)
+	if haveRelease(dir, ver) {
+		return nil
+	}
+	pth := filepath.Join(dir, VersionFile)
+	data, _ := os.ReadFile(pth) //nolint:gosec // Caller-supplied path.
+	have := cmp.Or(strings.TrimSpace(string(data)), "none")
+	format := "%w: Go embeds tz database %s, the registry has %s"
+	return fmt.Errorf(format, ErrOutdated, ver, have)
 }
 
 // haveRelease reports whether dir holds every file [Fetch] extracts from the
