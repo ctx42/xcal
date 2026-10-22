@@ -49,8 +49,7 @@ func (upd *Updater) Run(ctx context.Context) (Summary, error) {
 	}
 
 	dir := filepath.Join(upd.DataDir, TZDataDir)
-	have, _ := os.ReadFile(filepath.Join(dir, VersionFile))
-	if strings.TrimSpace(string(have)) != ver {
+	if !haveRelease(dir, ver) {
 		cli := cmp.Or(upd.Client, http.DefaultClient)
 		url := cmp.Or(upd.URL, ReleaseURL)
 		if err = Fetch(ctx, cli, url, ver, dir); err != nil {
@@ -77,6 +76,21 @@ func (upd *Updater) Run(ctx context.Context) (Summary, error) {
 		return Summary{}, err
 	}
 	return summarize(ver, prev, zs), nil
+}
+
+// haveRelease reports whether dir holds every file [Fetch] extracts from the
+// release ver.
+func haveRelease(dir, ver string) bool {
+	data, err := os.ReadFile(filepath.Join(dir, VersionFile))
+	if err != nil || strings.TrimSpace(string(data)) != ver {
+		return false
+	}
+	for _, name := range []string{LinksFile, ZoneTabFile} {
+		if _, err = os.Stat(filepath.Join(dir, name)); err != nil {
+			return false
+		}
+	}
+	return true
 }
 
 // summarize describes the change from the prev zones to zs.

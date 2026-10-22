@@ -185,6 +185,82 @@ func Test_Updater_Run_mergeError(t *testing.T) {
 	assert.Equal(t, Summary{}, have)
 }
 
+func Test_Updater_Run_missingReleaseFile(t *testing.T) {
+	// --- Given ---
+	var reqs atomic.Int32
+	srv := newRelease(t, &reqs)
+	upd := &Updater{
+		Client:  srv.Client(),
+		URL:     srv.URL + "/%s",
+		GoRoot:  newGoRoot(t, "2026c"),
+		DataDir: newDataDir(t),
+		Year:    2026,
+	}
+	must.Value(upd.Run(t.Context()))
+	must.Nil(os.Remove(filepath.Join(upd.DataDir, TZDataDir, LinksFile)))
+
+	// --- When ---
+	_, err := upd.Run(t.Context())
+
+	// --- Then ---
+	assert.NoError(t, err)
+	assert.Equal(t, int32(2), reqs.Load())
+}
+
+func Test_haveRelease_tabular(t *testing.T) {
+	all := map[string]string{
+		VersionFile: "2026c\n",
+		LinksFile:   "",
+		ZoneTabFile: "",
+	}
+
+	tt := []struct {
+		testN string
+
+		files map[string]string
+		want  bool
+	}{
+		{"complete", all, true},
+		{"no files", nil, false},
+		{
+			"other version",
+			map[string]string{
+				VersionFile: "2026b\n",
+				LinksFile:   "",
+				ZoneTabFile: "",
+			},
+			false,
+		},
+		{
+			"missing links",
+			map[string]string{VersionFile: "2026c\n", ZoneTabFile: ""},
+			false,
+		},
+		{
+			"missing zone.tab",
+			map[string]string{VersionFile: "2026c\n", LinksFile: ""},
+			false,
+		},
+	}
+
+	for _, tc := range tt {
+		t.Run(tc.testN, func(t *testing.T) {
+			// --- Given ---
+			dir := t.TempDir()
+			for name, data := range tc.files {
+				pth := filepath.Join(dir, name)
+				must.Nil(os.WriteFile(pth, []byte(data), 0644))
+			}
+
+			// --- When ---
+			have := haveRelease(dir, "2026c")
+
+			// --- Then ---
+			assert.Equal(t, tc.want, have)
+		})
+	}
+}
+
 func Test_summarize(t *testing.T) {
 	// --- Given ---
 	prev := []*xcal.Zone{
