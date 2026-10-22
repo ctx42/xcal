@@ -32,7 +32,7 @@ func LoadLocation(locS string) (*Location, error) {
 		}
 		tLoc, err := zon.Loc()
 		if err != nil {
-			// Zone is not in the Go location database.
+			// Zone name is missing from Zones or the Go location database.
 			return nil, ErrInvTimezone
 		}
 
