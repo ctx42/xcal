@@ -87,7 +87,8 @@ func (zon *Zone) Check() error {
 	return nil
 }
 
-// Validate validates zone.
+// Validate runs [Zone.Check] and also requires the zone name to be in
+// [Zones], returning [ErrInvTimezone] otherwise.
 func (zon *Zone) Validate() error {
 	if err := zon.Check(); err != nil {
 		return err
@@ -98,7 +99,8 @@ func (zon *Zone) Validate() error {
 	return nil
 }
 
-// Loc returns timezone location.
+// Loc returns the zone's location. The zone name must be in [Zones], or
+// [ErrInvTimezone] is returned.
 func (zon *Zone) Loc() (*time.Location, error) {
 	loc, err := LoadLocation(zon.Name)
 	if err != nil {
