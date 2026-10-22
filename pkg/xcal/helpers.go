@@ -10,7 +10,8 @@ import (
 // past or far in the future.
 var ErrTimeBounds = errors.New("date out of bounds")
 
-// CheckTimeBounds returns error if tim is before fip or after fif.
+// CheckTimeBounds returns an error wrapping [ErrTimeBounds] when tim is before
+// fip or later than now plus fif. The name prefixes the error message.
 func CheckTimeBounds(name string, tim, fip time.Time, fif time.Duration) error {
 	if tim.After(time.Now().UTC().Add(fif)) {
 		return fmt.Errorf("%w: %s date in far future", ErrTimeBounds, name)

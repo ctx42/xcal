@@ -5,7 +5,8 @@ import (
 	"time"
 )
 
-// RFC339MICRO represents layout with milliseconds.
+// RFC339MICRO is the RFC 3339 layout with up to six fractional second digits
+// (microseconds).
 const RFC339MICRO = "2006-01-02T15:04:05.999999Z07:00"
 
 // Midnight returns time of midnight for given tim in its timezone.
