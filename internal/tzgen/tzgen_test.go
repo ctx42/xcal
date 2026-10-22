@@ -132,8 +132,10 @@ func Test_GenerateTZ_noSourceFile(t *testing.T) {
 }
 
 func Test_GenerateTZ_noDestinationDir(t *testing.T) {
-	// --- When ---
+	// --- Given ---
 	dst := "testdata/not_existing/timezones.go"
+
+	// --- When ---
 	err := GenerateTZ("testdata/timezones.json", dst, "xcal")
 
 	// --- Then ---
