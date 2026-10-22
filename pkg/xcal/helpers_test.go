@@ -17,7 +17,7 @@ func Test_CheckTimeBounds_tabular(t *testing.T) {
 		fif string
 	}{
 		{
-			"1",
+			"within bounds",
 			time.Now().UTC(),
 			time.Date(2000, 1, 1, 0, 0, 0, 0, time.UTC),
 			"1s",

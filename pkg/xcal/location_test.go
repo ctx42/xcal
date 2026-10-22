@@ -17,10 +17,10 @@ func Test_LoadLocation_tabular(t *testing.T) {
 		wLoc string
 		wID  int
 	}{
-		{"1", "Europe/Warsaw", "Europe/Warsaw", 416},
-		{"2", "Europe/Zurich", "Europe/Zurich", 419},
-		{"3", "416", "Europe/Warsaw", 416},
-		{"4", "419", "Europe/Zurich", 419},
+		{"Warsaw name", "Europe/Warsaw", "Europe/Warsaw", 416},
+		{"Zurich name", "Europe/Zurich", "Europe/Zurich", 419},
+		{"Warsaw ID", "416", "Europe/Warsaw", 416},
+		{"Zurich ID", "419", "Europe/Zurich", 419},
 	}
 
 	for _, tc := range tt {
@@ -284,9 +284,9 @@ func Test_DefaultLocations_tabular(t *testing.T) {
 		want string
 		loc  *time.Location
 	}{
-		{"1", "Europe/Warsaw", WAW},
-		{"2", "Europe/Zurich", ZRH},
-		{"3", "Europe/Moscow", MOW},
+		{"WAW", "Europe/Warsaw", WAW},
+		{"ZRH", "Europe/Zurich", ZRH},
+		{"MOW", "Europe/Moscow", MOW},
 	}
 
 	for _, tc := range tt {

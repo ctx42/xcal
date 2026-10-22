@@ -17,17 +17,17 @@ func Test_Midnight_tabular(t *testing.T) {
 		want time.Time
 	}{
 		{
-			"1",
+			"UTC",
 			time.Date(2019, 5, 28, 22, 0, 0, 0, time.UTC),
 			time.Date(2019, 5, 28, 0, 0, 0, 0, time.UTC),
 		},
 		{
-			"2",
+			"Warsaw",
 			time.Date(2019, 5, 28, 22, 0, 0, 0, WAW),
 			time.Date(2019, 5, 28, 0, 0, 0, 0, WAW),
 		},
 		{
-			"3",
+			"fixed zone",
 			time.Date(2019, 5, 28, 22, 0, 0, 0, time.FixedZone("", -60*60)),
 			time.Date(2019, 5, 28, 0, 0, 0, 0, time.FixedZone("", -60*60)),
 		},
@@ -53,19 +53,19 @@ func Test_MonthStartEnd_tabular(t *testing.T) {
 		wEnd   time.Time
 	}{
 		{
-			"1",
+			"mid month",
 			time.Date(2019, 5, 28, 22, 0, 0, 0, time.UTC),
 			time.Date(2019, 5, 1, 0, 0, 0, 0, time.UTC),
 			time.Date(2019, 6, 1, 0, 0, 0, 0, time.UTC),
 		},
 		{
-			"2",
+			"leap February",
 			time.Date(2004, 2, 29, 22, 0, 0, 0, time.UTC),
 			time.Date(2004, 2, 1, 0, 0, 0, 0, time.UTC),
 			time.Date(2004, 3, 1, 0, 0, 0, 0, time.UTC),
 		},
 		{
-			"3",
+			"December",
 			time.Date(2004, 12, 31, 22, 0, 0, 0, WAW),
 			time.Date(2004, 12, 1, 0, 0, 0, 0, WAW),
 			time.Date(2005, 1, 1, 0, 0, 0, 0, WAW),
@@ -91,15 +91,15 @@ func Test_SinceMidnight_tabular(t *testing.T) {
 		date time.Time
 		want string
 	}{
-		{"1", time.Date(2019, 5, 28, 22, 0, 0, 0, time.UTC), "22h0m0s"},
-		{"2", time.Date(2019, 5, 28, 22, 0, 0, 0, WAW), "22h0m0s"},
+		{"UTC", time.Date(2019, 5, 28, 22, 0, 0, 0, time.UTC), "22h0m0s"},
+		{"Warsaw", time.Date(2019, 5, 28, 22, 0, 0, 0, WAW), "22h0m0s"},
 		{
-			"3",
+			"fixed zone",
 			time.Date(2019, 5, 28, 22, 0, 0, 0, time.FixedZone("", -60*60)),
 			"22h0m0s",
 		},
 		{
-			"4",
+			"fixed zone with seconds",
 			time.Date(2019, 5, 28, 22, 0, 13, 0, time.FixedZone("", -60*60)),
 			"22h0m13s",
 		},
@@ -126,28 +126,28 @@ func Test_InWindow_tabular(t *testing.T) {
 		date   time.Time
 	}{
 		{
-			"1",
+			"summer before start",
 			false,
 			"2h0m0s",
 			"2h0m0s",
 			time.Date(2019, 5, 28, 1, 59, 59, 0, WAW),
 		},
 		{
-			"2",
+			"summer at start",
 			true,
 			"2h0m0s",
 			"2h0m0s",
 			time.Date(2019, 5, 28, 2, 0, 0, 0, WAW),
 		},
 		{
-			"3",
+			"summer at end",
 			true,
 			"2h0m0s",
 			"2h0m0s",
 			time.Date(2019, 5, 28, 4, 0, 0, 0, WAW),
 		},
 		{
-			"4",
+			"summer after end",
 			false,
 			"2h0m0s",
 			"2h0m0s",
@@ -155,28 +155,28 @@ func Test_InWindow_tabular(t *testing.T) {
 		},
 
 		{
-			"5",
+			"winter before start",
 			false,
 			"2h0m0s",
 			"2h0m0s",
 			time.Date(2019, 2, 28, 1, 59, 59, 0, ZRH),
 		},
 		{
-			"6",
+			"winter at start",
 			true,
 			"2h0m0s",
 			"2h0m0s",
 			time.Date(2019, 2, 28, 2, 0, 0, 0, ZRH),
 		},
 		{
-			"7",
+			"winter at end",
 			true,
 			"2h0m0s",
 			"2h0m0s",
 			time.Date(2019, 2, 28, 4, 0, 0, 0, ZRH),
 		},
 		{
-			"8",
+			"winter after end",
 			false,
 			"2h0m0s",
 			"2h0m0s",
@@ -184,7 +184,7 @@ func Test_InWindow_tabular(t *testing.T) {
 		},
 
 		{
-			"9",
+			"DST end day",
 			false,
 			"2h0m0s",
 			"1h30m0s",
@@ -217,35 +217,35 @@ func Test_InBetween_tabular(t *testing.T) {
 		date  time.Time
 	}{
 		{
-			"1",
+			"at start",
 			false,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 29, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 		},
 		{
-			"2",
+			"at end",
 			false,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 29, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 29, 1, 59, 59, 0, time.UTC),
 		},
 		{
-			"3",
+			"inside",
 			true,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 29, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 28, 16, 59, 59, 0, time.UTC),
 		},
 		{
-			"4",
+			"before start",
 			false,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 29, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 28, 1, 59, 58, 0, time.UTC),
 		},
 		{
-			"5",
+			"after end",
 			false,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 29, 1, 59, 59, 0, time.UTC),
@@ -274,35 +274,35 @@ func Test_InBetweenInclusive_tabular(t *testing.T) {
 		date  time.Time
 	}{
 		{
-			"1",
+			"at start",
 			true,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 29, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 		},
 		{
-			"2",
+			"at end",
 			true,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 29, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 29, 1, 59, 59, 0, time.UTC),
 		},
 		{
-			"3",
+			"inside",
 			true,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 29, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 28, 16, 59, 59, 0, time.UTC),
 		},
 		{
-			"4",
+			"before start",
 			false,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 29, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 28, 1, 59, 58, 0, time.UTC),
 		},
 		{
-			"5",
+			"after end",
 			false,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 29, 1, 59, 59, 0, time.UTC),
@@ -329,19 +329,19 @@ func Test_IsBeforeOrEqual_tabular(t *testing.T) {
 		a, b time.Time
 	}{
 		{
-			"1",
+			"equal",
 			true,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 		},
 		{
-			"2",
+			"before",
 			true,
 			time.Date(2019, 5, 28, 1, 59, 58, 0, time.UTC),
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 		},
 		{
-			"3",
+			"after",
 			false,
 			time.Date(2019, 5, 28, 2, 0, 0, 0, time.UTC),
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
@@ -367,19 +367,19 @@ func Test_IsAfterOrEqual_tabular(t *testing.T) {
 		a, b time.Time
 	}{
 		{
-			"1",
+			"equal",
 			true,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 		},
 		{
-			"2",
+			"after",
 			true,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 28, 1, 59, 58, 0, time.UTC),
 		},
 		{
-			"3",
+			"before",
 			false,
 			time.Date(2019, 5, 28, 1, 59, 59, 0, time.UTC),
 			time.Date(2019, 5, 28, 2, 0, 0, 0, time.UTC),
@@ -425,13 +425,13 @@ func Test_ChangeLocation_tabular(t *testing.T) {
 		want string
 	}{
 		{
-			"1",
+			"set date",
 			time.Date(2022, 1, 29, 8, 41, 12, 0, WAW),
 			"America/Los_Angeles",
 			"2022-01-29T08:41:12-08:00",
 		},
 		{
-			"2",
+			"zero date",
 			time.Date(1, 1, 1, 0, 0, 0, 0, time.UTC),
 			"America/Los_Angeles",
 			"0000-12-31T16:07:02-07:52",
