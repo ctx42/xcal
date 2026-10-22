@@ -7,19 +7,6 @@ import (
 )
 
 func Test_Zone_Check(t *testing.T) {
-	validZone := func() *Zone {
-		return &Zone{
-			Id:          416,
-			CountryCode: "PL",
-			Name:        "Europe/Warsaw",
-			Offset:      120,
-			OffsetDST:   180,
-			Status:      "C",
-			Link:        "",
-			Notes:       "",
-		}
-	}
-
 	t.Run("ok", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
@@ -107,19 +94,6 @@ func Test_Zone_Check(t *testing.T) {
 }
 
 func Test_Zone_Validate(t *testing.T) {
-	validZone := func() *Zone {
-		return &Zone{
-			Id:          416,
-			CountryCode: "PL",
-			Name:        "Europe/Warsaw",
-			Offset:      120,
-			OffsetDST:   180,
-			Status:      "C",
-			Link:        "",
-			Notes:       "",
-		}
-	}
-
 	t.Run("ok", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
