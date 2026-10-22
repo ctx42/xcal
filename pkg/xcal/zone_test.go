@@ -155,6 +155,21 @@ func Test_Zone_Check(t *testing.T) {
 		assert.ErrorEqual(t, want, err)
 	})
 
+	t.Run("error - removed with empty name", func(t *testing.T) {
+		// --- Given ---
+		zon := validZone()
+		zon.Name = ""
+		zon.Status = Removed
+		zon.Link = "Etc/UTC"
+
+		// --- When ---
+		err := zon.Check()
+
+		// --- Then ---
+		assert.ErrorIs(t, ErrInvTimezone, err)
+		assert.ErrorEqual(t, "invalid timezone: ", err)
+	})
+
 	t.Run("error - removed without link", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()

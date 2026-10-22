@@ -61,6 +61,10 @@ func (zon *Zone) Check() error {
 		return fmt.Errorf("invalid ZoneID %d", zon.Id)
 	}
 
+	// A removed zone's name is not loaded, so reject the names loadTZ would.
+	if zon.Name == "" || zon.Name == "Local" {
+		return fmt.Errorf("%w: %s", ErrInvTimezone, zon.Name)
+	}
 	if zon.Status != Removed {
 		if _, err := loadTZ(zon.Name); err != nil {
 			return fmt.Errorf("%w: %s", ErrInvTimezone, zon.Name)
