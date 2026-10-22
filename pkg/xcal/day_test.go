@@ -159,7 +159,7 @@ func Test_Day_MarshalText_yearOutOfRange_tabular(t *testing.T) {
 	}
 }
 
-func Test_Day_zeroRoundTrip(t *testing.T) {
+func Test_Day_MarshalText_zeroRoundTrip(t *testing.T) {
 	// --- Given ---
 	data := must.Value(json.Marshal(struct{ Day Day }{}))
 	have := struct{ Day Day }{Day: NewDay(2026, time.March, 25)}
