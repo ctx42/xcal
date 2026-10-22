@@ -13,9 +13,9 @@ func Test_LoadLocation(t *testing.T) {
 	tt := []struct {
 		testN string
 
-		locS   string
-		expLoc string
-		expID  int
+		locS string
+		wLoc string
+		wID  int
 	}{
 		{"1", "Europe/Warsaw", "Europe/Warsaw", 416},
 		{"2", "Europe/Zurich", "Europe/Zurich", 419},
@@ -26,12 +26,12 @@ func Test_LoadLocation(t *testing.T) {
 	for _, tc := range tt {
 		t.Run(tc.testN, func(t *testing.T) {
 			// --- When ---
-			loc, err := LoadLocation(tc.locS)
+			have, err := LoadLocation(tc.locS)
 
 			// --- Then ---
 			assert.NoError(t, err)
-			assert.Equal(t, tc.expLoc, loc.Loc.String())
-			assert.Equal(t, tc.expID, loc.ID)
+			assert.Equal(t, tc.wLoc, have.Loc.String())
+			assert.Equal(t, tc.wID, have.ID)
 		})
 	}
 }
@@ -119,11 +119,11 @@ func Test_Location_MarshalJSON(t *testing.T) {
 	assert.NoError(t, err)
 
 	// --- When ---
-	got, err := json.Marshal(tz)
+	have, err := json.Marshal(tz)
 
 	// --- Then ---
 	assert.NoError(t, err)
-	assert.Equal(t, `"Europe/Warsaw"`, string(got))
+	assert.Equal(t, `"Europe/Warsaw"`, string(have))
 }
 
 func Test_Location_MarshalJSON_inStructure(t *testing.T) {
@@ -267,8 +267,8 @@ func Test_DefaultLocations(t *testing.T) {
 	tt := []struct {
 		testN string
 
-		exp string
-		loc *time.Location
+		want string
+		loc  *time.Location
 	}{
 		{"1", "Europe/Warsaw", WAW},
 		{"2", "Europe/Zurich", ZRH},
@@ -277,7 +277,7 @@ func Test_DefaultLocations(t *testing.T) {
 
 	for _, tc := range tt {
 		t.Run(tc.testN, func(t *testing.T) {
-			assert.Equal(t, tc.exp, tc.loc.String())
+			assert.Equal(t, tc.want, tc.loc.String())
 		})
 	}
 }

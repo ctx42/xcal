@@ -46,7 +46,7 @@ func Test_CheckTimeBounds_errors(t *testing.T) {
 		fip   time.Time
 		fif   string
 		field string
-		msg   string
+		want  string
 	}{
 		{
 			"1",
@@ -76,18 +76,18 @@ func Test_CheckTimeBounds_errors(t *testing.T) {
 
 			// --- Then ---
 			assert.ErrorIs(t, ErrTimeBounds, err)
-			assert.ErrorEqual(t, tc.msg, err)
+			assert.ErrorEqual(t, tc.want, err)
 		})
 	}
 }
 
 func Test_ToZone(t *testing.T) {
 	// --- When ---
-	z, err := ToZone(WAW)
+	have, err := ToZone(WAW)
 
 	// --- Then ---
 	assert.NoError(t, err)
-	assert.Equal(t, 416, z.Id)
+	assert.Equal(t, 416, have.Id)
 }
 
 func Test_ToZone_Local(t *testing.T) {
@@ -97,11 +97,11 @@ func Test_ToZone_Local(t *testing.T) {
 	t.Cleanup(func() { time.Local = orig })
 
 	// --- When ---
-	z, err := ToZone(time.Local)
+	have, err := ToZone(time.Local)
 
 	// --- Then ---
 	assert.ErrorEqual(t, "timezone Local means nothing", err)
-	assert.Nil(t, z)
+	assert.Nil(t, have)
 }
 
 func Test_ToZone_UnknownTimezone(t *testing.T) {
@@ -109,11 +109,11 @@ func Test_ToZone_UnknownTimezone(t *testing.T) {
 	loc := time.FixedZone("MyTZ", 0)
 
 	// --- When ---
-	z, err := ToZone(loc)
+	have, err := ToZone(loc)
 
 	// --- Then ---
 	assert.ErrorIs(t, ErrInvTimezone, err)
-	assert.Nil(t, z)
+	assert.Nil(t, have)
 }
 
 func Test_ByZoneID(t *testing.T) {

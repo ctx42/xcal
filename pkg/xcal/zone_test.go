@@ -8,11 +8,11 @@ import (
 
 func Test_Zone_Loc(t *testing.T) {
 	// --- When ---
-	loc, err := Zones["Europe/Warsaw"].Loc()
+	have, err := Zones["Europe/Warsaw"].Loc()
 
 	// --- Then ---
 	assert.NoError(t, err)
-	assert.Equal(t, "Europe/Warsaw", loc.String())
+	assert.Equal(t, "Europe/Warsaw", have.String())
 }
 
 func Test_Zone_Loc_unknownTimezone(t *testing.T) {
@@ -22,11 +22,11 @@ func Test_Zone_Loc_unknownTimezone(t *testing.T) {
 	}
 
 	// --- When ---
-	loc, err := z.Loc()
+	have, err := z.Loc()
 
 	// --- Then ---
 	assert.ErrorIs(t, ErrInvTimezone, err)
-	assert.Nil(t, loc)
+	assert.Nil(t, have)
 }
 
 func Test_Zone_Check(t *testing.T) {

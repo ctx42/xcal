@@ -106,12 +106,12 @@ func Test_DayOf(t *testing.T) {
 	tim := time.Date(2026, time.March, 24, 23, 30, 0, 0, time.UTC)
 
 	// --- When ---
-	utcDay := DayOf(tim)
-	locDay := DayOf(tim.In(WAW))
+	hUTC := DayOf(tim)
+	hLoc := DayOf(tim.In(WAW))
 
 	// --- Then ---
-	assert.Equal(t, NewDay(2026, time.March, 24), utcDay)
-	assert.Equal(t, NewDay(2026, time.March, 25), locDay)
+	assert.Equal(t, NewDay(2026, time.March, 24), hUTC)
+	assert.Equal(t, NewDay(2026, time.March, 25), hLoc)
 }
 
 func Test_Day_AddDays(t *testing.T) {

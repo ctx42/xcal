@@ -48,9 +48,9 @@ func Test_MonthStartEnd(t *testing.T) {
 	tt := []struct {
 		testN string
 
-		date  time.Time
-		start time.Time
-		end   time.Time
+		date   time.Time
+		wStart time.Time
+		wEnd   time.Time
 	}{
 		{
 			"1",
@@ -75,11 +75,11 @@ func Test_MonthStartEnd(t *testing.T) {
 	for _, tc := range tt {
 		t.Run(tc.testN, func(t *testing.T) {
 			// --- Given ---
-			start, end := MonthStartEnd(tc.date)
+			hStart, hEnd := MonthStartEnd(tc.date)
 
 			// --- Then ---
-			assert.Equal(t, tc.start, start)
-			assert.Equal(t, tc.end, end)
+			assert.Equal(t, tc.wStart, hStart)
+			assert.Equal(t, tc.wEnd, hEnd)
 		})
 	}
 }
@@ -404,7 +404,7 @@ func Test_TimeSortASC(t *testing.T) {
 		time.Date(2019, time.July, 18, 23, 17, 10, 0, WAW),
 	}
 
-	exp := []time.Time{
+	want := []time.Time{
 		time.Date(2019, time.July, 18, 23, 17, 10, 0, WAW),
 		time.Date(2019, time.July, 18, 23, 17, 10, 0, time.UTC),
 	}
@@ -413,7 +413,7 @@ func Test_TimeSortASC(t *testing.T) {
 	sort.Sort(TimeSortASC(in))
 
 	// --- Then ---
-	assert.Equal(t, exp, in)
+	assert.Equal(t, want, in)
 }
 
 func Test_ChangeLocation(t *testing.T) {

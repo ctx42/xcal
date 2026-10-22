@@ -117,12 +117,12 @@ func Test_GenerateTZ(t *testing.T) {
 	// --- Then ---
 	assert.NoError(t, err)
 
-	exp, err := os.ReadFile("testdata/timezones_expected_go")
+	want, err := os.ReadFile("testdata/timezones_expected_go")
 	assert.NoError(t, err)
 
-	got, err := os.ReadFile(dst)
+	have, err := os.ReadFile(dst)
 	assert.NoError(t, err)
-	assert.Equal(t, string(exp), string(got))
+	assert.Equal(t, string(want), string(have))
 }
 
 func Test_GenerateTZ_noSourceFile(t *testing.T) {
@@ -154,12 +154,12 @@ func Test_GenerateTZGo(t *testing.T) {
 	// --- Then ---
 	assert.NoError(t, err)
 
-	exp, err := os.ReadFile("testdata/timezones_expected_go")
+	want, err := os.ReadFile("testdata/timezones_expected_go")
 	assert.NoError(t, err)
 
-	got, err := os.ReadFile(dst)
+	have, err := os.ReadFile(dst)
 	assert.NoError(t, err)
-	assert.Equal(t, string(exp), string(got))
+	assert.Equal(t, string(want), string(have))
 }
 
 func Test_zoneLit(t *testing.T) {
