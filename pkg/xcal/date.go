@@ -63,8 +63,9 @@ func (tsa TimeSortASC) Len() int           { return len(tsa) }
 func (tsa TimeSortASC) Less(i, j int) bool { return tsa[i].Before(tsa[j]) }
 func (tsa TimeSortASC) Swap(i, j int)      { tsa[i], tsa[j] = tsa[j], tsa[i] }
 
-// ChangeLocation changes the timezone for the date.
-// It does not change the date string representation.
+// ChangeLocation changes the timezone for the date, keeping its wall clock
+// fields, so the date string representation stays the same. The zero time is
+// instead converted with [time.Time.In], so it stays zero.
 func ChangeLocation(date time.Time, tz *time.Location) time.Time {
 	// Date has not been set.
 	if date.IsZero() {
