@@ -31,6 +31,7 @@ func Test_LoadLocation(t *testing.T) {
 			// --- Then ---
 			assert.NoError(t, err)
 			assert.Equal(t, tc.expLoc, loc.Loc.String())
+			assert.Equal(t, tc.expID, loc.ID)
 		})
 	}
 }
