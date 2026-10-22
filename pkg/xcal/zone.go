@@ -68,6 +68,12 @@ func (zon *Zone) Check() error {
 		return fmt.Errorf("invalid Zone DST offset %d", zon.OffsetDST)
 	}
 
+	switch zon.Status {
+	case Canonical, Alias, Deprecated:
+	default:
+		return fmt.Errorf("invalid Zone status %q", zon.Status)
+	}
+
 	if zon.Status == Alias {
 		if zon.Link == "" {
 			return fmt.Errorf("alias without link for %s", zon.Name)

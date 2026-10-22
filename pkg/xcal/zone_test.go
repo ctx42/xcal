@@ -67,6 +67,18 @@ func Test_Zone_Check(t *testing.T) {
 		assert.ErrorEqual(t, "invalid Zone DST offset -1000", err)
 	})
 
+	t.Run("error - invalid status", func(t *testing.T) {
+		// --- Given ---
+		zon := validZone()
+		zon.Status = "X"
+
+		// --- When ---
+		err := zon.Check()
+
+		// --- Then ---
+		assert.ErrorEqual(t, `invalid Zone status "X"`, err)
+	})
+
 	t.Run("error - alias without link", func(t *testing.T) {
 		// --- Given ---
 		zon := validZone()
