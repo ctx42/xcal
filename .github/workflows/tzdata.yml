@@ -1,0 +1,41 @@
+# Fails when the latest stable Go embeds a tz database release the zone
+# registry does not hold yet. Fix it by upgrading Go and running:
+#
+#   go run ./internal/tzgen/cmd/tzupdate
+#   go generate ./pkg/xcal
+
+name: TZ data
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 6 * * 1'  # Weekly, as Go releases ship without a push here.
+  workflow_dispatch:
+
+# The workflow declares the minimum required permissions.
+# This follows the principle of least privilege.
+permissions:
+  contents: read
+
+# Cancel any in-progress runs for the same branch or PR.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+    - uses: actions/checkout@v6
+
+    - name: Set up latest stable Go
+      uses: actions/setup-go@v6
+      with:
+        go-version: stable
+        cache: true   # Enables module caching for faster runs.
+
+    - name: Check the zone registry holds Go's tz database release
+      run: go run ./internal/tzgen/cmd/tzupdate -check
