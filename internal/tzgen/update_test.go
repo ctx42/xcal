@@ -21,7 +21,7 @@ func Test_Updater_Run(t *testing.T) {
 	upd := &Updater{
 		Client:  srv.Client(),
 		URL:     srv.URL + "/%s",
-		GoRoot:  newGoRoot(t, "2026c"),
+		GoRoot:  newGoRoot(t),
 		DataDir: newDataDir(t),
 		Year:    2026,
 	}
@@ -55,7 +55,7 @@ func Test_Updater_Run_current(t *testing.T) {
 	upd := &Updater{
 		Client:  srv.Client(),
 		URL:     srv.URL + "/%s",
-		GoRoot:  newGoRoot(t, "2026c"),
+		GoRoot:  newGoRoot(t),
 		DataDir: newDataDir(t),
 		Year:    2026,
 	}
@@ -79,7 +79,7 @@ func Test_Updater_Run_zeroYear(t *testing.T) {
 		must.Nil(os.MkdirAll(filepath.Dir(dst), 0755))
 		must.Nil(os.WriteFile(dst, must.Value(os.ReadFile(src)), 0644))
 	}
-	upd := &Updater{GoRoot: newGoRoot(t, "2026c"), DataDir: dir}
+	upd := &Updater{GoRoot: newGoRoot(t), DataDir: dir}
 
 	// --- When ---
 	_, err := upd.Run(t.Context())
@@ -111,7 +111,7 @@ func Test_Updater_Run_fetchError(t *testing.T) {
 	upd := &Updater{
 		Client:  srv.Client(),
 		URL:     srv.URL + "/%s",
-		GoRoot:  newGoRoot(t, "2026c"),
+		GoRoot:  newGoRoot(t),
 		DataDir: newDataDir(t),
 	}
 
@@ -127,7 +127,7 @@ func Test_Updater_Run_noZoneInfo(t *testing.T) {
 	// --- Given ---
 	var reqs atomic.Int32
 	srv := newRelease(t, &reqs)
-	root := newGoRoot(t, "2026c")
+	root := newGoRoot(t)
 	must.Nil(os.Remove(filepath.Join(root, "lib", "time", "zoneinfo.zip")))
 	upd := &Updater{
 		Client:  srv.Client(),
@@ -151,7 +151,7 @@ func Test_Updater_Run_noRegistry(t *testing.T) {
 	upd := &Updater{
 		Client:  srv.Client(),
 		URL:     srv.URL + "/%s",
-		GoRoot:  newGoRoot(t, "2026c"),
+		GoRoot:  newGoRoot(t),
 		DataDir: t.TempDir(),
 	}
 
@@ -173,7 +173,7 @@ func Test_Updater_Run_mergeError(t *testing.T) {
 	upd := &Updater{
 		Client:  srv.Client(),
 		URL:     srv.URL + "/%s",
-		GoRoot:  newGoRoot(t, "2026c"),
+		GoRoot:  newGoRoot(t),
 		DataDir: dir,
 	}
 
@@ -192,7 +192,7 @@ func Test_Updater_Run_missingReleaseFile(t *testing.T) {
 	upd := &Updater{
 		Client:  srv.Client(),
 		URL:     srv.URL + "/%s",
-		GoRoot:  newGoRoot(t, "2026c"),
+		GoRoot:  newGoRoot(t),
 		DataDir: newDataDir(t),
 		Year:    2026,
 	}

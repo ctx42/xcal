@@ -67,15 +67,15 @@ func writeZip(t tester.T, files map[string][]byte) string {
 	return pth
 }
 
-// newGoRoot creates a Go root in a temporary directory, embedding the tz
-// database release version and the zones of testdata/zoneinfo.zip, and
-// returns its path.
-func newGoRoot(t tester.T, version string) string {
+// newGoRoot creates a Go root in a temporary directory, embedding the 2026c
+// tz database release and the zones of testdata/zoneinfo.zip, and returns its
+// path.
+func newGoRoot(t tester.T) string {
 	t.Helper()
 	root := t.TempDir()
 	dir := filepath.Join(root, "lib", "time")
 	must.Nil(os.MkdirAll(dir, 0755))
-	script := "CODE=" + version + "\nDATA=" + version + "\n"
+	script := "CODE=2026c\nDATA=2026c\n"
 	pth := filepath.Join(dir, "update.bash")
 	must.Nil(os.WriteFile(pth, []byte(script), 0644))
 	data := must.Value(os.ReadFile("testdata/zoneinfo.zip"))

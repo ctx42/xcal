@@ -16,7 +16,7 @@ import (
 
 func Test_GoTZVersion(t *testing.T) {
 	// --- Given ---
-	root := newGoRoot(t, "2026c")
+	root := newGoRoot(t)
 
 	// --- When ---
 	have, err := GoTZVersion(root)

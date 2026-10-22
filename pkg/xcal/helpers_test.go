@@ -100,7 +100,7 @@ func Test_ToZone(t *testing.T) {
 
 func Test_ToZone_Local(t *testing.T) {
 	// --- When ---
-	have, err := ToZone(time.Local)
+	have, err := ToZone(time.FixedZone("Local", 120))
 
 	// --- Then ---
 	assert.ErrorEqual(t, "timezone Local means nothing", err)
